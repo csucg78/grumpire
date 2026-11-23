@@ -1,0 +1,184 @@
+{
+  "umpire_id": "658325",
+  "umpire_name": "Tyler Jones",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 15,
+  "taken": 2427,
+  "missed": 147,
+  "acc_pct": 93.94,
+  "tol_acc_pct": 94.79,
+  "mean_miss_in": 0.89,
+  "challenges": 50,
+  "overturns": 20,
+  "overturn_pct": 40.0,
+  "re_impact": 19.15,
+  "game_log": [
+    {
+      "game_pk": 815786,
+      "date": "2026-09-16",
+      "level": "MiLB",
+      "matchup": "JAX @ SWB",
+      "taken": 172,
+      "missed": 8,
+      "acc_pct": 95.35,
+      "overturns": 0,
+      "re_impact": 1.55
+    },
+    {
+      "game_pk": 816825,
+      "date": "2026-09-12",
+      "level": "MiLB",
+      "matchup": "BUF @ CLT",
+      "taken": 125,
+      "missed": 12,
+      "acc_pct": 90.4,
+      "overturns": 2,
+      "re_impact": 1.19
+    },
+    {
+      "game_pk": 816617,
+      "date": "2026-08-21",
+      "level": "MiLB",
+      "matchup": "DUR @ GWN",
+      "taken": 176,
+      "missed": 10,
+      "acc_pct": 94.32,
+      "overturns": 2,
+      "re_impact": 1.12
+    },
+    {
+      "game_pk": 816632,
+      "date": "2026-07-21",
+      "level": "MiLB",
+      "matchup": "IOW @ GWN",
+      "taken": 181,
+      "missed": 12,
+      "acc_pct": 93.37,
+      "overturns": 1,
+      "re_impact": 1.92
+    },
+    {
+      "game_pk": 816851,
+      "date": "2026-07-11",
+      "level": "MiLB",
+      "matchup": "NAS @ CLT",
+      "taken": 151,
+      "missed": 6,
+      "acc_pct": 96.03,
+      "overturns": 1,
+      "re_impact": 0.45
+    },
+    {
+      "game_pk": 816707,
+      "date": "2026-07-04",
+      "level": "MiLB",
+      "matchup": "GWN @ DUR",
+      "taken": 148,
+      "missed": 15,
+      "acc_pct": 89.86,
+      "overturns": 1,
+      "re_impact": 2.2
+    },
+    {
+      "game_pk": 816710,
+      "date": "2026-06-30",
+      "level": "MiLB",
+      "matchup": "GWN @ DUR",
+      "taken": 148,
+      "missed": 5,
+      "acc_pct": 96.62,
+      "overturns": 1,
+      "re_impact": 0.49
+    },
+    {
+      "game_pk": 816421,
+      "date": "2026-06-06",
+      "level": "MiLB",
+      "matchup": "NAS @ JAX",
+      "taken": 157,
+      "missed": 12,
+      "acc_pct": 92.36,
+      "overturns": 4,
+      "re_impact": 1.27
+    },
+    {
+      "game_pk": 816418,
+      "date": "2026-06-02",
+      "level": "MiLB",
+      "matchup": "NAS @ JAX",
+      "taken": 204,
+      "missed": 17,
+      "acc_pct": 91.67,
+      "overturns": 1,
+      "re_impact": 2.03
+    },
+    {
+      "game_pk": 815539,
+      "date": "2026-05-05",
+      "level": "MiLB",
+      "matchup": "SWB @ WOR",
+      "taken": 137,
+      "missed": 3,
+      "acc_pct": 97.81,
+      "overturns": 0,
+      "re_impact": 0.27
+    },
+    {
+      "game_pk": 815846,
+      "date": "2026-04-21",
+      "level": "MiLB",
+      "matchup": "ROC @ SWB",
+      "taken": 145,
+      "missed": 6,
+      "acc_pct": 95.86,
+      "overturns": 0,
+      "re_impact": 1.11
+    },
+    {
+      "game_pk": 815924,
+      "date": "2026-04-14",
+      "level": "MiLB",
+      "matchup": "BUF @ ROC",
+      "taken": 140,
+      "missed": 8,
+      "acc_pct": 94.29,
+      "overturns": 3,
+      "re_impact": 1.16
+    },
+    {
+      "game_pk": 816894,
+      "date": "2026-04-10",
+      "level": "MiLB",
+      "matchup": "MEM @ CLT",
+      "taken": 204,
+      "missed": 15,
+      "acc_pct": 92.65,
+      "overturns": 2,
+      "re_impact": 1.87
+    },
+    {
+      "game_pk": 816740,
+      "date": "2026-04-04",
+      "level": "MiLB",
+      "matchup": "LHV @ DUR",
+      "taken": 173,
+      "missed": 10,
+      "acc_pct": 94.22,
+      "overturns": 2,
+      "re_impact": 1.31
+    },
+    {
+      "game_pk": 816751,
+      "date": "2026-03-31",
+      "level": "MiLB",
+      "matchup": "LHV @ DUR",
+      "taken": 166,
+      "missed": 8,
+      "acc_pct": 95.18,
+      "overturns": 0,
+      "re_impact": 1.21
+    }
+  ]
+}

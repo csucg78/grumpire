@@ -1,0 +1,140 @@
+{
+  "umpire_id": "676581",
+  "umpire_name": "James Jean",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 11,
+  "taken": 1749,
+  "missed": 108,
+  "acc_pct": 93.83,
+  "tol_acc_pct": 94.3,
+  "mean_miss_in": 1.02,
+  "challenges": 30,
+  "overturns": 11,
+  "overturn_pct": 36.7,
+  "re_impact": 14.17,
+  "game_log": [
+    {
+      "game_pk": 815489,
+      "date": "2026-08-29",
+      "level": "MiLB",
+      "matchup": "SWB @ WOR",
+      "taken": 168,
+      "missed": 15,
+      "acc_pct": 91.07,
+      "overturns": 2,
+      "re_impact": 2.01
+    },
+    {
+      "game_pk": 815485,
+      "date": "2026-08-25",
+      "level": "MiLB",
+      "matchup": "SWB @ WOR",
+      "taken": 181,
+      "missed": 7,
+      "acc_pct": 96.13,
+      "overturns": 2,
+      "re_impact": 0.82
+    },
+    {
+      "game_pk": 814821,
+      "date": "2026-07-31",
+      "level": "MiLB",
+      "matchup": "SL @ SUG",
+      "taken": 179,
+      "missed": 11,
+      "acc_pct": 93.85,
+      "overturns": 1,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 814825,
+      "date": "2026-07-28",
+      "level": "MiLB",
+      "matchup": "SL @ SUG",
+      "taken": 161,
+      "missed": 7,
+      "acc_pct": 95.65,
+      "overturns": 1,
+      "re_impact": 0.96
+    },
+    {
+      "game_pk": 816560,
+      "date": "2026-07-10",
+      "level": "MiLB",
+      "matchup": "TOL @ IND",
+      "taken": 145,
+      "missed": 6,
+      "acc_pct": 95.86,
+      "overturns": 1,
+      "re_impact": 0.85
+    },
+    {
+      "game_pk": 815810,
+      "date": "2026-07-05",
+      "level": "MiLB",
+      "matchup": "NOR @ SWB",
+      "taken": 97,
+      "missed": 5,
+      "acc_pct": 94.85,
+      "overturns": 1,
+      "re_impact": 0.51
+    },
+    {
+      "game_pk": 815815,
+      "date": "2026-06-30",
+      "level": "MiLB",
+      "matchup": "NOR @ SWB",
+      "taken": 143,
+      "missed": 16,
+      "acc_pct": 88.81,
+      "overturns": 1,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 816193,
+      "date": "2026-06-18",
+      "level": "MiLB",
+      "matchup": "NAS @ MEM",
+      "taken": 153,
+      "missed": 4,
+      "acc_pct": 97.39,
+      "overturns": 0,
+      "re_impact": 0.44
+    },
+    {
+      "game_pk": 816436,
+      "date": "2026-05-05",
+      "level": "MiLB",
+      "matchup": "CLT @ JAX",
+      "taken": 138,
+      "missed": 6,
+      "acc_pct": 95.65,
+      "overturns": 1,
+      "re_impact": 0.73
+    },
+    {
+      "game_pk": 814862,
+      "date": "2026-04-23",
+      "level": "MiLB",
+      "matchup": "RR @ SUG",
+      "taken": 209,
+      "missed": 14,
+      "acc_pct": 93.3,
+      "overturns": 1,
+      "re_impact": 1.68
+    },
+    {
+      "game_pk": 816455,
+      "date": "2026-03-28",
+      "level": "MiLB",
+      "matchup": "ROC @ JAX",
+      "taken": 175,
+      "missed": 17,
+      "acc_pct": 90.29,
+      "overturns": 0,
+      "re_impact": 3.17
+    }
+  ]
+}

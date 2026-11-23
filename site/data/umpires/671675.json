@@ -1,0 +1,52 @@
+{
+  "umpire_id": "671675",
+  "umpire_name": "C Julian Everett",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 3,
+  "taken": 495,
+  "missed": 49,
+  "acc_pct": 90.1,
+  "tol_acc_pct": 90.23,
+  "mean_miss_in": 1.57,
+  "challenges": 12,
+  "overturns": 11,
+  "overturn_pct": 91.7,
+  "re_impact": 5.46,
+  "game_log": [
+    {
+      "game_pk": 820669,
+      "date": "2026-06-03",
+      "level": "MiLB",
+      "matchup": "DBT @ DUN",
+      "taken": 167,
+      "missed": 22,
+      "acc_pct": 86.83,
+      "overturns": 3,
+      "re_impact": 2.72
+    },
+    {
+      "game_pk": 820401,
+      "date": "2026-05-31",
+      "level": "MiLB",
+      "matchup": "LAK @ PMB",
+      "taken": 187,
+      "missed": 16,
+      "acc_pct": 91.44,
+      "overturns": 3,
+      "re_impact": 1.48
+    },
+    {
+      "game_pk": 820408,
+      "date": "2026-05-29",
+      "level": "MiLB",
+      "matchup": "LAK @ PMB",
+      "taken": 141,
+      "missed": 11,
+      "acc_pct": 92.2,
+      "overturns": 5,
+      "re_impact": 1.26
+    }
+  ]
+}

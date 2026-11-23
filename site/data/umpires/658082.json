@@ -1,0 +1,239 @@
+{
+  "umpire_id": "658082",
+  "umpire_name": "Jacob Metz",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 20,
+  "taken": 3226,
+  "missed": 224,
+  "acc_pct": 93.06,
+  "tol_acc_pct": 93.72,
+  "mean_miss_in": 1.53,
+  "challenges": 66,
+  "overturns": 38,
+  "overturn_pct": 57.6,
+  "re_impact": 27.86,
+  "game_log": [
+    {
+      "game_pk": 815634,
+      "date": "2026-09-17",
+      "level": "MiLB",
+      "matchup": "LHV @ SYR",
+      "taken": 200,
+      "missed": 14,
+      "acc_pct": 93.0,
+      "overturns": 2,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 815413,
+      "date": "2026-08-19",
+      "level": "MiLB",
+      "matchup": "LV @ ABQ",
+      "taken": 204,
+      "missed": 24,
+      "acc_pct": 88.24,
+      "overturns": 7,
+      "re_impact": 3.31
+    },
+    {
+      "game_pk": 815263,
+      "date": "2026-08-11",
+      "level": "MiLB",
+      "matchup": "SAC @ LV",
+      "taken": 166,
+      "missed": 9,
+      "acc_pct": 94.58,
+      "overturns": 2,
+      "re_impact": 1.24
+    },
+    {
+      "game_pk": 816550,
+      "date": "2026-08-04",
+      "level": "MiLB",
+      "matchup": "IOW @ IND",
+      "taken": 198,
+      "missed": 19,
+      "acc_pct": 90.4,
+      "overturns": 1,
+      "re_impact": 2.68
+    },
+    {
+      "game_pk": 815201,
+      "date": "2026-07-30",
+      "level": "MiLB",
+      "matchup": "LV @ OKC",
+      "taken": 138,
+      "missed": 9,
+      "acc_pct": 93.48,
+      "overturns": 2,
+      "re_impact": 1.31
+    },
+    {
+      "game_pk": 814827,
+      "date": "2026-07-25",
+      "level": "MiLB",
+      "matchup": "NAS @ SUG",
+      "taken": 123,
+      "missed": 5,
+      "acc_pct": 95.93,
+      "overturns": 0,
+      "re_impact": 0.68
+    },
+    {
+      "game_pk": 814831,
+      "date": "2026-07-21",
+      "level": "MiLB",
+      "matchup": "NAS @ SUG",
+      "taken": 142,
+      "missed": 8,
+      "acc_pct": 94.37,
+      "overturns": 3,
+      "re_impact": 1.02
+    },
+    {
+      "game_pk": 814989,
+      "date": "2026-07-10",
+      "level": "MiLB",
+      "matchup": "SL @ SAC",
+      "taken": 171,
+      "missed": 13,
+      "acc_pct": 92.4,
+      "overturns": 2,
+      "re_impact": 1.91
+    },
+    {
+      "game_pk": 814760,
+      "date": "2026-07-04",
+      "level": "MiLB",
+      "matchup": "RNO @ TAC",
+      "taken": 166,
+      "missed": 10,
+      "acc_pct": 93.98,
+      "overturns": 1,
+      "re_impact": 1.04
+    },
+    {
+      "game_pk": 814759,
+      "date": "2026-06-30",
+      "level": "MiLB",
+      "matchup": "RNO @ TAC",
+      "taken": 133,
+      "missed": 7,
+      "acc_pct": 94.74,
+      "overturns": 2,
+      "re_impact": 0.91
+    },
+    {
+      "game_pk": 816110,
+      "date": "2026-06-26",
+      "level": "MiLB",
+      "matchup": "GWN @ NAS",
+      "taken": 180,
+      "missed": 8,
+      "acc_pct": 95.56,
+      "overturns": 0,
+      "re_impact": 1.38
+    },
+    {
+      "game_pk": 815972,
+      "date": "2026-05-31",
+      "level": "MiLB",
+      "matchup": "MEM @ OMA",
+      "taken": 143,
+      "missed": 9,
+      "acc_pct": 93.71,
+      "overturns": 0,
+      "re_impact": 0.95
+    },
+    {
+      "game_pk": 815975,
+      "date": "2026-05-28",
+      "level": "MiLB",
+      "matchup": "MEM @ OMA",
+      "taken": 173,
+      "missed": 6,
+      "acc_pct": 96.53,
+      "overturns": 1,
+      "re_impact": 0.64
+    },
+    {
+      "game_pk": 815603,
+      "date": "2026-05-24",
+      "level": "MiLB",
+      "matchup": "IND @ TOL",
+      "taken": 136,
+      "missed": 11,
+      "acc_pct": 91.91,
+      "overturns": 0,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 815607,
+      "date": "2026-05-20",
+      "level": "MiLB",
+      "matchup": "IND @ TOL",
+      "taken": 131,
+      "missed": 16,
+      "acc_pct": 87.79,
+      "overturns": 1,
+      "re_impact": 1.98
+    },
+    {
+      "game_pk": 816127,
+      "date": "2026-05-16",
+      "level": "MiLB",
+      "matchup": "IOW @ NAS",
+      "taken": 161,
+      "missed": 21,
+      "acc_pct": 86.96,
+      "overturns": 3,
+      "re_impact": 2.66
+    },
+    {
+      "game_pk": 816133,
+      "date": "2026-05-12",
+      "level": "MiLB",
+      "matchup": "IOW @ NAS",
+      "taken": 183,
+      "missed": 8,
+      "acc_pct": 95.63,
+      "overturns": 3,
+      "re_impact": 0.76
+    },
+    {
+      "game_pk": 814789,
+      "date": "2026-04-18",
+      "level": "MiLB",
+      "matchup": "SAC @ TAC",
+      "taken": 138,
+      "missed": 7,
+      "acc_pct": 94.93,
+      "overturns": 3,
+      "re_impact": 0.62
+    },
+    {
+      "game_pk": 815023,
+      "date": "2026-04-07",
+      "level": "MiLB",
+      "matchup": "LV @ SAC",
+      "taken": 177,
+      "missed": 10,
+      "acc_pct": 94.35,
+      "overturns": 0,
+      "re_impact": 0.84
+    },
+    {
+      "game_pk": 815174,
+      "date": "2026-03-28",
+      "level": "MiLB",
+      "matchup": "TAC @ RNO",
+      "taken": 163,
+      "missed": 10,
+      "acc_pct": 93.87,
+      "overturns": 5,
+      "re_impact": 0.93
+    }
+  ]
+}

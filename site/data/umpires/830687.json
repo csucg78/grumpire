@@ -1,0 +1,195 @@
+{
+  "umpire_id": "830687",
+  "umpire_name": "Ryan Smith",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 16,
+  "taken": 2771,
+  "missed": 272,
+  "acc_pct": 90.18,
+  "tol_acc_pct": 91.05,
+  "mean_miss_in": 1.71,
+  "challenges": 110,
+  "overturns": 66,
+  "overturn_pct": 60.0,
+  "re_impact": 33.47,
+  "game_log": [
+    {
+      "game_pk": 820760,
+      "date": "2026-09-05",
+      "level": "MiLB",
+      "matchup": "FTM @ CLR",
+      "taken": 177,
+      "missed": 24,
+      "acc_pct": 86.44,
+      "overturns": 5,
+      "re_impact": 3.39
+    },
+    {
+      "game_pk": 820771,
+      "date": "2026-09-03",
+      "level": "MiLB",
+      "matchup": "FTM @ CLR",
+      "taken": 146,
+      "missed": 16,
+      "acc_pct": 89.04,
+      "overturns": 1,
+      "re_impact": 1.92
+    },
+    {
+      "game_pk": 820768,
+      "date": "2026-09-01",
+      "level": "MiLB",
+      "matchup": "FTM @ CLR",
+      "taken": 167,
+      "missed": 21,
+      "acc_pct": 87.43,
+      "overturns": 10,
+      "re_impact": 1.81
+    },
+    {
+      "game_pk": 820834,
+      "date": "2026-08-22",
+      "level": "MiLB",
+      "matchup": "JUP @ BRD",
+      "taken": 199,
+      "missed": 18,
+      "acc_pct": 90.95,
+      "overturns": 3,
+      "re_impact": 2.36
+    },
+    {
+      "game_pk": 820843,
+      "date": "2026-08-20",
+      "level": "MiLB",
+      "matchup": "JUP @ BRD",
+      "taken": 182,
+      "missed": 15,
+      "acc_pct": 91.76,
+      "overturns": 3,
+      "re_impact": 1.98
+    },
+    {
+      "game_pk": 820839,
+      "date": "2026-08-18",
+      "level": "MiLB",
+      "matchup": "JUP @ BRD",
+      "taken": 215,
+      "missed": 17,
+      "acc_pct": 92.09,
+      "overturns": 3,
+      "re_impact": 2.08
+    },
+    {
+      "game_pk": 820449,
+      "date": "2026-08-07",
+      "level": "MiLB",
+      "matchup": "DUN @ LAK",
+      "taken": 161,
+      "missed": 18,
+      "acc_pct": 88.82,
+      "overturns": 5,
+      "re_impact": 2.13
+    },
+    {
+      "game_pk": 820448,
+      "date": "2026-08-05",
+      "level": "MiLB",
+      "matchup": "DUN @ LAK",
+      "taken": 165,
+      "missed": 12,
+      "acc_pct": 92.73,
+      "overturns": 1,
+      "re_impact": 2.21
+    },
+    {
+      "game_pk": 820576,
+      "date": "2026-08-02",
+      "level": "MiLB",
+      "matchup": "PMB @ FTM",
+      "taken": 185,
+      "missed": 11,
+      "acc_pct": 94.05,
+      "overturns": 0,
+      "re_impact": 1.08
+    },
+    {
+      "game_pk": 820579,
+      "date": "2026-07-31",
+      "level": "MiLB",
+      "matchup": "PMB @ FTM",
+      "taken": 172,
+      "missed": 11,
+      "acc_pct": 93.6,
+      "overturns": 2,
+      "re_impact": 1.31
+    },
+    {
+      "game_pk": 820580,
+      "date": "2026-07-29",
+      "level": "MiLB",
+      "matchup": "PMB @ FTM",
+      "taken": 197,
+      "missed": 18,
+      "acc_pct": 90.86,
+      "overturns": 5,
+      "re_impact": 2.22
+    },
+    {
+      "game_pk": 820782,
+      "date": "2026-07-25",
+      "level": "MiLB",
+      "matchup": "DBT @ CLR",
+      "taken": 167,
+      "missed": 15,
+      "acc_pct": 91.02,
+      "overturns": 3,
+      "re_impact": 1.78
+    },
+    {
+      "game_pk": 820788,
+      "date": "2026-07-23",
+      "level": "MiLB",
+      "matchup": "DBT @ CLR",
+      "taken": 126,
+      "missed": 10,
+      "acc_pct": 92.06,
+      "overturns": 7,
+      "re_impact": 0.87
+    },
+    {
+      "game_pk": 820783,
+      "date": "2026-07-21",
+      "level": "MiLB",
+      "matchup": "DBT @ CLR",
+      "taken": 177,
+      "missed": 30,
+      "acc_pct": 83.05,
+      "overturns": 7,
+      "re_impact": 3.54
+    },
+    {
+      "game_pk": 820386,
+      "date": "2026-07-19",
+      "level": "MiLB",
+      "matchup": "SLU @ PMB",
+      "taken": 189,
+      "missed": 20,
+      "acc_pct": 89.42,
+      "overturns": 7,
+      "re_impact": 2.8
+    },
+    {
+      "game_pk": 820397,
+      "date": "2026-07-17",
+      "level": "MiLB",
+      "matchup": "SLU @ PMB",
+      "taken": 146,
+      "missed": 16,
+      "acc_pct": 89.04,
+      "overturns": 4,
+      "re_impact": 1.99
+    }
+  ]
+}

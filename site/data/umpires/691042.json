@@ -1,0 +1,85 @@
+{
+  "umpire_id": "691042",
+  "umpire_name": "Willie Traynor",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 6,
+  "taken": 1033,
+  "missed": 88,
+  "acc_pct": 91.48,
+  "tol_acc_pct": 92.58,
+  "mean_miss_in": 1.13,
+  "challenges": 16,
+  "overturns": 8,
+  "overturn_pct": 50.0,
+  "re_impact": 12.49,
+  "game_log": [
+    {
+      "game_pk": 815031,
+      "date": "2026-09-18",
+      "level": "MiLB",
+      "matchup": "TAC @ RR",
+      "taken": 159,
+      "missed": 14,
+      "acc_pct": 91.19,
+      "overturns": 1,
+      "re_impact": 2.23
+    },
+    {
+      "game_pk": 814993,
+      "date": "2026-06-23",
+      "level": "MiLB",
+      "matchup": "LV @ SAC",
+      "taken": 209,
+      "missed": 23,
+      "acc_pct": 89.0,
+      "overturns": 1,
+      "re_impact": 3.84
+    },
+    {
+      "game_pk": 816810,
+      "date": "2026-05-19",
+      "level": "MiLB",
+      "matchup": "LOU @ COL",
+      "taken": 139,
+      "missed": 13,
+      "acc_pct": 90.65,
+      "overturns": 2,
+      "re_impact": 1.55
+    },
+    {
+      "game_pk": 814855,
+      "date": "2026-05-09",
+      "level": "MiLB",
+      "matchup": "ABQ @ SUG",
+      "taken": 209,
+      "missed": 17,
+      "acc_pct": 91.87,
+      "overturns": 1,
+      "re_impact": 2.12
+    },
+    {
+      "game_pk": 816808,
+      "date": "2026-04-28",
+      "level": "MiLB",
+      "matchup": "TOL @ COL",
+      "taken": 176,
+      "missed": 13,
+      "acc_pct": 92.61,
+      "overturns": 3,
+      "re_impact": 1.9
+    },
+    {
+      "game_pk": 816371,
+      "date": "2026-03-28",
+      "level": "MiLB",
+      "matchup": "TOL @ LHV",
+      "taken": 141,
+      "missed": 8,
+      "acc_pct": 94.33,
+      "overturns": 0,
+      "re_impact": 0.85
+    }
+  ]
+}

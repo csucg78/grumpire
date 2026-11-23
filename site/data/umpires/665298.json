@@ -1,0 +1,217 @@
+{
+  "umpire_id": "665298",
+  "umpire_name": "Dexter Kelley",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 18,
+  "taken": 3009,
+  "missed": 216,
+  "acc_pct": 92.82,
+  "tol_acc_pct": 93.98,
+  "mean_miss_in": 0.95,
+  "challenges": 47,
+  "overturns": 22,
+  "overturn_pct": 46.8,
+  "re_impact": 27.89,
+  "game_log": [
+    {
+      "game_pk": 816385,
+      "date": "2026-09-10",
+      "level": "MiLB",
+      "matchup": "GWN @ JAX",
+      "taken": 147,
+      "missed": 14,
+      "acc_pct": 90.48,
+      "overturns": 0,
+      "re_impact": 1.87
+    },
+    {
+      "game_pk": 816380,
+      "date": "2026-09-08",
+      "level": "MiLB",
+      "matchup": "GWN @ JAX",
+      "taken": 91,
+      "missed": 10,
+      "acc_pct": 89.01,
+      "overturns": 1,
+      "re_impact": 1.0
+    },
+    {
+      "game_pk": 815500,
+      "date": "2026-08-04",
+      "level": "MiLB",
+      "matchup": "LHV @ WOR",
+      "taken": 182,
+      "missed": 14,
+      "acc_pct": 92.31,
+      "overturns": 2,
+      "re_impact": 1.73
+    },
+    {
+      "game_pk": 816404,
+      "date": "2026-07-10",
+      "level": "MiLB",
+      "matchup": "DUR @ JAX",
+      "taken": 191,
+      "missed": 19,
+      "acc_pct": 90.05,
+      "overturns": 1,
+      "re_impact": 2.81
+    },
+    {
+      "game_pk": 816641,
+      "date": "2026-07-07",
+      "level": "MiLB",
+      "matchup": "MEM @ GWN",
+      "taken": 197,
+      "missed": 16,
+      "acc_pct": 91.88,
+      "overturns": 2,
+      "re_impact": 2.07
+    },
+    {
+      "game_pk": 816337,
+      "date": "2026-06-27",
+      "level": "MiLB",
+      "matchup": "SYR @ LHV",
+      "taken": 164,
+      "missed": 12,
+      "acc_pct": 92.68,
+      "overturns": 0,
+      "re_impact": 1.54
+    },
+    {
+      "game_pk": 816335,
+      "date": "2026-06-23",
+      "level": "MiLB",
+      "matchup": "SYR @ LHV",
+      "taken": 209,
+      "missed": 15,
+      "acc_pct": 92.82,
+      "overturns": 0,
+      "re_impact": 1.36
+    },
+    {
+      "game_pk": 816867,
+      "date": "2026-06-09",
+      "level": "MiLB",
+      "matchup": "OKC @ CLT",
+      "taken": 144,
+      "missed": 13,
+      "acc_pct": 90.97,
+      "overturns": 2,
+      "re_impact": 2.01
+    },
+    {
+      "game_pk": 816645,
+      "date": "2026-06-03",
+      "level": "MiLB",
+      "matchup": "NOR @ GWN",
+      "taken": 135,
+      "missed": 9,
+      "acc_pct": 93.33,
+      "overturns": 0,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 816056,
+      "date": "2026-05-29",
+      "level": "MiLB",
+      "matchup": "DUR @ NOR",
+      "taken": 184,
+      "missed": 13,
+      "acc_pct": 92.93,
+      "overturns": 2,
+      "re_impact": 1.73
+    },
+    {
+      "game_pk": 816051,
+      "date": "2026-05-26",
+      "level": "MiLB",
+      "matchup": "DUR @ NOR",
+      "taken": 161,
+      "missed": 13,
+      "acc_pct": 91.93,
+      "overturns": 1,
+      "re_impact": 1.64
+    },
+    {
+      "game_pk": 816646,
+      "date": "2026-05-22",
+      "level": "MiLB",
+      "matchup": "CLT @ GWN",
+      "taken": 164,
+      "missed": 12,
+      "acc_pct": 92.68,
+      "overturns": 1,
+      "re_impact": 1.67
+    },
+    {
+      "game_pk": 816657,
+      "date": "2026-05-19",
+      "level": "MiLB",
+      "matchup": "CLT @ GWN",
+      "taken": 165,
+      "missed": 7,
+      "acc_pct": 95.76,
+      "overturns": 1,
+      "re_impact": 0.83
+    },
+    {
+      "game_pk": 815761,
+      "date": "2026-04-30",
+      "level": "MiLB",
+      "matchup": "IOW @ STP",
+      "taken": 150,
+      "missed": 4,
+      "acc_pct": 97.33,
+      "overturns": 0,
+      "re_impact": 0.4
+    },
+    {
+      "game_pk": 816285,
+      "date": "2026-04-18",
+      "level": "MiLB",
+      "matchup": "TOL @ LOU",
+      "taken": 169,
+      "missed": 9,
+      "acc_pct": 94.67,
+      "overturns": 3,
+      "re_impact": 1.15
+    },
+    {
+      "game_pk": 816295,
+      "date": "2026-04-14",
+      "level": "MiLB",
+      "matchup": "TOL @ LOU",
+      "taken": 160,
+      "missed": 9,
+      "acc_pct": 94.38,
+      "overturns": 1,
+      "re_impact": 1.06
+    },
+    {
+      "game_pk": 816292,
+      "date": "2026-04-02",
+      "level": "MiLB",
+      "matchup": "IOW @ LOU",
+      "taken": 186,
+      "missed": 17,
+      "acc_pct": 90.86,
+      "overturns": 2,
+      "re_impact": 2.7
+    },
+    {
+      "game_pk": 816298,
+      "date": "2026-03-28",
+      "level": "MiLB",
+      "matchup": "OMA @ LOU",
+      "taken": 210,
+      "missed": 10,
+      "acc_pct": 95.24,
+      "overturns": 3,
+      "re_impact": 1.09
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "umpire_id": "427292",
+  "umpire_name": "Ron Kulpa",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 1,
+  "taken": 185,
+  "missed": 10,
+  "acc_pct": 94.59,
+  "tol_acc_pct": 94.57,
+  "mean_miss_in": 1.14,
+  "challenges": 3,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 1.32,
+  "game_log": [
+    {
+      "game_pk": 815608,
+      "date": "2026-05-10",
+      "level": "MiLB",
+      "matchup": "MEM @ TOL",
+      "taken": 185,
+      "missed": 10,
+      "acc_pct": 94.59,
+      "overturns": 0,
+      "re_impact": 1.32
+    }
+  ]
+}

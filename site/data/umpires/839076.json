@@ -1,0 +1,250 @@
+{
+  "umpire_id": "839076",
+  "umpire_name": "Josue Rosario",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 21,
+  "taken": 3521,
+  "missed": 327,
+  "acc_pct": 90.71,
+  "tol_acc_pct": 91.32,
+  "mean_miss_in": 1.44,
+  "challenges": 78,
+  "overturns": 44,
+  "overturn_pct": 56.4,
+  "re_impact": 41.81,
+  "game_log": [
+    {
+      "game_pk": 850940,
+      "date": "2026-09-10",
+      "level": "MiLB",
+      "matchup": "TAM @ CLR",
+      "taken": 155,
+      "missed": 11,
+      "acc_pct": 92.9,
+      "overturns": 1,
+      "re_impact": 1.27
+    },
+    {
+      "game_pk": 820547,
+      "date": "2026-05-24",
+      "level": "MiLB",
+      "matchup": "DBT @ JUP",
+      "taken": 155,
+      "missed": 10,
+      "acc_pct": 93.55,
+      "overturns": 2,
+      "re_impact": 1.44
+    },
+    {
+      "game_pk": 820542,
+      "date": "2026-05-22",
+      "level": "MiLB",
+      "matchup": "DBT @ JUP",
+      "taken": 143,
+      "missed": 11,
+      "acc_pct": 92.31,
+      "overturns": 1,
+      "re_impact": 1.55
+    },
+    {
+      "game_pk": 820545,
+      "date": "2026-05-20",
+      "level": "MiLB",
+      "matchup": "DBT @ JUP",
+      "taken": 178,
+      "missed": 15,
+      "acc_pct": 91.57,
+      "overturns": 1,
+      "re_impact": 2.28
+    },
+    {
+      "game_pk": 820281,
+      "date": "2026-05-17",
+      "level": "MiLB",
+      "matchup": "DUN @ TAM",
+      "taken": 107,
+      "missed": 13,
+      "acc_pct": 87.85,
+      "overturns": 1,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 820280,
+      "date": "2026-05-15",
+      "level": "MiLB",
+      "matchup": "DUN @ TAM",
+      "taken": 218,
+      "missed": 19,
+      "acc_pct": 91.28,
+      "overturns": 0,
+      "re_impact": 2.42
+    },
+    {
+      "game_pk": 820284,
+      "date": "2026-05-13",
+      "level": "MiLB",
+      "matchup": "DUN @ TAM",
+      "taken": 188,
+      "missed": 15,
+      "acc_pct": 92.02,
+      "overturns": 1,
+      "re_impact": 2.25
+    },
+    {
+      "game_pk": 820477,
+      "date": "2026-05-10",
+      "level": "MiLB",
+      "matchup": "SLU @ LAK",
+      "taken": 154,
+      "missed": 12,
+      "acc_pct": 92.21,
+      "overturns": 3,
+      "re_impact": 1.54
+    },
+    {
+      "game_pk": 820489,
+      "date": "2026-05-08",
+      "level": "MiLB",
+      "matchup": "SLU @ LAK",
+      "taken": 140,
+      "missed": 11,
+      "acc_pct": 92.14,
+      "overturns": 5,
+      "re_impact": 1.34
+    },
+    {
+      "game_pk": 820486,
+      "date": "2026-05-06",
+      "level": "MiLB",
+      "matchup": "SLU @ LAK",
+      "taken": 133,
+      "missed": 11,
+      "acc_pct": 91.73,
+      "overturns": 2,
+      "re_impact": 1.3
+    },
+    {
+      "game_pk": 820421,
+      "date": "2026-05-03",
+      "level": "MiLB",
+      "matchup": "CLR @ PMB",
+      "taken": 172,
+      "missed": 9,
+      "acc_pct": 94.77,
+      "overturns": 1,
+      "re_impact": 1.52
+    },
+    {
+      "game_pk": 820422,
+      "date": "2026-05-01",
+      "level": "MiLB",
+      "matchup": "CLR @ PMB",
+      "taken": 172,
+      "missed": 17,
+      "acc_pct": 90.12,
+      "overturns": 2,
+      "re_impact": 1.9
+    },
+    {
+      "game_pk": 820420,
+      "date": "2026-04-29",
+      "level": "MiLB",
+      "matchup": "CLR @ PMB",
+      "taken": 191,
+      "missed": 16,
+      "acc_pct": 91.62,
+      "overturns": 1,
+      "re_impact": 2.13
+    },
+    {
+      "game_pk": 820617,
+      "date": "2026-04-26",
+      "level": "MiLB",
+      "matchup": "DUN @ FTM",
+      "taken": 154,
+      "missed": 19,
+      "acc_pct": 87.66,
+      "overturns": 2,
+      "re_impact": 2.28
+    },
+    {
+      "game_pk": 820611,
+      "date": "2026-04-24",
+      "level": "MiLB",
+      "matchup": "DUN @ FTM",
+      "taken": 164,
+      "missed": 11,
+      "acc_pct": 93.29,
+      "overturns": 3,
+      "re_impact": 1.4
+    },
+    {
+      "game_pk": 820624,
+      "date": "2026-04-22",
+      "level": "MiLB",
+      "matchup": "DUN @ FTM",
+      "taken": 144,
+      "missed": 16,
+      "acc_pct": 88.89,
+      "overturns": 2,
+      "re_impact": 1.89
+    },
+    {
+      "game_pk": 820887,
+      "date": "2026-04-12",
+      "level": "MiLB",
+      "matchup": "PMB @ BRD",
+      "taken": 149,
+      "missed": 15,
+      "acc_pct": 89.93,
+      "overturns": 2,
+      "re_impact": 1.48
+    },
+    {
+      "game_pk": 820893,
+      "date": "2026-04-10",
+      "level": "MiLB",
+      "matchup": "PMB @ BRD",
+      "taken": 187,
+      "missed": 21,
+      "acc_pct": 88.77,
+      "overturns": 6,
+      "re_impact": 3.07
+    },
+    {
+      "game_pk": 820890,
+      "date": "2026-04-08",
+      "level": "MiLB",
+      "matchup": "PMB @ BRD",
+      "taken": 196,
+      "missed": 33,
+      "acc_pct": 83.16,
+      "overturns": 1,
+      "re_impact": 4.15
+    },
+    {
+      "game_pk": 820301,
+      "date": "2026-04-05",
+      "level": "MiLB",
+      "matchup": "LAK @ TAM",
+      "taken": 193,
+      "missed": 21,
+      "acc_pct": 89.12,
+      "overturns": 1,
+      "re_impact": 2.91
+    },
+    {
+      "game_pk": 820299,
+      "date": "2026-04-03",
+      "level": "MiLB",
+      "matchup": "LAK @ TAM",
+      "taken": 228,
+      "missed": 21,
+      "acc_pct": 90.79,
+      "overturns": 6,
+      "re_impact": 2.27
+    }
+  ]
+}

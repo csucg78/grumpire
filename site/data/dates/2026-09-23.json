@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-23",
+  "games": [
+    {
+      "game_pk": 850991,
+      "date": "2026-09-23",
+      "level": "MiLB",
+      "venue": "AutoZone Park",
+      "away": "ROC",
+      "home": "MEM",
+      "away_runs": 4,
+      "home_runs": 15,
+      "umpire_id": "688057",
+      "umpire_name": "Matt Blackborow",
+      "taken": 173,
+      "correct": 159,
+      "missed": 14,
+      "acc_pct": 91.91,
+      "tol_acc_pct": 93.49,
+      "cs_acc_pct": 87.23,
+      "cb_acc_pct": 93.65,
+      "mean_miss_in": 1.01,
+      "challenges": 2,
+      "overturns": 2,
+      "unchallenged_misses": 12,
+      "re_impact": 1.61
+    },
+    {
+      "game_pk": 850989,
+      "date": "2026-09-23",
+      "level": "MiLB",
+      "venue": "Las Vegas Ballpark",
+      "away": "OKC",
+      "home": "LV",
+      "away_runs": 7,
+      "home_runs": 2,
+      "umpire_id": "682443",
+      "umpire_name": "Steven Rios Jr.",
+      "taken": 153,
+      "correct": 140,
+      "missed": 13,
+      "acc_pct": 91.5,
+      "tol_acc_pct": 93.24,
+      "cs_acc_pct": 89.13,
+      "cb_acc_pct": 92.52,
+      "mean_miss_in": 0.95,
+      "challenges": 5,
+      "overturns": 3,
+      "unchallenged_misses": 9,
+      "re_impact": 1.29
+    }
+  ]
+}

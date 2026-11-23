@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-07",
+  "games": [
+    {
+      "game_pk": 815861,
+      "date": "2026-09-07",
+      "level": "MiLB",
+      "venue": "ESL Ballpark",
+      "away": "SWB",
+      "home": "ROC",
+      "away_runs": 1,
+      "home_runs": 3,
+      "umpire_id": "490310",
+      "umpire_name": "Nathan Hall",
+      "taken": 129,
+      "correct": 121,
+      "missed": 8,
+      "acc_pct": 93.8,
+      "tol_acc_pct": 94.49,
+      "cs_acc_pct": 87.8,
+      "cb_acc_pct": 96.59,
+      "mean_miss_in": 0.85,
+      "challenges": 3,
+      "overturns": 2,
+      "unchallenged_misses": 7,
+      "re_impact": 1.02
+    },
+    {
+      "game_pk": 816678,
+      "date": "2026-09-07",
+      "level": "MiLB",
+      "venue": "Durham Bulls Athletic Park",
+      "away": "NAS",
+      "home": "DUR",
+      "away_runs": 3,
+      "home_runs": 0,
+      "umpire_id": "690888",
+      "umpire_name": "Austin Snow",
+      "taken": 116,
+      "correct": 109,
+      "missed": 7,
+      "acc_pct": 93.97,
+      "tol_acc_pct": 94.78,
+      "cs_acc_pct": 93.1,
+      "cb_acc_pct": 94.25,
+      "mean_miss_in": 0.92,
+      "challenges": 5,
+      "overturns": 2,
+      "unchallenged_misses": 5,
+      "re_impact": 0.82
+    }
+  ]
+}

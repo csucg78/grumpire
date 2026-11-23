@@ -1,0 +1,283 @@
+{
+  "umpire_id": "664263",
+  "umpire_name": "Edwin Jimenez",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 24,
+  "taken": 4094,
+  "missed": 318,
+  "acc_pct": 92.23,
+  "tol_acc_pct": 93.59,
+  "mean_miss_in": 1.01,
+  "challenges": 89,
+  "overturns": 51,
+  "overturn_pct": 57.3,
+  "re_impact": 37.57,
+  "game_log": [
+    {
+      "game_pk": 816395,
+      "date": "2026-08-11",
+      "level": "MiLB",
+      "matchup": "SYR @ JAX",
+      "taken": 182,
+      "missed": 12,
+      "acc_pct": 93.41,
+      "overturns": 0,
+      "re_impact": 1.47
+    },
+    {
+      "game_pk": 815111,
+      "date": "2026-08-07",
+      "level": "MiLB",
+      "matchup": "ELP @ RNO",
+      "taken": 164,
+      "missed": 18,
+      "acc_pct": 89.02,
+      "overturns": 1,
+      "re_impact": 1.75
+    },
+    {
+      "game_pk": 815120,
+      "date": "2026-08-04",
+      "level": "MiLB",
+      "matchup": "ELP @ RNO",
+      "taken": 143,
+      "missed": 20,
+      "acc_pct": 86.01,
+      "overturns": 4,
+      "re_impact": 2.63
+    },
+    {
+      "game_pk": 816033,
+      "date": "2026-07-31",
+      "level": "MiLB",
+      "matchup": "WOR @ NOR",
+      "taken": 195,
+      "missed": 18,
+      "acc_pct": 90.77,
+      "overturns": 4,
+      "re_impact": 2.27
+    },
+    {
+      "game_pk": 815572,
+      "date": "2026-07-26",
+      "level": "MiLB",
+      "matchup": "LOU @ TOL",
+      "taken": 132,
+      "missed": 7,
+      "acc_pct": 94.7,
+      "overturns": 2,
+      "re_impact": 0.96
+    },
+    {
+      "game_pk": 815585,
+      "date": "2026-07-23",
+      "level": "MiLB",
+      "matchup": "LOU @ TOL",
+      "taken": 201,
+      "missed": 7,
+      "acc_pct": 96.52,
+      "overturns": 1,
+      "re_impact": 0.87
+    },
+    {
+      "game_pk": 815581,
+      "date": "2026-07-18",
+      "level": "MiLB",
+      "matchup": "GWN @ TOL",
+      "taken": 133,
+      "missed": 13,
+      "acc_pct": 90.23,
+      "overturns": 3,
+      "re_impact": 1.48
+    },
+    {
+      "game_pk": 815198,
+      "date": "2026-07-10",
+      "level": "MiLB",
+      "matchup": "ELP @ OKC",
+      "taken": 204,
+      "missed": 13,
+      "acc_pct": 93.63,
+      "overturns": 1,
+      "re_impact": 1.59
+    },
+    {
+      "game_pk": 816264,
+      "date": "2026-06-26",
+      "level": "MiLB",
+      "matchup": "STP @ LOU",
+      "taken": 96,
+      "missed": 4,
+      "acc_pct": 95.83,
+      "overturns": 0,
+      "re_impact": 0.36
+    },
+    {
+      "game_pk": 816796,
+      "date": "2026-06-20",
+      "level": "MiLB",
+      "matchup": "SWB @ COL",
+      "taken": 145,
+      "missed": 9,
+      "acc_pct": 93.79,
+      "overturns": 5,
+      "re_impact": 1.41
+    },
+    {
+      "game_pk": 816798,
+      "date": "2026-06-16",
+      "level": "MiLB",
+      "matchup": "SWB @ COL",
+      "taken": 140,
+      "missed": 12,
+      "acc_pct": 91.43,
+      "overturns": 1,
+      "re_impact": 1.74
+    },
+    {
+      "game_pk": 816868,
+      "date": "2026-06-12",
+      "level": "MiLB",
+      "matchup": "OKC @ CLT",
+      "taken": 204,
+      "missed": 15,
+      "acc_pct": 92.65,
+      "overturns": 1,
+      "re_impact": 1.5
+    },
+    {
+      "game_pk": 814858,
+      "date": "2026-05-26",
+      "level": "MiLB",
+      "matchup": "OKC @ SUG",
+      "taken": 189,
+      "missed": 24,
+      "acc_pct": 87.3,
+      "overturns": 5,
+      "re_impact": 2.99
+    },
+    {
+      "game_pk": 815379,
+      "date": "2026-05-22",
+      "level": "MiLB",
+      "matchup": "RR @ ELP",
+      "taken": 172,
+      "missed": 12,
+      "acc_pct": 93.02,
+      "overturns": 2,
+      "re_impact": 1.18
+    },
+    {
+      "game_pk": 815387,
+      "date": "2026-05-19",
+      "level": "MiLB",
+      "matchup": "RR @ ELP",
+      "taken": 203,
+      "missed": 23,
+      "acc_pct": 88.67,
+      "overturns": 1,
+      "re_impact": 3.13
+    },
+    {
+      "game_pk": 816204,
+      "date": "2026-05-15",
+      "level": "MiLB",
+      "matchup": "JAX @ MEM",
+      "taken": 180,
+      "missed": 8,
+      "acc_pct": 95.56,
+      "overturns": 1,
+      "re_impact": 1.0
+    },
+    {
+      "game_pk": 816212,
+      "date": "2026-05-12",
+      "level": "MiLB",
+      "matchup": "JAX @ MEM",
+      "taken": 188,
+      "missed": 12,
+      "acc_pct": 93.62,
+      "overturns": 5,
+      "re_impact": 1.12
+    },
+    {
+      "game_pk": 815385,
+      "date": "2026-05-08",
+      "level": "MiLB",
+      "matchup": "TAC @ ELP",
+      "taken": 173,
+      "missed": 9,
+      "acc_pct": 94.8,
+      "overturns": 0,
+      "re_impact": 0.73
+    },
+    {
+      "game_pk": 815085,
+      "date": "2026-05-03",
+      "level": "MiLB",
+      "matchup": "OKC @ RR",
+      "taken": 174,
+      "missed": 15,
+      "acc_pct": 91.38,
+      "overturns": 1,
+      "re_impact": 2.08
+    },
+    {
+      "game_pk": 815086,
+      "date": "2026-04-29",
+      "level": "MiLB",
+      "matchup": "OKC @ RR",
+      "taken": 200,
+      "missed": 15,
+      "acc_pct": 92.5,
+      "overturns": 1,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 815390,
+      "date": "2026-04-24",
+      "level": "MiLB",
+      "matchup": "RNO @ ELP",
+      "taken": 176,
+      "missed": 15,
+      "acc_pct": 91.48,
+      "overturns": 3,
+      "re_impact": 1.41
+    },
+    {
+      "game_pk": 815393,
+      "date": "2026-04-21",
+      "level": "MiLB",
+      "matchup": "RNO @ ELP",
+      "taken": 190,
+      "missed": 18,
+      "acc_pct": 90.53,
+      "overturns": 3,
+      "re_impact": 2.02
+    },
+    {
+      "game_pk": 816971,
+      "date": "2026-04-09",
+      "level": "MiLB",
+      "matchup": "SYR @ BUF",
+      "taken": 136,
+      "missed": 9,
+      "acc_pct": 93.38,
+      "overturns": 5,
+      "re_impact": 1.17
+    },
+    {
+      "game_pk": 814874,
+      "date": "2026-03-28",
+      "level": "MiLB",
+      "matchup": "RR @ SUG",
+      "taken": 174,
+      "missed": 10,
+      "acc_pct": 94.25,
+      "overturns": 1,
+      "re_impact": 1.13
+    }
+  ]
+}

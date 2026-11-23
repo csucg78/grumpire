@@ -1,0 +1,30 @@
+{
+  "umpire_id": "677170",
+  "umpire_name": "Adam Clark",
+  "levels": [
+    "MiLB"
+  ],
+  "games": 1,
+  "taken": 144,
+  "missed": 16,
+  "acc_pct": 88.89,
+  "tol_acc_pct": 89.44,
+  "mean_miss_in": 1.05,
+  "challenges": 4,
+  "overturns": 2,
+  "overturn_pct": 50.0,
+  "re_impact": 1.69,
+  "game_log": [
+    {
+      "game_pk": 816091,
+      "date": "2026-08-16",
+      "level": "MiLB",
+      "matchup": "IND @ NAS",
+      "taken": 144,
+      "missed": 16,
+      "acc_pct": 88.89,
+      "overturns": 2,
+      "re_impact": 1.69
+    }
+  ]
+}

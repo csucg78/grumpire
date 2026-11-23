@@ -1,0 +1,29 @@
+{
+  "date": "2025-09-01",
+  "games": [
+    {
+      "game_pk": 781396,
+      "date": "2025-09-01",
+      "level": "AAA",
+      "venue": "Coolray Field",
+      "away": "DUR",
+      "home": "GWN",
+      "away_runs": 4,
+      "home_runs": 1,
+      "umpire_id": "486200",
+      "umpire_name": "David Arrieta",
+      "taken": 174,
+      "correct": 160,
+      "missed": 14,
+      "acc_pct": 92.0,
+      "tol_acc_pct": 93.4,
+      "cs_acc_pct": 82.4,
+      "cb_acc_pct": 95.9,
+      "mean_miss_in": 0.8,
+      "challenges": 1,
+      "overturns": 1,
+      "unchallenged_misses": 13,
+      "re_impact": 1.86
+    }
+  ]
+}

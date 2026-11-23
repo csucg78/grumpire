@@ -1,0 +1,107 @@
+{
+  "umpire_id": "573659",
+  "umpire_name": "Brian DeBrauwere",
+  "levels": [
+    "AAA"
+  ],
+  "games": 8,
+  "taken": 1192,
+  "missed": 68,
+  "acc_pct": 94.3,
+  "tol_acc_pct": 94.7,
+  "mean_miss_in": 1.13,
+  "challenges": 18,
+  "overturns": 6,
+  "overturn_pct": 33.3,
+  "re_impact": 7.3,
+  "game_log": [
+    {
+      "game_pk": 780594,
+      "date": "2025-06-29",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 146,
+      "missed": 10,
+      "acc_pct": 93.2,
+      "overturns": 3,
+      "re_impact": 1.19
+    },
+    {
+      "game_pk": 780595,
+      "date": "2025-06-26",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 142,
+      "missed": 6,
+      "acc_pct": 95.8,
+      "overturns": 0,
+      "re_impact": 0.51
+    },
+    {
+      "game_pk": 752944,
+      "date": "2024-09-22",
+      "level": "AAA",
+      "matchup": "WOR @ LHV",
+      "taken": 173,
+      "missed": 9,
+      "acc_pct": 94.8,
+      "overturns": 1,
+      "re_impact": 1.2
+    },
+    {
+      "game_pk": 752949,
+      "date": "2024-08-31",
+      "level": "AAA",
+      "matchup": "SYR @ LHV",
+      "taken": 145,
+      "missed": 2,
+      "acc_pct": 98.6,
+      "overturns": 1,
+      "re_impact": 0.2
+    },
+    {
+      "game_pk": 752284,
+      "date": "2024-08-25",
+      "level": "AAA",
+      "matchup": "DUR @ SYR",
+      "taken": 143,
+      "missed": 20,
+      "acc_pct": 86.0,
+      "overturns": 0,
+      "re_impact": 1.85
+    },
+    {
+      "game_pk": 752959,
+      "date": "2024-08-22",
+      "level": "AAA",
+      "matchup": "ROC @ LHV",
+      "taken": 161,
+      "missed": 13,
+      "acc_pct": 91.9,
+      "overturns": 1,
+      "re_impact": 1.37
+    },
+    {
+      "game_pk": 752964,
+      "date": "2024-08-10",
+      "level": "AAA",
+      "matchup": "SWB @ LHV",
+      "taken": 96,
+      "missed": 4,
+      "acc_pct": 95.8,
+      "overturns": 0,
+      "re_impact": 0.66
+    },
+    {
+      "game_pk": 753007,
+      "date": "2024-04-24",
+      "level": "AAA",
+      "matchup": "CLT @ LHV",
+      "taken": 186,
+      "missed": 4,
+      "acc_pct": 97.8,
+      "overturns": 0,
+      "re_impact": 0.32
+    }
+  ]
+}

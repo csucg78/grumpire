@@ -1,0 +1,118 @@
+{
+  "umpire_id": "802056",
+  "umpire_name": "Patrick Buhl",
+  "levels": [
+    "FSL"
+  ],
+  "games": 9,
+  "taken": 1534,
+  "missed": 110,
+  "acc_pct": 92.8,
+  "tol_acc_pct": 93.9,
+  "mean_miss_in": 1.1,
+  "challenges": 16,
+  "overturns": 9,
+  "overturn_pct": 56.2,
+  "re_impact": 14.01,
+  "game_log": [
+    {
+      "game_pk": 729600,
+      "date": "2023-06-11",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 198,
+      "missed": 21,
+      "acc_pct": 89.4,
+      "overturns": 2,
+      "re_impact": 2.98
+    },
+    {
+      "game_pk": 729667,
+      "date": "2023-06-03",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 151,
+      "missed": 12,
+      "acc_pct": 92.1,
+      "overturns": 2,
+      "re_impact": 1.74
+    },
+    {
+      "game_pk": 729670,
+      "date": "2023-06-01",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 163,
+      "missed": 9,
+      "acc_pct": 94.5,
+      "overturns": 0,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 729668,
+      "date": "2023-05-30",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 229,
+      "missed": 10,
+      "acc_pct": 95.6,
+      "overturns": 0,
+      "re_impact": 1.17
+    },
+    {
+      "game_pk": 730136,
+      "date": "2023-05-28",
+      "level": "FSL",
+      "matchup": "FTM @ DUN",
+      "taken": 132,
+      "missed": 14,
+      "acc_pct": 89.4,
+      "overturns": 5,
+      "re_impact": 1.38
+    },
+    {
+      "game_pk": 730131,
+      "date": "2023-05-27",
+      "level": "FSL",
+      "matchup": "FTM @ DUN",
+      "taken": 154,
+      "missed": 19,
+      "acc_pct": 87.7,
+      "overturns": 0,
+      "re_impact": 2.64
+    },
+    {
+      "game_pk": 730133,
+      "date": "2023-05-25",
+      "level": "FSL",
+      "matchup": "FTM @ DUN",
+      "taken": 170,
+      "missed": 6,
+      "acc_pct": 96.5,
+      "overturns": 0,
+      "re_impact": 0.75
+    },
+    {
+      "game_pk": 729676,
+      "date": "2023-05-17",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 179,
+      "missed": 12,
+      "acc_pct": 93.3,
+      "overturns": 0,
+      "re_impact": 1.41
+    },
+    {
+      "game_pk": 729752,
+      "date": "2023-04-26",
+      "level": "FSL",
+      "matchup": "PMB @ LAK",
+      "taken": 158,
+      "missed": 7,
+      "acc_pct": 95.6,
+      "overturns": 0,
+      "re_impact": 0.52
+    }
+  ]
+}

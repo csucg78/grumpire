@@ -1,0 +1,41 @@
+{
+  "umpire_id": "608072",
+  "umpire_name": "Clay Park",
+  "levels": [
+    "AAA"
+  ],
+  "games": 2,
+  "taken": 265,
+  "missed": 7,
+  "acc_pct": 97.4,
+  "tol_acc_pct": 98.1,
+  "mean_miss_in": 0.5,
+  "challenges": 2,
+  "overturns": 1,
+  "overturn_pct": 50.0,
+  "re_impact": 1.05,
+  "game_log": [
+    {
+      "game_pk": 751719,
+      "date": "2024-05-18",
+      "level": "AAA",
+      "matchup": "RNO @ RR",
+      "taken": 106,
+      "missed": 4,
+      "acc_pct": 96.2,
+      "overturns": 1,
+      "re_impact": 0.58
+    },
+    {
+      "game_pk": 751728,
+      "date": "2024-05-09",
+      "level": "AAA",
+      "matchup": "LV @ RR",
+      "taken": 159,
+      "missed": 3,
+      "acc_pct": 98.1,
+      "overturns": 0,
+      "re_impact": 0.47
+    }
+  ]
+}

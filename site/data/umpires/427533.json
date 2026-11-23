@@ -1,0 +1,30 @@
+{
+  "umpire_id": "427533",
+  "umpire_name": "Mark Wegner",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 169,
+  "missed": 19,
+  "acc_pct": 88.8,
+  "tol_acc_pct": 89.8,
+  "mean_miss_in": 1.23,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 2.3,
+  "game_log": [
+    {
+      "game_pk": 753274,
+      "date": "2024-06-29",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 169,
+      "missed": 19,
+      "acc_pct": 88.8,
+      "overturns": 0,
+      "re_impact": 2.3
+    }
+  ]
+}

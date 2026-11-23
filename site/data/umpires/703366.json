@@ -1,0 +1,41 @@
+{
+  "umpire_id": "703366",
+  "umpire_name": "Jason Harstick",
+  "levels": [
+    "AAA"
+  ],
+  "games": 2,
+  "taken": 310,
+  "missed": 25,
+  "acc_pct": 91.9,
+  "tol_acc_pct": 92.5,
+  "mean_miss_in": 1.32,
+  "challenges": 10,
+  "overturns": 4,
+  "overturn_pct": 40.0,
+  "re_impact": 2.96,
+  "game_log": [
+    {
+      "game_pk": 753128,
+      "date": "2024-06-30",
+      "level": "AAA",
+      "matchup": "STP @ IOW",
+      "taken": 173,
+      "missed": 13,
+      "acc_pct": 92.5,
+      "overturns": 1,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 752605,
+      "date": "2024-06-23",
+      "level": "AAA",
+      "matchup": "LOU @ OMA",
+      "taken": 137,
+      "missed": 12,
+      "acc_pct": 91.2,
+      "overturns": 3,
+      "re_impact": 1.54
+    }
+  ]
+}

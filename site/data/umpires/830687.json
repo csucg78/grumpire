@@ -2,7 +2,7 @@
   "umpire_id": "830687",
   "umpire_name": "Ryan Smith",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 16,
   "taken": 2771,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820760,
       "date": "2026-09-05",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ CLR",
       "taken": 177,
       "missed": 24,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820771,
       "date": "2026-09-03",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ CLR",
       "taken": 146,
       "missed": 16,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820768,
       "date": "2026-09-01",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ CLR",
       "taken": 167,
       "missed": 21,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820834,
       "date": "2026-08-22",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ BRD",
       "taken": 199,
       "missed": 18,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820843,
       "date": "2026-08-20",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ BRD",
       "taken": 182,
       "missed": 15,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820839,
       "date": "2026-08-18",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ BRD",
       "taken": 215,
       "missed": 17,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820449,
       "date": "2026-08-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 161,
       "missed": 18,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820448,
       "date": "2026-08-05",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 165,
       "missed": 12,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820576,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ FTM",
       "taken": 185,
       "missed": 11,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820579,
       "date": "2026-07-31",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ FTM",
       "taken": 172,
       "missed": 11,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820580,
       "date": "2026-07-29",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ FTM",
       "taken": 197,
       "missed": 18,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820782,
       "date": "2026-07-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ CLR",
       "taken": 167,
       "missed": 15,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820788,
       "date": "2026-07-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ CLR",
       "taken": 126,
       "missed": 10,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820783,
       "date": "2026-07-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ CLR",
       "taken": 177,
       "missed": 30,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820386,
       "date": "2026-07-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ PMB",
       "taken": 189,
       "missed": 20,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820397,
       "date": "2026-07-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ PMB",
       "taken": 146,
       "missed": 16,

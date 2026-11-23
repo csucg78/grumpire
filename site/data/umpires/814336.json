@@ -1,0 +1,217 @@
+{
+  "umpire_id": "814336",
+  "umpire_name": "Dominic Romero",
+  "levels": [
+    "FSL"
+  ],
+  "games": 18,
+  "taken": 2763,
+  "missed": 220,
+  "acc_pct": 92.0,
+  "tol_acc_pct": 92.8,
+  "mean_miss_in": 1.24,
+  "challenges": 45,
+  "overturns": 24,
+  "overturn_pct": 53.3,
+  "re_impact": 25.87,
+  "game_log": [
+    {
+      "game_pk": 760115,
+      "date": "2024-07-14",
+      "level": "FSL",
+      "matchup": "CLR @ PMB",
+      "taken": 146,
+      "missed": 12,
+      "acc_pct": 91.8,
+      "overturns": 2,
+      "re_impact": 1.65
+    },
+    {
+      "game_pk": 760112,
+      "date": "2024-07-11",
+      "level": "FSL",
+      "matchup": "CLR @ PMB",
+      "taken": 179,
+      "missed": 10,
+      "acc_pct": 94.4,
+      "overturns": 0,
+      "re_impact": 1.05
+    },
+    {
+      "game_pk": 760117,
+      "date": "2024-07-10",
+      "level": "FSL",
+      "matchup": "CLR @ PMB",
+      "taken": 134,
+      "missed": 4,
+      "acc_pct": 97.0,
+      "overturns": 0,
+      "re_impact": 0.58
+    },
+    {
+      "game_pk": 760058,
+      "date": "2024-07-05",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 154,
+      "missed": 18,
+      "acc_pct": 88.3,
+      "overturns": 4,
+      "re_impact": 2.15
+    },
+    {
+      "game_pk": 760522,
+      "date": "2024-06-29",
+      "level": "FSL",
+      "matchup": "BRD @ CLR",
+      "taken": 142,
+      "missed": 21,
+      "acc_pct": 85.2,
+      "overturns": 3,
+      "re_impact": 2.12
+    },
+    {
+      "game_pk": 760521,
+      "date": "2024-06-27",
+      "level": "FSL",
+      "matchup": "BRD @ CLR",
+      "taken": 149,
+      "missed": 12,
+      "acc_pct": 91.9,
+      "overturns": 0,
+      "re_impact": 1.38
+    },
+    {
+      "game_pk": 760526,
+      "date": "2024-06-25",
+      "level": "FSL",
+      "matchup": "BRD @ CLR",
+      "taken": 167,
+      "missed": 9,
+      "acc_pct": 94.6,
+      "overturns": 0,
+      "re_impact": 0.89
+    },
+    {
+      "game_pk": 759995,
+      "date": "2024-06-21",
+      "level": "FSL",
+      "matchup": "PMB @ TAM",
+      "taken": 146,
+      "missed": 18,
+      "acc_pct": 87.7,
+      "overturns": 3,
+      "re_impact": 2.45
+    },
+    {
+      "game_pk": 759998,
+      "date": "2024-06-19",
+      "level": "FSL",
+      "matchup": "PMB @ TAM",
+      "taken": 108,
+      "missed": 11,
+      "acc_pct": 89.8,
+      "overturns": 0,
+      "re_impact": 0.89
+    },
+    {
+      "game_pk": 760393,
+      "date": "2024-06-15",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 164,
+      "missed": 18,
+      "acc_pct": 89.0,
+      "overturns": 0,
+      "re_impact": 2.66
+    },
+    {
+      "game_pk": 760392,
+      "date": "2024-06-13",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 173,
+      "missed": 7,
+      "acc_pct": 96.0,
+      "overturns": 0,
+      "re_impact": 0.66
+    },
+    {
+      "game_pk": 760398,
+      "date": "2024-06-12",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 136,
+      "missed": 7,
+      "acc_pct": 94.9,
+      "overturns": 0,
+      "re_impact": 0.69
+    },
+    {
+      "game_pk": 760198,
+      "date": "2024-06-09",
+      "level": "FSL",
+      "matchup": "JUP @ LAK",
+      "taken": 148,
+      "missed": 11,
+      "acc_pct": 92.6,
+      "overturns": 3,
+      "re_impact": 1.11
+    },
+    {
+      "game_pk": 760202,
+      "date": "2024-06-07",
+      "level": "FSL",
+      "matchup": "JUP @ LAK",
+      "taken": 147,
+      "missed": 19,
+      "acc_pct": 87.1,
+      "overturns": 5,
+      "re_impact": 2.26
+    },
+    {
+      "game_pk": 760200,
+      "date": "2024-06-05",
+      "level": "FSL",
+      "matchup": "JUP @ LAK",
+      "taken": 196,
+      "missed": 11,
+      "acc_pct": 94.4,
+      "overturns": 0,
+      "re_impact": 1.71
+    },
+    {
+      "game_pk": 760138,
+      "date": "2024-06-01",
+      "level": "FSL",
+      "matchup": "TAM @ PMB",
+      "taken": 129,
+      "missed": 13,
+      "acc_pct": 89.9,
+      "overturns": 4,
+      "re_impact": 1.46
+    },
+    {
+      "game_pk": 760137,
+      "date": "2024-05-30",
+      "level": "FSL",
+      "matchup": "TAM @ PMB",
+      "taken": 161,
+      "missed": 8,
+      "acc_pct": 95.0,
+      "overturns": 0,
+      "re_impact": 1.1
+    },
+    {
+      "game_pk": 760136,
+      "date": "2024-05-28",
+      "level": "FSL",
+      "matchup": "TAM @ PMB",
+      "taken": 184,
+      "missed": 11,
+      "acc_pct": 94.0,
+      "overturns": 0,
+      "re_impact": 1.06
+    }
+  ]
+}

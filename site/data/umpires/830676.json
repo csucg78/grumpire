@@ -2,7 +2,7 @@
   "umpire_id": "830676",
   "umpire_name": "Anthony Artini",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 18,
   "taken": 2791,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820822,
       "date": "2026-09-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ BRD",
       "taken": 131,
       "missed": 11,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820835,
       "date": "2026-09-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ BRD",
       "taken": 107,
       "missed": 13,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820830,
       "date": "2026-09-03",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ BRD",
       "taken": 179,
       "missed": 21,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820629,
       "date": "2026-08-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ DUN",
       "taken": 145,
       "missed": 8,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820634,
       "date": "2026-08-27",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ DUN",
       "taken": 175,
       "missed": 12,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820640,
       "date": "2026-08-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ DUN",
       "taken": 167,
       "missed": 19,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820244,
       "date": "2026-08-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ TAM",
       "taken": 148,
       "missed": 11,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820247,
       "date": "2026-08-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ TAM",
       "taken": 191,
       "missed": 16,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820443,
       "date": "2026-08-15",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ LAK",
       "taken": 143,
       "missed": 12,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820439,
       "date": "2026-08-13",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ LAK",
       "taken": 117,
       "missed": 8,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820440,
       "date": "2026-08-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ LAK",
       "taken": 149,
       "missed": 15,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820776,
       "date": "2026-08-08",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 150,
       "missed": 10,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820779,
       "date": "2026-08-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 114,
       "missed": 8,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820774,
       "date": "2026-08-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 173,
       "missed": 14,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820387,
       "date": "2026-07-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ PMB",
       "taken": 181,
       "missed": 19,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820391,
       "date": "2026-07-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ PMB",
       "taken": 142,
       "missed": 10,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820385,
       "date": "2026-07-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ PMB",
       "taken": 163,
       "missed": 9,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820650,
       "date": "2026-07-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ DUN",
       "taken": 216,
       "missed": 19,

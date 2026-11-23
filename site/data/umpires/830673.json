@@ -2,23 +2,23 @@
   "umpire_id": "830673",
   "umpire_name": "Alexander Cardona",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
-  "games": 17,
-  "taken": 2633,
-  "missed": 255,
-  "acc_pct": 90.3,
-  "tol_acc_pct": 91.0,
-  "mean_miss_in": 1.58,
-  "challenges": 68,
-  "overturns": 40,
-  "overturn_pct": 58.8,
-  "re_impact": 32.36,
+  "games": 19,
+  "taken": 2944,
+  "missed": 298,
+  "acc_pct": 89.9,
+  "tol_acc_pct": 90.5,
+  "mean_miss_in": 1.66,
+  "challenges": 79,
+  "overturns": 49,
+  "overturn_pct": 62.0,
+  "re_impact": 37.51,
   "game_log": [
     {
       "game_pk": 820649,
       "date": "2026-07-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ DUN",
       "taken": 166,
       "missed": 12,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820655,
       "date": "2026-07-10",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ DUN",
       "taken": 144,
       "missed": 12,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820662,
       "date": "2026-07-08",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ DUN",
       "taken": 173,
       "missed": 15,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820330,
       "date": "2026-07-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ SLU",
       "taken": 150,
       "missed": 12,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820331,
       "date": "2026-07-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ SLU",
       "taken": 163,
       "missed": 11,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820326,
       "date": "2026-06-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ SLU",
       "taken": 160,
       "missed": 18,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820532,
       "date": "2026-06-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ JUP",
       "taken": 150,
       "missed": 15,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820527,
       "date": "2026-06-18",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ JUP",
       "taken": 176,
       "missed": 20,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820537,
       "date": "2026-06-16",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ JUP",
       "taken": 223,
       "missed": 31,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820602,
       "date": "2026-06-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ FTM",
       "taken": 117,
       "missed": 16,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820603,
       "date": "2026-06-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ FTM",
       "taken": 136,
       "missed": 19,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820335,
       "date": "2026-06-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ SLU",
       "taken": 139,
       "missed": 7,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820346,
       "date": "2026-06-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ SLU",
       "taken": 193,
       "missed": 21,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820343,
       "date": "2026-06-03",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ SLU",
       "taken": 104,
       "missed": 6,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820610,
       "date": "2026-05-31",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ FTM",
       "taken": 141,
       "missed": 7,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820604,
       "date": "2026-05-29",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ FTM",
       "taken": 174,
       "missed": 19,
@@ -194,13 +194,35 @@
     {
       "game_pk": 820605,
       "date": "2026-05-28",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ FTM",
       "taken": 124,
       "missed": 14,
       "acc_pct": 88.71,
       "overturns": 2,
       "re_impact": 1.7
+    },
+    {
+      "game_pk": 785764,
+      "date": "2025-07-27",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 123,
+      "missed": 21,
+      "acc_pct": 82.9,
+      "overturns": 5,
+      "re_impact": 2.44
+    },
+    {
+      "game_pk": 785776,
+      "date": "2025-07-25",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 188,
+      "missed": 22,
+      "acc_pct": 88.3,
+      "overturns": 4,
+      "re_impact": 2.71
     }
   ]
 }

@@ -4,7 +4,7 @@
     {
       "game_pk": 816152,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "AutoZone Park",
       "away": "NOR",
       "home": "MEM",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815706,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "CHS Field",
       "away": "SYR",
       "home": "STP",
@@ -52,7 +52,7 @@
     {
       "game_pk": 814884,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "The Ballpark at America First Square",
       "away": "RR",
       "home": "SL",
@@ -76,7 +76,7 @@
     {
       "game_pk": 816528,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Victory Field",
       "away": "OMA",
       "home": "IND",
@@ -100,7 +100,7 @@
     {
       "game_pk": 815180,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Chickasaw Bricktown Ballpark",
       "away": "SUG",
       "home": "OKC",
@@ -124,7 +124,7 @@
     {
       "game_pk": 815260,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "SAC",
       "home": "LV",
@@ -148,7 +148,7 @@
     {
       "game_pk": 814734,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "ELP",
       "home": "TAC",
@@ -172,7 +172,7 @@
     {
       "game_pk": 816380,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "GWN",
       "home": "JAX",
@@ -196,7 +196,7 @@
     {
       "game_pk": 816238,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "COL",
       "home": "LOU",
@@ -218,33 +218,9 @@
       "re_impact": 1.1
     },
     {
-      "game_pk": 850938,
-      "date": "2026-09-08",
-      "level": "MiLB",
-      "venue": "George M. Steinbrenner Field",
-      "away": "CLR",
-      "home": "TAM",
-      "away_runs": 0,
-      "home_runs": 2,
-      "umpire_id": "830686",
-      "umpire_name": "Joshua Smith",
-      "taken": 157,
-      "correct": 148,
-      "missed": 9,
-      "acc_pct": 94.27,
-      "tol_acc_pct": 94.12,
-      "cs_acc_pct": 84.78,
-      "cb_acc_pct": 98.2,
-      "mean_miss_in": 1.61,
-      "challenges": 1,
-      "overturns": 1,
-      "unchallenged_misses": 9,
-      "re_impact": 0.71
-    },
-    {
       "game_pk": 816306,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "WOR",
       "home": "LHV",
@@ -268,7 +244,7 @@
     {
       "game_pk": 816377,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "GWN",
       "home": "JAX",
@@ -292,7 +268,7 @@
     {
       "game_pk": 815103,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Greater Nevada Field",
       "away": "ABQ",
       "home": "RNO",
@@ -316,7 +292,7 @@
     {
       "game_pk": 816834,
       "date": "2026-09-08",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Truist Field",
       "away": "BUF",
       "home": "CLT",
@@ -336,6 +312,30 @@
       "overturns": 1,
       "unchallenged_misses": 2,
       "re_impact": 0.35
+    },
+    {
+      "game_pk": 850938,
+      "date": "2026-09-08",
+      "level": "FSL",
+      "venue": "George M. Steinbrenner Field",
+      "away": "CLR",
+      "home": "TAM",
+      "away_runs": 0,
+      "home_runs": 2,
+      "umpire_id": "830686",
+      "umpire_name": "Joshua Smith",
+      "taken": 157,
+      "correct": 148,
+      "missed": 9,
+      "acc_pct": 94.27,
+      "tol_acc_pct": 94.12,
+      "cs_acc_pct": 84.78,
+      "cb_acc_pct": 98.2,
+      "mean_miss_in": 1.61,
+      "challenges": 1,
+      "overturns": 1,
+      "unchallenged_misses": 9,
+      "re_impact": 0.71
     }
   ]
 }

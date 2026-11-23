@@ -2,7 +2,7 @@
   "umpire_id": "831806",
   "umpire_name": "Zach Bloom",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 18,
   "taken": 2869,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820516,
       "date": "2026-07-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 161,
       "missed": 10,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820522,
       "date": "2026-07-10",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 119,
       "missed": 7,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820519,
       "date": "2026-07-08",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 163,
       "missed": 13,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820859,
       "date": "2026-07-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 188,
       "missed": 13,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820862,
       "date": "2026-07-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 168,
       "missed": 8,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820856,
       "date": "2026-06-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 138,
       "missed": 12,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820589,
       "date": "2026-06-28",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ FTM",
       "taken": 144,
       "missed": 9,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820590,
       "date": "2026-06-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ FTM",
       "taken": 164,
       "missed": 11,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820599,
       "date": "2026-06-24",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ FTM",
       "taken": 221,
       "missed": 15,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820466,
       "date": "2026-06-20",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 178,
       "missed": 9,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820464,
       "date": "2026-06-18",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 156,
       "missed": 14,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820472,
       "date": "2026-06-16",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 136,
       "missed": 12,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820866,
       "date": "2026-06-14",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 160,
       "missed": 9,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820867,
       "date": "2026-06-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 146,
       "missed": 17,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820864,
       "date": "2026-06-10",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 134,
       "missed": 11,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820668,
       "date": "2026-06-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ DUN",
       "taken": 144,
       "missed": 11,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820670,
       "date": "2026-06-05",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ DUN",
       "taken": 153,
       "missed": 9,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820412,
       "date": "2026-05-27",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ PMB",
       "taken": 196,
       "missed": 11,

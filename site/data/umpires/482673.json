@@ -2,7 +2,7 @@
   "umpire_id": "482673",
   "umpire_name": "Jeffrey Spisak",
   "levels": [
-    "MiLB"
+    "AAA"
   ],
   "games": 1,
   "taken": 156,
@@ -18,7 +18,7 @@
     {
       "game_pk": 816540,
       "date": "2026-08-20",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LOU @ IND",
       "taken": 156,
       "missed": 11,

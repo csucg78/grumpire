@@ -1,0 +1,228 @@
+{
+  "umpire_id": "829385",
+  "umpire_name": "Bayron Matos",
+  "levels": [
+    "FSL"
+  ],
+  "games": 19,
+  "taken": 3400,
+  "missed": 292,
+  "acc_pct": 91.4,
+  "tol_acc_pct": 92.3,
+  "mean_miss_in": 1.2,
+  "challenges": 78,
+  "overturns": 33,
+  "overturn_pct": 42.3,
+  "re_impact": 34.48,
+  "game_log": [
+    {
+      "game_pk": 785593,
+      "date": "2025-05-25",
+      "level": "FSL",
+      "matchup": "DBT @ PMB",
+      "taken": 169,
+      "missed": 19,
+      "acc_pct": 88.8,
+      "overturns": 1,
+      "re_impact": 1.98
+    },
+    {
+      "game_pk": 785590,
+      "date": "2025-05-23",
+      "level": "FSL",
+      "matchup": "DBT @ PMB",
+      "taken": 175,
+      "missed": 15,
+      "acc_pct": 91.4,
+      "overturns": 5,
+      "re_impact": 1.93
+    },
+    {
+      "game_pk": 785594,
+      "date": "2025-05-21",
+      "level": "FSL",
+      "matchup": "DBT @ PMB",
+      "taken": 165,
+      "missed": 12,
+      "acc_pct": 92.7,
+      "overturns": 4,
+      "re_impact": 1.48
+    },
+    {
+      "game_pk": 785720,
+      "date": "2025-05-18",
+      "level": "FSL",
+      "matchup": "FTM @ JUP",
+      "taken": 178,
+      "missed": 19,
+      "acc_pct": 89.3,
+      "overturns": 3,
+      "re_impact": 2.53
+    },
+    {
+      "game_pk": 785727,
+      "date": "2025-05-16",
+      "level": "FSL",
+      "matchup": "FTM @ JUP",
+      "taken": 177,
+      "missed": 15,
+      "acc_pct": 91.5,
+      "overturns": 2,
+      "re_impact": 1.49
+    },
+    {
+      "game_pk": 785729,
+      "date": "2025-05-14",
+      "level": "FSL",
+      "matchup": "FTM @ JUP",
+      "taken": 189,
+      "missed": 14,
+      "acc_pct": 92.6,
+      "overturns": 2,
+      "re_impact": 1.39
+    },
+    {
+      "game_pk": 785524,
+      "date": "2025-05-11",
+      "level": "FSL",
+      "matchup": "CLR @ SLU",
+      "taken": 163,
+      "missed": 12,
+      "acc_pct": 92.6,
+      "overturns": 2,
+      "re_impact": 1.66
+    },
+    {
+      "game_pk": 785529,
+      "date": "2025-05-09",
+      "level": "FSL",
+      "matchup": "CLR @ SLU",
+      "taken": 150,
+      "missed": 10,
+      "acc_pct": 93.3,
+      "overturns": 1,
+      "re_impact": 1.35
+    },
+    {
+      "game_pk": 785530,
+      "date": "2025-05-07",
+      "level": "FSL",
+      "matchup": "CLR @ SLU",
+      "taken": 157,
+      "missed": 10,
+      "acc_pct": 93.6,
+      "overturns": 1,
+      "re_impact": 1.7
+    },
+    {
+      "game_pk": 785856,
+      "date": "2025-05-04",
+      "level": "FSL",
+      "matchup": "DBT @ DUN",
+      "taken": 155,
+      "missed": 10,
+      "acc_pct": 93.5,
+      "overturns": 1,
+      "re_impact": 0.98
+    },
+    {
+      "game_pk": 785868,
+      "date": "2025-05-02",
+      "level": "FSL",
+      "matchup": "DBT @ DUN",
+      "taken": 177,
+      "missed": 16,
+      "acc_pct": 91.0,
+      "overturns": 0,
+      "re_impact": 1.62
+    },
+    {
+      "game_pk": 785605,
+      "date": "2025-04-30",
+      "level": "FSL",
+      "matchup": "SLU @ PMB",
+      "taken": 209,
+      "missed": 13,
+      "acc_pct": 93.8,
+      "overturns": 3,
+      "re_impact": 1.56
+    },
+    {
+      "game_pk": 785997,
+      "date": "2025-04-26",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 143,
+      "missed": 10,
+      "acc_pct": 93.0,
+      "overturns": 2,
+      "re_impact": 1.29
+    },
+    {
+      "game_pk": 786005,
+      "date": "2025-04-24",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 172,
+      "missed": 14,
+      "acc_pct": 91.9,
+      "overturns": 0,
+      "re_impact": 1.8
+    },
+    {
+      "game_pk": 786006,
+      "date": "2025-04-22",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 164,
+      "missed": 17,
+      "acc_pct": 89.6,
+      "overturns": 0,
+      "re_impact": 1.95
+    },
+    {
+      "game_pk": 786070,
+      "date": "2025-04-12",
+      "level": "FSL",
+      "matchup": "PMB @ BRD",
+      "taken": 189,
+      "missed": 18,
+      "acc_pct": 90.5,
+      "overturns": 1,
+      "re_impact": 1.97
+    },
+    {
+      "game_pk": 786082,
+      "date": "2025-04-10",
+      "level": "FSL",
+      "matchup": "PMB @ BRD",
+      "taken": 254,
+      "missed": 28,
+      "acc_pct": 89.0,
+      "overturns": 2,
+      "re_impact": 3.63
+    },
+    {
+      "game_pk": 786079,
+      "date": "2025-04-08",
+      "level": "FSL",
+      "matchup": "PMB @ BRD",
+      "taken": 179,
+      "missed": 24,
+      "acc_pct": 86.6,
+      "overturns": 2,
+      "re_impact": 2.51
+    },
+    {
+      "game_pk": 785480,
+      "date": "2025-04-05",
+      "level": "FSL",
+      "matchup": "LAK @ TAM",
+      "taken": 235,
+      "missed": 16,
+      "acc_pct": 93.2,
+      "overturns": 1,
+      "re_impact": 1.66
+    }
+  ]
+}

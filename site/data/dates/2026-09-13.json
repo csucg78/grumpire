@@ -4,7 +4,7 @@
     {
       "game_pk": 815102,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Greater Nevada Field",
       "away": "ABQ",
       "home": "RNO",
@@ -28,7 +28,7 @@
     {
       "game_pk": 816451,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Principal Park",
       "away": "TOL",
       "home": "IOW",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815178,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Chickasaw Bricktown Ballpark",
       "away": "SUG",
       "home": "OKC",
@@ -76,7 +76,7 @@
     {
       "game_pk": 815702,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "CHS Field",
       "away": "SYR",
       "home": "STP",
@@ -100,7 +100,7 @@
     {
       "game_pk": 816223,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "COL",
       "home": "LOU",
@@ -124,7 +124,7 @@
     {
       "game_pk": 814727,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "ELP",
       "home": "TAC",
@@ -148,7 +148,7 @@
     {
       "game_pk": 816150,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "AutoZone Park",
       "away": "NOR",
       "home": "MEM",
@@ -172,7 +172,7 @@
     {
       "game_pk": 815850,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "ESL Ballpark",
       "away": "SWB",
       "home": "ROC",
@@ -194,33 +194,9 @@
       "re_impact": 1.19
     },
     {
-      "game_pk": 850932,
-      "date": "2026-09-13",
-      "level": "MiLB",
-      "venue": "George M. Steinbrenner Field",
-      "away": "JUP",
-      "home": "TAM",
-      "away_runs": 9,
-      "home_runs": 1,
-      "umpire_id": "830668",
-      "umpire_name": "Jacob Gorman",
-      "taken": 166,
-      "correct": 155,
-      "missed": 11,
-      "acc_pct": 93.37,
-      "tol_acc_pct": 94.51,
-      "cs_acc_pct": 81.82,
-      "cb_acc_pct": 97.54,
-      "mean_miss_in": 0.88,
-      "challenges": 5,
-      "overturns": 2,
-      "unchallenged_misses": 9,
-      "re_impact": 1.66
-    },
-    {
       "game_pk": 816681,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Durham Bulls Athletic Park",
       "away": "NAS",
       "home": "DUR",
@@ -244,7 +220,7 @@
     {
       "game_pk": 814879,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "The Ballpark at America First Square",
       "away": "RR",
       "home": "SL",
@@ -268,7 +244,7 @@
     {
       "game_pk": 816526,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Victory Field",
       "away": "OMA",
       "home": "IND",
@@ -292,7 +268,7 @@
     {
       "game_pk": 816302,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "WOR",
       "home": "LHV",
@@ -316,7 +292,7 @@
     {
       "game_pk": 815251,
       "date": "2026-09-13",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "SAC",
       "home": "LV",
@@ -336,6 +312,30 @@
       "overturns": 1,
       "unchallenged_misses": 5,
       "re_impact": 0.82
+    },
+    {
+      "game_pk": 850932,
+      "date": "2026-09-13",
+      "level": "FSL",
+      "venue": "George M. Steinbrenner Field",
+      "away": "JUP",
+      "home": "TAM",
+      "away_runs": 9,
+      "home_runs": 1,
+      "umpire_id": "830668",
+      "umpire_name": "Jacob Gorman",
+      "taken": 166,
+      "correct": 155,
+      "missed": 11,
+      "acc_pct": 93.37,
+      "tol_acc_pct": 94.51,
+      "cs_acc_pct": 81.82,
+      "cb_acc_pct": 97.54,
+      "mean_miss_in": 0.88,
+      "challenges": 5,
+      "overturns": 2,
+      "unchallenged_misses": 9,
+      "re_impact": 1.66
     }
   ]
 }

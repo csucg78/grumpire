@@ -1,0 +1,41 @@
+{
+  "umpire_id": "681786",
+  "umpire_name": "Jose Lozada",
+  "levels": [
+    "AAA"
+  ],
+  "games": 2,
+  "taken": 279,
+  "missed": 26,
+  "acc_pct": 90.7,
+  "tol_acc_pct": 91.9,
+  "mean_miss_in": 1.39,
+  "challenges": 2,
+  "overturns": 1,
+  "overturn_pct": 50.0,
+  "re_impact": 2.43,
+  "game_log": [
+    {
+      "game_pk": 752292,
+      "date": "2024-07-20",
+      "level": "AAA",
+      "matchup": "ROC @ SYR",
+      "taken": 157,
+      "missed": 21,
+      "acc_pct": 86.6,
+      "overturns": 1,
+      "re_impact": 2.05
+    },
+    {
+      "game_pk": 752558,
+      "date": "2024-04-18",
+      "level": "AAA",
+      "matchup": "TOL @ ROC",
+      "taken": 122,
+      "missed": 5,
+      "acc_pct": 95.9,
+      "overturns": 0,
+      "re_impact": 0.38
+    }
+  ]
+}

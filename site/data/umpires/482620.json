@@ -1,0 +1,52 @@
+{
+  "umpire_id": "482620",
+  "umpire_name": "Chris Conroy",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 497,
+  "missed": 39,
+  "acc_pct": 92.2,
+  "tol_acc_pct": 92.5,
+  "mean_miss_in": 1.24,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 4.22,
+  "game_log": [
+    {
+      "game_pk": 753005,
+      "date": "2024-04-25",
+      "level": "AAA",
+      "matchup": "CLT @ LHV",
+      "taken": 192,
+      "missed": 15,
+      "acc_pct": 92.2,
+      "overturns": 0,
+      "re_impact": 1.45
+    },
+    {
+      "game_pk": 752487,
+      "date": "2024-04-19",
+      "level": "AAA",
+      "matchup": "LHV @ SWB",
+      "taken": 174,
+      "missed": 11,
+      "acc_pct": 93.7,
+      "overturns": 0,
+      "re_impact": 1.14
+    },
+    {
+      "game_pk": 753008,
+      "date": "2024-04-13",
+      "level": "AAA",
+      "matchup": "DUR @ LHV",
+      "taken": 131,
+      "missed": 13,
+      "acc_pct": 90.1,
+      "overturns": 0,
+      "re_impact": 1.63
+    }
+  ]
+}

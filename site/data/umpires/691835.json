@@ -1,0 +1,41 @@
+{
+  "umpire_id": "691835",
+  "umpire_name": "Nelson Fraley",
+  "levels": [
+    "FSL"
+  ],
+  "games": 2,
+  "taken": 263,
+  "missed": 23,
+  "acc_pct": 91.3,
+  "tol_acc_pct": 91.2,
+  "mean_miss_in": 1.61,
+  "challenges": 1,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 2.79,
+  "game_log": [
+    {
+      "game_pk": 730217,
+      "date": "2023-04-08",
+      "level": "FSL",
+      "matchup": "JUP @ PMB",
+      "taken": 132,
+      "missed": 16,
+      "acc_pct": 87.9,
+      "overturns": 0,
+      "re_impact": 2.09
+    },
+    {
+      "game_pk": 730219,
+      "date": "2023-04-06",
+      "level": "FSL",
+      "matchup": "JUP @ PMB",
+      "taken": 131,
+      "missed": 7,
+      "acc_pct": 94.7,
+      "overturns": 0,
+      "re_impact": 0.7
+    }
+  ]
+}

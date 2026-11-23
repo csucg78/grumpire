@@ -2,7 +2,7 @@
   "umpire_id": "839079",
   "umpire_name": "Aidan Sessler",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 18,
   "taken": 3113,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820341,
       "date": "2026-05-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 144,
       "missed": 14,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820345,
       "date": "2026-05-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 230,
       "missed": 16,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820353,
       "date": "2026-05-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 143,
       "missed": 11,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820875,
       "date": "2026-05-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ BRD",
       "taken": 165,
       "missed": 18,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820879,
       "date": "2026-05-15",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ BRD",
       "taken": 140,
       "missed": 15,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820882,
       "date": "2026-05-13",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ BRD",
       "taken": 180,
       "missed": 21,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820680,
       "date": "2026-05-03",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ DUN",
       "taken": 198,
       "missed": 18,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820689,
       "date": "2026-05-01",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ DUN",
       "taken": 220,
       "missed": 24,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820684,
       "date": "2026-04-29",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ DUN",
       "taken": 185,
       "missed": 22,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820362,
       "date": "2026-04-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 174,
       "missed": 14,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820360,
       "date": "2026-04-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 164,
       "missed": 7,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820356,
       "date": "2026-04-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "PMB @ SLU",
       "taken": 197,
       "missed": 19,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820621,
       "date": "2026-04-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ FTM",
       "taken": 161,
       "missed": 15,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820620,
       "date": "2026-04-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ FTM",
       "taken": 203,
       "missed": 23,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820622,
       "date": "2026-04-15",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ FTM",
       "taken": 190,
       "missed": 18,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820826,
       "date": "2026-04-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 146,
       "missed": 12,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820827,
       "date": "2026-04-09",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 148,
       "missed": 8,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820823,
       "date": "2026-04-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ CLR",
       "taken": 125,
       "missed": 11,

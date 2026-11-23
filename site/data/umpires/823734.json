@@ -1,0 +1,206 @@
+{
+  "umpire_id": "823734",
+  "umpire_name": "Derek Gibson",
+  "levels": [
+    "FSL"
+  ],
+  "games": 17,
+  "taken": 2572,
+  "missed": 218,
+  "acc_pct": 91.5,
+  "tol_acc_pct": 92.5,
+  "mean_miss_in": 1.38,
+  "challenges": 56,
+  "overturns": 24,
+  "overturn_pct": 42.9,
+  "re_impact": 27.77,
+  "game_log": [
+    {
+      "game_pk": 786032,
+      "date": "2025-07-12",
+      "level": "FSL",
+      "matchup": "SLU @ BRD",
+      "taken": 196,
+      "missed": 12,
+      "acc_pct": 93.9,
+      "overturns": 0,
+      "re_impact": 1.47
+    },
+    {
+      "game_pk": 786036,
+      "date": "2025-07-10",
+      "level": "FSL",
+      "matchup": "SLU @ BRD",
+      "taken": 176,
+      "missed": 13,
+      "acc_pct": 92.6,
+      "overturns": 0,
+      "re_impact": 1.61
+    },
+    {
+      "game_pk": 786040,
+      "date": "2025-07-08",
+      "level": "FSL",
+      "matchup": "SLU @ BRD",
+      "taken": 140,
+      "missed": 8,
+      "acc_pct": 94.3,
+      "overturns": 3,
+      "re_impact": 0.71
+    },
+    {
+      "game_pk": 785978,
+      "date": "2025-07-03",
+      "level": "FSL",
+      "matchup": "TAM @ CLR",
+      "taken": 156,
+      "missed": 12,
+      "acc_pct": 92.3,
+      "overturns": 3,
+      "re_impact": 1.21
+    },
+    {
+      "game_pk": 785976,
+      "date": "2025-07-01",
+      "level": "FSL",
+      "matchup": "TAM @ CLR",
+      "taken": 169,
+      "missed": 14,
+      "acc_pct": 91.7,
+      "overturns": 3,
+      "re_impact": 1.97
+    },
+    {
+      "game_pk": 785771,
+      "date": "2025-06-22",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 153,
+      "missed": 13,
+      "acc_pct": 91.5,
+      "overturns": 2,
+      "re_impact": 1.53
+    },
+    {
+      "game_pk": 785785,
+      "date": "2025-06-20",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 159,
+      "missed": 16,
+      "acc_pct": 89.9,
+      "overturns": 2,
+      "re_impact": 2.23
+    },
+    {
+      "game_pk": 785778,
+      "date": "2025-06-17",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 129,
+      "missed": 7,
+      "acc_pct": 94.6,
+      "overturns": 0,
+      "re_impact": 0.76
+    },
+    {
+      "game_pk": 786050,
+      "date": "2025-06-15",
+      "level": "FSL",
+      "matchup": "JUP @ BRD",
+      "taken": 130,
+      "missed": 8,
+      "acc_pct": 93.8,
+      "overturns": 1,
+      "re_impact": 1.2
+    },
+    {
+      "game_pk": 786049,
+      "date": "2025-06-13",
+      "level": "FSL",
+      "matchup": "JUP @ BRD",
+      "taken": 144,
+      "missed": 6,
+      "acc_pct": 95.8,
+      "overturns": 1,
+      "re_impact": 1.0
+    },
+    {
+      "game_pk": 786054,
+      "date": "2025-06-11",
+      "level": "FSL",
+      "matchup": "JUP @ BRD",
+      "taken": 131,
+      "missed": 17,
+      "acc_pct": 87.0,
+      "overturns": 0,
+      "re_impact": 1.63
+    },
+    {
+      "game_pk": 785512,
+      "date": "2025-06-08",
+      "level": "FSL",
+      "matchup": "DUN @ SLU",
+      "taken": 143,
+      "missed": 15,
+      "acc_pct": 89.5,
+      "overturns": 2,
+      "re_impact": 2.06
+    },
+    {
+      "game_pk": 785516,
+      "date": "2025-06-06",
+      "level": "FSL",
+      "matchup": "DUN @ SLU",
+      "taken": 152,
+      "missed": 16,
+      "acc_pct": 89.5,
+      "overturns": 2,
+      "re_impact": 2.2
+    },
+    {
+      "game_pk": 785515,
+      "date": "2025-06-05",
+      "level": "FSL",
+      "matchup": "DUN @ SLU",
+      "taken": 95,
+      "missed": 7,
+      "acc_pct": 92.6,
+      "overturns": 1,
+      "re_impact": 0.66
+    },
+    {
+      "game_pk": 785457,
+      "date": "2025-06-01",
+      "level": "FSL",
+      "matchup": "FTM @ TAM",
+      "taken": 173,
+      "missed": 19,
+      "acc_pct": 89.0,
+      "overturns": 0,
+      "re_impact": 2.65
+    },
+    {
+      "game_pk": 785463,
+      "date": "2025-05-30",
+      "level": "FSL",
+      "matchup": "FTM @ TAM",
+      "taken": 167,
+      "missed": 15,
+      "acc_pct": 91.0,
+      "overturns": 2,
+      "re_impact": 1.75
+    },
+    {
+      "game_pk": 785994,
+      "date": "2025-05-28",
+      "level": "FSL",
+      "matchup": "DUN @ CLR",
+      "taken": 159,
+      "missed": 20,
+      "acc_pct": 87.4,
+      "overturns": 2,
+      "re_impact": 3.13
+    }
+  ]
+}

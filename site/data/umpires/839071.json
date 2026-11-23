@@ -2,7 +2,7 @@
   "umpire_id": "839071",
   "umpire_name": "Hudson Arney",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 20,
   "taken": 3122,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820276,
       "date": "2026-05-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ TAM",
       "taken": 151,
       "missed": 19,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820279,
       "date": "2026-05-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ TAM",
       "taken": 135,
       "missed": 18,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820274,
       "date": "2026-05-20",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ TAM",
       "taken": 121,
       "missed": 13,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820351,
       "date": "2026-05-16",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ SLU",
       "taken": 136,
       "missed": 11,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820352,
       "date": "2026-05-14",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ SLU",
       "taken": 194,
       "missed": 16,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820354,
       "date": "2026-05-13",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ SLU",
       "taken": 111,
       "missed": 15,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820683,
       "date": "2026-05-09",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ DUN",
       "taken": 171,
       "missed": 15,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820677,
       "date": "2026-05-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ DUN",
       "taken": 180,
       "missed": 20,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820679,
       "date": "2026-05-05",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ DUN",
       "taken": 129,
       "missed": 6,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820488,
       "date": "2026-04-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ LAK",
       "taken": 183,
       "missed": 13,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820482,
       "date": "2026-04-24",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ LAK",
       "taken": 169,
       "missed": 18,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820495,
       "date": "2026-04-22",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ LAK",
       "taken": 167,
       "missed": 10,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820688,
       "date": "2026-04-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ DUN",
       "taken": 168,
       "missed": 19,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820685,
       "date": "2026-04-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ DUN",
       "taken": 177,
       "missed": 10,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820693,
       "date": "2026-04-15",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ DUN",
       "taken": 179,
       "missed": 8,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820556,
       "date": "2026-04-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ JUP",
       "taken": 190,
       "missed": 14,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820559,
       "date": "2026-04-10",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ JUP",
       "taken": 172,
       "missed": 18,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820567,
       "date": "2026-04-09",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ JUP",
       "taken": 116,
       "missed": 13,
@@ -216,7 +216,7 @@
     {
       "game_pk": 820432,
       "date": "2026-04-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ PMB",
       "taken": 109,
       "missed": 8,
@@ -227,7 +227,7 @@
     {
       "game_pk": 820436,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ PMB",
       "taken": 164,
       "missed": 11,

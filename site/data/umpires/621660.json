@@ -1,0 +1,239 @@
+{
+  "umpire_id": "621660",
+  "umpire_name": "Emil Jimenez",
+  "levels": [
+    "AAA"
+  ],
+  "games": 20,
+  "taken": 3330,
+  "missed": 215,
+  "acc_pct": 93.5,
+  "tol_acc_pct": 94.4,
+  "mean_miss_in": 1.2,
+  "challenges": 42,
+  "overturns": 19,
+  "overturn_pct": 45.2,
+  "re_impact": 25.98,
+  "game_log": [
+    {
+      "game_pk": 752586,
+      "date": "2024-08-09",
+      "level": "AAA",
+      "matchup": "IOW @ OMA",
+      "taken": 176,
+      "missed": 8,
+      "acc_pct": 95.5,
+      "overturns": 0,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 752590,
+      "date": "2024-08-06",
+      "level": "AAA",
+      "matchup": "IOW @ OMA",
+      "taken": 139,
+      "missed": 11,
+      "acc_pct": 92.1,
+      "overturns": 1,
+      "re_impact": 1.34
+    },
+    {
+      "game_pk": 752518,
+      "date": "2024-07-26",
+      "level": "AAA",
+      "matchup": "LHV @ ROC",
+      "taken": 194,
+      "missed": 13,
+      "acc_pct": 93.3,
+      "overturns": 3,
+      "re_impact": 2.08
+    },
+    {
+      "game_pk": 753444,
+      "date": "2024-05-18",
+      "level": "AAA",
+      "matchup": "LOU @ COL",
+      "taken": 149,
+      "missed": 8,
+      "acc_pct": 94.6,
+      "overturns": 3,
+      "re_impact": 0.87
+    },
+    {
+      "game_pk": 753447,
+      "date": "2024-05-16",
+      "level": "AAA",
+      "matchup": "LOU @ COL",
+      "taken": 150,
+      "missed": 6,
+      "acc_pct": 96.0,
+      "overturns": 0,
+      "re_impact": 0.5
+    },
+    {
+      "game_pk": 751426,
+      "date": "2024-05-14",
+      "level": "AAA",
+      "matchup": "SL @ TAC",
+      "taken": 193,
+      "missed": 8,
+      "acc_pct": 95.9,
+      "overturns": 0,
+      "re_impact": 0.69
+    },
+    {
+      "game_pk": 751504,
+      "date": "2024-05-10",
+      "level": "AAA",
+      "matchup": "OKC @ SUG",
+      "taken": 146,
+      "missed": 15,
+      "acc_pct": 89.7,
+      "overturns": 2,
+      "re_impact": 1.67
+    },
+    {
+      "game_pk": 753017,
+      "date": "2024-03-30",
+      "level": "AAA",
+      "matchup": "WOR @ LHV",
+      "taken": 172,
+      "missed": 13,
+      "acc_pct": 92.4,
+      "overturns": 4,
+      "re_impact": 1.16
+    },
+    {
+      "game_pk": 725429,
+      "date": "2023-09-16",
+      "level": "AAA",
+      "matchup": "NAS @ CLT",
+      "taken": 167,
+      "missed": 15,
+      "acc_pct": 91.0,
+      "overturns": 2,
+      "re_impact": 1.77
+    },
+    {
+      "game_pk": 723543,
+      "date": "2023-09-07",
+      "level": "AAA",
+      "matchup": "TOL @ IND",
+      "taken": 173,
+      "missed": 7,
+      "acc_pct": 96.0,
+      "overturns": 0,
+      "re_impact": 0.67
+    },
+    {
+      "game_pk": 725545,
+      "date": "2023-06-23",
+      "level": "AAA",
+      "matchup": "MEM @ IOW",
+      "taken": 174,
+      "missed": 13,
+      "acc_pct": 92.5,
+      "overturns": 1,
+      "re_impact": 1.67
+    },
+    {
+      "game_pk": 725542,
+      "date": "2023-06-20",
+      "level": "AAA",
+      "matchup": "MEM @ IOW",
+      "taken": 182,
+      "missed": 5,
+      "acc_pct": 97.3,
+      "overturns": 0,
+      "re_impact": 0.42
+    },
+    {
+      "game_pk": 723147,
+      "date": "2023-06-17",
+      "level": "AAA",
+      "matchup": "WOR @ NOR",
+      "taken": 130,
+      "missed": 9,
+      "acc_pct": 93.1,
+      "overturns": 1,
+      "re_impact": 1.13
+    },
+    {
+      "game_pk": 723002,
+      "date": "2023-06-02",
+      "level": "AAA",
+      "matchup": "SYR @ ROC",
+      "taken": 189,
+      "missed": 17,
+      "acc_pct": 91.0,
+      "overturns": 2,
+      "re_impact": 1.93
+    },
+    {
+      "game_pk": 723243,
+      "date": "2023-04-25",
+      "level": "AAA",
+      "matchup": "OMA @ NAS",
+      "taken": 142,
+      "missed": 4,
+      "acc_pct": 97.2,
+      "overturns": 0,
+      "re_impact": 0.35
+    },
+    {
+      "game_pk": 723322,
+      "date": "2023-04-19",
+      "level": "AAA",
+      "matchup": "IND @ MEM",
+      "taken": 157,
+      "missed": 29,
+      "acc_pct": 81.5,
+      "overturns": 0,
+      "re_impact": 3.56
+    },
+    {
+      "game_pk": 721874,
+      "date": "2023-04-15",
+      "level": "AAA",
+      "matchup": "SL @ LV",
+      "taken": 188,
+      "missed": 14,
+      "acc_pct": 92.6,
+      "overturns": 0,
+      "re_impact": 1.96
+    },
+    {
+      "game_pk": 721876,
+      "date": "2023-04-11",
+      "level": "AAA",
+      "matchup": "SL @ LV",
+      "taken": 153,
+      "missed": 5,
+      "acc_pct": 96.7,
+      "overturns": 0,
+      "re_impact": 0.84
+    },
+    {
+      "game_pk": 721581,
+      "date": "2023-04-06",
+      "level": "AAA",
+      "matchup": "ELP @ SAC",
+      "taken": 179,
+      "missed": 12,
+      "acc_pct": 93.3,
+      "overturns": 0,
+      "re_impact": 1.71
+    },
+    {
+      "game_pk": 721802,
+      "date": "2023-04-01",
+      "level": "AAA",
+      "matchup": "TAC @ OKC",
+      "taken": 177,
+      "missed": 3,
+      "acc_pct": 98.3,
+      "overturns": 0,
+      "re_impact": 0.43
+    }
+  ]
+}

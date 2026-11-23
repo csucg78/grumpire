@@ -1,0 +1,30 @@
+{
+  "umpire_id": "427520",
+  "umpire_name": "Larry Vanover",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 196,
+  "missed": 24,
+  "acc_pct": 87.8,
+  "tol_acc_pct": 87.7,
+  "mean_miss_in": 1.71,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 2.29,
+  "game_log": [
+    {
+      "game_pk": 723350,
+      "date": "2023-08-03",
+      "level": "AAA",
+      "matchup": "OMA @ LOU",
+      "taken": 196,
+      "missed": 24,
+      "acc_pct": 87.8,
+      "overturns": 0,
+      "re_impact": 2.29
+    }
+  ]
+}

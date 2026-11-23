@@ -2,7 +2,7 @@
   "umpire_id": "839073",
   "umpire_name": "Caleb Rodriguez",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 1,
   "taken": 174,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820781,
       "date": "2026-07-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ CLR",
       "taken": 174,
       "missed": 14,

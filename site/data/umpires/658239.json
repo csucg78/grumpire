@@ -1,0 +1,52 @@
+{
+  "umpire_id": "658239",
+  "umpire_name": "Ben Sonntag",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 478,
+  "missed": 32,
+  "acc_pct": 93.3,
+  "tol_acc_pct": 93.6,
+  "mean_miss_in": 1.79,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 3.74,
+  "game_log": [
+    {
+      "game_pk": 723683,
+      "date": "2023-04-12",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 192,
+      "missed": 12,
+      "acc_pct": 93.8,
+      "overturns": 0,
+      "re_impact": 1.17
+    },
+    {
+      "game_pk": 725400,
+      "date": "2023-04-06",
+      "level": "AAA",
+      "matchup": "DUR @ JAX",
+      "taken": 114,
+      "missed": 8,
+      "acc_pct": 93.0,
+      "overturns": 0,
+      "re_impact": 0.82
+    },
+    {
+      "game_pk": 723250,
+      "date": "2023-04-02",
+      "level": "AAA",
+      "matchup": "LOU @ NAS",
+      "taken": 172,
+      "missed": 12,
+      "acc_pct": 93.0,
+      "overturns": 0,
+      "re_impact": 1.75
+    }
+  ]
+}

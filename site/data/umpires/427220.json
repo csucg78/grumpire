@@ -1,0 +1,41 @@
+{
+  "umpire_id": "427220",
+  "umpire_name": "Angel Hernandez",
+  "levels": [
+    "AAA"
+  ],
+  "games": 2,
+  "taken": 316,
+  "missed": 32,
+  "acc_pct": 89.9,
+  "tol_acc_pct": 92.1,
+  "mean_miss_in": 1.07,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 3.88,
+  "game_log": [
+    {
+      "game_pk": 723710,
+      "date": "2023-07-29",
+      "level": "AAA",
+      "matchup": "CLT @ DUR",
+      "taken": 144,
+      "missed": 16,
+      "acc_pct": 88.9,
+      "overturns": 0,
+      "re_impact": 2.02
+    },
+    {
+      "game_pk": 723718,
+      "date": "2023-07-25",
+      "level": "AAA",
+      "matchup": "CLT @ DUR",
+      "taken": 172,
+      "missed": 16,
+      "acc_pct": 90.7,
+      "overturns": 0,
+      "re_impact": 1.86
+    }
+  ]
+}

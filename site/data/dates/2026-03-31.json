@@ -4,7 +4,7 @@
     {
       "game_pk": 816447,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "SUG",
       "home": "JAX",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815328,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "OKC",
       "home": "LV",
@@ -52,7 +52,7 @@
     {
       "game_pk": 816151,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "First Horizon Park",
       "away": "CLT",
       "home": "NAS",
@@ -76,7 +76,7 @@
     {
       "game_pk": 815476,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Isotopes Park",
       "away": "RNO",
       "home": "ABQ",
@@ -100,7 +100,7 @@
     {
       "game_pk": 816301,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "IOW",
       "home": "LOU",
@@ -124,7 +124,7 @@
     {
       "game_pk": 815775,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "CHS Field",
       "away": "WOR",
       "home": "STP",
@@ -148,7 +148,7 @@
     {
       "game_pk": 814801,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "ELP",
       "home": "TAC",
@@ -172,7 +172,7 @@
     {
       "game_pk": 814952,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "The Ballpark at America First Square",
       "away": "SAC",
       "home": "SL",
@@ -196,7 +196,7 @@
     {
       "game_pk": 815100,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "GWN",
       "home": "RR",
@@ -220,7 +220,7 @@
     {
       "game_pk": 815999,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Werner Park",
       "away": "BUF",
       "home": "OMA",
@@ -244,7 +244,7 @@
     {
       "game_pk": 816225,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "AutoZone Park",
       "away": "NOR",
       "home": "MEM",
@@ -268,7 +268,7 @@
     {
       "game_pk": 815703,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "NBT Bank Stadium",
       "away": "TOL",
       "home": "SYR",
@@ -292,7 +292,7 @@
     {
       "game_pk": 816830,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Huntington Park",
       "away": "IND",
       "home": "COL",
@@ -316,7 +316,7 @@
     {
       "game_pk": 816751,
       "date": "2026-03-31",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Durham Bulls Athletic Park",
       "away": "LHV",
       "home": "DUR",

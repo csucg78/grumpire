@@ -71,9 +71,11 @@ def extract_hp_umpire(feed: dict[str, Any]) -> tuple[str, str]:
 def process_game(session: requests.Session, game_meta: dict[str, Any], date_str: str) -> dict[str, Any] | None:
     game_pk = game_meta["gamePk"]
     sport_id = game_meta.get("teams", {}).get("home", {}).get("team", {}).get("sport", {}).get("id")
-    level = SPORT_LABELS.get(sport_id, game_meta.get("_level", "MiLB"))
 
     feed = fetch_json(session, LIVE_FEED_URL.format(game_pk=game_pk))
+    if not sport_id:
+        sport_id = feed.get("gameData", {}).get("teams", {}).get("home", {}).get("sport", {}).get("id")
+    level = SPORT_LABELS.get(sport_id, game_meta.get("_level", "MiLB"))
     ump_id, ump_name = extract_hp_umpire(feed)
 
     teams = feed.get("gameData", {}).get("teams", {})
@@ -294,9 +296,10 @@ def rebuild_aggregates(data_dir: Path) -> None:
     umps_dir = data_dir / "umpires"
     umps_dir.mkdir(parents=True, exist_ok=True)
 
-    ump_map: dict[str, dict[str, Any]] = {}
-    total_games = 0
-    total_pitches = 0
+    # Track aggregates across all seasons ("ALL") as well as per-season ("2026", "2025", ...)
+    ump_by_year: dict[str, dict[str, dict[str, Any]]] = {"ALL": {}}
+    totals_by_year: dict[str, dict[str, int]] = {"ALL": {"games": 0, "pitches": 0}}
+    years_found: set[str] = set()
 
     for g_file in sorted(games_dir.glob("*.json")):
         g = json.loads(g_file.read_text(encoding="utf-8"))
@@ -304,90 +307,117 @@ def rebuild_aggregates(data_dir: Path) -> None:
         if uid == "unknown":
             continue
 
-        total_games += 1
-        total_pitches += g["taken"]
+        year = g["date"][:4]
+        years_found.add(year)
+        ump_by_year.setdefault(year, {})
+        totals_by_year.setdefault(year, {"games": 0, "pitches": 0})
 
-        rec = ump_map.setdefault(uid, {
-            "umpire_id": uid,
-            "umpire_name": g["umpire_name"],
-            "levels": set(),
-            "games": 0,
-            "taken": 0,
-            "correct": 0,
-            "missed": 0,
-            "tol_weighted": 0.0,
-            "miss_sum_in": 0.0,
-            "challenges": 0,
-            "overturns": 0,
-            "re_impact": 0.0,
-            "game_log": [],
-        })
+        for bucket_key in ("ALL", year):
+            totals_by_year[bucket_key]["games"] += 1
+            totals_by_year[bucket_key]["pitches"] += g["taken"]
 
-        rec["levels"].add(g["level"])
-        rec["games"] += 1
-        rec["taken"] += g["taken"]
-        rec["correct"] += g["correct"]
-        rec["missed"] += g["missed"]
-        rec["tol_weighted"] += g["tol_acc_pct"] * g["taken"]
-        rec["miss_sum_in"] += g["mean_miss_in"] * g["missed"]
-        rec["challenges"] += g["challenges"]
-        rec["overturns"] += g["overturns"]
-        rec["re_impact"] += g["re_impact"]
-        rec["game_log"].append({
-            "game_pk": g["game_pk"],
-            "date": g["date"],
-            "level": g["level"],
-            "matchup": f"{g['away']} @ {g['home']}",
-            "taken": g["taken"],
-            "missed": g["missed"],
-            "acc_pct": g["acc_pct"],
-            "overturns": g["overturns"],
-            "re_impact": g["re_impact"],
-        })
+            ump_map = ump_by_year[bucket_key]
+            rec = ump_map.setdefault(uid, {
+                "umpire_id": uid,
+                "umpire_name": g["umpire_name"],
+                "levels": set(),
+                "games": 0,
+                "taken": 0,
+                "correct": 0,
+                "missed": 0,
+                "tol_weighted": 0.0,
+                "miss_sum_in": 0.0,
+                "challenges": 0,
+                "overturns": 0,
+                "re_impact": 0.0,
+                "game_log": [],
+            })
 
-    leaderboard: list[dict[str, Any]] = []
-    for uid, rec in ump_map.items():
-        taken = rec["taken"]
-        missed = rec["missed"]
-        levels_sorted = sorted(rec["levels"])
-        summary = {
-            "umpire_id": uid,
-            "umpire_name": rec["umpire_name"],
-            "levels": levels_sorted,
-            "games": rec["games"],
-            "taken": taken,
-            "missed": missed,
-            "acc_pct": round((rec["correct"] / taken) * 100.0, 1) if taken else 0.0,
-            "tol_acc_pct": round(rec["tol_weighted"] / taken, 1) if taken else 0.0,
-            "mean_miss_in": round(rec["miss_sum_in"] / missed, 2) if missed else 0.0,
-            "challenges": rec["challenges"],
-            "overturns": rec["overturns"],
-            "overturn_pct": round((rec["overturns"] / rec["challenges"]) * 100.0, 1) if rec["challenges"] else 0.0,
-            "re_impact": round(rec["re_impact"], 2),
-        }
-        leaderboard.append(summary)
+            rec["levels"].add(g["level"])
+            rec["games"] += 1
+            rec["taken"] += g["taken"]
+            rec["correct"] += g["correct"]
+            rec["missed"] += g["missed"]
+            rec["tol_weighted"] += g["tol_acc_pct"] * g["taken"]
+            rec["miss_sum_in"] += g["mean_miss_in"] * g["missed"]
+            rec["challenges"] += g["challenges"]
+            rec["overturns"] += g["overturns"]
+            rec["re_impact"] += g["re_impact"]
+            rec["game_log"].append({
+                "game_pk": g["game_pk"],
+                "date": g["date"],
+                "level": g["level"],
+                "matchup": f"{g['away']} @ {g['home']}",
+                "taken": g["taken"],
+                "missed": g["missed"],
+                "acc_pct": g["acc_pct"],
+                "overturns": g["overturns"],
+                "re_impact": g["re_impact"],
+            })
 
-        rec["game_log"].sort(key=lambda x: x["date"], reverse=True)
-        (umps_dir / f"{uid}.json").write_text(
-            json.dumps({**summary, "game_log": rec["game_log"]}, indent=2), encoding="utf-8"
-        )
+    leaderboards_by_year: dict[str, list[dict[str, Any]]] = {}
+    for bucket_key, ump_map in ump_by_year.items():
+        lb: list[dict[str, Any]] = []
+        for uid, rec in ump_map.items():
+            taken = rec["taken"]
+            missed = rec["missed"]
+            levels_sorted = sorted(rec["levels"])
+            summary = {
+                "umpire_id": uid,
+                "umpire_name": rec["umpire_name"],
+                "levels": levels_sorted,
+                "games": rec["games"],
+                "taken": taken,
+                "missed": missed,
+                "acc_pct": round((rec["correct"] / taken) * 100.0, 1) if taken else 0.0,
+                "tol_acc_pct": round(rec["tol_weighted"] / taken, 1) if taken else 0.0,
+                "mean_miss_in": round(rec["miss_sum_in"] / missed, 2) if missed else 0.0,
+                "challenges": rec["challenges"],
+                "overturns": rec["overturns"],
+                "overturn_pct": round((rec["overturns"] / rec["challenges"]) * 100.0, 1) if rec["challenges"] else 0.0,
+                "re_impact": round(rec["re_impact"], 2),
+            }
+            lb.append(summary)
 
-    leaderboard.sort(key=lambda u: (u["acc_pct"], -u["missed"]))
-    (umps_dir / "leaderboard.json").write_text(json.dumps(leaderboard, indent=2), encoding="utf-8")
+            if bucket_key == "ALL":
+                rec["game_log"].sort(key=lambda x: x["date"], reverse=True)
+                (umps_dir / f"{uid}.json").write_text(
+                    json.dumps({**summary, "game_log": rec["game_log"]}, indent=2), encoding="utf-8"
+                )
+
+        lb.sort(key=lambda u: (u["tol_acc_pct"], u["acc_pct"], -u["missed"]))
+        leaderboards_by_year[bucket_key] = lb
+        if bucket_key == "ALL":
+            (umps_dir / "leaderboard.json").write_text(json.dumps(lb, indent=2), encoding="utf-8")
+        else:
+            (umps_dir / f"leaderboard_{bucket_key}.json").write_text(json.dumps(lb, indent=2), encoding="utf-8")
 
     available_dates = sorted([p.stem for p in dates_dir.glob("*.json")], reverse=True)
+    available_years = sorted(years_found, reverse=True)
+    year_totals = {
+        yr: {
+            "games": totals_by_year[yr]["games"],
+            "pitches": totals_by_year[yr]["pitches"],
+            "umpires": len(leaderboards_by_year.get(yr, [])),
+        }
+        for yr in ["ALL", *available_years]
+    }
     manifest = {
         "updated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "available_years": available_years,
         "available_dates": available_dates,
         "latest_date": available_dates[0] if available_dates else None,
-        "totals": {
-            "games": total_games,
-            "pitches": total_pitches,
-            "umpires": len(leaderboard),
-        },
+        "totals": year_totals["ALL"],
+        "totals_by_year": year_totals,
     }
     (data_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    log.info("Aggregates rebuilt: %d games, %d umpires, %d dates.", total_games, len(leaderboard), len(available_dates))
+    log.info(
+        "Aggregates rebuilt: %d games, %d umpires, %d dates across years %s.",
+        year_totals["ALL"]["games"],
+        year_totals["ALL"]["umpires"],
+        len(available_dates),
+        available_years,
+    )
 
 
 def main() -> None:

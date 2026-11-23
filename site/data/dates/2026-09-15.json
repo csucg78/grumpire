@@ -2,33 +2,9 @@
   "date": "2026-09-15",
   "games": [
     {
-      "game_pk": 850943,
-      "date": "2026-09-15",
-      "level": "MiLB",
-      "venue": "Roger Dean Chevrolet Stadium",
-      "away": "TAM",
-      "home": "JUP",
-      "away_runs": 4,
-      "home_runs": 1,
-      "umpire_id": "839069",
-      "umpire_name": "Gabriel Bellon",
-      "taken": 190,
-      "correct": 169,
-      "missed": 21,
-      "acc_pct": 88.95,
-      "tol_acc_pct": 89.25,
-      "cs_acc_pct": 75.51,
-      "cb_acc_pct": 93.62,
-      "mean_miss_in": 1.81,
-      "challenges": 5,
-      "overturns": 1,
-      "unchallenged_misses": 19,
-      "re_impact": 2.84
-    },
-    {
       "game_pk": 816008,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Harbor Park",
       "away": "CLT",
       "home": "NOR",
@@ -52,7 +28,7 @@
     {
       "game_pk": 815410,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Isotopes Park",
       "away": "SL",
       "home": "ABQ",
@@ -76,7 +52,7 @@
     {
       "game_pk": 815631,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "NBT Bank Stadium",
       "away": "LHV",
       "home": "SYR",
@@ -100,7 +76,7 @@
     {
       "game_pk": 815552,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Fifth Third Field",
       "away": "LOU",
       "home": "TOL",
@@ -124,7 +100,7 @@
     {
       "game_pk": 815482,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Polar Park",
       "away": "DUR",
       "home": "WOR",
@@ -148,7 +124,7 @@
     {
       "game_pk": 816607,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Gwinnett Field",
       "away": "IND",
       "home": "GWN",
@@ -172,7 +148,7 @@
     {
       "game_pk": 815334,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Southwest University Park",
       "away": "OKC",
       "home": "ELP",
@@ -196,7 +172,7 @@
     {
       "game_pk": 816080,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "First Horizon Park",
       "away": "MEM",
       "home": "NAS",
@@ -220,7 +196,7 @@
     {
       "game_pk": 816907,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Sahlen Field",
       "away": "ROC",
       "home": "BUF",
@@ -244,7 +220,7 @@
     {
       "game_pk": 814809,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Constellation Field",
       "away": "LV",
       "home": "SUG",
@@ -268,7 +244,7 @@
     {
       "game_pk": 814954,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Sutter Health Park",
       "away": "RNO",
       "home": "SAC",
@@ -292,7 +268,7 @@
     {
       "game_pk": 815032,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "TAC",
       "home": "RR",
@@ -316,7 +292,7 @@
     {
       "game_pk": 816755,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Huntington Park",
       "away": "STP",
       "home": "COL",
@@ -340,7 +316,7 @@
     {
       "game_pk": 815784,
       "date": "2026-09-15",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "PNC Field",
       "away": "JAX",
       "home": "SWB",
@@ -360,6 +336,30 @@
       "overturns": 0,
       "unchallenged_misses": 2,
       "re_impact": 0.35
+    },
+    {
+      "game_pk": 850943,
+      "date": "2026-09-15",
+      "level": "FSL",
+      "venue": "Roger Dean Chevrolet Stadium",
+      "away": "TAM",
+      "home": "JUP",
+      "away_runs": 4,
+      "home_runs": 1,
+      "umpire_id": "839069",
+      "umpire_name": "Gabriel Bellon",
+      "taken": 190,
+      "correct": 169,
+      "missed": 21,
+      "acc_pct": 88.95,
+      "tol_acc_pct": 89.25,
+      "cs_acc_pct": 75.51,
+      "cb_acc_pct": 93.62,
+      "mean_miss_in": 1.81,
+      "challenges": 5,
+      "overturns": 1,
+      "unchallenged_misses": 19,
+      "re_impact": 2.84
     }
   ]
 }

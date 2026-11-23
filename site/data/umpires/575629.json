@@ -1,0 +1,63 @@
+{
+  "umpire_id": "575629",
+  "umpire_name": "Shane Livensparger",
+  "levels": [
+    "AAA"
+  ],
+  "games": 4,
+  "taken": 613,
+  "missed": 63,
+  "acc_pct": 89.7,
+  "tol_acc_pct": 91.3,
+  "mean_miss_in": 0.98,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 8.35,
+  "game_log": [
+    {
+      "game_pk": 752443,
+      "date": "2024-07-26",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 178,
+      "missed": 18,
+      "acc_pct": 89.9,
+      "overturns": 0,
+      "re_impact": 2.45
+    },
+    {
+      "game_pk": 752449,
+      "date": "2024-07-23",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 170,
+      "missed": 19,
+      "acc_pct": 88.8,
+      "overturns": 0,
+      "re_impact": 2.2
+    },
+    {
+      "game_pk": 753045,
+      "date": "2024-07-20",
+      "level": "AAA",
+      "matchup": "DUR @ JAX",
+      "taken": 113,
+      "missed": 12,
+      "acc_pct": 89.4,
+      "overturns": 0,
+      "re_impact": 1.65
+    },
+    {
+      "game_pk": 753496,
+      "date": "2024-07-11",
+      "level": "AAA",
+      "matchup": "DUR @ CLT",
+      "taken": 152,
+      "missed": 14,
+      "acc_pct": 90.8,
+      "overturns": 0,
+      "re_impact": 2.05
+    }
+  ]
+}

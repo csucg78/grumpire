@@ -1,0 +1,30 @@
+{
+  "umpire_id": "690895",
+  "umpire_name": "Chase Eubanks",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 171,
+  "missed": 20,
+  "acc_pct": 88.3,
+  "tol_acc_pct": 89.2,
+  "mean_miss_in": 1.33,
+  "challenges": 7,
+  "overturns": 4,
+  "overturn_pct": 57.1,
+  "re_impact": 2.44,
+  "game_log": [
+    {
+      "game_pk": 781747,
+      "date": "2025-04-27",
+      "level": "AAA",
+      "matchup": "ROC @ BUF",
+      "taken": 171,
+      "missed": 20,
+      "acc_pct": 88.3,
+      "overturns": 4,
+      "re_impact": 2.44
+    }
+  ]
+}

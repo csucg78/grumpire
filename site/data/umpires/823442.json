@@ -1,0 +1,129 @@
+{
+  "umpire_id": "823442",
+  "umpire_name": "Eli Cox",
+  "levels": [
+    "FSL"
+  ],
+  "games": 10,
+  "taken": 1465,
+  "missed": 147,
+  "acc_pct": 90.0,
+  "tol_acc_pct": 90.3,
+  "mean_miss_in": 1.48,
+  "challenges": 48,
+  "overturns": 26,
+  "overturn_pct": 54.2,
+  "re_impact": 18.62,
+  "game_log": [
+    {
+      "game_pk": 785559,
+      "date": "2025-08-19",
+      "level": "FSL",
+      "matchup": "SLU @ PMB",
+      "taken": 189,
+      "missed": 10,
+      "acc_pct": 94.7,
+      "overturns": 3,
+      "re_impact": 1.44
+    },
+    {
+      "game_pk": 785426,
+      "date": "2025-08-17",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 146,
+      "missed": 13,
+      "acc_pct": 91.1,
+      "overturns": 4,
+      "re_impact": 1.04
+    },
+    {
+      "game_pk": 785428,
+      "date": "2025-08-15",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 170,
+      "missed": 16,
+      "acc_pct": 90.6,
+      "overturns": 3,
+      "re_impact": 2.56
+    },
+    {
+      "game_pk": 785427,
+      "date": "2025-08-14",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 118,
+      "missed": 16,
+      "acc_pct": 86.4,
+      "overturns": 1,
+      "re_impact": 1.99
+    },
+    {
+      "game_pk": 785437,
+      "date": "2025-08-12",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 127,
+      "missed": 13,
+      "acc_pct": 89.8,
+      "overturns": 1,
+      "re_impact": 1.44
+    },
+    {
+      "game_pk": 785627,
+      "date": "2025-08-09",
+      "level": "FSL",
+      "matchup": "BRD @ LAK",
+      "taken": 150,
+      "missed": 12,
+      "acc_pct": 92.0,
+      "overturns": 5,
+      "re_impact": 1.39
+    },
+    {
+      "game_pk": 785634,
+      "date": "2025-08-07",
+      "level": "FSL",
+      "matchup": "BRD @ LAK",
+      "taken": 139,
+      "missed": 18,
+      "acc_pct": 87.1,
+      "overturns": 3,
+      "re_impact": 2.53
+    },
+    {
+      "game_pk": 785628,
+      "date": "2025-08-05",
+      "level": "FSL",
+      "matchup": "BRD @ LAK",
+      "taken": 160,
+      "missed": 11,
+      "acc_pct": 93.1,
+      "overturns": 0,
+      "re_impact": 1.16
+    },
+    {
+      "game_pk": 785495,
+      "date": "2025-08-03",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 180,
+      "missed": 26,
+      "acc_pct": 85.6,
+      "overturns": 5,
+      "re_impact": 3.07
+    },
+    {
+      "game_pk": 785494,
+      "date": "2025-08-02",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 86,
+      "missed": 12,
+      "acc_pct": 86.0,
+      "overturns": 1,
+      "re_impact": 2.0
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "umpire_id": "703375",
   "umpire_name": "Scott Letendre",
   "levels": [
-    "MiLB"
+    "AAA"
   ],
   "games": 1,
   "taken": 148,
@@ -18,7 +18,7 @@
     {
       "game_pk": 814969,
       "date": "2026-08-08",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "RR @ SAC",
       "taken": 148,
       "missed": 10,

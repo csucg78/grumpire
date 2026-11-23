@@ -1,0 +1,41 @@
+{
+  "umpire_id": "832210",
+  "umpire_name": "Preston Hughes",
+  "levels": [
+    "FSL"
+  ],
+  "games": 2,
+  "taken": 300,
+  "missed": 25,
+  "acc_pct": 91.7,
+  "tol_acc_pct": 93.4,
+  "mean_miss_in": 1.47,
+  "challenges": 7,
+  "overturns": 3,
+  "overturn_pct": 42.9,
+  "re_impact": 3.16,
+  "game_log": [
+    {
+      "game_pk": 786027,
+      "date": "2025-07-27",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 171,
+      "missed": 18,
+      "acc_pct": 89.5,
+      "overturns": 3,
+      "re_impact": 2.31
+    },
+    {
+      "game_pk": 786029,
+      "date": "2025-07-25",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 129,
+      "missed": 7,
+      "acc_pct": 94.6,
+      "overturns": 0,
+      "re_impact": 0.85
+    }
+  ]
+}

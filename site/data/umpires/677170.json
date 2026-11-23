@@ -2,7 +2,7 @@
   "umpire_id": "677170",
   "umpire_name": "Adam Clark",
   "levels": [
-    "MiLB"
+    "AAA"
   ],
   "games": 1,
   "taken": 144,
@@ -18,7 +18,7 @@
     {
       "game_pk": 816091,
       "date": "2026-08-16",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "IND @ NAS",
       "taken": 144,
       "missed": 16,

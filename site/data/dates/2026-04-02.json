@@ -4,7 +4,7 @@
     {
       "game_pk": 816292,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "IOW",
       "home": "LOU",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815317,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "OKC",
       "home": "LV",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815700,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "NBT Bank Stadium",
       "away": "TOL",
       "home": "SYR",
@@ -76,7 +76,7 @@
     {
       "game_pk": 816000,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Werner Park",
       "away": "BUF",
       "home": "OMA",
@@ -100,7 +100,7 @@
     {
       "game_pk": 816750,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Durham Bulls Athletic Park",
       "away": "LHV",
       "home": "DUR",
@@ -124,7 +124,7 @@
     {
       "game_pk": 816443,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "SUG",
       "home": "JAX",
@@ -146,33 +146,9 @@
       "re_impact": 1.5
     },
     {
-      "game_pk": 820436,
-      "date": "2026-04-02",
-      "level": "MiLB",
-      "venue": "Roger Dean Chevrolet Stadium",
-      "away": "SLU",
-      "home": "PMB",
-      "away_runs": 3,
-      "home_runs": 6,
-      "umpire_id": "839071",
-      "umpire_name": "Hudson Arney",
-      "taken": 164,
-      "correct": 153,
-      "missed": 11,
-      "acc_pct": 93.29,
-      "tol_acc_pct": 94.38,
-      "cs_acc_pct": 79.07,
-      "cb_acc_pct": 98.35,
-      "mean_miss_in": 1.81,
-      "challenges": 5,
-      "overturns": 2,
-      "unchallenged_misses": 9,
-      "re_impact": 1.26
-    },
-    {
       "game_pk": 816826,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Huntington Park",
       "away": "IND",
       "home": "COL",
@@ -196,7 +172,7 @@
     {
       "game_pk": 816228,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "AutoZone Park",
       "away": "NOR",
       "home": "MEM",
@@ -220,7 +196,7 @@
     {
       "game_pk": 815469,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Isotopes Park",
       "away": "RNO",
       "home": "ABQ",
@@ -244,7 +220,7 @@
     {
       "game_pk": 815099,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "GWN",
       "home": "RR",
@@ -268,7 +244,7 @@
     {
       "game_pk": 815925,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "ESL Ballpark",
       "away": "SWB",
       "home": "ROC",
@@ -292,7 +268,7 @@
     {
       "game_pk": 814798,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "ELP",
       "home": "TAC",
@@ -316,7 +292,7 @@
     {
       "game_pk": 816148,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "First Horizon Park",
       "away": "CLT",
       "home": "NAS",
@@ -336,6 +312,30 @@
       "overturns": 0,
       "unchallenged_misses": 7,
       "re_impact": 0.71
+    },
+    {
+      "game_pk": 820436,
+      "date": "2026-04-02",
+      "level": "FSL",
+      "venue": "Roger Dean Chevrolet Stadium",
+      "away": "SLU",
+      "home": "PMB",
+      "away_runs": 3,
+      "home_runs": 6,
+      "umpire_id": "839071",
+      "umpire_name": "Hudson Arney",
+      "taken": 164,
+      "correct": 153,
+      "missed": 11,
+      "acc_pct": 93.29,
+      "tol_acc_pct": 94.38,
+      "cs_acc_pct": 79.07,
+      "cb_acc_pct": 98.35,
+      "mean_miss_in": 1.81,
+      "challenges": 5,
+      "overturns": 2,
+      "unchallenged_misses": 9,
+      "re_impact": 1.26
     }
   ]
 }

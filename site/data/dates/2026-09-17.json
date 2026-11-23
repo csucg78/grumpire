@@ -4,7 +4,7 @@
     {
       "game_pk": 816761,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Huntington Park",
       "away": "STP",
       "home": "COL",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815329,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Southwest University Park",
       "away": "OKC",
       "home": "ELP",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815029,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "TAC",
       "home": "RR",
@@ -76,7 +76,7 @@
     {
       "game_pk": 814800,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Constellation Field",
       "away": "LV",
       "home": "SUG",
@@ -100,7 +100,7 @@
     {
       "game_pk": 815634,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "NBT Bank Stadium",
       "away": "LHV",
       "home": "SYR",
@@ -124,7 +124,7 @@
     {
       "game_pk": 815777,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "PNC Field",
       "away": "JAX",
       "home": "SWB",
@@ -148,7 +148,7 @@
     {
       "game_pk": 815408,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Isotopes Park",
       "away": "SL",
       "home": "ABQ",
@@ -172,7 +172,7 @@
     {
       "game_pk": 816610,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Gwinnett Field",
       "away": "IND",
       "home": "GWN",
@@ -196,7 +196,7 @@
     {
       "game_pk": 816079,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "First Horizon Park",
       "away": "MEM",
       "home": "NAS",
@@ -220,7 +220,7 @@
     {
       "game_pk": 815931,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Werner Park",
       "away": "IOW",
       "home": "OMA",
@@ -244,7 +244,7 @@
     {
       "game_pk": 816005,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Harbor Park",
       "away": "CLT",
       "home": "NOR",
@@ -268,7 +268,7 @@
     {
       "game_pk": 816906,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Sahlen Field",
       "away": "ROC",
       "home": "BUF",
@@ -292,7 +292,7 @@
     {
       "game_pk": 815557,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Fifth Third Field",
       "away": "LOU",
       "home": "TOL",
@@ -316,7 +316,7 @@
     {
       "game_pk": 814960,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Sutter Health Park",
       "away": "RNO",
       "home": "SAC",
@@ -340,7 +340,7 @@
     {
       "game_pk": 815481,
       "date": "2026-09-17",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Polar Park",
       "away": "DUR",
       "home": "WOR",

@@ -1,0 +1,228 @@
+{
+  "umpire_id": "814357",
+  "umpire_name": "Sam Harris",
+  "levels": [
+    "FSL"
+  ],
+  "games": 19,
+  "taken": 2983,
+  "missed": 252,
+  "acc_pct": 91.6,
+  "tol_acc_pct": 92.4,
+  "mean_miss_in": 1.42,
+  "challenges": 64,
+  "overturns": 39,
+  "overturn_pct": 60.9,
+  "re_impact": 29.96,
+  "game_log": [
+    {
+      "game_pk": 760378,
+      "date": "2024-07-13",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 149,
+      "missed": 19,
+      "acc_pct": 87.2,
+      "overturns": 2,
+      "re_impact": 1.91
+    },
+    {
+      "game_pk": 760383,
+      "date": "2024-07-11",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 166,
+      "missed": 14,
+      "acc_pct": 91.6,
+      "overturns": 0,
+      "re_impact": 2.43
+    },
+    {
+      "game_pk": 760381,
+      "date": "2024-07-09",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 137,
+      "missed": 9,
+      "acc_pct": 93.4,
+      "overturns": 0,
+      "re_impact": 0.93
+    },
+    {
+      "game_pk": 760319,
+      "date": "2024-07-06",
+      "level": "FSL",
+      "matchup": "BRD @ FTM",
+      "taken": 154,
+      "missed": 14,
+      "acc_pct": 90.9,
+      "overturns": 6,
+      "re_impact": 1.55
+    },
+    {
+      "game_pk": 760317,
+      "date": "2024-07-04",
+      "level": "FSL",
+      "matchup": "BRD @ FTM",
+      "taken": 126,
+      "missed": 18,
+      "acc_pct": 85.7,
+      "overturns": 2,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 760581,
+      "date": "2024-07-02",
+      "level": "FSL",
+      "matchup": "FTM @ BRD",
+      "taken": 206,
+      "missed": 10,
+      "acc_pct": 95.1,
+      "overturns": 0,
+      "re_impact": 1.24
+    },
+    {
+      "game_pk": 760191,
+      "date": "2024-06-30",
+      "level": "FSL",
+      "matchup": "DUN @ LAK",
+      "taken": 104,
+      "missed": 11,
+      "acc_pct": 89.4,
+      "overturns": 2,
+      "re_impact": 1.14
+    },
+    {
+      "game_pk": 760192,
+      "date": "2024-06-29",
+      "level": "FSL",
+      "matchup": "DUN @ LAK",
+      "taken": 123,
+      "missed": 12,
+      "acc_pct": 90.2,
+      "overturns": 4,
+      "re_impact": 1.59
+    },
+    {
+      "game_pk": 760195,
+      "date": "2024-06-26",
+      "level": "FSL",
+      "matchup": "DUN @ LAK",
+      "taken": 144,
+      "missed": 12,
+      "acc_pct": 91.7,
+      "overturns": 0,
+      "re_impact": 1.12
+    },
+    {
+      "game_pk": 760065,
+      "date": "2024-06-22",
+      "level": "FSL",
+      "matchup": "FTM @ SLU",
+      "taken": 164,
+      "missed": 11,
+      "acc_pct": 93.3,
+      "overturns": 1,
+      "re_impact": 1.04
+    },
+    {
+      "game_pk": 760080,
+      "date": "2024-05-05",
+      "level": "FSL",
+      "matchup": "JUP @ SLU",
+      "taken": 156,
+      "missed": 16,
+      "acc_pct": 89.7,
+      "overturns": 1,
+      "re_impact": 2.21
+    },
+    {
+      "game_pk": 760081,
+      "date": "2024-05-03",
+      "level": "FSL",
+      "matchup": "JUP @ SLU",
+      "taken": 177,
+      "missed": 16,
+      "acc_pct": 91.0,
+      "overturns": 4,
+      "re_impact": 2.01
+    },
+    {
+      "game_pk": 760084,
+      "date": "2024-05-01",
+      "level": "FSL",
+      "matchup": "JUP @ SLU",
+      "taken": 182,
+      "missed": 8,
+      "acc_pct": 95.6,
+      "overturns": 0,
+      "re_impact": 0.84
+    },
+    {
+      "game_pk": 760018,
+      "date": "2024-04-27",
+      "level": "FSL",
+      "matchup": "LAK @ TAM",
+      "taken": 166,
+      "missed": 15,
+      "acc_pct": 91.0,
+      "overturns": 4,
+      "re_impact": 1.68
+    },
+    {
+      "game_pk": 760020,
+      "date": "2024-04-25",
+      "level": "FSL",
+      "matchup": "LAK @ TAM",
+      "taken": 199,
+      "missed": 10,
+      "acc_pct": 95.0,
+      "overturns": 0,
+      "re_impact": 1.02
+    },
+    {
+      "game_pk": 760023,
+      "date": "2024-04-23",
+      "level": "FSL",
+      "matchup": "LAK @ TAM",
+      "taken": 146,
+      "missed": 10,
+      "acc_pct": 93.2,
+      "overturns": 0,
+      "re_impact": 1.62
+    },
+    {
+      "game_pk": 760611,
+      "date": "2024-04-21",
+      "level": "FSL",
+      "matchup": "DBT @ BRD",
+      "taken": 193,
+      "missed": 20,
+      "acc_pct": 89.6,
+      "overturns": 9,
+      "re_impact": 2.66
+    },
+    {
+      "game_pk": 760617,
+      "date": "2024-04-19",
+      "level": "FSL",
+      "matchup": "DBT @ BRD",
+      "taken": 136,
+      "missed": 21,
+      "acc_pct": 84.6,
+      "overturns": 4,
+      "re_impact": 2.65
+    },
+    {
+      "game_pk": 760616,
+      "date": "2024-04-17",
+      "level": "FSL",
+      "matchup": "DBT @ BRD",
+      "taken": 155,
+      "missed": 6,
+      "acc_pct": 96.1,
+      "overturns": 0,
+      "re_impact": 0.74
+    }
+  ]
+}

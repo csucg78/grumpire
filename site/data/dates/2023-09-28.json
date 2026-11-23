@@ -1,0 +1,29 @@
+{
+  "date": "2023-09-28",
+  "games": [
+    {
+      "game_pk": 738542,
+      "date": "2023-09-28",
+      "level": "AAA",
+      "venue": "Harbor Park",
+      "away": "DUR",
+      "home": "NOR",
+      "away_runs": 0,
+      "home_runs": 7,
+      "umpire_id": "658536",
+      "umpire_name": "Austin Jones",
+      "taken": 167,
+      "correct": 160,
+      "missed": 7,
+      "acc_pct": 95.8,
+      "tol_acc_pct": 95.8,
+      "cs_acc_pct": 93.9,
+      "cb_acc_pct": 96.6,
+      "mean_miss_in": 1.4,
+      "challenges": 3,
+      "overturns": 2,
+      "unchallenged_misses": 5,
+      "re_impact": 0.68
+    }
+  ]
+}

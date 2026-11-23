@@ -4,7 +4,7 @@
     {
       "game_pk": 815262,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "SUG",
       "home": "LV",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815183,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Chickasaw Bricktown Ballpark",
       "away": "ELP",
       "home": "OKC",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815489,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Polar Park",
       "away": "SWB",
       "home": "WOR",
@@ -76,7 +76,7 @@
     {
       "game_pk": 815106,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Greater Nevada Field",
       "away": "SAC",
       "home": "RNO",
@@ -100,7 +100,7 @@
     {
       "game_pk": 815042,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "ABQ",
       "home": "RR",
@@ -124,7 +124,7 @@
     {
       "game_pk": 816237,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "GWN",
       "home": "LOU",
@@ -148,7 +148,7 @@
     {
       "game_pk": 816831,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Truist Field",
       "away": "MEM",
       "home": "CLT",
@@ -172,7 +172,7 @@
     {
       "game_pk": 816383,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "NAS",
       "home": "JAX",
@@ -196,7 +196,7 @@
     {
       "game_pk": 816311,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "SYR",
       "home": "LHV",
@@ -220,7 +220,7 @@
     {
       "game_pk": 816533,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Victory Field",
       "away": "COL",
       "home": "IND",
@@ -244,7 +244,7 @@
     {
       "game_pk": 815709,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "CHS Field",
       "away": "TOL",
       "home": "STP",
@@ -268,7 +268,7 @@
     {
       "game_pk": 814731,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "SL",
       "home": "TAC",
@@ -292,7 +292,7 @@
     {
       "game_pk": 816691,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Durham Bulls Athletic Park",
       "away": "NOR",
       "home": "DUR",
@@ -316,7 +316,7 @@
     {
       "game_pk": 816464,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Principal Park",
       "away": "OMA",
       "home": "IOW",
@@ -340,7 +340,7 @@
     {
       "game_pk": 815860,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "ESL Ballpark",
       "away": "BUF",
       "home": "ROC",
@@ -364,7 +364,7 @@
     {
       "game_pk": 816307,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "SYR",
       "home": "LHV",
@@ -388,7 +388,7 @@
     {
       "game_pk": 816838,
       "date": "2026-08-29",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Truist Field",
       "away": "MEM",
       "home": "CLT",

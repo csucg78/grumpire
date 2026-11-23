@@ -2,7 +2,7 @@
   "umpire_id": "823448",
   "umpire_name": "Jill Sopko",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 1,
   "taken": 136,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820292,
       "date": "2026-04-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ TAM",
       "taken": 136,
       "missed": 16,

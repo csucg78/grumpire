@@ -1,0 +1,96 @@
+{
+  "umpire_id": "455043",
+  "umpire_name": "Javerro January",
+  "levels": [
+    "AAA"
+  ],
+  "games": 7,
+  "taken": 1146,
+  "missed": 105,
+  "acc_pct": 90.8,
+  "tol_acc_pct": 91.7,
+  "mean_miss_in": 1.29,
+  "challenges": 28,
+  "overturns": 21,
+  "overturn_pct": 75.0,
+  "re_impact": 12.41,
+  "game_log": [
+    {
+      "game_pk": 780974,
+      "date": "2025-06-22",
+      "level": "AAA",
+      "matchup": "NOR @ MEM",
+      "taken": 152,
+      "missed": 19,
+      "acc_pct": 87.5,
+      "overturns": 6,
+      "re_impact": 2.21
+    },
+    {
+      "game_pk": 752805,
+      "date": "2024-08-25",
+      "level": "AAA",
+      "matchup": "CLT @ MEM",
+      "taken": 154,
+      "missed": 20,
+      "acc_pct": 87.0,
+      "overturns": 3,
+      "re_impact": 2.1
+    },
+    {
+      "game_pk": 752808,
+      "date": "2024-08-22",
+      "level": "AAA",
+      "matchup": "CLT @ MEM",
+      "taken": 169,
+      "missed": 16,
+      "acc_pct": 90.5,
+      "overturns": 2,
+      "re_impact": 1.78
+    },
+    {
+      "game_pk": 752821,
+      "date": "2024-07-11",
+      "level": "AAA",
+      "matchup": "NOR @ MEM",
+      "taken": 171,
+      "missed": 10,
+      "acc_pct": 94.2,
+      "overturns": 1,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 752828,
+      "date": "2024-07-02",
+      "level": "AAA",
+      "matchup": "NAS @ MEM",
+      "taken": 173,
+      "missed": 19,
+      "acc_pct": 89.0,
+      "overturns": 3,
+      "re_impact": 2.54
+    },
+    {
+      "game_pk": 752826,
+      "date": "2024-06-23",
+      "level": "AAA",
+      "matchup": "JAX @ MEM",
+      "taken": 186,
+      "missed": 18,
+      "acc_pct": 90.3,
+      "overturns": 6,
+      "re_impact": 1.96
+    },
+    {
+      "game_pk": 752830,
+      "date": "2024-06-20",
+      "level": "AAA",
+      "matchup": "JAX @ MEM",
+      "taken": 141,
+      "missed": 3,
+      "acc_pct": 97.9,
+      "overturns": 0,
+      "re_impact": 0.59
+    }
+  ]
+}

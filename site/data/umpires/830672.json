@@ -2,7 +2,7 @@
   "umpire_id": "830672",
   "umpire_name": "Kyran Bacchus",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 21,
   "taken": 3417,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820364,
       "date": "2026-09-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ PMB",
       "taken": 166,
       "missed": 18,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820368,
       "date": "2026-09-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ PMB",
       "taken": 160,
       "missed": 14,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820376,
       "date": "2026-09-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ PMB",
       "taken": 155,
       "missed": 8,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820503,
       "date": "2026-08-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ JUP",
       "taken": 194,
       "missed": 18,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820499,
       "date": "2026-08-27",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ JUP",
       "taken": 174,
       "missed": 16,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820510,
       "date": "2026-08-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ JUP",
       "taken": 160,
       "missed": 14,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820305,
       "date": "2026-08-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ SLU",
       "taken": 170,
       "missed": 13,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820304,
       "date": "2026-08-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ SLU",
       "taken": 160,
       "missed": 14,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820311,
       "date": "2026-08-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ SLU",
       "taken": 168,
       "missed": 11,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820570,
       "date": "2026-08-15",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ FTM",
       "taken": 185,
       "missed": 15,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820572,
       "date": "2026-08-13",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ FTM",
       "taken": 167,
       "missed": 7,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820581,
       "date": "2026-08-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ FTM",
       "taken": 132,
       "missed": 7,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820379,
       "date": "2026-08-08",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ PMB",
       "taken": 151,
       "missed": 14,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820381,
       "date": "2026-08-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ PMB",
       "taken": 173,
       "missed": 22,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820378,
       "date": "2026-08-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ PMB",
       "taken": 174,
       "missed": 5,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820243,
       "date": "2026-07-31",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ TAM",
       "taken": 117,
       "missed": 6,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820252,
       "date": "2026-07-29",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ TAM",
       "taken": 153,
       "missed": 10,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820322,
       "date": "2026-07-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ SLU",
       "taken": 174,
       "missed": 17,
@@ -216,7 +216,7 @@
     {
       "game_pk": 820318,
       "date": "2026-07-24",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ SLU",
       "taken": 186,
       "missed": 11,
@@ -227,7 +227,7 @@
     {
       "game_pk": 820323,
       "date": "2026-07-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ SLU",
       "taken": 132,
       "missed": 11,
@@ -238,7 +238,7 @@
     {
       "game_pk": 820321,
       "date": "2026-07-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "FTM @ SLU",
       "taken": 166,
       "missed": 18,

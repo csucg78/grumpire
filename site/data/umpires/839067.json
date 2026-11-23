@@ -2,7 +2,7 @@
   "umpire_id": "839067",
   "umpire_name": "Chadd Campbell",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 1,
   "taken": 241,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820445,
       "date": "2026-07-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "JUP @ LAK",
       "taken": 241,
       "missed": 19,

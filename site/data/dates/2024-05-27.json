@@ -1,0 +1,29 @@
+{
+  "date": "2024-05-27",
+  "games": [
+    {
+      "game_pk": 753221,
+      "date": "2024-05-27",
+      "level": "AAA",
+      "venue": "Victory Field",
+      "away": "OMA",
+      "home": "IND",
+      "away_runs": 3,
+      "home_runs": 11,
+      "umpire_id": "655461",
+      "umpire_name": "Ray Valero",
+      "taken": 198,
+      "correct": 191,
+      "missed": 7,
+      "acc_pct": 96.5,
+      "tol_acc_pct": 97.4,
+      "cs_acc_pct": 94.5,
+      "cb_acc_pct": 97.2,
+      "mean_miss_in": 0.46,
+      "challenges": 0,
+      "overturns": 0,
+      "unchallenged_misses": 7,
+      "re_impact": 0.93
+    }
+  ]
+}

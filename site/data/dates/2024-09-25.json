@@ -1,0 +1,53 @@
+{
+  "date": "2024-09-25",
+  "games": [
+    {
+      "game_pk": 769023,
+      "date": "2024-09-25",
+      "level": "AAA",
+      "venue": "Werner Park",
+      "away": "COL",
+      "home": "OMA",
+      "away_runs": 4,
+      "home_runs": 5,
+      "umpire_id": "681849",
+      "umpire_name": "Felix Neon",
+      "taken": 203,
+      "correct": 188,
+      "missed": 15,
+      "acc_pct": 92.6,
+      "tol_acc_pct": 93.9,
+      "cs_acc_pct": 85.5,
+      "cb_acc_pct": 95.3,
+      "mean_miss_in": 1.01,
+      "challenges": 9,
+      "overturns": 8,
+      "unchallenged_misses": 8,
+      "re_impact": 1.82
+    },
+    {
+      "game_pk": 769021,
+      "date": "2024-09-25",
+      "level": "AAA",
+      "venue": "Constellation Field",
+      "away": "RNO",
+      "home": "SUG",
+      "away_runs": 2,
+      "home_runs": 5,
+      "umpire_id": "691042",
+      "umpire_name": "Willie Traynor",
+      "taken": 151,
+      "correct": 146,
+      "missed": 5,
+      "acc_pct": 96.7,
+      "tol_acc_pct": 96.6,
+      "cs_acc_pct": 88.9,
+      "cb_acc_pct": 100.0,
+      "mean_miss_in": 0.83,
+      "challenges": 0,
+      "overturns": 0,
+      "unchallenged_misses": 5,
+      "re_impact": 0.54
+    }
+  ]
+}

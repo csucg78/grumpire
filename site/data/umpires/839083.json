@@ -2,7 +2,7 @@
   "umpire_id": "839083",
   "umpire_name": "Jarrett Johnson",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 20,
   "taken": 3247,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820518,
       "date": "2026-07-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 154,
       "missed": 13,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820520,
       "date": "2026-07-09",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 179,
       "missed": 18,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820524,
       "date": "2026-07-07",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ JUP",
       "taken": 200,
       "missed": 10,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820853,
       "date": "2026-07-05",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 179,
       "missed": 18,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820861,
       "date": "2026-07-03",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 182,
       "missed": 19,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820860,
       "date": "2026-07-01",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ BRD",
       "taken": 138,
       "missed": 14,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820592,
       "date": "2026-06-25",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ FTM",
       "taken": 158,
       "missed": 11,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820597,
       "date": "2026-06-23",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "SLU @ FTM",
       "taken": 182,
       "missed": 18,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820462,
       "date": "2026-06-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 146,
       "missed": 13,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820465,
       "date": "2026-06-19",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 131,
       "missed": 10,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820467,
       "date": "2026-06-17",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ LAK",
       "taken": 190,
       "missed": 22,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820869,
       "date": "2026-06-13",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 127,
       "missed": 16,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820870,
       "date": "2026-06-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 104,
       "missed": 3,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820865,
       "date": "2026-06-09",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "TAM @ BRD",
       "taken": 175,
       "missed": 17,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820664,
       "date": "2026-06-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ DUN",
       "taken": 176,
       "missed": 13,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820666,
       "date": "2026-06-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ DUN",
       "taken": 122,
       "missed": 7,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820665,
       "date": "2026-06-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ DUN",
       "taken": 167,
       "missed": 19,
@@ -205,7 +205,7 @@
     {
       "game_pk": 820406,
       "date": "2026-05-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ PMB",
       "taken": 160,
       "missed": 12,
@@ -216,7 +216,7 @@
     {
       "game_pk": 820410,
       "date": "2026-05-28",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ PMB",
       "taken": 180,
       "missed": 11,
@@ -227,7 +227,7 @@
     {
       "game_pk": 820411,
       "date": "2026-05-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ PMB",
       "taken": 197,
       "missed": 15,

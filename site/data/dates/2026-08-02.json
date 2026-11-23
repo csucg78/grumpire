@@ -4,7 +4,7 @@
     {
       "game_pk": 816470,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Principal Park",
       "away": "SWB",
       "home": "IOW",
@@ -28,7 +28,7 @@
     {
       "game_pk": 815946,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Werner Park",
       "away": "STP",
       "home": "OMA",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815869,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "ESL Ballpark",
       "away": "SYR",
       "home": "ROC",
@@ -76,7 +76,7 @@
     {
       "game_pk": 816400,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "MEM",
       "home": "JAX",
@@ -100,7 +100,7 @@
     {
       "game_pk": 816242,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "IND",
       "home": "LOU",
@@ -124,7 +124,7 @@
     {
       "game_pk": 816029,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Harbor Park",
       "away": "WOR",
       "home": "NOR",
@@ -146,33 +146,9 @@
       "re_impact": 1.65
     },
     {
-      "game_pk": 820576,
-      "date": "2026-08-02",
-      "level": "MiLB",
-      "venue": "Lee Health Sports Complex",
-      "away": "PMB",
-      "home": "FTM",
-      "away_runs": 3,
-      "home_runs": 20,
-      "umpire_id": "830687",
-      "umpire_name": "Ryan Smith",
-      "taken": 185,
-      "correct": 174,
-      "missed": 11,
-      "acc_pct": 94.05,
-      "tol_acc_pct": 94.29,
-      "cs_acc_pct": 84.13,
-      "cb_acc_pct": 99.18,
-      "mean_miss_in": 1.93,
-      "challenges": 3,
-      "overturns": 0,
-      "unchallenged_misses": 11,
-      "re_impact": 1.08
-    },
-    {
       "game_pk": 816321,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "BUF",
       "home": "LHV",
@@ -196,7 +172,7 @@
     {
       "game_pk": 815352,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Southwest University Park",
       "away": "ABQ",
       "home": "ELP",
@@ -220,7 +196,7 @@
     {
       "game_pk": 815194,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Chickasaw Bricktown Ballpark",
       "away": "LV",
       "home": "OKC",
@@ -244,7 +220,7 @@
     {
       "game_pk": 815052,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Dell Diamond",
       "away": "RNO",
       "home": "RR",
@@ -268,7 +244,7 @@
     {
       "game_pk": 814744,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Cheney Stadium",
       "away": "SAC",
       "home": "TAC",
@@ -292,7 +268,7 @@
     {
       "game_pk": 816693,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Durham Bulls Athletic Park",
       "away": "GWN",
       "home": "DUR",
@@ -316,7 +292,7 @@
     {
       "game_pk": 816093,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "First Horizon Park",
       "away": "CLT",
       "home": "NAS",
@@ -340,7 +316,7 @@
     {
       "game_pk": 816774,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Huntington Park",
       "away": "TOL",
       "home": "COL",
@@ -364,7 +340,7 @@
     {
       "game_pk": 814822,
       "date": "2026-08-02",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Constellation Field",
       "away": "SL",
       "home": "SUG",
@@ -384,6 +360,30 @@
       "overturns": 0,
       "unchallenged_misses": 7,
       "re_impact": 0.72
+    },
+    {
+      "game_pk": 820576,
+      "date": "2026-08-02",
+      "level": "FSL",
+      "venue": "Lee Health Sports Complex",
+      "away": "PMB",
+      "home": "FTM",
+      "away_runs": 3,
+      "home_runs": 20,
+      "umpire_id": "830687",
+      "umpire_name": "Ryan Smith",
+      "taken": 185,
+      "correct": 174,
+      "missed": 11,
+      "acc_pct": 94.05,
+      "tol_acc_pct": 94.29,
+      "cs_acc_pct": 84.13,
+      "cb_acc_pct": 99.18,
+      "mean_miss_in": 1.93,
+      "challenges": 3,
+      "overturns": 0,
+      "unchallenged_misses": 11,
+      "re_impact": 1.08
     }
   ]
 }

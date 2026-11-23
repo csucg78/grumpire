@@ -1,0 +1,29 @@
+{
+  "date": "2024-09-26",
+  "games": [
+    {
+      "game_pk": 769022,
+      "date": "2024-09-26",
+      "level": "AAA",
+      "venue": "Werner Park",
+      "away": "COL",
+      "home": "OMA",
+      "away_runs": 3,
+      "home_runs": 7,
+      "umpire_id": "658325",
+      "umpire_name": "Tyler Jones",
+      "taken": 144,
+      "correct": 138,
+      "missed": 6,
+      "acc_pct": 95.8,
+      "tol_acc_pct": 96.5,
+      "cs_acc_pct": 90.0,
+      "cb_acc_pct": 98.1,
+      "mean_miss_in": 0.57,
+      "challenges": 3,
+      "overturns": 2,
+      "unchallenged_misses": 4,
+      "re_impact": 0.63
+    }
+  ]
+}

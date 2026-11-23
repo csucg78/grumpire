@@ -2,23 +2,23 @@
   "umpire_id": "691047",
   "umpire_name": "Kellen Martin",
   "levels": [
-    "MiLB"
+    "AAA"
   ],
-  "games": 45,
-  "taken": 7026,
-  "missed": 451,
-  "acc_pct": 93.6,
-  "tol_acc_pct": 94.4,
-  "mean_miss_in": 0.98,
-  "challenges": 141,
-  "overturns": 66,
-  "overturn_pct": 46.8,
-  "re_impact": 53.98,
+  "games": 94,
+  "taken": 14691,
+  "missed": 954,
+  "acc_pct": 93.5,
+  "tol_acc_pct": 94.3,
+  "mean_miss_in": 1.04,
+  "challenges": 291,
+  "overturns": 131,
+  "overturn_pct": 45.0,
+  "re_impact": 113.58,
   "game_log": [
     {
       "game_pk": 815928,
       "date": "2026-09-20",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "IOW @ OMA",
       "taken": 183,
       "missed": 13,
@@ -29,7 +29,7 @@
     {
       "game_pk": 815933,
       "date": "2026-09-18",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "IOW @ OMA",
       "taken": 115,
       "missed": 7,
@@ -40,7 +40,7 @@
     {
       "game_pk": 815701,
       "date": "2026-09-12",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SYR @ STP",
       "taken": 180,
       "missed": 10,
@@ -51,7 +51,7 @@
     {
       "game_pk": 815712,
       "date": "2026-09-09",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SYR @ STP",
       "taken": 167,
       "missed": 9,
@@ -62,7 +62,7 @@
     {
       "game_pk": 815787,
       "date": "2026-09-05",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LHV @ SWB",
       "taken": 161,
       "missed": 9,
@@ -73,7 +73,7 @@
     {
       "game_pk": 815783,
       "date": "2026-09-02",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LHV @ SWB",
       "taken": 146,
       "missed": 11,
@@ -84,7 +84,7 @@
     {
       "game_pk": 816682,
       "date": "2026-08-30",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "NOR @ DUR",
       "taken": 146,
       "missed": 9,
@@ -95,7 +95,7 @@
     {
       "game_pk": 816689,
       "date": "2026-08-27",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "NOR @ DUR",
       "taken": 137,
       "missed": 12,
@@ -106,7 +106,7 @@
     {
       "game_pk": 816161,
       "date": "2026-08-22",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "JAX @ MEM",
       "taken": 189,
       "missed": 16,
@@ -117,7 +117,7 @@
     {
       "game_pk": 816174,
       "date": "2026-08-19",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "JAX @ MEM",
       "taken": 196,
       "missed": 18,
@@ -128,7 +128,7 @@
     {
       "game_pk": 816469,
       "date": "2026-08-15",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "STP @ IOW",
       "taken": 114,
       "missed": 2,
@@ -139,7 +139,7 @@
     {
       "game_pk": 816465,
       "date": "2026-08-12",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "STP @ IOW",
       "taken": 172,
       "missed": 19,
@@ -150,7 +150,7 @@
     {
       "game_pk": 815568,
       "date": "2026-08-09",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "OMA @ TOL",
       "taken": 141,
       "missed": 7,
@@ -161,7 +161,7 @@
     {
       "game_pk": 815575,
       "date": "2026-08-07",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "OMA @ TOL",
       "taken": 119,
       "missed": 9,
@@ -172,7 +172,7 @@
     {
       "game_pk": 816248,
       "date": "2026-07-31",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "IND @ LOU",
       "taken": 145,
       "missed": 9,
@@ -183,7 +183,7 @@
     {
       "game_pk": 816253,
       "date": "2026-07-28",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "IND @ LOU",
       "taken": 180,
       "missed": 8,
@@ -194,7 +194,7 @@
     {
       "game_pk": 816853,
       "date": "2026-07-24",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "NOR @ CLT",
       "taken": 120,
       "missed": 9,
@@ -205,7 +205,7 @@
     {
       "game_pk": 816848,
       "date": "2026-07-21",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "NOR @ CLT",
       "taken": 159,
       "missed": 17,
@@ -216,7 +216,7 @@
     {
       "game_pk": 815727,
       "date": "2026-07-18",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LOU @ STP",
       "taken": 139,
       "missed": 7,
@@ -227,7 +227,7 @@
     {
       "game_pk": 815203,
       "date": "2026-07-12",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "ELP @ OKC",
       "taken": 112,
       "missed": 5,
@@ -238,7 +238,7 @@
     {
       "game_pk": 815206,
       "date": "2026-07-07",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "ELP @ OKC",
       "taken": 177,
       "missed": 9,
@@ -249,7 +249,7 @@
     {
       "game_pk": 814758,
       "date": "2026-07-02",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "RNO @ TAC",
       "taken": 164,
       "missed": 12,
@@ -260,7 +260,7 @@
     {
       "game_pk": 814985,
       "date": "2026-06-27",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LV @ SAC",
       "taken": 135,
       "missed": 11,
@@ -271,7 +271,7 @@
     {
       "game_pk": 814998,
       "date": "2026-06-24",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LV @ SAC",
       "taken": 132,
       "missed": 12,
@@ -282,7 +282,7 @@
     {
       "game_pk": 814912,
       "date": "2026-06-19",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "TAC @ SL",
       "taken": 117,
       "missed": 7,
@@ -293,7 +293,7 @@
     {
       "game_pk": 814917,
       "date": "2026-06-16",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "TAC @ SL",
       "taken": 162,
       "missed": 11,
@@ -304,7 +304,7 @@
     {
       "game_pk": 815590,
       "date": "2026-06-12",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "STP @ TOL",
       "taken": 186,
       "missed": 10,
@@ -315,7 +315,7 @@
     {
       "game_pk": 815601,
       "date": "2026-06-09",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "STP @ TOL",
       "taken": 152,
       "missed": 9,
@@ -326,7 +326,7 @@
     {
       "game_pk": 815671,
       "date": "2026-06-05",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SWB @ SYR",
       "taken": 138,
       "missed": 4,
@@ -337,7 +337,7 @@
     {
       "game_pk": 815673,
       "date": "2026-06-03",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SWB @ SYR",
       "taken": 128,
       "missed": 5,
@@ -348,7 +348,7 @@
     {
       "game_pk": 816952,
       "date": "2026-05-30",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LHV @ BUF",
       "taken": 171,
       "missed": 8,
@@ -359,7 +359,7 @@
     {
       "game_pk": 816950,
       "date": "2026-05-27",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LHV @ BUF",
       "taken": 188,
       "missed": 12,
@@ -370,7 +370,7 @@
     {
       "game_pk": 815524,
       "date": "2026-05-22",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "ROC @ WOR",
       "taken": 178,
       "missed": 15,
@@ -381,7 +381,7 @@
     {
       "game_pk": 815833,
       "date": "2026-05-17",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SYR @ SWB",
       "taken": 146,
       "missed": 5,
@@ -392,7 +392,7 @@
     {
       "game_pk": 815832,
       "date": "2026-05-13",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "SYR @ SWB",
       "taken": 126,
       "missed": 8,
@@ -403,7 +403,7 @@
     {
       "game_pk": 816359,
       "date": "2026-05-07",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "BUF @ LHV",
       "taken": 197,
       "missed": 18,
@@ -414,7 +414,7 @@
     {
       "game_pk": 816736,
       "date": "2026-05-01",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "JAX @ DUR",
       "taken": 197,
       "missed": 13,
@@ -425,7 +425,7 @@
     {
       "game_pk": 816062,
       "date": "2026-04-26",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "MEM @ NOR",
       "taken": 201,
       "missed": 11,
@@ -436,7 +436,7 @@
     {
       "game_pk": 816063,
       "date": "2026-04-23",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "MEM @ NOR",
       "taken": 181,
       "missed": 11,
@@ -447,7 +447,7 @@
     {
       "game_pk": 815090,
       "date": "2026-04-19",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "ELP @ RR",
       "taken": 119,
       "missed": 4,
@@ -458,7 +458,7 @@
     {
       "game_pk": 815094,
       "date": "2026-04-16",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "ELP @ RR",
       "taken": 196,
       "missed": 14,
@@ -469,7 +469,7 @@
     {
       "game_pk": 815013,
       "date": "2026-04-10",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "LV @ SAC",
       "taken": 187,
       "missed": 13,
@@ -480,7 +480,7 @@
     {
       "game_pk": 815472,
       "date": "2026-04-05",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "RNO @ ABQ",
       "taken": 149,
       "missed": 4,
@@ -491,7 +491,7 @@
     {
       "game_pk": 815469,
       "date": "2026-04-02",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "RNO @ ABQ",
       "taken": 139,
       "missed": 10,
@@ -502,13 +502,552 @@
     {
       "game_pk": 814876,
       "date": "2026-03-29",
-      "level": "MiLB",
+      "level": "AAA",
       "matchup": "RR @ SUG",
       "taken": 139,
       "missed": 9,
       "acc_pct": 93.53,
       "overturns": 0,
       "re_impact": 0.88
+    },
+    {
+      "game_pk": 780944,
+      "date": "2025-09-21",
+      "level": "AAA",
+      "matchup": "STP @ MEM",
+      "taken": 118,
+      "missed": 17,
+      "acc_pct": 85.6,
+      "overturns": 2,
+      "re_impact": 1.78
+    },
+    {
+      "game_pk": 780941,
+      "date": "2025-09-18",
+      "level": "AAA",
+      "matchup": "STP @ MEM",
+      "taken": 175,
+      "missed": 19,
+      "acc_pct": 89.1,
+      "overturns": 3,
+      "re_impact": 2.54
+    },
+    {
+      "game_pk": 780862,
+      "date": "2025-09-14",
+      "level": "AAA",
+      "matchup": "GWN @ NAS",
+      "taken": 134,
+      "missed": 8,
+      "acc_pct": 94.0,
+      "overturns": 0,
+      "re_impact": 1.18
+    },
+    {
+      "game_pk": 780864,
+      "date": "2025-09-11",
+      "level": "AAA",
+      "matchup": "GWN @ NAS",
+      "taken": 140,
+      "missed": 3,
+      "acc_pct": 97.9,
+      "overturns": 3,
+      "re_impact": 0.41
+    },
+    {
+      "game_pk": 781243,
+      "date": "2025-09-07",
+      "level": "AAA",
+      "matchup": "OMA @ IOW",
+      "taken": 155,
+      "missed": 9,
+      "acc_pct": 94.2,
+      "overturns": 0,
+      "re_impact": 1.39
+    },
+    {
+      "game_pk": 781246,
+      "date": "2025-09-04",
+      "level": "AAA",
+      "matchup": "OMA @ IOW",
+      "taken": 187,
+      "missed": 16,
+      "acc_pct": 91.4,
+      "overturns": 1,
+      "re_impact": 1.53
+    },
+    {
+      "game_pk": 781029,
+      "date": "2025-08-30",
+      "level": "AAA",
+      "matchup": "COL @ LOU",
+      "taken": 137,
+      "missed": 11,
+      "acc_pct": 92.0,
+      "overturns": 2,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 781026,
+      "date": "2025-08-28",
+      "level": "AAA",
+      "matchup": "COL @ LOU",
+      "taken": 159,
+      "missed": 12,
+      "acc_pct": 92.5,
+      "overturns": 0,
+      "re_impact": 1.65
+    },
+    {
+      "game_pk": 780648,
+      "date": "2025-08-24",
+      "level": "AAA",
+      "matchup": "TOL @ ROC",
+      "taken": 206,
+      "missed": 14,
+      "acc_pct": 93.2,
+      "overturns": 2,
+      "re_impact": 1.54
+    },
+    {
+      "game_pk": 780642,
+      "date": "2025-08-21",
+      "level": "AAA",
+      "matchup": "TOL @ ROC",
+      "taken": 180,
+      "missed": 9,
+      "acc_pct": 95.0,
+      "overturns": 0,
+      "re_impact": 1.03
+    },
+    {
+      "game_pk": 780579,
+      "date": "2025-08-17",
+      "level": "AAA",
+      "matchup": "IND @ SWB",
+      "taken": 127,
+      "missed": 6,
+      "acc_pct": 95.3,
+      "overturns": 2,
+      "re_impact": 0.83
+    },
+    {
+      "game_pk": 780572,
+      "date": "2025-08-14",
+      "level": "AAA",
+      "matchup": "IND @ SWB",
+      "taken": 164,
+      "missed": 13,
+      "acc_pct": 92.1,
+      "overturns": 5,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 780427,
+      "date": "2025-08-10",
+      "level": "AAA",
+      "matchup": "CLT @ SYR",
+      "taken": 128,
+      "missed": 15,
+      "acc_pct": 88.3,
+      "overturns": 0,
+      "re_impact": 1.94
+    },
+    {
+      "game_pk": 780426,
+      "date": "2025-08-07",
+      "level": "AAA",
+      "matchup": "CLT @ SYR",
+      "taken": 182,
+      "missed": 14,
+      "acc_pct": 92.3,
+      "overturns": 1,
+      "re_impact": 1.97
+    },
+    {
+      "game_pk": 780290,
+      "date": "2025-08-03",
+      "level": "AAA",
+      "matchup": "LHV @ WOR",
+      "taken": 149,
+      "missed": 9,
+      "acc_pct": 94.0,
+      "overturns": 0,
+      "re_impact": 0.91
+    },
+    {
+      "game_pk": 780286,
+      "date": "2025-08-01",
+      "level": "AAA",
+      "matchup": "LHV @ WOR",
+      "taken": 119,
+      "missed": 4,
+      "acc_pct": 96.6,
+      "overturns": 1,
+      "re_impact": 0.32
+    },
+    {
+      "game_pk": 781328,
+      "date": "2025-07-27",
+      "level": "AAA",
+      "matchup": "TOL @ IND",
+      "taken": 150,
+      "missed": 11,
+      "acc_pct": 92.7,
+      "overturns": 0,
+      "re_impact": 1.41
+    },
+    {
+      "game_pk": 781330,
+      "date": "2025-07-24",
+      "level": "AAA",
+      "matchup": "TOL @ IND",
+      "taken": 158,
+      "missed": 6,
+      "acc_pct": 96.2,
+      "overturns": 0,
+      "re_impact": 0.54
+    },
+    {
+      "game_pk": 781041,
+      "date": "2025-07-20",
+      "level": "AAA",
+      "matchup": "STP @ LOU",
+      "taken": 147,
+      "missed": 20,
+      "acc_pct": 86.4,
+      "overturns": 2,
+      "re_impact": 2.25
+    },
+    {
+      "game_pk": 779915,
+      "date": "2025-07-13",
+      "level": "AAA",
+      "matchup": "TAC @ RNO",
+      "taken": 178,
+      "missed": 9,
+      "acc_pct": 94.9,
+      "overturns": 3,
+      "re_impact": 1.22
+    },
+    {
+      "game_pk": 779911,
+      "date": "2025-07-10",
+      "level": "AAA",
+      "matchup": "TAC @ RNO",
+      "taken": 133,
+      "missed": 9,
+      "acc_pct": 93.2,
+      "overturns": 0,
+      "re_impact": 1.24
+    },
+    {
+      "game_pk": 780216,
+      "date": "2025-07-06",
+      "level": "AAA",
+      "matchup": "ELP @ ABQ",
+      "taken": 130,
+      "missed": 10,
+      "acc_pct": 92.3,
+      "overturns": 1,
+      "re_impact": 1.31
+    },
+    {
+      "game_pk": 780220,
+      "date": "2025-07-03",
+      "level": "AAA",
+      "matchup": "ELP @ ABQ",
+      "taken": 191,
+      "missed": 8,
+      "acc_pct": 95.8,
+      "overturns": 2,
+      "re_impact": 1.18
+    },
+    {
+      "game_pk": 779839,
+      "date": "2025-06-29",
+      "level": "AAA",
+      "matchup": "TAC @ RR",
+      "taken": 151,
+      "missed": 4,
+      "acc_pct": 97.4,
+      "overturns": 1,
+      "re_impact": 0.32
+    },
+    {
+      "game_pk": 779843,
+      "date": "2025-06-26",
+      "level": "AAA",
+      "matchup": "TAC @ RR",
+      "taken": 135,
+      "missed": 5,
+      "acc_pct": 96.3,
+      "overturns": 0,
+      "re_impact": 0.38
+    },
+    {
+      "game_pk": 780155,
+      "date": "2025-06-22",
+      "level": "AAA",
+      "matchup": "RNO @ ELP",
+      "taken": 153,
+      "missed": 9,
+      "acc_pct": 94.1,
+      "overturns": 2,
+      "re_impact": 0.96
+    },
+    {
+      "game_pk": 780147,
+      "date": "2025-06-19",
+      "level": "AAA",
+      "matchup": "RNO @ ELP",
+      "taken": 213,
+      "missed": 14,
+      "acc_pct": 93.4,
+      "overturns": 3,
+      "re_impact": 1.87
+    },
+    {
+      "game_pk": 781424,
+      "date": "2025-06-14",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 152,
+      "missed": 15,
+      "acc_pct": 90.1,
+      "overturns": 1,
+      "re_impact": 1.72
+    },
+    {
+      "game_pk": 781429,
+      "date": "2025-06-11",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 193,
+      "missed": 14,
+      "acc_pct": 92.7,
+      "overturns": 3,
+      "re_impact": 1.73
+    },
+    {
+      "game_pk": 780452,
+      "date": "2025-06-07",
+      "level": "AAA",
+      "matchup": "BUF @ SYR",
+      "taken": 176,
+      "missed": 10,
+      "acc_pct": 94.3,
+      "overturns": 3,
+      "re_impact": 1.07
+    },
+    {
+      "game_pk": 780456,
+      "date": "2025-06-04",
+      "level": "AAA",
+      "matchup": "BUF @ SYR",
+      "taken": 151,
+      "missed": 6,
+      "acc_pct": 96.0,
+      "overturns": 2,
+      "re_impact": 0.58
+    },
+    {
+      "game_pk": 780605,
+      "date": "2025-05-31",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 171,
+      "missed": 15,
+      "acc_pct": 91.2,
+      "overturns": 2,
+      "re_impact": 2.03
+    },
+    {
+      "game_pk": 780608,
+      "date": "2025-05-28",
+      "level": "AAA",
+      "matchup": "WOR @ SWB",
+      "taken": 171,
+      "missed": 13,
+      "acc_pct": 92.4,
+      "overturns": 1,
+      "re_impact": 1.63
+    },
+    {
+      "game_pk": 781587,
+      "date": "2025-05-25",
+      "level": "AAA",
+      "matchup": "IOW @ COL",
+      "taken": 168,
+      "missed": 10,
+      "acc_pct": 94.0,
+      "overturns": 2,
+      "re_impact": 0.92
+    },
+    {
+      "game_pk": 781591,
+      "date": "2025-05-22",
+      "level": "AAA",
+      "matchup": "IOW @ COL",
+      "taken": 210,
+      "missed": 12,
+      "acc_pct": 94.3,
+      "overturns": 2,
+      "re_impact": 1.4
+    },
+    {
+      "game_pk": 781362,
+      "date": "2025-05-18",
+      "level": "AAA",
+      "matchup": "LOU @ IND",
+      "taken": 135,
+      "missed": 8,
+      "acc_pct": 94.1,
+      "overturns": 1,
+      "re_impact": 0.96
+    },
+    {
+      "game_pk": 781366,
+      "date": "2025-05-15",
+      "level": "AAA",
+      "matchup": "LOU @ IND",
+      "taken": 150,
+      "missed": 13,
+      "acc_pct": 91.3,
+      "overturns": 2,
+      "re_impact": 1.54
+    },
+    {
+      "game_pk": 780915,
+      "date": "2025-05-09",
+      "level": "AAA",
+      "matchup": "NOR @ NAS",
+      "taken": 148,
+      "missed": 10,
+      "acc_pct": 93.2,
+      "overturns": 0,
+      "re_impact": 1.44
+    },
+    {
+      "game_pk": 780921,
+      "date": "2025-05-06",
+      "level": "AAA",
+      "matchup": "NOR @ NAS",
+      "taken": 177,
+      "missed": 10,
+      "acc_pct": 94.4,
+      "overturns": 1,
+      "re_impact": 0.98
+    },
+    {
+      "game_pk": 781298,
+      "date": "2025-05-02",
+      "level": "AAA",
+      "matchup": "BUF @ IOW",
+      "taken": 141,
+      "missed": 17,
+      "acc_pct": 87.9,
+      "overturns": 2,
+      "re_impact": 1.93
+    },
+    {
+      "game_pk": 781301,
+      "date": "2025-04-29",
+      "level": "AAA",
+      "matchup": "BUF @ IOW",
+      "taken": 137,
+      "missed": 7,
+      "acc_pct": 94.9,
+      "overturns": 0,
+      "re_impact": 0.7
+    },
+    {
+      "game_pk": 780542,
+      "date": "2025-04-25",
+      "level": "AAA",
+      "matchup": "IND @ STP",
+      "taken": 138,
+      "missed": 9,
+      "acc_pct": 93.5,
+      "overturns": 2,
+      "re_impact": 0.83
+    },
+    {
+      "game_pk": 780250,
+      "date": "2025-04-20",
+      "level": "AAA",
+      "matchup": "ELP @ ABQ",
+      "taken": 169,
+      "missed": 7,
+      "acc_pct": 95.9,
+      "overturns": 1,
+      "re_impact": 0.9
+    },
+    {
+      "game_pk": 780246,
+      "date": "2025-04-17",
+      "level": "AAA",
+      "matchup": "ELP @ ABQ",
+      "taken": 144,
+      "missed": 5,
+      "acc_pct": 96.5,
+      "overturns": 0,
+      "re_impact": 0.71
+    },
+    {
+      "game_pk": 779725,
+      "date": "2025-04-13",
+      "level": "AAA",
+      "matchup": "RNO @ SL",
+      "taken": 158,
+      "missed": 10,
+      "acc_pct": 93.7,
+      "overturns": 2,
+      "re_impact": 1.28
+    },
+    {
+      "game_pk": 779734,
+      "date": "2025-04-10",
+      "level": "AAA",
+      "matchup": "RNO @ SL",
+      "taken": 149,
+      "missed": 10,
+      "acc_pct": 93.3,
+      "overturns": 0,
+      "re_impact": 1.19
+    },
+    {
+      "game_pk": 780106,
+      "date": "2025-04-04",
+      "level": "AAA",
+      "matchup": "SAC @ LV",
+      "taken": 171,
+      "missed": 10,
+      "acc_pct": 94.2,
+      "overturns": 2,
+      "re_impact": 1.08
+    },
+    {
+      "game_pk": 779578,
+      "date": "2025-03-30",
+      "level": "AAA",
+      "matchup": "RR @ TAC",
+      "taken": 132,
+      "missed": 6,
+      "acc_pct": 95.5,
+      "overturns": 0,
+      "re_impact": 0.62
+    },
+    {
+      "game_pk": 752231,
+      "date": "2024-06-29",
+      "level": "AAA",
+      "matchup": "LOU @ TOL",
+      "taken": 125,
+      "missed": 2,
+      "acc_pct": 98.4,
+      "overturns": 0,
+      "re_impact": 0.2
     }
   ]
 }

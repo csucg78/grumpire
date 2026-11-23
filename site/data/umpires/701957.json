@@ -1,0 +1,151 @@
+{
+  "umpire_id": "701957",
+  "umpire_name": "Nobuoki Yasuta",
+  "levels": [
+    "FSL"
+  ],
+  "games": 12,
+  "taken": 1840,
+  "missed": 126,
+  "acc_pct": 93.2,
+  "tol_acc_pct": 94.3,
+  "mean_miss_in": 1.16,
+  "challenges": 8,
+  "overturns": 3,
+  "overturn_pct": 37.5,
+  "re_impact": 15.42,
+  "game_log": [
+    {
+      "game_pk": 730003,
+      "date": "2023-05-11",
+      "level": "FSL",
+      "matchup": "PMB @ JUP",
+      "taken": 137,
+      "missed": 4,
+      "acc_pct": 97.1,
+      "overturns": 0,
+      "re_impact": 0.4
+    },
+    {
+      "game_pk": 730011,
+      "date": "2023-05-09",
+      "level": "FSL",
+      "matchup": "PMB @ JUP",
+      "taken": 128,
+      "missed": 7,
+      "acc_pct": 94.5,
+      "overturns": 0,
+      "re_impact": 0.87
+    },
+    {
+      "game_pk": 729806,
+      "date": "2023-05-06",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 142,
+      "missed": 12,
+      "acc_pct": 91.5,
+      "overturns": 0,
+      "re_impact": 1.55
+    },
+    {
+      "game_pk": 729810,
+      "date": "2023-05-04",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 162,
+      "missed": 10,
+      "acc_pct": 93.8,
+      "overturns": 0,
+      "re_impact": 1.01
+    },
+    {
+      "game_pk": 729808,
+      "date": "2023-05-02",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 189,
+      "missed": 14,
+      "acc_pct": 92.6,
+      "overturns": 0,
+      "re_impact": 2.27
+    },
+    {
+      "game_pk": 730142,
+      "date": "2023-04-30",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 131,
+      "missed": 12,
+      "acc_pct": 90.8,
+      "overturns": 0,
+      "re_impact": 1.43
+    },
+    {
+      "game_pk": 730148,
+      "date": "2023-04-27",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 189,
+      "missed": 8,
+      "acc_pct": 95.8,
+      "overturns": 0,
+      "re_impact": 1.41
+    },
+    {
+      "game_pk": 730144,
+      "date": "2023-04-25",
+      "level": "FSL",
+      "matchup": "BRD @ DUN",
+      "taken": 159,
+      "missed": 9,
+      "acc_pct": 94.3,
+      "overturns": 0,
+      "re_impact": 1.64
+    },
+    {
+      "game_pk": 729947,
+      "date": "2023-04-23",
+      "level": "FSL",
+      "matchup": "LAK @ SLU",
+      "taken": 142,
+      "missed": 12,
+      "acc_pct": 91.5,
+      "overturns": 3,
+      "re_impact": 1.21
+    },
+    {
+      "game_pk": 729952,
+      "date": "2023-04-20",
+      "level": "FSL",
+      "matchup": "LAK @ SLU",
+      "taken": 187,
+      "missed": 8,
+      "acc_pct": 95.7,
+      "overturns": 0,
+      "re_impact": 1.04
+    },
+    {
+      "game_pk": 729886,
+      "date": "2023-04-08",
+      "level": "FSL",
+      "matchup": "DUN @ FTM",
+      "taken": 189,
+      "missed": 25,
+      "acc_pct": 86.8,
+      "overturns": 0,
+      "re_impact": 2.04
+    },
+    {
+      "game_pk": 729891,
+      "date": "2023-04-06",
+      "level": "FSL",
+      "matchup": "DUN @ FTM",
+      "taken": 85,
+      "missed": 5,
+      "acc_pct": 94.1,
+      "overturns": 0,
+      "re_impact": 0.55
+    }
+  ]
+}

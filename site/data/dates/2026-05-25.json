@@ -4,7 +4,7 @@
     {
       "game_pk": 815899,
       "date": "2026-05-25",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "ESL Ballpark",
       "away": "SYR",
       "home": "ROC",
@@ -28,7 +28,7 @@
     {
       "game_pk": 816581,
       "date": "2026-05-25",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Victory Field",
       "away": "IOW",
       "home": "IND",
@@ -52,7 +52,7 @@
     {
       "game_pk": 815605,
       "date": "2026-05-25",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Fifth Third Field",
       "away": "COL",
       "home": "TOL",

@@ -2,7 +2,7 @@
   "umpire_id": "839075",
   "umpire_name": "Leo Dlatt",
   "levels": [
-    "MiLB"
+    "FSL"
   ],
   "games": 17,
   "taken": 3007,
@@ -18,7 +18,7 @@
     {
       "game_pk": 820258,
       "date": "2026-07-11",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ TAM",
       "taken": 114,
       "missed": 7,
@@ -29,7 +29,7 @@
     {
       "game_pk": 820260,
       "date": "2026-07-08",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "CLR @ TAM",
       "taken": 140,
       "missed": 10,
@@ -40,7 +40,7 @@
     {
       "game_pk": 820521,
       "date": "2026-07-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ JUP",
       "taken": 211,
       "missed": 16,
@@ -51,7 +51,7 @@
     {
       "game_pk": 820525,
       "date": "2026-07-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ JUP",
       "taken": 191,
       "missed": 18,
@@ -62,7 +62,7 @@
     {
       "game_pk": 820533,
       "date": "2026-06-30",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DUN @ JUP",
       "taken": 192,
       "missed": 14,
@@ -73,7 +73,7 @@
     {
       "game_pk": 820394,
       "date": "2026-06-28",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ PMB",
       "taken": 131,
       "missed": 12,
@@ -84,7 +84,7 @@
     {
       "game_pk": 820393,
       "date": "2026-06-26",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ PMB",
       "taken": 208,
       "missed": 19,
@@ -95,7 +95,7 @@
     {
       "game_pk": 820398,
       "date": "2026-06-24",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ PMB",
       "taken": 216,
       "missed": 17,
@@ -106,7 +106,7 @@
     {
       "game_pk": 820325,
       "date": "2026-06-21",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ SLU",
       "taken": 216,
       "missed": 17,
@@ -117,7 +117,7 @@
     {
       "game_pk": 820336,
       "date": "2026-06-18",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ SLU",
       "taken": 182,
       "missed": 10,
@@ -128,7 +128,7 @@
     {
       "game_pk": 820339,
       "date": "2026-06-16",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "DBT @ SLU",
       "taken": 176,
       "missed": 17,
@@ -139,7 +139,7 @@
     {
       "game_pk": 820803,
       "date": "2026-06-14",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ CLR",
       "taken": 156,
       "missed": 12,
@@ -150,7 +150,7 @@
     {
       "game_pk": 820804,
       "date": "2026-06-12",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ CLR",
       "taken": 149,
       "missed": 14,
@@ -161,7 +161,7 @@
     {
       "game_pk": 820798,
       "date": "2026-06-10",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "LAK @ CLR",
       "taken": 145,
       "missed": 11,
@@ -172,7 +172,7 @@
     {
       "game_pk": 820539,
       "date": "2026-06-06",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ JUP",
       "taken": 185,
       "missed": 12,
@@ -183,7 +183,7 @@
     {
       "game_pk": 820534,
       "date": "2026-06-04",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ JUP",
       "taken": 250,
       "missed": 24,
@@ -194,7 +194,7 @@
     {
       "game_pk": 820540,
       "date": "2026-06-02",
-      "level": "MiLB",
+      "level": "FSL",
       "matchup": "BRD @ JUP",
       "taken": 145,
       "missed": 8,

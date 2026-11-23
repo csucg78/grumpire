@@ -4,7 +4,7 @@
     {
       "game_pk": 816075,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Harbor Park",
       "away": "NAS",
       "home": "NOR",
@@ -28,7 +28,7 @@
     {
       "game_pk": 816455,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Vystar Ballpark",
       "away": "ROC",
       "home": "JAX",
@@ -52,7 +52,7 @@
     {
       "game_pk": 816671,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Gwinnett Field",
       "away": "MEM",
       "home": "GWN",
@@ -76,7 +76,7 @@
     {
       "game_pk": 815249,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Chickasaw Bricktown Ballpark",
       "away": "ABQ",
       "home": "OKC",
@@ -100,7 +100,7 @@
     {
       "game_pk": 816603,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Victory Field",
       "away": "STP",
       "home": "IND",
@@ -124,7 +124,7 @@
     {
       "game_pk": 816298,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Louisville Slugger Field",
       "away": "OMA",
       "home": "LOU",
@@ -148,7 +148,7 @@
     {
       "game_pk": 815174,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Greater Nevada Field",
       "away": "TAC",
       "home": "RNO",
@@ -172,7 +172,7 @@
     {
       "game_pk": 814874,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Constellation Field",
       "away": "RR",
       "home": "SUG",
@@ -196,7 +196,7 @@
     {
       "game_pk": 815555,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Polar Park",
       "away": "SYR",
       "home": "WOR",
@@ -220,7 +220,7 @@
     {
       "game_pk": 816900,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Truist Field",
       "away": "DUR",
       "home": "CLT",
@@ -244,7 +244,7 @@
     {
       "game_pk": 816523,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Principal Park",
       "away": "COL",
       "home": "IOW",
@@ -268,7 +268,7 @@
     {
       "game_pk": 815027,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Sutter Health Park",
       "away": "ELP",
       "home": "SAC",
@@ -292,7 +292,7 @@
     {
       "game_pk": 816371,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Coca-Cola Park",
       "away": "TOL",
       "home": "LHV",
@@ -316,7 +316,7 @@
     {
       "game_pk": 815326,
       "date": "2026-03-28",
-      "level": "MiLB",
+      "level": "AAA",
       "venue": "Las Vegas Ballpark",
       "away": "SL",
       "home": "LV",

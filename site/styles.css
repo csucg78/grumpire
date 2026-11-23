@@ -105,8 +105,13 @@ body {
   align-items: start;
 }
 
+.slate-list, .scorecard-panel {
+  min-width: 0;
+  max-width: 100%;
+}
+
 @media (max-width: 960px) {
-  .view-grid { grid-template-columns: 1fr; }
+  .view-grid { grid-template-columns: minmax(0, 1fr); }
   .scorecard-panel { position: static; }
 }
 
@@ -124,7 +129,7 @@ body {
   .filters { width: 100%; flex-wrap: wrap; gap: 6px; font-size: 0.8rem; }
   .filters select, .filters input { flex: 1; min-width: 110px; }
   .metric-tip-bar { font-size: 0.76rem; padding: 7px 10px; margin-bottom: 12px; }
-  .view-grid { grid-template-columns: 1fr; gap: 16px; }
+  .view-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .game-card { padding: 11px 12px; }
   .game-card:hover, .game-card.selected { padding: 10px 11px; }
   .matchup { font-size: 0.92rem; }

@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GRUMPIRE — MiLB Umpire &amp; ABS Audit</title>
+  <title>Miriam's Grumpire — MiLB Umpire &amp; ABS Audit</title>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="apple-touch-icon" href="./icon.png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="brand-block">
-      <h1>GRUMPIRE</h1>
-      <p class="subtitle">MiLB Home Plate Umpire Accuracy &amp; Unmasked ABS Challenge Tracker (AAA + FSL)</p>
+      <img src="./icon.png" alt="Miriam's Grumpire icon" class="brand-icon" width="56" height="56" />
+      <div class="brand-text">
+        <h1>MIRIAM'S GRUMPIRE</h1>
+        <p class="subtitle">MiLB Home Plate Umpire Accuracy &amp; Unmasked ABS Challenge Tracker (AAA + FSL)</p>
+      </div>
     </div>
     <div class="meta-stats" id="seasonTotals">Loading index…</div>
   </header>
@@ -38,6 +43,12 @@
     </div>
   </nav>
 
+  <!-- Active Metric Definition Banner (works on Desktop Hover & iPhone Tap) -->
+  <div id="metricTipBar" class="metric-tip-bar">
+    <span class="tip-icon">ⓘ</span>
+    <span id="metricTipText">Hover or tap any column header <span class="th-info-badge">?</span> for its exact formula and Hawk-Eye definition.</span>
+  </div>
+
   <main class="workspace">
     <!-- Daily Slate + Scorecard Split -->
     <section id="slateView" class="view-grid">
@@ -49,21 +60,23 @@
 
     <!-- Season Leaderboard -->
     <section id="leaderboardView" class="hidden">
+      <div class="viz-banner" id="leaderboardViz"></div>
       <div class="table-wrap">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Umpire</th>
-              <th>Levels</th>
-              <th>Games</th>
-              <th>Taken</th>
-              <th>Raw Acc%</th>
-              <th>Tol Acc% (±0.20")</th>
-              <th>Missed</th>
-              <th>Mean Miss</th>
-              <th>ABS Overturns</th>
-              <th>Σ ΔRE24</th>
+              <th data-tip="Rank: Ordered from worst raw accuracy (#1 Grumpiest) to highest accuracy among umpires meeting the minimum pitch filter.">Rank <span class="th-info-badge">?</span></th>
+              <th data-tip="Umpire: Home plate official identified from MLB StatsAPI boxscore metadata. Click any umpire name to inspect their full 2026 game log and official profile links.">Umpire <span class="th-info-badge">?</span></th>
+              <th data-tip="Rating: Grumpiness tier based on initial raw accuracy — Rough (<89.5%), Shaky (89.5%–92.49%), or Sharp (≥92.5%).">Rating <span class="th-info-badge">?</span></th>
+              <th data-tip="Levels: MiLB levels with public Hawk-Eye optical tracking worked by this umpire — Triple-A (AAA) and/or Florida State League (FSL).">Levels <span class="th-info-badge">?</span></th>
+              <th data-tip="Games: Total tracked games worked behind home plate with ≥20 Hawk-Eye taken pitches.">Games <span class="th-info-badge">?</span></th>
+              <th data-tip="Taken: Total pitches taken by the batter (called strikes + called balls, excluding swings/pitchouts) with valid 3D Hawk-Eye coordinates.">Taken <span class="th-info-badge">?</span></th>
+              <th data-tip="Raw Acc%: Percentage of taken pitches where the umpire's initial call BEFORE any ABS challenge matched the exact 2D Hawk-Eye strike zone (17&quot; plate width + 1.47&quot; ball radius).">Raw Acc% (Worst First) <span class="th-info-badge">?</span></th>
+              <th data-tip="Tol Acc% (±0.20&quot;): Accuracy excluding razor-thin borderline pitches whose outer ball edge falls within ±0.20 inches of the strike zone edge.">Tol Acc% (±0.20") <span class="th-info-badge">?</span></th>
+              <th data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye (including calls later overturned by an ABS challenge).">Missed <span class="th-info-badge">?</span></th>
+              <th data-tip="Mean Miss: Average distance in inches from the outer edge of the baseball to the strike zone boundary across all missed calls.">Mean Miss <span class="th-info-badge">?</span></th>
+              <th data-tip="ABS Overturns: Automated Ball-Strike system challenges that overturned the umpire's initial call / total challenges initiated (and overturn rate %).">ABS Overturns <span class="th-info-badge">?</span></th>
+              <th data-tip="Σ ΔRE24: Cumulative Run Expectancy swing across all missed initial calls, weighted by the pre-pitch ball-strike count leverage (e.g., a 3-2 miss swings 0.445 expected runs).">Σ ΔRE24 <span class="th-info-badge">?</span></th>
             </tr>
           </thead>
           <tbody id="leaderboardBody"></tbody>
@@ -71,6 +84,11 @@
       </div>
     </section>
   </main>
+
+  <!-- Umpire Profile & Season Game Log Modal -->
+  <div id="umpModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="umpModalCard"></div>
+  </div>
 
   <script type="module" src="./app.js"></script>
 </body>

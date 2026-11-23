@@ -372,7 +372,7 @@ def rebuild_aggregates(data_dir: Path) -> None:
             json.dumps({**summary, "game_log": rec["game_log"]}, indent=2), encoding="utf-8"
         )
 
-    leaderboard.sort(key=lambda u: (-u["acc_pct"], u["missed"]))
+    leaderboard.sort(key=lambda u: (u["acc_pct"], -u["missed"]))
     (umps_dir / "leaderboard.json").write_text(json.dumps(leaderboard, indent=2), encoding="utf-8")
 
     available_dates = sorted([p.stem for p in dates_dir.glob("*.json")], reverse=True)

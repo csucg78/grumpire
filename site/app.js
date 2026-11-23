@@ -1170,12 +1170,12 @@ async function init() {
     const years = state.manifest.available_years || ["2026"];
     if (els.yearSelect) {
       els.yearSelect.innerHTML = [
+        ...(years.length > 1 ? [`<option value="ALL">All Seasons (${years[years.length - 1]}–${years[0]})</option>`] : []),
         ...years.map((y) => `<option value="${y}">${y}</option>`),
-        ...(years.length > 1 ? [`<option value="ALL">All (${years[years.length - 1]}–${years[0]})</option>`] : []),
       ].join("");
     }
 
-    const defaultYear = years[0] || "ALL";
+    const defaultYear = years.length > 1 ? "ALL" : (years[0] || "ALL");
     if (els.yearSelect) els.yearSelect.value = defaultYear;
     await applyYearSelection(defaultYear, true);
   } catch {

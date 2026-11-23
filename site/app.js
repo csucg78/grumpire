@@ -75,15 +75,18 @@ async function loadDateSlate(dateStr) {
   });
 
   const firstCard = els.gamesList.querySelector(".game-card");
-  if (firstCard) selectGame(firstCard.dataset.pk, firstCard);
+  if (firstCard) selectGame(firstCard.dataset.pk, firstCard, false);
 }
 
-async function selectGame(gamePk, cardEl) {
+async function selectGame(gamePk, cardEl, shouldScroll = true) {
   els.gamesList.querySelectorAll(".game-card").forEach((c) => c.classList.remove("selected"));
   if (cardEl) cardEl.classList.add("selected");
 
   state.activeGame = await getJSON(`./data/games/${gamePk}.json`);
   renderScorecard();
+  if (shouldScroll && window.innerWidth <= 960 && cardEl) {
+    els.scorecardPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function renderScorecard() {
@@ -192,14 +195,16 @@ function renderScorecard() {
 
   const detailEl = document.getElementById("hoverDetail");
   els.scorecardPanel.querySelectorAll(".pitch-dot").forEach((dot) => {
-    dot.addEventListener("mouseenter", () => {
+    const showDetail = () => {
       const p = filtered[Number(dot.dataset.idx)];
       detailEl.innerHTML = `
         <strong>${p.inn} · ${p.cnt}</strong> · ${p.bat} vs. ${p.pit}<br/>
         Initial: <strong>${p.init.toUpperCase()}</strong> | Hawk-Eye: <strong>${p.true.toUpperCase()}</strong><br/>
         Edge margin: <strong>${p.margin_in}"</strong> ${p.ovt ? "· <strong>ABS OVERTURNED</strong>" : ""}
       `;
-    });
+    };
+    dot.addEventListener("mouseenter", showDetail);
+    dot.addEventListener("click", showDetail);
   });
 }
 

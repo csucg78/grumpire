@@ -35,6 +35,10 @@ function umpProfileLinks(umpId, umpName) {
   return { apiUrl, bRefUrl, ccsUrl };
 }
 
+function fmt1(val) {
+  return Number(val).toFixed(1);
+}
+
 function accColor(pct) {
   if (pct < 89.5) return "#dc2626"; // High grump (red)
   if (pct < 92.5) return "#d97706"; // Mid (amber)
@@ -42,13 +46,18 @@ function accColor(pct) {
 }
 
 function grumpBadge(pct) {
-  if (pct < 89.5) {
-    return `<span class="grump-pill" style="background:#fee2e2;color:#b91c1c" title="Rough zone (<89.5%)">😠 Rough</span>`;
-  }
-  if (pct < 92.5) {
-    return `<span class="grump-pill" style="background:#fef3c7;color:#b45309" title="Shaky zone (89.5%–92.49%)">😐 Shaky</span>`;
-  }
-  return `<span class="grump-pill" style="background:#dcfce7;color:#15803d" title="Sharp zone (≥92.5%)">🎯 Sharp</span>`;
+  let count = 1;
+  if (pct < 88.5) count = 5;
+  else if (pct < 90.0) count = 4;
+  else if (pct < 91.5) count = 3;
+  else if (pct < 93.0) count = 2;
+
+  const pips = Array.from(
+    { length: count },
+    () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="20" height="20" />`
+  ).join("");
+
+  return `<span class="grump-pill" title="${count}/5 Miriam Grumpiness Rating (${fmt1(pct)}% Raw Acc — more Miriams = worse)" aria-label="${count} out of 5 Miriams">${pips}</span>`;
 }
 
 function bindTooltipTargets(root = document) {
@@ -98,12 +107,12 @@ async function openUmpireModal(umpId) {
       <div class="sc-kpi-grid">
         <div class="sc-kpi-box">
           <div class="sc-kpi-label"><span>2026 Raw Acc</span><span>🎯</span></div>
-          <div class="sc-kpi-val" style="color:${color}">${u.acc_pct}%</div>
-          <div class="sc-sub">Tol Acc: ${u.tol_acc_pct}%</div>
+          <div class="sc-kpi-val" style="color:${color}">${fmt1(u.acc_pct)}%</div>
+          <div class="sc-sub">Tol Acc: ${fmt1(u.tol_acc_pct)}%</div>
         </div>
         <div class="sc-kpi-box">
           <div class="sc-kpi-label"><span>ABS Overturns</span><span>↺</span></div>
-          <div class="sc-kpi-val" style="color:#7c3aed">${u.overturns}/${u.challenges} (${u.overturn_pct}%)</div>
+          <div class="sc-kpi-val" style="color:#7c3aed">${u.overturns}/${u.challenges} (${fmt1(u.overturn_pct)}%)</div>
           <div class="sc-sub">Total Missed: ${u.missed.toLocaleString()} (Mean ${u.mean_miss_in}")</div>
         </div>
         <div class="sc-kpi-box">
@@ -135,7 +144,7 @@ async function openUmpireModal(umpId) {
                 <td>${g.level}</td>
                 <td>${g.matchup}</td>
                 <td>${g.taken}</td>
-                <td><strong style="color:${accColor(g.acc_pct)}">${g.acc_pct}%</strong></td>
+                <td><strong style="color:${accColor(g.acc_pct)}">${fmt1(g.acc_pct)}%</strong></td>
                 <td>${g.missed}</td>
                 <td>${g.overturns}</td>
                 <td>+${g.re_impact}</td>
@@ -224,12 +233,12 @@ async function loadDateSlate(dateStr) {
         HP Umpire: <button type="button" class="ump-link" data-ump="${g.umpire_id}">${g.umpire_name}</button> · ${g.venue}
       </div>
       <div class="metrics-strip">
-        <div class="metric-cell" data-tip="Raw Acc: Percentage of taken pitches where the initial call matched the 2D Hawk-Eye strike zone."><span>Raw Acc <b class="th-info-badge">?</b></span><strong style="color:${color}">${g.acc_pct}%</strong></div>
-        <div class="metric-cell" data-tip="Tol Acc (±0.20&quot;): Accuracy excluding borderline pitches within ±0.20 inches of the zone edge."><span>Tol Acc <b class="th-info-badge">?</b></span><strong>${g.tol_acc_pct}%</strong></div>
+        <div class="metric-cell" data-tip="Raw Acc: Percentage of taken pitches where the initial call matched the 2D Hawk-Eye strike zone."><span>Raw Acc <b class="th-info-badge">?</b></span><strong style="color:${color}">${fmt1(g.acc_pct)}%</strong></div>
+        <div class="metric-cell" data-tip="Tol Acc (±0.20&quot;): Accuracy excluding borderline pitches within ±0.20 inches of the zone edge."><span>Tol Acc <b class="th-info-badge">?</b></span><strong>${fmt1(g.tol_acc_pct)}%</strong></div>
         <div class="metric-cell" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye out of all taken pitches."><span>Missed <b class="th-info-badge">?</b></span><strong>${g.missed}/${g.taken}</strong></div>
         <div class="metric-cell" data-tip="ABS Ovt: Calls overturned by an ABS challenge out of total challenges in this game."><span>ABS Ovt <b class="th-info-badge">?</b></span><strong style="color:#7c3aed">${g.overturns}/${g.challenges}</strong></div>
       </div>
-      <div class="card-meter" title="Raw accuracy gauge (${g.acc_pct}%)">
+      <div class="card-meter" title="Raw accuracy gauge (${fmt1(g.acc_pct)}%)">
         <div class="card-meter-fill" style="width:${barW}%;background:${color}"></div>
       </div>
     </article>
@@ -337,12 +346,12 @@ function renderScorecard() {
     <div class="sc-kpi-grid">
       <div class="sc-kpi-box" data-tip="Called Strike Acc: Percentage of pitches the umpire initially called a STRIKE that genuinely clipped or entered the Hawk-Eye zone.">
         <div class="sc-kpi-label"><span>Called Strike Acc <b class="th-info-badge">?</b></span><span>🎯</span></div>
-        <div class="sc-kpi-val" style="color:${accColor(g.cs_acc_pct)}">${g.cs_acc_pct}%</div>
+        <div class="sc-kpi-val" style="color:${accColor(g.cs_acc_pct)}">${fmt1(g.cs_acc_pct)}%</div>
         <div class="mini-bar"><div class="mini-bar-fill" style="width:${g.cs_acc_pct}%;background:${accColor(g.cs_acc_pct)}"></div></div>
       </div>
       <div class="sc-kpi-box" data-tip="Called Ball Acc: Percentage of pitches the umpire initially called a BALL that were genuinely outside the Hawk-Eye zone.">
         <div class="sc-kpi-label"><span>Called Ball Acc <b class="th-info-badge">?</b></span><span>👁️</span></div>
-        <div class="sc-kpi-val" style="color:${accColor(g.cb_acc_pct)}">${g.cb_acc_pct}%</div>
+        <div class="sc-kpi-val" style="color:${accColor(g.cb_acc_pct)}">${fmt1(g.cb_acc_pct)}%</div>
         <div class="mini-bar"><div class="mini-bar-fill" style="width:${g.cb_acc_pct}%;background:${accColor(g.cb_acc_pct)}"></div></div>
       </div>
       <div class="sc-kpi-box" data-tip="Run Impact (Σ ΔRE24): Sum of Run Expectancy swings caused by missed initial calls in this game, weighted by pre-pitch ball-strike count.">
@@ -476,14 +485,14 @@ function renderLeaderboard() {
 
     els.leaderboardViz.innerHTML = `
       <div class="viz-card">
-        <h3>😠 Lowest Raw Accuracy (Bottom 5)</h3>
+        <h3>💩 Lowest Raw Accuracy (Bottom 5)</h3>
         ${grumpiest5.map((u) => {
           const w = Math.max(12, Math.min(100, ((96 - u.acc_pct) / 10) * 100)).toFixed(0);
           return `
             <div class="bar-row">
               <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
-              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#dc2626"></div></div>
-              <strong>${u.acc_pct}%</strong>
+              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#5c3a21"></div></div>
+              <strong>${fmt1(u.acc_pct)}%</strong>
             </div>
           `;
         }).join("")}
@@ -504,13 +513,13 @@ function renderLeaderboard() {
       </div>
 
       <div class="viz-card">
-        <h3>⚡ Highest Cumulative ΔRE24 (Top 5)</h3>
+        <h3>👍 Highest Cumulative ΔRE24 (Top 5)</h3>
         ${highestRe5.map((u) => {
           const w = ((u.re_impact / maxRe) * 100).toFixed(0);
           return `
             <div class="bar-row">
               <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
-              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#d97706"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#15803d"></div></div>
               <strong>${u.re_impact}</strong>
             </div>
           `;
@@ -538,16 +547,16 @@ function renderLeaderboard() {
       <td>${u.taken.toLocaleString()}</td>
       <td>
         <div class="cell-bar-wrap">
-          <strong style="color:${color};min-width:48px">${u.acc_pct}%</strong>
+          <strong style="color:${color};min-width:44px">${fmt1(u.acc_pct)}%</strong>
           <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${accBar}%;background:${color}"></div></div>
         </div>
       </td>
-      <td>${u.tol_acc_pct}%</td>
+      <td>${fmt1(u.tol_acc_pct)}%</td>
       <td>${u.missed.toLocaleString()}</td>
       <td>${u.mean_miss_in}"</td>
       <td>
         <div class="cell-bar-wrap">
-          <span>${u.overturns}/${u.challenges} (${u.overturn_pct}%)</span>
+          <span>${u.overturns}/${u.challenges} (${fmt1(u.overturn_pct)}%)</span>
           <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${u.overturn_pct}%;background:#7c3aed"></div></div>
         </div>
       </td>

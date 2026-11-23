@@ -8,7 +8,7 @@
   "taken": 6964,
   "missed": 439,
   "acc_pct": 93.7,
-  "tol_acc_pct": 94.74,
+  "tol_acc_pct": 94.7,
   "mean_miss_in": 0.87,
   "challenges": 124,
   "overturns": 64,

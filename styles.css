@@ -755,21 +755,23 @@ th[data-tip]:hover, th[data-tip].tip-active {
   color: #ffffff;
   border: 2px solid #3d271d;
   border-top: none;
-  padding: 7px 10px;
+  padding: 8px 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 6px;
+  text-align: center;
+  gap: 5px;
 }
 
 .card-ump-name {
   font-family: "Bungee", "Impact", sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.96rem;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #fef9c3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+  width: 100%;
 }
 
 .card-back-stats {

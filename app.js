@@ -7,11 +7,13 @@ const state = {
   selectedYear: "2026",
   sortCol: "tol_acc_pct",
   sortAsc: true, // true = ascending (worst tol_acc_pct first)
+  searchQuery: "",
   photoOnly: false,
   activeGame: null,
   pitchFilter: "ALL", // ALL | MISSED | CHAL
 };
 
+const AA_NO_HAWKEYE_TIP = "Hawk-Eye optical tracking is not installed at Double-A ballparks.";
 const els = {
   totals: document.getElementById("seasonTotals"),
   yearSelect: document.getElementById("yearSelect"),
@@ -28,6 +30,7 @@ const els = {
   leaderboardBody: document.getElementById("leaderboardBody"),
   levelFilter: document.getElementById("levelFilter"),
   minPitches: document.getElementById("minPitches"),
+  umpSearchInput: document.getElementById("umpSearchInput"),
   umpModal: document.getElementById("umpModal"),
   umpModalCard: document.getElementById("umpModalCard"),
   playerModal: document.getElementById("playerModal"),
@@ -116,7 +119,12 @@ function accColor(pct) {
   return "#15803d";                 // Sharp (green)
 }
 
-function grumpBadge(pct) {
+function grumpBadge(pct, csPct = null) {
+  if (pct === null || pct === undefined) {
+    // Double-A ungraded split: show neutral AA zone badge or Miriam pips based on zone deviation
+    const label = csPct !== null && csPct !== undefined ? `AA (${fmt1(csPct)}% CS)` : "AA Split";
+    return `<span class="badge" title="${AA_NO_HAWKEYE_TIP}" data-tip="${AA_NO_HAWKEYE_TIP}">${label}</span>`;
+  }
   let count = 1;
   if (pct < 88.5) count = 5;
   else if (pct < 90.0) count = 4;
@@ -128,7 +136,66 @@ function grumpBadge(pct) {
     () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="20" height="20" />`
   ).join("");
 
-  return `<span class="grump-pill" title="${count}/5 Miriam Grumpiness Rating (${fmt1(pct)}% Raw Acc — more Miriams = worse)" aria-label="${count} out of 5 Miriams">${pips}</span>`;
+  return `<span class="grump-pill" title="${count}/5 Miriam Grumpiness Rating (${fmt1(pct)}% Acc — more Miriams = worse)" aria-label="${count} out of 5 Miriams">${pips}</span>`;
+}
+
+function naDashHtml() {
+  return `<span class="na-dash" title="${AA_NO_HAWKEYE_TIP}" data-tip="${AA_NO_HAWKEYE_TIP}">—</span>`;
+}
+
+function renderAaHeatmapSvg(heatmap) {
+  if (!heatmap || !heatmap.cells) return "";
+  const n = heatmap.grid_size || 6;
+  const size = 220;
+  const cellW = size / n;
+  let rects = "";
+
+  for (let r = 0; r < n; r++) {
+    for (let c = 0; c < n; c++) {
+      const cell = heatmap.cells[r]?.[c] || { taken: 0, cs: 0, cs_pct: null };
+      const rate = cell.cs_pct;
+      let fill = "#f3f2ee";
+      let textFill = "#5e5d59";
+      if (rate !== null && cell.taken > 0) {
+        // Color scale from cool blue (0% CS) -> amber (50% CS) -> deep crimson (90%+ CS)
+        const t = Math.max(0, Math.min(1, rate / 100));
+        const red = Math.round(30 + t * 190);
+        const green = Math.round(110 - t * 75);
+        const blue = Math.round(210 - t * 175);
+        fill = `rgb(${red}, ${green}, ${blue})`;
+        textFill = t > 0.35 ? "#ffffff" : "#141413";
+      }
+      const x = (c * cellW).toFixed(1);
+      const y = (r * cellW).toFixed(1);
+      const label = rate !== null && cell.taken > 0 ? `${Math.round(rate)}%` : "·";
+      rects += `
+        <g>
+          <rect x="${x}" y="${y}" width="${cellW.toFixed(1)}" height="${cellW.toFixed(1)}" fill="${fill}" stroke="#ffffff" stroke-width="1">
+            <title>Bin (${r + 1},${c + 1}): ${cell.cs}/${cell.taken} Called Strikes (${rate !== null ? rate + "%" : "N/A"})</title>
+          </rect>
+          <text x="${(c * cellW + cellW / 2).toFixed(1)}" y="${(r * cellW + cellW / 2 + 4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="${textFill}">${label}</text>
+        </g>
+      `;
+    }
+  }
+
+  // Approximate inner rulebook zone guide box (central +-0.85 SD out of +-1.8 SD)
+  const z0 = (((1.8 - 0.85) / 3.6) * size).toFixed(1);
+  const zw = (((1.7) / 3.6) * size).toFixed(1);
+
+  return `
+    <div class="heatmap-panel">
+      <svg class="heatmap-svg" viewBox="0 0 220 220" role="img" aria-label="Venue-normalized Double-A called strike heatmap">
+        ${rects}
+        <rect x="${z0}" y="${z0}" width="${zw}" height="${zw}" fill="none" stroke="#141413" stroke-width="2" stroke-dasharray="4 2" />
+      </svg>
+      <div class="heatmap-info">
+        <h4>🗺️ Venue-Normalized AA Called-Strike Heatmap</h4>
+        <p style="margin-bottom:6px">${AA_NO_HAWKEYE_TIP}</p>
+        <p style="color:var(--muted)">Each cell shows this umpire's called-strike rate (%) on taken pitches binned across venue-normalized Gameday stringer coordinates (<code>norm_x</code>, <code>norm_y</code> in ±1.8 SD). Dashed inner box marks the empirical core zone.</p>
+      </div>
+    </div>
+  `;
 }
 
 function bindTooltipTargets(root = document) {
@@ -275,7 +342,7 @@ async function openPlayerModal(playerName) {
   });
 }
 
-async function openUmpireModal(umpId) {
+async function openUmpireModal(umpId, initialLevel = null) {
   if (!umpId || umpId === "unknown") return;
   els.umpModal.classList.remove("hidden");
   els.umpModalCard.innerHTML = `<div class="empty-state">Loading umpire profile #${umpId}…</div>`;
@@ -283,112 +350,183 @@ async function openUmpireModal(umpId) {
   try {
     const u = await getJSON(`./data/umpires/${umpId}.json`);
     const links = umpProfileLinks(u.umpire_id, u.umpire_name);
-    const color = accColor(u.acc_pct);
+    const activeYr = state.selectedYear || "ALL";
+    const yrSplits = u.season_splits?.[activeYr] || u.level_splits || { ALL: u };
+    const availLevels = ["ALL", ...["AAA", "AA", "FSL"].filter((l) => u.levels.includes(l))];
 
-    els.umpModalCard.innerHTML = `
-      <div class="modal-top">
-        <div class="modal-id-row">
-          <img id="modalUmpAvatar" src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="modal-avatar" />
-          <div>
-            <h2 style="font-size:1.35rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-              ${u.umpire_name} ${grumpBadge(u.acc_pct)}
-            </h2>
-            <div class="sc-sub">MLB Official ID #${u.umpire_id} · Levels: ${u.levels.join(", ")} · ${u.games} Games (${u.taken.toLocaleString()} Taken Pitches)</div>
-            <div class="ext-links" id="modalExtLinks">
-              <a href="${links.photosUrl}" target="_blank" rel="noopener">📷 Umpire Photos ↗</a>
-              <a href="${links.webUrl}" target="_blank" rel="noopener">🔎 Umpire Bio &amp; News ↗</a>
-              <a href="${links.ccsUrl}" target="_blank" rel="noopener">Close Call Sports ↗</a>
-              <a href="${links.bRefUrl}" target="_blank" rel="noopener">Baseball-Reference ↗</a>
-            </div>
+    let selectedLvl = initialLevel || (els.levelFilter?.value !== "ALL" && availLevels.includes(els.levelFilter?.value) ? els.levelFilter.value : "ALL");
+    if (!availLevels.includes(selectedLvl)) selectedLvl = availLevels[1] || "ALL";
+
+    const renderModalSplit = (lvlKey) => {
+      selectedLvl = lvlKey;
+      const splitRec = yrSplits[lvlKey] || u.level_splits?.[lvlKey] || u;
+      // Only show the AA-only notice/heatmap when explicitly viewing the "AA" split, OR when the umpire has zero Hawk-Eye games
+      const isAaOnly = lvlKey === "AA" || (splitRec.tol_acc_pct === null || splitRec.tol_acc_pct === undefined);
+      const color = isAaOnly ? "#1d4ed8" : accColor(splitRec.tol_acc_pct);
+      const logsForSplit = u.game_log.filter((g) => {
+        if (activeYr !== "ALL" && !g.date.startsWith(activeYr)) return false;
+        if (lvlKey !== "ALL" && g.level !== lvlKey) return false;
+        return true;
+      });
+      const heatmapObj = splitRec.aa_heatmap || u.aa_heatmap || u.level_splits?.AA?.aa_heatmap;
+
+      const splitTabsHtml = availLevels.length > 1 ? `
+        <div class="split-pills">
+          <span style="font-size:0.76rem;font-weight:700;color:var(--muted);align-self:center;margin-right:4px">LEVEL SPLIT:</span>
+          ${availLevels.map((lk) => `
+            <button type="button" class="pill-btn modal-lvl-btn ${lk === lvlKey ? "active" : ""}" data-mlvl="${lk}">
+              ${lk === "ALL" ? `All Levels (${u.levels.join(" + ")})` : (lk === "AA" ? "Double-A (AA)" : (lk === "AAA" ? "Triple-A (AAA)" : "Single-A (FSL)"))}
+            </button>
+          `).join("")}
+        </div>
+      ` : "";
+
+      const kpiHtml = isAaOnly ? `
+        <div class="aa-notice-banner">
+          <strong>Double-A Outcome &amp; Zone Profile:</strong> ${AA_NO_HAWKEYE_TIP} Displaying outcome-based zone metrics and venue-normalized called-strike density.
+        </div>
+        <div class="sc-kpi-grid">
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>Called Strike %</span><span>⚾</span></div>
+            <div class="sc-kpi-val" style="color:#1d4ed8">${fmt1(splitRec.called_strike_pct || 0)}%</div>
+            <div class="sc-sub">${(splitRec.called_strikes || 0).toLocaleString()} CS / ${(splitRec.taken || 0).toLocaleString()} Taken</div>
+          </div>
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>K% / BB%</span><span>📊</span></div>
+            <div class="sc-kpi-val">${splitRec.k_pct != null ? fmt1(splitRec.k_pct) + "%" : "—"} / ${splitRec.bb_pct != null ? fmt1(splitRec.bb_pct) + "%" : "—"}</div>
+            <div class="sc-sub">${(splitRec.plate_appearances || 0).toLocaleString()} Completed PAs</div>
+          </div>
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>Runs/G · Ejections</span><span>🏟️</span></div>
+            <div class="sc-kpi-val">${splitRec.runs_per_game != null ? Number(splitRec.runs_per_game).toFixed(2) : "—"} R/G</div>
+            <div class="sc-sub">Ejections: ${splitRec.ejections || 0} · Games: ${splitRec.games}</div>
           </div>
         </div>
-        <button class="pill-btn" id="closeUmpModal">✕ Close</button>
-      </div>
+        ${renderAaHeatmapSvg(heatmapObj)}
+      ` : `
+        <div class="sc-kpi-grid">
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>Tol Acc% (±0.20")</span><span>🎯</span></div>
+            <div class="sc-kpi-val" style="color:${color}">${fmt1(splitRec.tol_acc_pct)}%</div>
+            <div class="sc-sub">Raw Acc: ${fmt1(splitRec.acc_pct)}% · CS%: ${fmt1(splitRec.called_strike_pct || 0)}%</div>
+          </div>
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>ABS Overturns</span><span>↺</span></div>
+            <div class="sc-kpi-val" style="color:#7c3aed">${splitRec.overturns}/${splitRec.challenges} (${fmt1(splitRec.overturn_pct || 0)}%)</div>
+            <div class="sc-sub">Total Missed: ${(splitRec.missed || 0).toLocaleString()} (Mean ${splitRec.mean_miss_in}")</div>
+          </div>
+          <div class="sc-kpi-box">
+            <div class="sc-kpi-label"><span>Cumulative Σ ΔRE24</span><span>⚡</span></div>
+            <div class="sc-kpi-val" style="color:#dc2626">+${splitRec.re_impact}</div>
+            <div class="sc-sub">Runs/G: ${splitRec.runs_per_game ?? "—"} · Ej: ${splitRec.ejections || 0}</div>
+          </div>
+        </div>
+      `;
 
-      <div class="sc-kpi-grid">
-        <div class="sc-kpi-box">
-          <div class="sc-kpi-label"><span>2026 Raw Acc</span><span>🎯</span></div>
-          <div class="sc-kpi-val" style="color:${color}">${fmt1(u.acc_pct)}%</div>
-          <div class="sc-sub">Tol Acc: ${fmt1(u.tol_acc_pct)}%</div>
+      els.umpModalCard.innerHTML = `
+        <div class="modal-top">
+          <div class="modal-id-row">
+            <img id="modalUmpAvatar" src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="modal-avatar" />
+            <div>
+              <h2 style="font-size:1.35rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                ${u.umpire_name} ${grumpBadge(splitRec.tol_acc_pct, splitRec.called_strike_pct)}
+              </h2>
+              <div class="sc-sub">MLB Official ID #${u.umpire_id} · Levels: ${u.levels.join(", ")} · ${splitRec.games} Games (${(splitRec.taken || 0).toLocaleString()} Taken Pitches)</div>
+              <div class="ext-links" id="modalExtLinks">
+                <a href="${links.photosUrl}" target="_blank" rel="noopener">📷 Umpire Photos ↗</a>
+                <a href="${links.webUrl}" target="_blank" rel="noopener">🔎 Umpire Bio &amp; News ↗</a>
+                <a href="${links.ccsUrl}" target="_blank" rel="noopener">Close Call Sports ↗</a>
+                <a href="${links.bRefUrl}" target="_blank" rel="noopener">Baseball-Reference ↗</a>
+              </div>
+            </div>
+          </div>
+          <button class="pill-btn" id="closeUmpModal">✕ Close</button>
         </div>
-        <div class="sc-kpi-box">
-          <div class="sc-kpi-label"><span>ABS Overturns</span><span>↺</span></div>
-          <div class="sc-kpi-val" style="color:#7c3aed">${u.overturns}/${u.challenges} (${fmt1(u.overturn_pct)}%)</div>
-          <div class="sc-sub">Total Missed: ${u.missed.toLocaleString()} (Mean ${u.mean_miss_in}")</div>
-        </div>
-        <div class="sc-kpi-box">
-          <div class="sc-kpi-label"><span>Season Σ ΔRE24</span><span>⚡</span></div>
-          <div class="sc-kpi-val" style="color:#dc2626">+${u.re_impact}</div>
-          <div class="sc-sub">Cumulative expected runs swung</div>
-        </div>
-      </div>
 
-      <h3 style="font-size:0.8rem;text-transform:uppercase;color:var(--muted);margin-bottom:8px">2026 Game Log (${u.game_log.length} Games — Click any game to open scorecard)</h3>
-      <div class="table-wrap" style="max-height:360px;overflow-y:auto">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Lvl</th>
-              <th>Matchup</th>
-              <th>Taken</th>
-              <th>Raw Acc%</th>
-              <th>Missed</th>
-              <th>ABS Ovt</th>
-              <th>ΔRE24</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${u.game_log.map((g) => `
-              <tr class="ump-log-row" data-date="${g.date}" data-pk="${g.game_pk}" style="cursor:pointer">
-                <td><strong>${g.date}</strong></td>
-                <td>${g.level}</td>
-                <td>${g.matchup}</td>
-                <td>${g.taken}</td>
-                <td><strong style="color:${accColor(g.acc_pct)}">${fmt1(g.acc_pct)}%</strong></td>
-                <td>${g.missed}</td>
-                <td>${g.overturns}</td>
-                <td>+${g.re_impact}</td>
+        ${splitTabsHtml}
+        ${kpiHtml}
+
+        <h3 style="font-size:0.8rem;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Game Log (${logsForSplit.length} Games — Click any game to open scorecard)</h3>
+        <div class="table-wrap" style="max-height:340px;overflow-y:auto">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Lvl</th>
+                <th>Matchup</th>
+                <th>Taken</th>
+                <th>CS%</th>
+                <th>Tol Acc%</th>
+                <th>Raw Acc%</th>
+                <th>Missed</th>
+                <th>ABS Ovt</th>
               </tr>
-            `).join("")}
-          </tbody>
-        </table>
-      </div>
-    `;
+            </thead>
+            <tbody>
+              ${logsForSplit.map((g) => {
+                const gIsAa = g.level === "AA" || g.acc_pct === null || g.acc_pct === undefined;
+                const gTol = g.tol_acc_pct ?? g.acc_pct;
+                return `
+                <tr class="ump-log-row" data-date="${g.date}" data-pk="${g.game_pk}" style="cursor:pointer">
+                  <td><strong>${g.date}</strong></td>
+                  <td><span class="badge">${g.level}</span></td>
+                  <td>${g.matchup}</td>
+                  <td>${g.taken}</td>
+                  <td>${g.called_strike_pct != null ? fmt1(g.called_strike_pct) + "%" : "—"}</td>
+                  <td>${gIsAa ? naDashHtml() : `<strong style="color:${accColor(gTol)}">${fmt1(gTol)}%</strong>`}</td>
+                  <td>${gIsAa ? naDashHtml() : `${fmt1(g.acc_pct)}%`}</td>
+                  <td>${gIsAa ? naDashHtml() : g.missed}</td>
+                  <td>${gIsAa ? naDashHtml() : g.overturns}</td>
+                </tr>
+              `;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
 
-    document.getElementById("closeUmpModal").addEventListener("click", () => {
-      els.umpModal.classList.add("hidden");
-    });
-
-    fetchWikiUmpirePhoto(
-      u.umpire_name,
-      document.getElementById("modalUmpAvatar"),
-      document.getElementById("modalExtLinks"),
-      u.umpire_id
-    );
-
-    els.umpModalCard.querySelectorAll(".ump-log-row").forEach((row) => {
-      row.addEventListener("click", async () => {
+      document.getElementById("closeUmpModal").addEventListener("click", () => {
         els.umpModal.classList.add("hidden");
-        document.querySelector('[data-view="slateView"]').click();
-        const rowYear = row.dataset.date.slice(0, 4);
-        if (els.yearSelect && state.selectedYear !== "ALL" && state.selectedYear !== rowYear) {
-          els.yearSelect.value = rowYear;
-          await applyYearSelection(rowYear, false);
-        }
-        els.dateSelect.value = row.dataset.date;
-        await loadDateSlate(row.dataset.date);
-        const targetCard = els.gamesList.querySelector(`.game-card[data-pk="${row.dataset.pk}"]`);
-        if (targetCard) selectGame(row.dataset.pk, targetCard);
       });
-    });
+
+      els.umpModalCard.querySelectorAll(".modal-lvl-btn").forEach((b) => {
+        b.addEventListener("click", () => renderModalSplit(b.dataset.mlvl));
+      });
+
+      fetchWikiUmpirePhoto(
+        u.umpire_name,
+        document.getElementById("modalUmpAvatar"),
+        document.getElementById("modalExtLinks"),
+        u.umpire_id
+      );
+
+      bindTooltipTargets(els.umpModalCard);
+
+      els.umpModalCard.querySelectorAll(".ump-log-row").forEach((row) => {
+        row.addEventListener("click", async () => {
+          els.umpModal.classList.add("hidden");
+          document.querySelector('[data-view="slateView"]').click();
+          const rowYear = row.dataset.date.slice(0, 4);
+          if (els.yearSelect && state.selectedYear !== "ALL" && state.selectedYear !== rowYear) {
+            els.yearSelect.value = rowYear;
+            await applyYearSelection(rowYear, false);
+          }
+          els.dateSelect.value = row.dataset.date;
+          await loadDateSlate(row.dataset.date);
+          const targetCard = els.gamesList.querySelector(`.game-card[data-pk="${row.dataset.pk}"]`);
+          if (targetCard) selectGame(row.dataset.pk, targetCard);
+        });
+      });
+    };
+
+    renderModalSplit(selectedLvl);
   } catch {
     els.umpModalCard.innerHTML = `<div class="empty-state">Could not load umpire #${umpId}.</div>`;
   }
 }
 
 async function getJSON(path) {
-  const res = await fetch(path);
+  const res = await fetch(path, { cache: "no-store" });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${path}`);
   return res.json();
 }
@@ -438,8 +576,30 @@ function setupTabs() {
     els.yearSelect.addEventListener("change", () => applyYearSelection(els.yearSelect.value, true));
   }
   els.dateSelect.addEventListener("change", () => loadDateSlate(els.dateSelect.value));
-  els.levelFilter.addEventListener("change", renderLeaderboard);
+  els.levelFilter.addEventListener("change", () => {
+    const lvl = els.levelFilter.value;
+    if (lvl === "AA") {
+      state.sortCol = "called_strike_pct";
+      state.sortAsc = false;
+    } else if (lvl !== "AA" && state.sortCol === "called_strike_pct") {
+      state.sortCol = "tol_acc_pct";
+      state.sortAsc = true;
+    }
+    document.querySelectorAll("#leaderboardHeaderRow .sortable-th").forEach((h) => {
+      const active = h.dataset.sort === state.sortCol;
+      h.classList.toggle("sort-active", active);
+      const arrow = h.querySelector(".sort-arrow");
+      if (arrow) arrow.textContent = active ? (state.sortAsc ? "▲" : "▼") : "";
+    });
+    renderLeaderboard();
+  });
   els.minPitches.addEventListener("input", renderLeaderboard);
+  if (els.umpSearchInput) {
+    els.umpSearchInput.addEventListener("input", () => {
+      state.searchQuery = els.umpSearchInput.value.trim().toLowerCase();
+      renderLeaderboard();
+    });
+  }
 
   const organBtn = document.getElementById("organToggleBtn");
   if (organBtn) {
@@ -516,14 +676,32 @@ async function loadDateSlate(dateStr) {
   }
 
   els.gamesList.innerHTML = data.games.map((g) => {
-    const color = accColor(g.tol_acc_pct);
-    const barW = Math.max(0, Math.min(100, ((g.tol_acc_pct - 75) / 25) * 100)).toFixed(1);
+    const isAa = g.level === "AA" || g.tol_acc_pct === null || g.tol_acc_pct === undefined;
+    const color = isAa ? "#1d4ed8" : accColor(g.tol_acc_pct);
+    const barW = isAa
+      ? Math.max(0, Math.min(100, ((g.called_strike_pct || 0) / 50) * 100)).toFixed(1)
+      : Math.max(0, Math.min(100, ((g.tol_acc_pct - 75) / 25) * 100)).toFixed(1);
+    const stripHtml = isAa ? `
+      <div class="metrics-strip">
+        <div class="metric-cell" data-tip="Called Strike %: Called strikes divided by taken pitches (${g.called_strikes}/${g.taken})."><span>CS% <b class="th-info-badge">?</b></span><strong style="color:#1d4ed8">${fmt1(g.called_strike_pct || 0)}%</strong></div>
+        <div class="metric-cell" data-tip="K% / BB%: Strikeout and walk rates across ${g.plate_appearances || 0} completed plate appearances."><span>K% / BB% <b class="th-info-badge">?</b></span><strong>${fmt1(g.k_pct || 0)}%/${fmt1(g.bb_pct || 0)}%</strong></div>
+        <div class="metric-cell" data-tip="Taken Pitches: ${g.called_strikes || 0} called strikes out of ${g.taken} taken pitches (${g.total_pitches || 0} total pitches)."><span>CS/Taken <b class="th-info-badge">?</b></span><strong>${g.called_strikes || 0}/${g.taken}</strong></div>
+        <div class="metric-cell" data-tip="${AA_NO_HAWKEYE_TIP}"><span>Hawk-Eye <b class="th-info-badge">?</b></span><strong>${naDashHtml()}</strong></div>
+      </div>
+    ` : `
+      <div class="metrics-strip">
+        <div class="metric-cell" data-tip="Tol Acc (±0.20&quot;): Tolerance-adjusted accuracy excluding razor-thin borderline pitches within ±0.20 inches of the zone edge."><span>Tol Acc <b class="th-info-badge">?</b></span><strong style="color:${color}">${fmt1(g.tol_acc_pct)}%</strong></div>
+        <div class="metric-cell" data-tip="Raw Acc: Strict unbuffered percentage of taken pitches matching the exact 0.00&quot; 2D Hawk-Eye strike zone."><span>Raw Acc <b class="th-info-badge">?</b></span><strong>${fmt1(g.acc_pct)}%</strong></div>
+        <div class="metric-cell" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye out of all taken pitches."><span>Missed <b class="th-info-badge">?</b></span><strong>${g.missed}/${g.taken}</strong></div>
+        <div class="metric-cell" data-tip="ABS Ovt: Calls overturned by an ABS challenge out of total challenges in this game."><span>ABS Ovt <b class="th-info-badge">?</b></span><strong style="color:#7c3aed">${g.overturns}/${g.challenges}</strong></div>
+      </div>
+    `;
     return `
     <article class="game-card" data-pk="${g.game_pk}">
       <div class="card-top">
         <span class="matchup">${g.away} ${g.away_runs} @ ${g.home} ${g.home_runs}</span>
         <div style="display:flex;gap:6px;align-items:center">
-          ${grumpBadge(g.tol_acc_pct)}
+          ${grumpBadge(g.tol_acc_pct, g.called_strike_pct)}
           <span class="badge">${g.level}</span>
         </div>
       </div>
@@ -531,13 +709,8 @@ async function loadDateSlate(dateStr) {
         <img src="${umpAvatarUrl(g.umpire_id, g.umpire_name)}" alt="${g.umpire_name}" class="ump-avatar" data-ump="${g.umpire_id}" loading="lazy" />
         HP Umpire: <button type="button" class="ump-link" data-ump="${g.umpire_id}">${g.umpire_name}</button> · ${g.venue}
       </div>
-      <div class="metrics-strip">
-        <div class="metric-cell" data-tip="Tol Acc (±0.20&quot;): Tolerance-adjusted accuracy excluding razor-thin borderline pitches within ±0.20 inches of the zone edge."><span>Tol Acc <b class="th-info-badge">?</b></span><strong style="color:${color}">${fmt1(g.tol_acc_pct)}%</strong></div>
-        <div class="metric-cell" data-tip="Raw Acc: Strict unbuffered percentage of taken pitches matching the exact 0.00&quot; 2D Hawk-Eye strike zone."><span>Raw Acc <b class="th-info-badge">?</b></span><strong>${fmt1(g.acc_pct)}%</strong></div>
-        <div class="metric-cell" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye out of all taken pitches."><span>Missed <b class="th-info-badge">?</b></span><strong>${g.missed}/${g.taken}</strong></div>
-        <div class="metric-cell" data-tip="ABS Ovt: Calls overturned by an ABS challenge out of total challenges in this game."><span>ABS Ovt <b class="th-info-badge">?</b></span><strong style="color:#7c3aed">${g.overturns}/${g.challenges}</strong></div>
-      </div>
-      <div class="card-meter" title="Tolerance accuracy gauge (${fmt1(g.tol_acc_pct)}%)">
+      ${stripHtml}
+      <div class="card-meter" title="${isAa ? `Called Strike % (${fmt1(g.called_strike_pct || 0)}%)` : `Tolerance accuracy gauge (${fmt1(g.tol_acc_pct)}%)`}">
         <div class="card-meter-fill" style="width:${barW}%;background:${color}"></div>
       </div>
     </article>
@@ -578,6 +751,127 @@ async function selectGame(gamePk, cardEl, shouldScroll = true) {
 function renderScorecard() {
   const g = state.activeGame;
   if (!g) return;
+
+  const isAa = g.level === "AA" || g.tol_acc_pct === null || g.tol_acc_pct === undefined;
+
+  if (isAa) {
+    // Double-A venue-normalized Gameday stringer coordinate plot: nx in [-2.2, 2.2] -> [0, 310]; ny in [-2.2, 2.2] -> [340, 0]
+    const mapX = (nx) => (((nx || 0) + 2.2) / 4.4) * 310;
+    const mapY = (ny) => 340 - (((ny || 0) + 2.2) / 4.4) * 340;
+    const zx = mapX(-0.95);
+    const zw = mapX(0.95) - zx;
+    const zy = mapY(0.95);
+    const zh = mapY(-0.95) - zy;
+    const plateY = 318;
+    const plateMid = mapX(0).toFixed(1);
+    const plateL = zx.toFixed(1);
+    const plateR = (zx + zw).toFixed(1);
+
+    const filtered = g.pitches.filter((p) => {
+      if (state.pitchFilter === "STRIKE") return p.init === "strike";
+      if (state.pitchFilter === "BALL") return p.init === "ball";
+      return true;
+    });
+
+    const circles = filtered
+      .filter((p) => p.nx !== undefined && p.ny !== undefined)
+      .map((p, i) => {
+        const isStrike = p.init === "strike";
+        const fill = isStrike ? "#dc2626" : "#1d4ed8";
+        return `<circle class="pitch-dot" data-idx="${i}" cx="${mapX(p.nx).toFixed(1)}" cy="${mapY(p.ny).toFixed(1)}" r="${isStrike ? 5.2 : 4.5}" fill="${fill}" fill-opacity="${isStrike ? 0.85 : 0.45}" stroke="#141413" stroke-width="0.7"/>`;
+      })
+      .join("");
+
+    els.scorecardPanel.innerHTML = `
+      <div class="sc-header">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+          <h2 style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <img src="${umpAvatarUrl(g.umpire_id, g.umpire_name)}" alt="${g.umpire_name}" class="ump-avatar" data-ump="${g.umpire_id}" />
+            <span>${g.away} ${g.away_runs} @ ${g.home} ${g.home_runs} · <button type="button" class="ump-link" data-ump="${g.umpire_id}">${g.umpire_name}</button></span>
+          </h2>
+          ${grumpBadge(null, g.called_strike_pct)}
+        </div>
+        <div class="sc-sub">${g.date} · ${g.venue} (Double-A) · ${AA_NO_HAWKEYE_TIP}</div>
+      </div>
+
+      <div class="sc-kpi-grid">
+        <div class="sc-kpi-box" data-tip="Called Strike %: Called strikes divided by total taken pitches in this game.">
+          <div class="sc-kpi-label"><span>Called Strike % <b class="th-info-badge">?</b></span><span>⚾</span></div>
+          <div class="sc-kpi-val" style="color:#1d4ed8">${fmt1(g.called_strike_pct || 0)}%</div>
+          <div class="sc-sub">${g.called_strikes || 0} CS / ${g.taken} Taken</div>
+        </div>
+        <div class="sc-kpi-box" data-tip="K% / BB%: Strikeout and walk rates across completed plate appearances in this game.">
+          <div class="sc-kpi-label"><span>Game K% / BB% <b class="th-info-badge">?</b></span><span>📊</span></div>
+          <div class="sc-kpi-val">${fmt1(g.k_pct || 0)}% / ${fmt1(g.bb_pct || 0)}%</div>
+          <div class="sc-sub">${g.strikeouts || 0} K · ${g.walks || 0} BB (${g.plate_appearances || 0} PAs)</div>
+        </div>
+        <div class="sc-kpi-box" data-tip="${AA_NO_HAWKEYE_TIP}">
+          <div class="sc-kpi-label"><span>Hawk-Eye / ABS <b class="th-info-badge">?</b></span><span>🏟️</span></div>
+          <div class="sc-kpi-val">${naDashHtml()}</div>
+          <div class="sc-sub">Runs: ${g.runs_scored || (g.away_runs + g.home_runs)} · Ejections: ${g.ejections || 0}</div>
+        </div>
+      </div>
+
+      <div class="zone-toolbar">
+        <div class="tabs">
+          <button class="pill-btn ${state.pitchFilter === "ALL" ? "active" : ""}" data-pf="ALL">All Taken (${g.pitches.length})</button>
+          <button class="pill-btn ${state.pitchFilter === "STRIKE" ? "active" : ""}" data-pf="STRIKE">Called Strikes (${g.called_strikes || 0})</button>
+          <button class="pill-btn ${state.pitchFilter === "BALL" ? "active" : ""}" data-pf="BALL">Called Balls (${g.taken - (g.called_strikes || 0)})</button>
+        </div>
+      </div>
+
+      <div class="zone-wrap">
+        <svg class="zone-svg" viewBox="0 0 310 340" role="img" aria-label="Venue-normalized Double-A taken pitch plot">
+          <rect x="${zx.toFixed(1)}" y="${zy.toFixed(1)}" width="${zw.toFixed(1)}" height="${zh.toFixed(1)}" fill="#141413" fill-opacity="0.03" stroke="#5e5d59" stroke-dasharray="4 3" stroke-width="1.6"/>
+          <polygon points="${plateL},${plateY} ${plateR},${plateY} ${plateR},${plateY + 7} ${plateMid},${plateY + 15} ${plateL},${plateY + 7}" fill="#ffffff" stroke="#5e5d59" stroke-width="1.3"/>
+          ${circles}
+        </svg>
+
+        <div class="pitch-readout">
+          <div class="legend">
+            <div><span class="dot-key" style="background:#dc2626"></span>Called Strike (Stringer x/y)</div>
+            <div><span class="dot-key" style="background:#1d4ed8;opacity:0.6"></span>Called Ball (Stringer x/y)</div>
+            <div style="color:var(--muted);font-size:0.74rem;margin-top:4px">${AA_NO_HAWKEYE_TIP} Dashed box shows empirical ±0.95 SD zone.</div>
+          </div>
+          <div id="hoverDetail">Hover or tap any pitch dot to inspect batter, count, call, and normalized stringer coordinates.</div>
+        </div>
+      </div>
+    `;
+
+    els.scorecardPanel.querySelectorAll(".pill-btn").forEach((b) => {
+      b.addEventListener("click", () => {
+        state.pitchFilter = b.dataset.pf;
+        renderScorecard();
+      });
+    });
+    els.scorecardPanel.querySelectorAll("[data-ump]").forEach((btn) => {
+      btn.addEventListener("click", () => openUmpireModal(btn.dataset.ump, "AA"));
+    });
+    bindTooltipTargets(els.scorecardPanel);
+
+    const detailEl = document.getElementById("hoverDetail");
+    els.scorecardPanel.querySelectorAll(".pitch-dot").forEach((dot) => {
+      const showDetail = () => {
+        const p = filtered[Number(dot.dataset.idx)];
+        detailEl.innerHTML = `
+          <strong>${p.inn} · ${p.cnt}</strong> ·
+          <img src="${umpAvatarUrl(0, p.bat)}" alt="" class="player-avatar player-link" data-player="${p.bat}" data-player-img="${p.bat}" />
+          <button type="button" class="ump-link player-link" data-player="${p.bat}">${p.bat}</button>
+          vs.
+          <img src="${umpAvatarUrl(0, p.pit)}" alt="" class="player-avatar player-link" data-player="${p.pit}" data-player-img="${p.pit}" />
+          <button type="button" class="ump-link player-link" data-player="${p.pit}">${p.pit}</button><br/>
+          Call: <strong>${p.init.toUpperCase()}</strong> | Stringer px: <code>(${p.gx}, ${p.gy})</code> · Norm: <code>(${p.nx}, ${p.ny})</code>
+        `;
+        detailEl.querySelectorAll(".player-link").forEach((b) => {
+          b.addEventListener("click", () => openPlayerModal(b.dataset.player));
+        });
+        hydratePlayerHeadshots(detailEl);
+      };
+      dot.addEventListener("mouseenter", showDetail);
+      dot.addEventListener("click", showDetail);
+    });
+    return;
+  }
 
   // SVG coordinate mapper: x in [-1.8, 1.8] ft -> [0, 310]; pzn in [-0.45, 1.45] -> [340, 0]
   const mapX = (px) => ((px + 1.8) / 3.6) * 310;
@@ -781,6 +1075,7 @@ function renderScorecard() {
 }
 
 function miriamCount(pct) {
+  if (pct === null || pct === undefined) return 0;
   if (pct < 88.5) return 5;
   if (pct < 90.0) return 4;
   if (pct < 91.5) return 3;
@@ -788,18 +1083,40 @@ function miriamCount(pct) {
   return 1;
 }
 
+function getUmpireViewRow(u, lvl) {
+  if (lvl && lvl !== "ALL" && u.level_splits && u.level_splits[lvl]) {
+    // Use the strict level split so Double-A stats never contaminate Triple-A / FSL Hawk-Eye averages
+    return { ...u.level_splits[lvl], all_levels: u.levels, level_splits: u.level_splits };
+  }
+  if (lvl === "ALL" && u.level_splits && u.level_splits.HAWKEYE && u.levels.includes("AA") && u.levels.length > 1) {
+    // Ensure All-Levels view shows pure Hawk-Eye grading alongside combined game/taken counts
+    return {
+      ...u,
+      tol_acc_pct: u.level_splits.HAWKEYE.tol_acc_pct,
+      acc_pct: u.level_splits.HAWKEYE.acc_pct,
+      all_levels: u.levels,
+      level_splits: u.level_splits,
+    };
+  }
+  return { ...u, all_levels: u.levels };
+}
+
 function renderLeaderboard() {
   const lvl = els.levelFilter.value;
   const minP = Number(els.minPitches.value) || 0;
+  const q = state.searchQuery || "";
 
-  const filteredRows = state.leaderboard.filter((u) => {
-    if (u.taken < minP) return false;
-    if (lvl !== "ALL" && !u.levels.includes(lvl)) return false;
-    if (state.photoOnly && !state.avatarIndex?.[String(u.umpire_id)]?.photo) return false;
-    return true;
-  });
+  const filteredRows = state.leaderboard
+    .filter((u) => {
+      if (lvl !== "ALL" && !u.levels.includes(lvl)) return false;
+      if (q && !u.umpire_name.toLowerCase().includes(q)) return false;
+      if (state.photoOnly && !state.avatarIndex?.[String(u.umpire_id)]?.photo) return false;
+      return true;
+    })
+    .map((u) => getUmpireViewRow(u, lvl))
+    .filter((u) => u.taken >= minP);
 
-  const col = state.sortCol || "tol_acc_pct";
+  const col = state.sortCol || (lvl === "AA" ? "called_strike_pct" : "tol_acc_pct");
   const dir = state.sortAsc ? 1 : -1;
 
   const rows = [...filteredRows].sort((a, b) => {
@@ -807,76 +1124,144 @@ function renderLeaderboard() {
       return dir * a.umpire_name.localeCompare(b.umpire_name);
     }
     if (col === "levels") {
-      return dir * a.levels.join(",").localeCompare(b.levels.join(","));
+      return dir * (a.all_levels || a.levels).join(",").localeCompare((b.all_levels || b.levels).join(","));
     }
     if (col === "rating") {
-      const diff = miriamCount(a.tol_acc_pct) - miriamCount(b.tol_acc_pct);
-      return diff !== 0 ? dir * diff : (a.tol_acc_pct - b.tol_acc_pct) * -dir;
+      const ma = miriamCount(a.tol_acc_pct);
+      const mb = miriamCount(b.tol_acc_pct);
+      if (ma === 0 && mb === 0) return (b.called_strike_pct || 0) - (a.called_strike_pct || 0);
+      if (ma === 0) return 1;
+      if (mb === 0) return -1;
+      const diff = ma - mb;
+      return diff !== 0 ? dir * diff : ((a.tol_acc_pct || 0) - (b.tol_acc_pct || 0)) * -dir;
     }
-    const va = Number(a[col]) || 0;
-    const vb = Number(b[col]) || 0;
+    const rawA = a[col];
+    const rawB = b[col];
+    const nullA = rawA === null || rawA === undefined;
+    const nullB = rawB === null || rawB === undefined;
+    if (nullA && nullB) return (b.called_strike_pct || 0) - (a.called_strike_pct || 0) || (b.games || 0) - (a.games || 0);
+    if (nullA) return 1;
+    if (nullB) return -1;
+    const va = Number(rawA);
+    const vb = Number(rawB);
     if (va !== vb) return dir * (va - vb);
-    return b.missed - a.missed;
+    return (b.missed || 0) - (a.missed || 0) || (b.taken || 0) - (a.taken || 0);
   });
 
   if (els.leaderboardViz && filteredRows.length) {
-    const grumpiest5 = [...filteredRows].sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || b.missed - a.missed).slice(0, 5);
-    const mostOverturned5 = [...filteredRows].sort((a, b) => b.overturns - a.overturns).slice(0, 5);
-    const maxOvt = Math.max(1, ...mostOverturned5.map((u) => u.overturns));
-    const highestRe5 = [...filteredRows].sort((a, b) => b.re_impact - a.re_impact).slice(0, 5);
-    const maxRe = Math.max(1, ...highestRe5.map((u) => u.re_impact));
+    if (lvl === "AA") {
+      const topCs5 = [...filteredRows].sort((a, b) => (b.called_strike_pct || 0) - (a.called_strike_pct || 0)).slice(0, 5);
+      const topK5 = [...filteredRows].sort((a, b) => (b.k_pct || 0) - (a.k_pct || 0)).slice(0, 5);
+      const topRuns5 = [...filteredRows].sort((a, b) => (b.runs_per_game || 0) - (a.runs_per_game || 0)).slice(0, 5);
+      const maxRuns = Math.max(1, ...topRuns5.map((u) => u.runs_per_game || 0));
 
-    els.leaderboardViz.innerHTML = `
-      <div class="viz-card">
-        <h3>💩 Lowest Tol Accuracy (Bottom 5)</h3>
-        ${grumpiest5.map((u) => {
-          const w = Math.max(12, Math.min(100, ((97 - u.tol_acc_pct) / 10) * 100)).toFixed(0);
-          return `
-            <div class="bar-row">
-              <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
-              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#5c3a21"></div></div>
-              <strong>${fmt1(u.tol_acc_pct)}%</strong>
-            </div>
-          `;
-        }).join("")}
-      </div>
+      els.leaderboardViz.innerHTML = `
+        <div class="viz-card">
+          <h3>⚾ Highest Called Strike % (Top 5 AA)</h3>
+          ${topCs5.map((u) => {
+            const w = Math.max(15, Math.min(100, ((u.called_strike_pct || 0) / 42) * 100)).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#1d4ed8"></div></div>
+                <strong>${fmt1(u.called_strike_pct || 0)}%</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
 
-      <div class="viz-card">
-        <h3>↺ Most ABS Overturns (Top 5)</h3>
-        ${mostOverturned5.map((u) => {
-          const w = ((u.overturns / maxOvt) * 100).toFixed(0);
-          return `
-            <div class="bar-row">
-              <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
-              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#7c3aed"></div></div>
-              <strong>${u.overturns}</strong>
-            </div>
-          `;
-        }).join("")}
-      </div>
+        <div class="viz-card">
+          <h3>🔥 Highest Strikeout Rate K% (Top 5 AA)</h3>
+          ${topK5.map((u) => {
+            const w = Math.max(15, Math.min(100, ((u.k_pct || 0) / 35) * 100)).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#7c3aed"></div></div>
+                <strong>${u.k_pct != null ? fmt1(u.k_pct) + "%" : "—"}</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
 
-      <div class="viz-card">
-        <h3>👍 Highest Cumulative ΔRE24 (Top 5)</h3>
-        ${highestRe5.map((u) => {
-          const w = ((u.re_impact / maxRe) * 100).toFixed(0);
-          return `
-            <div class="bar-row">
-              <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
-              <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#15803d"></div></div>
-              <strong>${u.re_impact}</strong>
-            </div>
-          `;
-        }).join("")}
-      </div>
-    `;
+        <div class="viz-card">
+          <h3>🏟️ Highest Runs Per Game (Top 5 AA)</h3>
+          ${topRuns5.map((u) => {
+            const w = (((u.runs_per_game || 0) / maxRuns) * 100).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#15803d"></div></div>
+                <strong>${Number(u.runs_per_game || 0).toFixed(1)}</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      `;
+    } else {
+      const heRows = filteredRows.filter((u) => u.tol_acc_pct !== null && u.tol_acc_pct !== undefined);
+      const grumpiest5 = [...heRows].sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || (b.missed || 0) - (a.missed || 0)).slice(0, 5);
+      const mostOverturned5 = [...heRows].sort((a, b) => (b.overturns || 0) - (a.overturns || 0)).slice(0, 5);
+      const maxOvt = Math.max(1, ...mostOverturned5.map((u) => u.overturns || 0));
+      const highestRe5 = [...heRows].sort((a, b) => (b.re_impact || 0) - (a.re_impact || 0)).slice(0, 5);
+      const maxRe = Math.max(1, ...highestRe5.map((u) => u.re_impact || 0));
+
+      els.leaderboardViz.innerHTML = `
+        <div class="viz-card">
+          <h3>💩 Lowest Tol Accuracy (Bottom 5)</h3>
+          ${grumpiest5.map((u) => {
+            const w = Math.max(12, Math.min(100, ((97 - u.tol_acc_pct) / 10) * 100)).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#5c3a21"></div></div>
+                <strong>${fmt1(u.tol_acc_pct)}%</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
+
+        <div class="viz-card">
+          <h3>↺ Most ABS Overturns (Top 5)</h3>
+          ${mostOverturned5.map((u) => {
+            const w = (((u.overturns || 0) / maxOvt) * 100).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#7c3aed"></div></div>
+                <strong>${u.overturns}</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
+
+        <div class="viz-card">
+          <h3>👍 Highest Cumulative ΔRE24 (Top 5)</h3>
+          ${highestRe5.map((u) => {
+            const w = (((u.re_impact || 0) / maxRe) * 100).toFixed(0);
+            return `
+              <div class="bar-row">
+                <button type="button" class="ump-link bar-row-name" data-ump="${u.umpire_id}" title="${u.umpire_name}">${u.umpire_name}</button>
+                <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:#15803d"></div></div>
+                <strong>${u.re_impact}</strong>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      `;
+    }
   }
 
-  const maxReRow = Math.max(1, ...rows.map((u) => u.re_impact));
+  const maxReRow = Math.max(1, ...rows.map((u) => u.re_impact || 0));
 
   els.leaderboardBody.innerHTML = rows.map((u, idx) => {
-    const color = accColor(u.tol_acc_pct);
-    const accBar = Math.max(0, Math.min(100, ((u.tol_acc_pct - 80) / 18) * 100)).toFixed(0);
-    const reBar = Math.min(100, (u.re_impact / maxReRow) * 100).toFixed(0);
+    const hasHe = u.tol_acc_pct !== null && u.tol_acc_pct !== undefined;
+    const color = hasHe ? accColor(u.tol_acc_pct) : "#1d4ed8";
+    const accBar = hasHe ? Math.max(0, Math.min(100, ((u.tol_acc_pct - 80) / 18) * 100)).toFixed(0) : 0;
+    const reBar = hasHe ? Math.min(100, ((u.re_impact || 0) / maxReRow) * 100).toFixed(0) : 0;
+    const csBar = Math.max(0, Math.min(100, (((u.called_strike_pct || 0) - 20) / 25) * 100)).toFixed(0);
+    const displayLevels = (u.all_levels || u.levels || []).join(", ");
+
     return `
     <tr>
       <td>${idx + 1}</td>
@@ -884,38 +1269,55 @@ function renderLeaderboard() {
         <img src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="ump-avatar" data-ump="${u.umpire_id}" loading="lazy" />
         <button type="button" class="ump-link" data-ump="${u.umpire_id}">${u.umpire_name}</button>
       </td>
-      <td>${grumpBadge(u.tol_acc_pct)}</td>
-      <td class="col-levels">${u.levels.join(", ")}</td>
+      <td>${grumpBadge(u.tol_acc_pct, u.called_strike_pct)}</td>
+      <td class="col-levels">${displayLevels}</td>
       <td>${u.games.toLocaleString()}</td>
       <td>${u.taken.toLocaleString()}</td>
       <td>
         <div class="cell-bar-wrap">
-          <strong style="color:${color};min-width:44px">${fmt1(u.tol_acc_pct)}%</strong>
-          <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${accBar}%;background:${color}"></div></div>
+          <strong style="color:#1d4ed8;min-width:42px">${fmt1(u.called_strike_pct || 0)}%</strong>
+          <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${csBar}%;background:#1d4ed8"></div></div>
         </div>
       </td>
-      <td>${fmt1(u.acc_pct)}%</td>
-      <td>${u.missed.toLocaleString()}</td>
-      <td>${u.mean_miss_in}"</td>
-      <td>
-        <div class="cell-bar-wrap">
-          <span>${u.overturns}/${u.challenges} (${fmt1(u.overturn_pct)}%)</span>
-          <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${u.overturn_pct}%;background:#7c3aed"></div></div>
-        </div>
+      <td class="col-aa-metric">${u.k_pct != null ? fmt1(u.k_pct) + "%" : "—"}</td>
+      <td class="col-aa-metric">${u.bb_pct != null ? fmt1(u.bb_pct) + "%" : "—"}</td>
+      <td class="col-aa-metric">${u.runs_per_game != null ? Number(u.runs_per_game).toFixed(1) : "—"}</td>
+      <td class="col-aa-metric">${u.ejections ?? 0}</td>
+      <td class="col-he-metric">
+        ${hasHe ? `
+          <div class="cell-bar-wrap">
+            <strong style="color:${color};min-width:44px">${fmt1(u.tol_acc_pct)}%</strong>
+            <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${accBar}%;background:${color}"></div></div>
+          </div>
+        ` : naDashHtml()}
       </td>
-      <td>
-        <div class="cell-bar-wrap">
-          <span style="min-width:42px">${u.re_impact}</span>
-          <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${reBar}%;background:#d97706"></div></div>
-        </div>
+      <td class="col-he-metric">${hasHe ? fmt1(u.acc_pct) + "%" : naDashHtml()}</td>
+      <td class="col-he-metric">${hasHe ? (u.missed || 0).toLocaleString() : naDashHtml()}</td>
+      <td class="col-he-metric">${hasHe ? u.mean_miss_in + '"' : naDashHtml()}</td>
+      <td class="col-he-metric">
+        ${hasHe ? `
+          <div class="cell-bar-wrap">
+            <span>${u.overturns}/${u.challenges} (${fmt1(u.overturn_pct || 0)}%)</span>
+            <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${u.overturn_pct || 0}%;background:#7c3aed"></div></div>
+          </div>
+        ` : naDashHtml()}
+      </td>
+      <td class="col-he-metric">
+        ${hasHe ? `
+          <div class="cell-bar-wrap">
+            <span style="min-width:42px">${u.re_impact}</span>
+            <div class="cell-bar-track"><div class="cell-bar-fill" style="width:${reBar}%;background:#d97706"></div></div>
+          </div>
+        ` : naDashHtml()}
       </td>
     </tr>
   `;
   }).join("");
 
   document.querySelectorAll("#leaderboardView [data-ump]").forEach((btn) => {
-    btn.addEventListener("click", () => openUmpireModal(btn.dataset.ump));
+    btn.addEventListener("click", () => openUmpireModal(btn.dataset.ump, lvl !== "ALL" ? lvl : null));
   });
+  bindTooltipTargets(els.leaderboardBody);
 
   renderBadUmpsCards(filteredRows);
 }
@@ -933,15 +1335,16 @@ const MIRIAM_VERDICTS = [
 
 function renderBadUmpsCards(filteredRows) {
   if (!els.badUmpsGrid) return;
+  const heOnly = filteredRows.filter((u) => u.tol_acc_pct !== null && u.tol_acc_pct !== undefined);
   const minFloor = Math.max(Number(els.minPitches.value) || 0, 150);
-  let worst = [...filteredRows]
+  let worst = [...heOnly]
     .filter((u) => u.taken >= minFloor)
-    .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || a.acc_pct - b.acc_pct || b.missed - a.missed)
+    .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || a.acc_pct - b.acc_pct || (b.missed || 0) - (a.missed || 0))
     .slice(0, 12);
 
   if (!worst.length) {
-    worst = [...filteredRows]
-      .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || b.missed - a.missed)
+    worst = [...heOnly]
+      .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || (b.missed || 0) - (a.missed || 0))
       .slice(0, 12);
   }
 

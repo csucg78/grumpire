@@ -17,7 +17,7 @@
       <img src="./icon.png" alt="Miriam's Grumpire icon" class="brand-icon" width="56" height="56" />
       <div class="brand-text">
         <h1>MIRIAM'S GRUMPIRE</h1>
-        <p class="subtitle">MiLB Home Plate Umpire Accuracy &amp; Unmasked ABS Challenge Tracker (AAA + FSL)</p>
+        <p class="subtitle">MiLB Home Plate Umpire Accuracy, Double-A Zone Metrics &amp; Unmasked ABS Challenge Tracker (AAA + AA + FSL)</p>
       </div>
     </div>
     <div class="topbar-right">
@@ -50,12 +50,14 @@
     <div class="filters hidden" id="leaderControls">
       <label for="levelFilter">Level</label>
       <select id="levelFilter">
-        <option value="ALL">All (AAA + FSL)</option>
-        <option value="AAA">Triple-A</option>
-        <option value="FSL">Florida State League</option>
+        <option value="ALL">All (AAA + AA + FSL)</option>
+        <option value="AAA">Triple-A (AAA)</option>
+        <option value="AA">Double-A (AA)</option>
+        <option value="FSL">Florida State League (FSL)</option>
       </select>
       <label for="minPitches">Min Pitches</label>
       <input type="number" id="minPitches" value="50" min="0" step="25" />
+      <input type="search" id="umpSearchInput" placeholder="Search umpire…" aria-label="Search umpire by name" />
       <button type="button" class="pill-btn" id="toggleLevelsCol" title="Show or hide the Levels column">+ Show Levels</button>
       <button type="button" class="pill-btn" id="togglePhotoOnly" title="Filter to umpires with verified Wikipedia photos">📷 Photos Only</button>
     </div>
@@ -87,18 +89,23 @@
         <table class="data-table">
           <thead>
             <tr id="leaderboardHeaderRow">
-              <th data-tip="Rank: Row position under the current sort order (defaults to #1 Grumpiest / lowest raw accuracy).">Rank <span class="th-info-badge">?</span></th>
-              <th data-sort="umpire_name" class="sortable-th" data-tip="Umpire: Home plate official identified from MLB StatsAPI boxscore metadata. Click any column header to sort, or click an umpire name to inspect their full game log and photo search.">Umpire <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="rating" class="sortable-th" data-tip="Rating: Miriam Grumpiness Rating (1 to 5 mini Miriam icons) based on initial raw accuracy — more Miriams = grumpier (5 Miriams <88.5%, 4 Miriams <90.0%, 3 Miriams <91.5%, 2 Miriams <93.0%, 1 Miriam ≥93.0%).">Rating <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="levels" class="sortable-th col-levels" data-tip="Levels: MiLB levels with public Hawk-Eye optical tracking worked by this umpire — Triple-A (AAA) and/or Florida State League (FSL).">Levels <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="games" class="sortable-th" data-tip="Games: Total tracked games worked behind home plate with ≥20 Hawk-Eye taken pitches.">Games <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="taken" class="sortable-th" data-tip="Taken: Total pitches taken by the batter (called strikes + called balls, excluding swings/pitchouts) with valid 3D Hawk-Eye coordinates.">Taken <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="tol_acc_pct" class="sortable-th sort-active" data-tip="Tol Acc% (±0.20&quot;): Tolerance-adjusted accuracy — percentage of correct initial calls excluding razor-thin borderline pitches whose outer ball edge falls within ±0.20 inches (the Hawk-Eye camera margin of error) of the strike zone edge.">Tol Acc% (±0.20") <span class="sort-arrow">▲</span> <span class="th-info-badge">?</span></th>
-              <th data-sort="acc_pct" class="sortable-th" data-tip="Raw Acc%: Strict unbuffered accuracy — percentage of taken pitches where the umpire's initial call BEFORE any ABS challenge matched the exact 0.00&quot; 2D Hawk-Eye strike zone boundary.">Raw Acc% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="missed" class="sortable-th" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye (including calls later overturned by an ABS challenge).">Missed <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="mean_miss_in" class="sortable-th" data-tip="Mean Miss: Average distance in inches from the outer edge of the baseball to the strike zone boundary across all missed calls.">Mean Miss <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="overturns" class="sortable-th" data-tip="ABS Overturns: Automated Ball-Strike system challenges that overturned the umpire's initial call / total challenges initiated (and overturn rate %).">ABS Overturns <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
-              <th data-sort="re_impact" class="sortable-th" data-tip="Σ ΔRE24: Cumulative Run Expectancy swing across all missed initial calls, weighted by the pre-pitch ball-strike count leverage (e.g., a 3-2 miss swings 0.445 expected runs).">Σ ΔRE24 <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-tip="Rank: Row position under the current sort order (defaults to #1 Grumpiest / lowest tolerance accuracy for AAA/FSL, or Called Strike % for AA).">Rank <span class="th-info-badge">?</span></th>
+              <th data-sort="umpire_name" class="sortable-th" data-tip="Umpire: Home plate official identified from MLB StatsAPI boxscore metadata. Click any column header to sort, or click an umpire name to inspect their full game log, level splits, and heatmap.">Umpire <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="rating" class="sortable-th" data-tip="Rating: Miriam Grumpiness Rating (1 to 5 mini Miriam icons) based on initial accuracy (or zone size tier for AA-only rows).">Rating <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="levels" class="sortable-th col-levels" data-tip="Levels: MiLB levels worked by this umpire — Triple-A (AAA), Double-A (AA), and/or Florida State League (FSL).">Levels <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="games" class="sortable-th" data-tip="Games: Total tracked games worked behind home plate with ≥20 taken pitches.">Games <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="taken" class="sortable-th" data-tip="Taken: Total pitches taken by the batter (called strikes + called balls, excluding swings/pitchouts).">Taken <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="called_strike_pct" class="sortable-th" data-tip="CS%: Called Strike Percentage — called strikes divided by total taken pitches (called strikes + called balls). Primary zone-size indicator at Double-A.">CS% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="k_pct" class="sortable-th col-aa-metric" data-tip="K%: Strikeout percentage across completed plate appearances in games worked behind home plate.">K% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="bb_pct" class="sortable-th col-aa-metric" data-tip="BB%: Walk percentage across completed plate appearances in games worked behind home plate.">BB% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="runs_per_game" class="sortable-th col-aa-metric" data-tip="Runs/G: Average combined runs scored per game worked behind home plate.">Runs/G <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="ejections" class="sortable-th col-aa-metric" data-tip="Ejections: Total recorded ejections in games worked behind home plate.">Ej <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="tol_acc_pct" class="sortable-th sort-active col-he-metric" data-tip="Tol Acc% (±0.20&quot;): Tolerance-adjusted accuracy — percentage of correct initial calls excluding razor-thin borderline pitches within ±0.20 inches of the Hawk-Eye strike zone edge (N/A at Double-A).">Tol Acc% (±0.20") <span class="sort-arrow">▲</span> <span class="th-info-badge">?</span></th>
+              <th data-sort="acc_pct" class="sortable-th col-he-metric" data-tip="Raw Acc%: Strict unbuffered accuracy — percentage of taken pitches matching the exact 0.00&quot; 2D Hawk-Eye strike zone boundary (N/A at Double-A).">Raw Acc% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="missed" class="sortable-th col-he-metric" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye (N/A at Double-A).">Missed <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="mean_miss_in" class="sortable-th col-he-metric" data-tip="Mean Miss: Average distance in inches from the outer edge of the baseball to the Hawk-Eye strike zone boundary across all missed calls (N/A at Double-A).">Mean Miss <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="overturns" class="sortable-th col-he-metric" data-tip="ABS Overturns: Automated Ball-Strike system challenges that overturned the umpire's initial call / total challenges initiated (N/A at Double-A).">ABS Overturns <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="re_impact" class="sortable-th col-he-metric" data-tip="Σ ΔRE24: Cumulative Run Expectancy swing across all missed initial calls, weighted by the pre-pitch ball-strike count leverage (N/A at Double-A).">Σ ΔRE24 <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
             </tr>
           </thead>
           <tbody id="leaderboardBody"></tbody>

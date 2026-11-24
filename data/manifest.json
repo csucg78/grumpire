@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-23T06:58:08Z",
+  "updated_utc": "2026-11-24T03:14:31Z",
   "available_years": [
     "2026",
     "2025",
@@ -631,20 +631,20 @@
   ],
   "latest_date": "2026-09-24",
   "totals": {
-    "games": 11227,
-    "pitches": 1816844,
-    "umpires": 244
+    "games": 11318,
+    "pitches": 1831265,
+    "umpires": 268
   },
   "totals_by_year": {
     "ALL": {
-      "games": 11227,
-      "pitches": 1816844,
-      "umpires": 244
+      "games": 11318,
+      "pitches": 1831265,
+      "umpires": 268
     },
     "2026": {
-      "games": 2812,
-      "pitches": 453522,
-      "umpires": 95
+      "games": 2903,
+      "pitches": 467943,
+      "umpires": 141
     },
     "2025": {
       "games": 2817,

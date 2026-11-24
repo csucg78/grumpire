@@ -1,0 +1,1414 @@
+{
+  "umpire_id": "804625",
+  "umpire_name": "Jamal Allen",
+  "levels": [
+    "AA"
+  ],
+  "games": 2,
+  "total_pitches": 597,
+  "taken": 309,
+  "taken_pitches": 309,
+  "called_strikes": 84,
+  "called_strike_pct": 27.2,
+  "plate_appearances": 152,
+  "k_pct": 25.7,
+  "bb_pct": 11.8,
+  "runs_per_game": 9.0,
+  "ejections": 0,
+  "missed": null,
+  "acc_pct": null,
+  "accuracy_pct": null,
+  "tol_acc_pct": null,
+  "consistency_pct": null,
+  "expected_accuracy_pct": null,
+  "favor_runs": null,
+  "mean_miss_in": null,
+  "challenges": null,
+  "overturns": null,
+  "overturn_pct": null,
+  "re_impact": null,
+  "level_splits": {
+    "AA": {
+      "umpire_id": "804625",
+      "umpire_name": "Jamal Allen",
+      "levels": [
+        "AA"
+      ],
+      "games": 2,
+      "total_pitches": 597,
+      "taken": 309,
+      "taken_pitches": 309,
+      "called_strikes": 84,
+      "called_strike_pct": 27.2,
+      "plate_appearances": 152,
+      "k_pct": 25.7,
+      "bb_pct": 11.8,
+      "runs_per_game": 9.0,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "accuracy_pct": null,
+      "tol_acc_pct": null,
+      "consistency_pct": null,
+      "expected_accuracy_pct": null,
+      "favor_runs": null,
+      "mean_miss_in": null,
+      "challenges": null,
+      "overturns": null,
+      "overturn_pct": null,
+      "re_impact": null,
+      "aa_heatmap": {
+        "grid_size": 6,
+        "span_sd": 1.8,
+        "cells": [
+          [
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 1,
+              "cs_pct": 33.3
+            },
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 6,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 6,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 10,
+              "cs": 5,
+              "cs_pct": 50.0
+            },
+            {
+              "taken": 8,
+              "cs": 6,
+              "cs_pct": 75.0
+            },
+            {
+              "taken": 12,
+              "cs": 6,
+              "cs_pct": 50.0
+            },
+            {
+              "taken": 14,
+              "cs": 1,
+              "cs_pct": 7.1
+            },
+            {
+              "taken": 13,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 8,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 16,
+              "cs": 3,
+              "cs_pct": 18.8
+            },
+            {
+              "taken": 14,
+              "cs": 14,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 10,
+              "cs": 10,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 9,
+              "cs": 4,
+              "cs_pct": 44.4
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 17,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 14,
+              "cs": 4,
+              "cs_pct": 28.6
+            },
+            {
+              "taken": 15,
+              "cs": 15,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 11,
+              "cs": 9,
+              "cs_pct": 81.8
+            },
+            {
+              "taken": 11,
+              "cs": 5,
+              "cs_pct": 45.5
+            },
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 12,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 8,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 5,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 5,
+              "cs": 1,
+              "cs_pct": 20.0
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 4,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 6,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "aa_heatmap": {
+    "grid_size": 6,
+    "span_sd": 1.8,
+    "cells": [
+      [
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 1,
+          "cs_pct": 33.3
+        },
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 6,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 6,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 10,
+          "cs": 5,
+          "cs_pct": 50.0
+        },
+        {
+          "taken": 8,
+          "cs": 6,
+          "cs_pct": 75.0
+        },
+        {
+          "taken": 12,
+          "cs": 6,
+          "cs_pct": 50.0
+        },
+        {
+          "taken": 14,
+          "cs": 1,
+          "cs_pct": 7.1
+        },
+        {
+          "taken": 13,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 8,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 16,
+          "cs": 3,
+          "cs_pct": 18.8
+        },
+        {
+          "taken": 14,
+          "cs": 14,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 10,
+          "cs": 10,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 9,
+          "cs": 4,
+          "cs_pct": 44.4
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 17,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 14,
+          "cs": 4,
+          "cs_pct": 28.6
+        },
+        {
+          "taken": 15,
+          "cs": 15,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 11,
+          "cs": 9,
+          "cs_pct": 81.8
+        },
+        {
+          "taken": 11,
+          "cs": 5,
+          "cs_pct": 45.5
+        },
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 12,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 8,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 5,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 5,
+          "cs": 1,
+          "cs_pct": 20.0
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 4,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 6,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ]
+    ]
+  },
+  "season_splits": {
+    "ALL": {
+      "ALL": {
+        "umpire_id": "804625",
+        "umpire_name": "Jamal Allen",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 597,
+        "taken": 309,
+        "taken_pitches": 309,
+        "called_strikes": 84,
+        "called_strike_pct": 27.2,
+        "plate_appearances": 152,
+        "k_pct": 25.7,
+        "bb_pct": 11.8,
+        "runs_per_game": 9.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 1,
+                "cs_pct": 33.3
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 10,
+                "cs": 5,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 8,
+                "cs": 6,
+                "cs_pct": 75.0
+              },
+              {
+                "taken": 12,
+                "cs": 6,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 14,
+                "cs": 1,
+                "cs_pct": 7.1
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 3,
+                "cs_pct": 18.8
+              },
+              {
+                "taken": 14,
+                "cs": 14,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 10,
+                "cs": 10,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 17,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 15,
+                "cs": 15,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 11,
+                "cs": 5,
+                "cs_pct": 45.5
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 1,
+                "cs_pct": 20.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "804625",
+        "umpire_name": "Jamal Allen",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 597,
+        "taken": 309,
+        "taken_pitches": 309,
+        "called_strikes": 84,
+        "called_strike_pct": 27.2,
+        "plate_appearances": 152,
+        "k_pct": 25.7,
+        "bb_pct": 11.8,
+        "runs_per_game": 9.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 1,
+                "cs_pct": 33.3
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 10,
+                "cs": 5,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 8,
+                "cs": 6,
+                "cs_pct": 75.0
+              },
+              {
+                "taken": 12,
+                "cs": 6,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 14,
+                "cs": 1,
+                "cs_pct": 7.1
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 3,
+                "cs_pct": 18.8
+              },
+              {
+                "taken": 14,
+                "cs": 14,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 10,
+                "cs": 10,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 17,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 15,
+                "cs": 15,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 11,
+                "cs": 5,
+                "cs_pct": 45.5
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 1,
+                "cs_pct": 20.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    "2026": {
+      "ALL": {
+        "umpire_id": "804625",
+        "umpire_name": "Jamal Allen",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 597,
+        "taken": 309,
+        "taken_pitches": 309,
+        "called_strikes": 84,
+        "called_strike_pct": 27.2,
+        "plate_appearances": 152,
+        "k_pct": 25.7,
+        "bb_pct": 11.8,
+        "runs_per_game": 9.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 1,
+                "cs_pct": 33.3
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 10,
+                "cs": 5,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 8,
+                "cs": 6,
+                "cs_pct": 75.0
+              },
+              {
+                "taken": 12,
+                "cs": 6,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 14,
+                "cs": 1,
+                "cs_pct": 7.1
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 3,
+                "cs_pct": 18.8
+              },
+              {
+                "taken": 14,
+                "cs": 14,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 10,
+                "cs": 10,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 17,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 15,
+                "cs": 15,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 11,
+                "cs": 5,
+                "cs_pct": 45.5
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 1,
+                "cs_pct": 20.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "804625",
+        "umpire_name": "Jamal Allen",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 597,
+        "taken": 309,
+        "taken_pitches": 309,
+        "called_strikes": 84,
+        "called_strike_pct": 27.2,
+        "plate_appearances": 152,
+        "k_pct": 25.7,
+        "bb_pct": 11.8,
+        "runs_per_game": 9.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 1,
+                "cs_pct": 33.3
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 10,
+                "cs": 5,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 8,
+                "cs": 6,
+                "cs_pct": 75.0
+              },
+              {
+                "taken": 12,
+                "cs": 6,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 14,
+                "cs": 1,
+                "cs_pct": 7.1
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 3,
+                "cs_pct": 18.8
+              },
+              {
+                "taken": 14,
+                "cs": 14,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 10,
+                "cs": 10,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 17,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 15,
+                "cs": 15,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 11,
+                "cs": 5,
+                "cs_pct": 45.5
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 1,
+                "cs_pct": 20.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "game_log": [
+    {
+      "game_pk": 817401,
+      "date": "2026-08-15",
+      "level": "AA",
+      "matchup": "SA @ FRI",
+      "taken": 163,
+      "called_strikes": 40,
+      "called_strike_pct": 24.5,
+      "k_pct": 26.9,
+      "bb_pct": 14.1,
+      "runs_scored": 8,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 817413,
+      "date": "2026-08-12",
+      "level": "AA",
+      "matchup": "SA @ FRI",
+      "taken": 146,
+      "called_strikes": 44,
+      "called_strike_pct": 30.1,
+      "k_pct": 24.3,
+      "bb_pct": 9.5,
+      "runs_scored": 10,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    }
+  ]
+}

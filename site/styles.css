@@ -813,3 +813,63 @@ th[data-tip]:hover, th[data-tip].tip-active {
   line-height: 1.35;
   font-style: italic;
 }
+
+/* Double-A Outcome & Heatmap Styles */
+.na-dash {
+  color: var(--muted);
+  font-weight: 600;
+  cursor: help;
+  border-bottom: 1px dotted var(--muted);
+}
+
+.split-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.heatmap-panel {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #faf9f5;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.heatmap-svg {
+  width: 220px;
+  height: 220px;
+  border: 1px solid var(--rule);
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.heatmap-info {
+  flex: 1;
+  min-width: 210px;
+  font-size: 0.81rem;
+  color: var(--ink);
+}
+
+.heatmap-info h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.aa-notice-banner {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-left: 4px solid #d97706;
+  color: #78350f;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}

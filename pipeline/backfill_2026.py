@@ -109,21 +109,23 @@ def discover_season_games(
     limiter: RateLimiter,
     start_date: dt.date,
     end_date: dt.date,
+    sport_ids: str = "11,12,14",
 ) -> list[tuple[str, dict[str, Any]]]:
-    """Fetch Final AAA (11) and FSL (14) games across 14-day schedule windows."""
+    """Fetch Final AAA (11), AA (12), and FSL (14) games across 14-day schedule windows."""
     discovered: dict[int, tuple[str, dict[str, Any]]] = {}
     chunks = iter_date_chunks(start_date, end_date, chunk_days=14)
-    log.info("Fetching 2026 schedule across %d date windows (%s -> %s)...", len(chunks), start_date, end_date)
+    log.info("Fetching schedule (sportId=%s) across %d date windows (%s -> %s)...", sport_ids, len(chunks), start_date, end_date)
 
     for s_str, e_str in chunks:
         limiter.acquire()
         resp = session.get(
             SCHEDULE_URL,
             params={
-                "sportId": "11,14",
+                "sportId": sport_ids,
                 "startDate": s_str,
                 "endDate": e_str,
                 "gameTypes": "R,F,D,L,W",
+                "hydrate": "officials",
             },
             timeout=30,
         )
@@ -141,13 +143,15 @@ def discover_season_games(
                     g.get("sportId")
                     or g.get("teams", {}).get("home", {}).get("team", {}).get("sport", {}).get("id")
                 )
+                if sport_id == 12 and g.get("gameType", "R") != "R":
+                    continue
                 g["_level"] = SPORT_LABELS.get(sport_id, "MiLB")
                 game_date = g.get("officialDate") or official_date
                 # Keep the latest entry if a suspended/resumed game appears on two dates
                 discovered[game_pk] = (game_date, g)
 
     ordered = sorted(discovered.values(), key=lambda item: (item[0], item[1]["gamePk"]))
-    log.info("Discovered %d unique Final AAA/FSL games.", len(ordered))
+    log.info("Discovered %d unique Final MiLB games.", len(ordered))
     return ordered
 
 
@@ -164,7 +168,7 @@ def rebuild_all_date_slates(data_dir: Path) -> int:
         by_date[g["date"]].append(card)
 
     for date_str, cards in by_date.items():
-        cards.sort(key=lambda c: (c["level"], -c["missed"]))
+        cards.sort(key=lambda c: (c["level"], -(c.get("missed") or 0), -(c.get("taken") or 0)))
         (dates_dir / f"{date_str}.json").write_text(
             json.dumps({"date": date_str, "games": cards}, indent=2),
             encoding="utf-8",
@@ -176,6 +180,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Concurrent 2026 MiLB Season Backfill for Grumpire")
     parser.add_argument("--start", default=DEFAULT_START, help=f"Start YYYY-MM-DD (default: {DEFAULT_START})")
     parser.add_argument("--end", default=DEFAULT_END, help=f"End YYYY-MM-DD (default: {DEFAULT_END})")
+    parser.add_argument("--sport-ids", default="11,12,14", help="Comma-separated MLB sportIds (default: 11,12,14)")
     parser.add_argument("--workers", type=int, default=10, help="Concurrent worker threads (default: 10)")
     parser.add_argument("--rps", type=float, default=12.0, help="Max global requests/sec (default: 12.0)")
     parser.add_argument("--data-dir", default="site/data", help="Output JSON directory (default: site/data)")
@@ -201,7 +206,7 @@ def main() -> None:
     limiter = RateLimiter(args.rps)
     session = build_pooled_session(pool_size=args.workers)
 
-    all_games = discover_season_games(session, limiter, start_date, end_date)
+    all_games = discover_season_games(session, limiter, start_date, end_date, sport_ids=args.sport_ids)
     if args.force:
         todo = all_games
     else:

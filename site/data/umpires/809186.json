@@ -1,0 +1,1414 @@
+{
+  "umpire_id": "809186",
+  "umpire_name": "Rafael Pineda",
+  "levels": [
+    "AA"
+  ],
+  "games": 2,
+  "total_pitches": 571,
+  "taken": 301,
+  "taken_pitches": 301,
+  "called_strikes": 87,
+  "called_strike_pct": 28.9,
+  "plate_appearances": 158,
+  "k_pct": 19.0,
+  "bb_pct": 10.1,
+  "runs_per_game": 10.0,
+  "ejections": 0,
+  "missed": null,
+  "acc_pct": null,
+  "accuracy_pct": null,
+  "tol_acc_pct": null,
+  "consistency_pct": null,
+  "expected_accuracy_pct": null,
+  "favor_runs": null,
+  "mean_miss_in": null,
+  "challenges": null,
+  "overturns": null,
+  "overturn_pct": null,
+  "re_impact": null,
+  "level_splits": {
+    "AA": {
+      "umpire_id": "809186",
+      "umpire_name": "Rafael Pineda",
+      "levels": [
+        "AA"
+      ],
+      "games": 2,
+      "total_pitches": 571,
+      "taken": 301,
+      "taken_pitches": 301,
+      "called_strikes": 87,
+      "called_strike_pct": 28.9,
+      "plate_appearances": 158,
+      "k_pct": 19.0,
+      "bb_pct": 10.1,
+      "runs_per_game": 10.0,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "accuracy_pct": null,
+      "tol_acc_pct": null,
+      "consistency_pct": null,
+      "expected_accuracy_pct": null,
+      "favor_runs": null,
+      "mean_miss_in": null,
+      "challenges": null,
+      "overturns": null,
+      "overturn_pct": null,
+      "re_impact": null,
+      "aa_heatmap": {
+        "grid_size": 6,
+        "span_sd": 1.8,
+        "cells": [
+          [
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 6,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 8,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 5,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 2,
+              "cs": 1,
+              "cs_pct": 50.0
+            },
+            {
+              "taken": 10,
+              "cs": 3,
+              "cs_pct": 30.0
+            },
+            {
+              "taken": 14,
+              "cs": 7,
+              "cs_pct": 50.0
+            },
+            {
+              "taken": 16,
+              "cs": 2,
+              "cs_pct": 12.5
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 4,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 16,
+              "cs": 10,
+              "cs_pct": 62.5
+            },
+            {
+              "taken": 5,
+              "cs": 5,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 19,
+              "cs": 19,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 11,
+              "cs": 6,
+              "cs_pct": 54.5
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 16,
+              "cs": 9,
+              "cs_pct": 56.2
+            },
+            {
+              "taken": 12,
+              "cs": 12,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 11,
+              "cs": 9,
+              "cs_pct": 81.8
+            },
+            {
+              "taken": 9,
+              "cs": 4,
+              "cs_pct": 44.4
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 10,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 18,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 13,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 4,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 6,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 0,
+              "cs": 0,
+              "cs_pct": null
+            },
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "aa_heatmap": {
+    "grid_size": 6,
+    "span_sd": 1.8,
+    "cells": [
+      [
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 6,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 8,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 5,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 2,
+          "cs": 1,
+          "cs_pct": 50.0
+        },
+        {
+          "taken": 10,
+          "cs": 3,
+          "cs_pct": 30.0
+        },
+        {
+          "taken": 14,
+          "cs": 7,
+          "cs_pct": 50.0
+        },
+        {
+          "taken": 16,
+          "cs": 2,
+          "cs_pct": 12.5
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 4,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 16,
+          "cs": 10,
+          "cs_pct": 62.5
+        },
+        {
+          "taken": 5,
+          "cs": 5,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 19,
+          "cs": 19,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 11,
+          "cs": 6,
+          "cs_pct": 54.5
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 16,
+          "cs": 9,
+          "cs_pct": 56.2
+        },
+        {
+          "taken": 12,
+          "cs": 12,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 11,
+          "cs": 9,
+          "cs_pct": 81.8
+        },
+        {
+          "taken": 9,
+          "cs": 4,
+          "cs_pct": 44.4
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 10,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 18,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 13,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 4,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 6,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 0,
+          "cs": 0,
+          "cs_pct": null
+        },
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ]
+    ]
+  },
+  "season_splits": {
+    "ALL": {
+      "ALL": {
+        "umpire_id": "809186",
+        "umpire_name": "Rafael Pineda",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 571,
+        "taken": 301,
+        "taken_pitches": 301,
+        "called_strikes": 87,
+        "called_strike_pct": 28.9,
+        "plate_appearances": 158,
+        "k_pct": 19.0,
+        "bb_pct": 10.1,
+        "runs_per_game": 10.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 1,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
+              },
+              {
+                "taken": 14,
+                "cs": 7,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 16,
+                "cs": 2,
+                "cs_pct": 12.5
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 10,
+                "cs_pct": 62.5
+              },
+              {
+                "taken": 5,
+                "cs": 5,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 19,
+                "cs": 19,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 6,
+                "cs_pct": 54.5
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 9,
+                "cs_pct": 56.2
+              },
+              {
+                "taken": 12,
+                "cs": 12,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 18,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "809186",
+        "umpire_name": "Rafael Pineda",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 571,
+        "taken": 301,
+        "taken_pitches": 301,
+        "called_strikes": 87,
+        "called_strike_pct": 28.9,
+        "plate_appearances": 158,
+        "k_pct": 19.0,
+        "bb_pct": 10.1,
+        "runs_per_game": 10.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 1,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
+              },
+              {
+                "taken": 14,
+                "cs": 7,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 16,
+                "cs": 2,
+                "cs_pct": 12.5
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 10,
+                "cs_pct": 62.5
+              },
+              {
+                "taken": 5,
+                "cs": 5,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 19,
+                "cs": 19,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 6,
+                "cs_pct": 54.5
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 9,
+                "cs_pct": 56.2
+              },
+              {
+                "taken": 12,
+                "cs": 12,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 18,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    "2026": {
+      "ALL": {
+        "umpire_id": "809186",
+        "umpire_name": "Rafael Pineda",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 571,
+        "taken": 301,
+        "taken_pitches": 301,
+        "called_strikes": 87,
+        "called_strike_pct": 28.9,
+        "plate_appearances": 158,
+        "k_pct": 19.0,
+        "bb_pct": 10.1,
+        "runs_per_game": 10.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 1,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
+              },
+              {
+                "taken": 14,
+                "cs": 7,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 16,
+                "cs": 2,
+                "cs_pct": 12.5
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 10,
+                "cs_pct": 62.5
+              },
+              {
+                "taken": 5,
+                "cs": 5,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 19,
+                "cs": 19,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 6,
+                "cs_pct": 54.5
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 9,
+                "cs_pct": 56.2
+              },
+              {
+                "taken": 12,
+                "cs": 12,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 18,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "809186",
+        "umpire_name": "Rafael Pineda",
+        "levels": [
+          "AA"
+        ],
+        "games": 2,
+        "total_pitches": 571,
+        "taken": 301,
+        "taken_pitches": 301,
+        "called_strikes": 87,
+        "called_strike_pct": 28.9,
+        "plate_appearances": 158,
+        "k_pct": 19.0,
+        "bb_pct": 10.1,
+        "runs_per_game": 10.0,
+        "ejections": 0,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 8,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 1,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
+              },
+              {
+                "taken": 14,
+                "cs": 7,
+                "cs_pct": 50.0
+              },
+              {
+                "taken": 16,
+                "cs": 2,
+                "cs_pct": 12.5
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 10,
+                "cs_pct": 62.5
+              },
+              {
+                "taken": 5,
+                "cs": 5,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 19,
+                "cs": 19,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 6,
+                "cs_pct": 54.5
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 16,
+                "cs": 9,
+                "cs_pct": 56.2
+              },
+              {
+                "taken": 12,
+                "cs": 12,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 11,
+                "cs": 9,
+                "cs_pct": 81.8
+              },
+              {
+                "taken": 9,
+                "cs": 4,
+                "cs_pct": 44.4
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 18,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 6,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "game_log": [
+    {
+      "game_pk": 817823,
+      "date": "2026-08-14",
+      "level": "AA",
+      "matchup": "CHA @ MTG",
+      "taken": 131,
+      "called_strikes": 41,
+      "called_strike_pct": 31.3,
+      "k_pct": 23.6,
+      "bb_pct": 8.3,
+      "runs_scored": 7,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 817819,
+      "date": "2026-08-11",
+      "level": "AA",
+      "matchup": "CHA @ MTG",
+      "taken": 170,
+      "called_strikes": 46,
+      "called_strike_pct": 27.1,
+      "k_pct": 15.1,
+      "bb_pct": 11.6,
+      "runs_scored": 13,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    }
+  ]
+}

@@ -20,6 +20,8 @@ const els = {
   leaderControls: document.getElementById("leaderControls"),
   slateView: document.getElementById("slateView"),
   leaderboardView: document.getElementById("leaderboardView"),
+  badUmpsView: document.getElementById("badUmpsView"),
+  badUmpsGrid: document.getElementById("badUmpsGrid"),
   gamesList: document.getElementById("gamesList"),
   scorecardPanel: document.getElementById("scorecardPanel"),
   leaderboardViz: document.getElementById("leaderboardViz"),
@@ -393,17 +395,20 @@ async function getJSON(path) {
 
 function activateView(target, updateHash = true) {
   const isSlate = target === "slateView";
+  const isLeader = target === "leaderboardView";
+  const isBadUmps = target === "badUmpsView";
   document.querySelectorAll(".tab-btn").forEach((b) => {
     b.classList.toggle("active", b.dataset.view === target);
   });
   els.slateView.classList.toggle("hidden", !isSlate);
   els.dateControls.classList.toggle("hidden", !isSlate);
   if (els.metricTipBar) els.metricTipBar.classList.toggle("hidden", !isSlate);
-  els.leaderboardView.classList.toggle("hidden", isSlate);
-  els.leaderControls.classList.toggle("hidden", isSlate);
+  els.leaderboardView.classList.toggle("hidden", !isLeader);
+  if (els.badUmpsView) els.badUmpsView.classList.toggle("hidden", !isBadUmps);
+  els.leaderControls.classList.toggle("hidden", !(isLeader || isBadUmps));
 
   if (updateHash) {
-    const newHash = isSlate ? "#/slate" : "#/leaderboard";
+    const newHash = isSlate ? "#/slate" : (isBadUmps ? "#/bad-umps" : "#/leaderboard");
     if (window.location.hash !== newHash) {
       history.replaceState(null, "", newHash);
     }
@@ -413,7 +418,9 @@ function activateView(target, updateHash = true) {
 function syncViewFromUrl() {
   const h = window.location.hash.toLowerCase();
   const params = new URLSearchParams(window.location.search);
-  if (h.includes("leaderboard") || params.get("view") === "leaderboard") {
+  if (h.includes("bad") || params.get("view") === "bad-umps") {
+    activateView("badUmpsView", false);
+  } else if (h.includes("leaderboard") || params.get("view") === "leaderboard") {
     activateView("leaderboardView", false);
   } else if (h.includes("slate") || params.get("view") === "slate") {
     activateView("slateView", false);
@@ -909,6 +916,106 @@ function renderLeaderboard() {
   document.querySelectorAll("#leaderboardView [data-ump]").forEach((btn) => {
     btn.addEventListener("click", () => openUmpireModal(btn.dataset.ump));
   });
+
+  renderBadUmpsCards(filteredRows);
+}
+
+const MIRIAM_VERDICTS = [
+  "\"That outer half wasn't a strike zone, it was a zip code!\"",
+  "\"Even the Hawk-Eye cameras had to rub their eyes on that call.\"",
+  "\"Batter needed a boat paddle to reach those called strikes.\"",
+  "\"ABS challenge button got worn down to the springs in this series.\"",
+  "\"Calling pitches in the dirt like it's cricket behind the plate!\"",
+  "\"Miriam's glasses fogged up just watching this strike zone drift.\"",
+  "\"Generous on the corners? That pitch was in the on-deck circle!\"",
+  "\"Pitchers loved it, batters wept, and the ABS system worked overtime.\"",
+];
+
+function renderBadUmpsCards(filteredRows) {
+  if (!els.badUmpsGrid) return;
+  const minFloor = Math.max(Number(els.minPitches.value) || 0, 150);
+  let worst = [...filteredRows]
+    .filter((u) => u.taken >= minFloor)
+    .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || a.acc_pct - b.acc_pct || b.missed - a.missed)
+    .slice(0, 12);
+
+  if (!worst.length) {
+    worst = [...filteredRows]
+      .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || b.missed - a.missed)
+      .slice(0, 12);
+  }
+
+  const yrLabel = state.selectedYear === "ALL" ? "2023–2026" : state.selectedYear;
+
+  els.badUmpsGrid.innerHTML = worst.map((u, idx) => {
+    const verdict = MIRIAM_VERDICTS[idx % MIRIAM_VERDICTS.length];
+    const mCount = Math.max(3, miriamCount(u.tol_acc_pct));
+    const pips = Array.from(
+      { length: mCount },
+      () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="18" height="18" />`
+    ).join("");
+
+    return `
+      <article class="baseball-card" data-ump="${u.umpire_id}">
+        <div>
+          <div class="card-series-bar">
+            <span>GRUMPIRE TOPPS-MISS #${String(idx + 1).padStart(2, "0")}</span>
+            <span>${yrLabel}</span>
+          </div>
+
+          <div class="card-portrait-frame">
+            <span class="card-level-pennant">${u.levels.join(" / ")}</span>
+            <img src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="card-ump-photo" loading="lazy" />
+            <div class="miriam-disapproval-seal" title="Miriam Disapproves!">
+              <img src="./icon.png" alt="Disapproving Miriam" />
+              <div class="seal-caption">Miriam<br/>Disapproves!</div>
+            </div>
+          </div>
+
+          <div class="card-name-ribbon">
+            <span class="card-ump-name">${u.umpire_name}</span>
+            <span class="grump-pill">${pips}</span>
+          </div>
+        </div>
+
+        <div class="card-back-stats">
+          <div class="card-stats-grid">
+            <div class="card-stat-box">
+              <span>Tol Acc%</span>
+              <strong style="color:#dc2626">${fmt1(u.tol_acc_pct)}%</strong>
+            </div>
+            <div class="card-stat-box">
+              <span>Raw Acc%</span>
+              <strong>${fmt1(u.acc_pct)}%</strong>
+            </div>
+            <div class="card-stat-box">
+              <span>Missed Calls</span>
+              <strong style="color:#b91c1c">${u.missed.toLocaleString()}</strong>
+            </div>
+            <div class="card-stat-box">
+              <span>Mean Miss</span>
+              <strong>${u.mean_miss_in}"</strong>
+            </div>
+            <div class="card-stat-box">
+              <span>ABS Overturns</span>
+              <strong style="color:#7c3aed">${u.overturns}/${u.challenges}</strong>
+            </div>
+            <div class="card-stat-box">
+              <span>Σ ΔRE24</span>
+              <strong style="color:#15803d">+${u.re_impact}</strong>
+            </div>
+          </div>
+          <div class="card-scouting-report">
+            <strong>Miriam's Scouting Report (${u.games} G · ${u.taken.toLocaleString()} Pitches):</strong> ${verdict}
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  els.badUmpsGrid.querySelectorAll(".baseball-card").forEach((card) => {
+    card.addEventListener("click", () => openUmpireModal(card.dataset.ump));
+  });
 }
 
 async function applyYearSelection(yearKey, reloadSlate = true) {
@@ -940,7 +1047,7 @@ async function applyYearSelection(yearKey, reloadSlate = true) {
   }
 }
 
-// Ballpark Organ Synthesizer ("Take Me Out to the Ball Game" - 1908 Albert Von Tilzer waltz with 3/4 Oom-Pah-Pah accompaniment & Leslie vibrato)
+// Ballpark Organ Synthesizer ("Take Me Out to the Ball Game" in C Harmonic Minor - Grumpire Funeral/Villain Waltz with 3/4 Oom-Pah-Pah accompaniment)
 const organ = {
   ctx: null,
   muted: false,
@@ -948,83 +1055,83 @@ const organ = {
   timer: null,
   noteIdx: 0,
   beatCount: 0,
-  // Exact 3/4 waltz sheet music in C Major: [melodyHz, beats, bassRootHz, chordMidHzArray]
-  // Chords: C = [261.63, 329.63, 392.00], G7 = [246.94, 349.23, 392.00], D7 = [293.66, 369.99, 440.00],
-  //         A7 = [277.18, 329.63, 440.00], Dm = [293.66, 349.23, 440.00], F = [261.63, 349.23, 440.00], E7 = [246.94, 329.63, 415.30]
+  // Transposed from C Major to C Harmonic Minor (Eb = 311.13 Hz, Ab = 415.30 Hz, B natural = 493.88 Hz, F# dim = 369.99 Hz)
+  // Minor Chords: Cm = [261.63, 311.13, 392.00], G7b9 = [246.94, 349.23, 415.30], Fm = [261.63, 349.23, 415.30],
+  //               Ddim7 = [293.66, 349.23, 415.30], Ab7 = [261.63, 311.13, 415.30], G7 = [246.94, 349.23, 392.00]
   melody: [
-    // m.1-4: "Take me out to the ball game," (C -> G7)
-    [261.63, 2, 130.81, [261.63, 329.63, 392.00]],
-    [523.25, 1, 130.81, [261.63, 329.63, 392.00]],
-    [440.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [329.63, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 3, 98.00,  [246.94, 349.23, 392.00]],
-    [293.66, 3, 98.00,  [246.94, 349.23, 392.00]],
+    // m.1-4: "Take me out to the ball game," (Cm -> G7b9)
+    [261.63, 2, 130.81, [261.63, 311.13, 392.00]],
+    [523.25, 1, 130.81, [261.63, 311.13, 392.00]],
+    [415.30, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 1, 130.81, [261.63, 311.13, 392.00]],
+    [311.13, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 3, 98.00,  [246.94, 349.23, 415.30]],
+    [293.66, 3, 98.00,  [246.94, 349.23, 415.30]],
 
-    // m.5-8: "Take me out with the crowd;" (C -> G7)
-    [261.63, 2, 130.81, [261.63, 329.63, 392.00]],
-    [523.25, 1, 130.81, [261.63, 329.63, 392.00]],
-    [440.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [329.63, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 6, 98.00,  [246.94, 349.23, 392.00]],
+    // m.5-8: "Take me out with the crowd;" (Cm -> G7b9)
+    [261.63, 2, 130.81, [261.63, 311.13, 392.00]],
+    [523.25, 1, 130.81, [261.63, 311.13, 392.00]],
+    [415.30, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 1, 130.81, [261.63, 311.13, 392.00]],
+    [311.13, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 6, 98.00,  [246.94, 349.23, 415.30]],
 
-    // m.9-12: "Buy me some pea-nuts and Crack-er Jack," (Dm -> A7 -> Dm)
-    [440.00, 1, 146.83, [293.66, 349.23, 440.00]],
-    [392.00, 1, 146.83, [293.66, 349.23, 440.00]],
-    [440.00, 1, 146.83, [293.66, 349.23, 440.00]],
-    [329.63, 1, 110.00, [277.18, 329.63, 440.00]],
-    [349.23, 1, 110.00, [277.18, 329.63, 440.00]],
-    [392.00, 1, 110.00, [277.18, 329.63, 440.00]],
-    [440.00, 2, 146.83, [293.66, 349.23, 440.00]],
-    [349.23, 1, 146.83, [293.66, 349.23, 440.00]],
-    [293.66, 3, 146.83, [293.66, 349.23, 440.00]],
+    // m.9-12: "Buy me some pea-nuts and Crack-er Jack," (Fm -> Ddim7 -> Fm)
+    [415.30, 1, 174.61, [261.63, 349.23, 415.30]],
+    [392.00, 1, 174.61, [261.63, 349.23, 415.30]],
+    [415.30, 1, 174.61, [261.63, 349.23, 415.30]],
+    [311.13, 1, 146.83, [293.66, 349.23, 415.30]],
+    [349.23, 1, 146.83, [293.66, 349.23, 415.30]],
+    [392.00, 1, 146.83, [293.66, 349.23, 415.30]],
+    [415.30, 2, 174.61, [261.63, 349.23, 415.30]],
+    [349.23, 1, 174.61, [261.63, 349.23, 415.30]],
+    [293.66, 3, 146.83, [293.66, 349.23, 415.30]],
 
-    // m.13-16: "I don't care if I nev-er get back," (D7 -> G7)
-    [440.00, 2, 146.83, [293.66, 369.99, 440.00]],
-    [440.00, 1, 146.83, [293.66, 369.99, 440.00]],
-    [440.00, 1, 146.83, [293.66, 369.99, 440.00]],
-    [493.88, 1, 146.83, [293.66, 369.99, 440.00]],
-    [523.25, 1, 146.83, [293.66, 369.99, 440.00]],
-    [587.33, 1, 98.00,  [246.94, 349.23, 392.00]],
-    [493.88, 1, 98.00,  [246.94, 349.23, 392.00]],
-    [440.00, 1, 98.00,  [246.94, 349.23, 392.00]],
-    [392.00, 3, 98.00,  [246.94, 349.23, 392.00]],
+    // m.13-16: "I don't care if I nev-er get back," (Ddim7 -> G7b9)
+    [415.30, 2, 146.83, [293.66, 349.23, 415.30]],
+    [415.30, 1, 146.83, [293.66, 349.23, 415.30]],
+    [415.30, 1, 146.83, [293.66, 349.23, 415.30]],
+    [493.88, 1, 146.83, [293.66, 349.23, 415.30]],
+    [523.25, 1, 146.83, [293.66, 349.23, 415.30]],
+    [587.33, 1, 98.00,  [246.94, 349.23, 415.30]],
+    [493.88, 1, 98.00,  [246.94, 349.23, 415.30]],
+    [415.30, 1, 98.00,  [246.94, 349.23, 415.30]],
+    [392.00, 3, 98.00,  [246.94, 349.23, 415.30]],
 
-    // m.17-20: "Let me root, root, root for the home team," (C -> G7)
-    [261.63, 2, 130.81, [261.63, 329.63, 392.00]],
-    [523.25, 1, 130.81, [261.63, 329.63, 392.00]],
-    [440.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 1, 130.81, [261.63, 329.63, 392.00]],
-    [329.63, 1, 130.81, [261.63, 329.63, 392.00]],
-    [392.00, 3, 98.00,  [246.94, 349.23, 392.00]],
-    [293.66, 2, 98.00,  [246.94, 349.23, 392.00]],
-    [293.66, 1, 98.00,  [246.94, 349.23, 392.00]],
+    // m.17-20: "Let me root, root, root for the home team," (Cm -> G7b9)
+    [261.63, 2, 130.81, [261.63, 311.13, 392.00]],
+    [523.25, 1, 130.81, [261.63, 311.13, 392.00]],
+    [415.30, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 1, 130.81, [261.63, 311.13, 392.00]],
+    [311.13, 1, 130.81, [261.63, 311.13, 392.00]],
+    [392.00, 3, 98.00,  [246.94, 349.23, 415.30]],
+    [293.66, 2, 98.00,  [246.94, 349.23, 415.30]],
+    [293.66, 1, 98.00,  [246.94, 349.23, 415.30]],
 
-    // m.21-24: "If they don't win it's a shame," (C -> E7 -> Am/F)
-    [261.63, 2, 130.81, [261.63, 329.63, 392.00]],
-    [293.66, 1, 130.81, [261.63, 329.63, 392.00]],
-    [329.63, 1, 123.47, [246.94, 329.63, 415.30]],
-    [349.23, 1, 123.47, [246.94, 329.63, 415.30]],
-    [392.00, 1, 123.47, [246.94, 329.63, 415.30]],
-    [440.00, 6, 174.61, [261.63, 349.23, 440.00]],
+    // m.21-24: "If they don't win it's a shame," (Cm -> Ab7 -> Fm)
+    [261.63, 2, 130.81, [261.63, 311.13, 392.00]],
+    [293.66, 1, 130.81, [261.63, 311.13, 392.00]],
+    [311.13, 1, 103.83, [261.63, 311.13, 415.30]],
+    [349.23, 1, 103.83, [261.63, 311.13, 415.30]],
+    [392.00, 1, 103.83, [261.63, 311.13, 415.30]],
+    [415.30, 6, 174.61, [261.63, 349.23, 415.30]],
 
-    // m.25-28: "For it's ONE! TWO! THREE strikes, you're out," (F -> C -> D7 -> G7)
-    [440.00, 2, 174.61, [261.63, 349.23, 440.00]],
-    [493.88, 1, 174.61, [261.63, 349.23, 440.00]],
-    [523.25, 3, 130.81, [261.63, 329.63, 392.00]], // "ONE!"
-    [523.25, 3, 130.81, [261.63, 329.63, 392.00]], // "TWO!"
-    [523.25, 1, 146.83, [293.66, 369.99, 440.00]], // "THREE"
-    [493.88, 1, 146.83, [293.66, 369.99, 440.00]], // "strikes,"
-    [440.00, 1, 146.83, [293.66, 369.99, 440.00]], // "you're"
-    [392.00, 1, 98.00,  [246.94, 349.23, 392.00]], // "out,"
-    [369.99, 1, 98.00,  [246.94, 349.23, 392.00]],
-    [392.00, 1, 98.00,  [246.94, 349.23, 392.00]],
+    // m.25-28: "For it's ONE! TWO! THREE strikes, you're out," (Fm -> Cm -> Ddim7 -> G7b9)
+    [415.30, 2, 174.61, [261.63, 349.23, 415.30]],
+    [493.88, 1, 174.61, [261.63, 349.23, 415.30]],
+    [523.25, 3, 130.81, [261.63, 311.13, 392.00]], // "ONE!" (Cm)
+    [523.25, 3, 130.81, [261.63, 311.13, 392.00]], // "TWO!" (Cm)
+    [523.25, 1, 146.83, [293.66, 349.23, 415.30]], // "THREE" (Ddim7)
+    [493.88, 1, 146.83, [293.66, 349.23, 415.30]], // "strikes,"
+    [415.30, 1, 146.83, [293.66, 349.23, 415.30]], // "you're" (Ab!)
+    [392.00, 1, 98.00,  [246.94, 349.23, 415.30]], // "out,"
+    [369.99, 1, 98.00,  [246.94, 349.23, 415.30]], // chromatic F# neighbor
+    [392.00, 1, 98.00,  [246.94, 349.23, 415.30]],
 
-    // m.29-32: "At the old ball game!" + ballpark charge fanfare pause (A7 -> D7 -> G7 -> C)
-    [440.00, 3, 110.00, [277.18, 329.63, 440.00]], // "At"
-    [493.88, 3, 98.00,  [246.94, 349.23, 392.00]], // "the"
-    [523.25, 6, 130.81, [261.63, 329.63, 392.00]], // "old ball game!"
+    // m.29-32: "At the old ball game!" (Ab7 -> G7b9 -> Cm dramatic minor resolution)
+    [415.30, 3, 103.83, [261.63, 311.13, 415.30]], // "At" (Ab!)
+    [493.88, 3, 98.00,  [246.94, 349.23, 415.30]], // "the" (B natural over G7b9)
+    [523.25, 6, 130.81, [261.63, 311.13, 392.00]], // "old ball game!" (Cm)
     [0,      3, 0,      []],
   ],
   updateBtn() {

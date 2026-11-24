@@ -30,6 +30,7 @@
     <div class="tabs">
       <button class="tab-btn active" data-view="slateView">Daily Slate</button>
       <button class="tab-btn" data-view="leaderboardView">Umpire Leaderboard</button>
+      <button class="tab-btn" data-view="badUmpsView">🃏 Bad Umps</button>
     </div>
 
     <div class="filters" id="yearControls">
@@ -103,6 +104,18 @@
           <tbody id="leaderboardBody"></tbody>
         </table>
       </div>
+    </section>
+
+    <!-- Bad Umps Vintage Baseball Trading Cards -->
+    <section id="badUmpsView" class="hidden">
+      <div class="bad-umps-intro">
+        <img src="./icon.png" alt="Disapproving Miriam" class="miriam-hero-stamp" width="76" height="76" />
+        <div>
+          <h2>MIRIAM'S HALL OF SHAME — SERIES 1 TRADING CARDS</h2>
+          <p>The Worst of the Worst Home Plate Umpires (Ranked by Lowest Tolerance-Adjusted Accuracy, Min. 250 Taken Pitches). Click any card to inspect their full game log or flip through their worst misses.</p>
+        </div>
+      </div>
+      <div class="trading-cards-grid" id="badUmpsGrid"></div>
     </section>
   </main>
 

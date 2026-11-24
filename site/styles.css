@@ -163,7 +163,7 @@ body {
   .tabs .tab-btn, .tabs .pill-btn { flex: 1; text-align: center; padding: 7px 6px; font-size: 0.78rem; }
   .filters { width: 100%; flex-wrap: wrap; gap: 6px; font-size: 0.8rem; }
   .filters select, .filters input { flex: 1; min-width: 110px; }
-  .metric-tip-bar { font-size: 0.76rem; padding: 7px 10px; margin-bottom: 12px; }
+  .metric-tip-bar { font-size: 0.76rem; padding: 7px 10px; margin-bottom: 12px; min-height: 68px; }
   .view-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .game-card { padding: 11px 12px; }
   .game-card:hover, .game-card.selected { padding: 10px 11px; }
@@ -541,6 +541,7 @@ body {
   border-radius: 6px;
   padding: 8px 12px;
   margin-bottom: 16px;
+  min-height: 54px;
   font-size: 0.82rem;
   color: var(--ink);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -601,4 +602,212 @@ th[data-tip]:hover, th[data-tip].tip-active {
   font-weight: 800;
   margin-left: 3px;
   vertical-align: middle;
+}
+
+/* Bad Umps Vintage Baseball Trading Cards */
+.bad-umps-intro {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(135deg, #2d1b12 0%, #4a2818 100%);
+  color: #f9f3e6;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+.miriam-hero-stamp {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 3px solid #ef4444;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  flex-shrink: 0;
+}
+
+.bad-umps-intro h2 {
+  font-family: "Bungee", "Impact", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+  color: #fde047;
+  margin-bottom: 4px;
+}
+
+.bad-umps-intro p {
+  font-size: 0.86rem;
+  color: #efe6d5;
+}
+
+.trading-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.baseball-card {
+  position: relative;
+  background: #f3e5c8;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.45) 0%, transparent 60%),
+    repeating-linear-gradient(45deg, rgba(139, 90, 43, 0.035) 0px, rgba(139, 90, 43, 0.035) 2px, transparent 2px, transparent 6px);
+  border: 10px solid #fbf6ea;
+  outline: 2px solid #3d271d;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 2px #8c1d1d;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.baseball-card:hover {
+  transform: translateY(-5px) rotate(-0.4deg);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.45), inset 0 0 0 2px #b91c1c;
+}
+
+.card-series-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7f1d1d;
+  color: #fef08a;
+  padding: 4px 10px;
+  font-family: "Bungee", "Impact", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-portrait-frame {
+  position: relative;
+  background: radial-gradient(circle at 50% 35%, #335c3b 0%, #162e1b 85%);
+  border: 3px solid #3d271d;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-ump-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f3e5c8;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+  background: #1e293b;
+}
+
+.miriam-disapproval-seal {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(127, 29, 29, 0.94);
+  color: #ffffff;
+  border: 2px solid #fde047;
+  border-radius: 999px;
+  padding: 3px 9px 3px 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+  transform: rotate(-4deg);
+}
+
+.miriam-disapproval-seal img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+}
+
+.seal-caption {
+  font-family: "Bungee", "Impact", sans-serif;
+  font-size: 0.58rem;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: #fde047;
+  text-transform: uppercase;
+}
+
+.card-level-pennant {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #f59e0b;
+  color: #141413;
+  font-weight: 900;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border: 1.5px solid #141413;
+  box-shadow: 2px 2px 0 #141413;
+  text-transform: uppercase;
+}
+
+.card-name-ribbon {
+  background: #1f2937;
+  color: #ffffff;
+  border: 2px solid #3d271d;
+  border-top: none;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-ump-name {
+  font-family: "Bungee", "Impact", sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: #fef9c3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-back-stats {
+  background: #fbf6ea;
+  border: 1.5px solid #bfa882;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.card-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  border-bottom: 1px dashed #bfa882;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.card-stat-box span {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b533b;
+}
+
+.card-stat-box strong {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #141413;
+}
+
+.card-scouting-report {
+  font-size: 0.74rem;
+  color: #3d271d;
+  line-height: 1.35;
+  font-style: italic;
 }

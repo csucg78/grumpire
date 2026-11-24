@@ -578,6 +578,9 @@ function setupTabs() {
   els.dateSelect.addEventListener("change", () => loadDateSlate(els.dateSelect.value));
   els.levelFilter.addEventListener("change", () => {
     const lvl = els.levelFilter.value;
+    document.querySelectorAll("#badUmpsLevelPills [data-bu-lvl]").forEach((p) => {
+      p.classList.toggle("active", p.dataset.buLvl === lvl);
+    });
     if (lvl === "AA") {
       state.sortCol = "called_strike_pct";
       state.sortAsc = false;
@@ -592,6 +595,12 @@ function setupTabs() {
       if (arrow) arrow.textContent = active ? (state.sortAsc ? "▲" : "▼") : "";
     });
     renderLeaderboard();
+  });
+  document.querySelectorAll("#badUmpsLevelPills [data-bu-lvl]").forEach((pill) => {
+    pill.addEventListener("click", () => {
+      els.levelFilter.value = pill.dataset.buLvl;
+      els.levelFilter.dispatchEvent(new Event("change"));
+    });
   });
   els.minPitches.addEventListener("input", renderLeaderboard);
   if (els.umpSearchInput) {
@@ -1333,91 +1342,300 @@ const MIRIAM_VERDICTS = [
   "\"Pitchers loved it, batters wept, and the ABS system worked overtime.\"",
 ];
 
-function renderBadUmpsCards(filteredRows) {
-  if (!els.badUmpsGrid) return;
-  const heOnly = filteredRows.filter((u) => u.tol_acc_pct !== null && u.tol_acc_pct !== undefined);
-  const minFloor = Math.max(Number(els.minPitches.value) || 0, 150);
-  let worst = [...heOnly]
-    .filter((u) => u.taken >= minFloor)
-    .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || a.acc_pct - b.acc_pct || (b.missed || 0) - (a.missed || 0))
-    .slice(0, 12);
+function computeAaChaosMetrics(u) {
+  const csPct = Number(u.called_strike_pct || 0);
+  const rawDev = csPct - 31.2;
+  const absDev = Math.abs(rawDev);
+  const hm = u.aa_heatmap?.cells || [];
+  let outerTaken = 0;
+  let outerCs = 0;
+  for (let r = 0; r < hm.length; r++) {
+    for (let c = 0; c < (hm[r]?.length || 0); c++) {
+      if (r === 0 || r === hm.length - 1 || c === 0 || c === hm[r].length - 1) {
+        outerTaken += hm[r][c]?.taken || 0;
+        outerCs += hm[r][c]?.cs || 0;
+      }
+    }
+  }
+  const outerCsPct = outerTaken > 0 ? (100 * outerCs) / outerTaken : 0;
+  const ejections = Number(u.ejections || 0);
+  const kPct = Number(u.k_pct || 0);
+  const bbPct = Number(u.bb_pct || 0);
+  const runsPerGame = Number(u.runs_per_game || 0);
+  const chaosScore =
+    absDev * 1.4 +
+    outerCs * 1.5 +
+    outerCsPct * 0.4 +
+    ejections * 4.5 +
+    Math.max(0, bbPct - 11) * 0.6 +
+    Math.max(0, runsPerGame - 11) * 0.4;
 
-  if (!worst.length) {
-    worst = [...heOnly]
-      .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || (b.missed || 0) - (a.missed || 0))
-      .slice(0, 12);
+  const mCount = chaosScore >= 13.5 ? 5 : chaosScore >= 9.5 ? 4 : 3;
+  let zoneTag = "AA · WILD ZONE";
+  if (ejections > 0 && outerCs >= 2) zoneTag = "AA · FRINGE & HOOK";
+  else if (ejections > 0) zoneTag = "AA · QUICK HOOK";
+  else if (rawDev <= -3.5) zoneTag = "AA · SQUEEZE ZONE";
+  else if (rawDev >= 3.0) zoneTag = "AA · BARN-DOOR ZONE";
+  else if (outerCs >= 3) zoneTag = "AA · FRINGE STRIKES";
+
+  let verdict = `"Miriam's stringer chart caught ${fmt1(csPct)}% called strikes (${rawDev >= 0 ? "+" : ""}${fmt1(rawDev)}% vs. AA norm) and ${runsPerGame.toFixed(1)} runs/game!"`;
+  if (ejections > 0 && outerCs >= 2) {
+    verdict = `"Rang up ${outerCs} outer-fringe called strikes beyond ±1.2σ (${fmt1(outerCsPct)}%) and tossed ${ejections} from the ballpark when they complained!"`;
+  } else if (rawDev <= -5.0) {
+    verdict = `"Squeezed the strike zone to a microscopic ${fmt1(csPct)}% Called Strikes (${fmt1(bbPct)}% BB rate, ${runsPerGame.toFixed(1)} Runs/G) — pitchers couldn't buy a strike!"`;
+  } else if (rawDev >= 3.0) {
+    verdict = `"Expanded the zone into a ${fmt1(csPct)}% Called-Strike barn door with a ${fmt1(kPct)}% strikeout rate — batters needed an oar!"`;
+  } else if (outerCs >= 3) {
+    verdict = `"Called ${outerCs} strikes in the outer >1.2σ perimeter ring (${fmt1(outerCsPct)}% fringe CS rate) — stringer coordinates went off the rails!"`;
+  } else if (ejections > 0) {
+    verdict = `"Called a ${fmt1(csPct)}% strike zone (${rawDev >= 0 ? "+" : ""}${fmt1(rawDev)}% vs. AA average) with ${ejections} ejection${ejections > 1 ? "s" : ""} and ${runsPerGame.toFixed(1)} runs per game!"`;
+  } else if (bbPct >= 13.5 || runsPerGame >= 14.0) {
+    verdict = `"Tight ${fmt1(csPct)}% called-strike zone fueled a ${fmt1(bbPct)}% walk parade and ${runsPerGame.toFixed(1)} combined runs per game!"`;
   }
 
+  return {
+    csPct,
+    rawDev,
+    absDev,
+    outerTaken,
+    outerCs,
+    outerCsPct,
+    ejections,
+    kPct,
+    bbPct,
+    runsPerGame,
+    chaosScore,
+    mCount,
+    zoneTag,
+    verdict,
+  };
+}
+
+function buildHawkEyeBadUmpCardHtml(u, idx, yrLabel) {
+  const verdict = MIRIAM_VERDICTS[idx % MIRIAM_VERDICTS.length];
+  const mCount = Math.max(3, miriamCount(u.tol_acc_pct));
+  const pips = Array.from(
+    { length: mCount },
+    () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="18" height="18" />`
+  ).join("");
+  const lvls = (u.all_levels || u.levels || []).filter((l) => l !== "AA");
+
+  return `
+    <article class="baseball-card" data-ump="${u.umpire_id}" data-card-lvl="">
+      <div>
+        <div class="card-series-bar">
+          <span>GRUMPIRE TOPPS-MISS #${String(idx + 1).padStart(2, "0")}</span>
+          <span>${yrLabel}</span>
+        </div>
+
+        <div class="card-portrait-frame">
+          <span class="card-level-pennant">${(lvls.length ? lvls : u.levels).join(" / ")}</span>
+          <img src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="card-ump-photo" loading="lazy" />
+          <div class="miriam-disapproval-seal" title="Miriam Disapproves!">
+            <img src="./icon.png" alt="Disapproving Miriam" />
+            <div class="seal-caption">Miriam<br/>Disapproves!</div>
+          </div>
+        </div>
+
+        <div class="card-name-ribbon">
+          <span class="card-ump-name">${u.umpire_name}</span>
+          <span class="grump-pill">${pips}</span>
+        </div>
+      </div>
+
+      <div class="card-back-stats">
+        <div class="card-stats-grid">
+          <div class="card-stat-box">
+            <span>Tol Acc%</span>
+            <strong style="color:#dc2626">${fmt1(u.tol_acc_pct)}%</strong>
+          </div>
+          <div class="card-stat-box">
+            <span>Raw Acc%</span>
+            <strong>${fmt1(u.acc_pct)}%</strong>
+          </div>
+          <div class="card-stat-box">
+            <span>Missed Calls</span>
+            <strong style="color:#b91c1c">${(u.missed || 0).toLocaleString()}</strong>
+          </div>
+          <div class="card-stat-box">
+            <span>Mean Miss</span>
+            <strong>${u.mean_miss_in}"</strong>
+          </div>
+          <div class="card-stat-box">
+            <span>ABS Overturns</span>
+            <strong style="color:#7c3aed">${u.overturns}/${u.challenges}</strong>
+          </div>
+          <div class="card-stat-box">
+            <span>Σ ΔRE24</span>
+            <strong style="color:#15803d">+${u.re_impact}</strong>
+          </div>
+        </div>
+        <div class="card-scouting-report">
+          <strong>Miriam's Scouting Report (${u.games} G · ${u.taken.toLocaleString()} Pitches):</strong> ${verdict}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function buildAaBadUmpCardHtml(u, idx, yrLabel) {
+  const m = computeAaChaosMetrics(u);
+  const pips = Array.from(
+    { length: m.mCount },
+    () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="18" height="18" />`
+  ).join("");
+  const devStr = `${m.rawDev >= 0 ? "+" : ""}${fmt1(m.rawDev)}%`;
+  const devColor = m.absDev >= 4.0 ? "#dc2626" : "#d97706";
+
+  return `
+    <article class="baseball-card" data-ump="${u.umpire_id}" data-card-lvl="AA">
+      <div>
+        <div class="card-series-bar" style="background:#1e3a8a;color:#fef08a">
+          <span>GRUMPIRE DOUBLE-A #${String(idx + 1).padStart(2, "0")}</span>
+          <span>${yrLabel} · AA</span>
+        </div>
+
+        <div class="card-portrait-frame">
+          <span class="card-level-pennant" style="background:#1d4ed8;color:#fff">${m.zoneTag}</span>
+          <img src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="card-ump-photo" loading="lazy" />
+          <div class="miriam-disapproval-seal" title="Miriam Disapproves of this AA Zone!">
+            <img src="./icon.png" alt="Disapproving Miriam" />
+            <div class="seal-caption">Miriam<br/>Disapproves!</div>
+          </div>
+        </div>
+
+        <div class="card-name-ribbon">
+          <span class="card-ump-name">${u.umpire_name}</span>
+          <span class="grump-pill" title="${m.mCount}/5 Miriam AA Zone-Chaos Rating">${pips}</span>
+        </div>
+      </div>
+
+      <div class="card-back-stats">
+        <div class="card-stats-grid">
+          <div class="card-stat-box" title="Called Strike Percentage (Called Strikes / Taken Pitches)">
+            <span>Called Strike%</span>
+            <strong style="color:#1d4ed8">${fmt1(m.csPct)}%</strong>
+          </div>
+          <div class="card-stat-box" title="Deviation from the 31.2% Double-A Called Strike average">
+            <span>Zone vs AA Avg</span>
+            <strong style="color:${devColor}">${devStr}</strong>
+          </div>
+          <div class="card-stat-box" title="Called strikes outside ±1.2 SD in venue-normalized Gameday stringer coordinates">
+            <span>Fringe CS (&gt;1.2σ)</span>
+            <strong style="color:#b91c1c">${m.outerCs} (${fmt1(m.outerCsPct)}%)</strong>
+          </div>
+          <div class="card-stat-box" title="Strikeout percentage across completed plate appearances">
+            <span>Strikeout K%</span>
+            <strong style="color:#7c3aed">${fmt1(m.kPct)}%</strong>
+          </div>
+          <div class="card-stat-box" title="Walk percentage across completed plate appearances">
+            <span>Walk Rate BB%</span>
+            <strong style="color:#d97706">${fmt1(m.bbPct)}%</strong>
+          </div>
+          <div class="card-stat-box" title="Combined runs per game and ejections">
+            <span>Runs/G · Ej</span>
+            <strong style="color:#15803d">${m.runsPerGame.toFixed(1)} · ${m.ejections} Ej</strong>
+          </div>
+        </div>
+        <div class="card-scouting-report">
+          <strong>Miriam's AA Scouting Report (${u.games} G · ${u.taken.toLocaleString()} Taken · No Hawk-Eye):</strong> ${m.verdict}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function getTopAaBadUmps(sourceList, minP) {
+  const q = state.searchQuery || "";
+  const aaRows = (sourceList || [])
+    .filter((u) => {
+      if (!u.levels?.includes("AA")) return false;
+      if (q && !u.umpire_name.toLowerCase().includes(q)) return false;
+      if (state.photoOnly && !state.avatarIndex?.[String(u.umpire_id)]?.photo) return false;
+      return true;
+    })
+    .map((u) => getUmpireViewRow(u, "AA"))
+    .filter((u) => u.taken >= Math.min(minP, 150));
+
+  const pool = aaRows.length
+    ? aaRows
+    : (state.leaderboardByYear["ALL"] || state.leaderboard || [])
+        .filter((u) => u.levels?.includes("AA"))
+        .map((u) => getUmpireViewRow(u, "AA"));
+
+  return [...pool]
+    .sort((a, b) => computeAaChaosMetrics(b).chaosScore - computeAaChaosMetrics(a).chaosScore)
+    .slice(0, 12);
+}
+
+function renderBadUmpsCards(filteredRows) {
+  if (!els.badUmpsGrid) return;
+  const lvl = els.levelFilter.value;
+  const titleEl = document.getElementById("badUmpsTitle");
+  const descEl = document.getElementById("badUmpsDesc");
+  const aaSectionEl = document.getElementById("badUmpsAaSection");
+  const aaGridEl = document.getElementById("badUmpsAaGrid");
+
+  document.querySelectorAll("#badUmpsLevelPills [data-bu-lvl]").forEach((p) => {
+    p.classList.toggle("active", p.dataset.buLvl === lvl);
+  });
+
   const yrLabel = state.selectedYear === "ALL" ? "2023–2026" : state.selectedYear;
+  const minP = Number(els.minPitches.value) || 0;
 
-  els.badUmpsGrid.innerHTML = worst.map((u, idx) => {
-    const verdict = MIRIAM_VERDICTS[idx % MIRIAM_VERDICTS.length];
-    const mCount = Math.max(3, miriamCount(u.tol_acc_pct));
-    const pips = Array.from(
-      { length: mCount },
-      () => `<img src="./favicon.png" alt="Miriam" class="miriam-pip" width="18" height="18" />`
-    ).join("");
+  if (lvl === "AA") {
+    if (titleEl) titleEl.textContent = "MIRIAM'S HALL OF SHAME — DOUBLE-A (AA) WILD ZONE EDITION";
+    if (descEl) {
+      descEl.textContent =
+        "Double-A ballparks do not have Hawk-Eye optical tracking — these 12 cards spotlight the wildest Called-Strike % zone deviations from the 31.2% AA norm, outer-perimeter stringer called strikes (>1.2σ), walk-fests, and ejections. Click any card to inspect their 6×6 Venue-Normalized Heatmap.";
+    }
+    if (aaSectionEl) aaSectionEl.classList.add("hidden");
 
-    return `
-      <article class="baseball-card" data-ump="${u.umpire_id}">
-        <div>
-          <div class="card-series-bar">
-            <span>GRUMPIRE TOPPS-MISS #${String(idx + 1).padStart(2, "0")}</span>
-            <span>${yrLabel}</span>
-          </div>
+    const worstAa = getTopAaBadUmps(state.leaderboard, minP);
+    els.badUmpsGrid.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, "2026")).join("");
+  } else {
+    if (titleEl) {
+      titleEl.textContent =
+        lvl === "ALL"
+          ? "MIRIAM'S HALL OF SHAME — SERIES 1 TRADING CARDS (AAA & FSL)"
+          : `MIRIAM'S HALL OF SHAME — ${lvl} TRADING CARDS`;
+    }
+    if (descEl) {
+      descEl.textContent =
+        "The Worst of the Worst Home Plate Umpires (Ranked by Lowest Tolerance-Adjusted Hawk-Eye Accuracy). Click any card to inspect their full game log or scroll down for the Double-A (AA) Wild Zone Edition.";
+    }
 
-          <div class="card-portrait-frame">
-            <span class="card-level-pennant">${u.levels.join(" / ")}</span>
-            <img src="${umpAvatarUrl(u.umpire_id, u.umpire_name)}" alt="${u.umpire_name}" class="card-ump-photo" loading="lazy" />
-            <div class="miriam-disapproval-seal" title="Miriam Disapproves!">
-              <img src="./icon.png" alt="Disapproving Miriam" />
-              <div class="seal-caption">Miriam<br/>Disapproves!</div>
-            </div>
-          </div>
+    const heOnly = filteredRows.filter((u) => u.tol_acc_pct !== null && u.tol_acc_pct !== undefined);
+    const minFloor = Math.max(minP, 150);
+    let worst = [...heOnly]
+      .filter((u) => u.taken >= minFloor)
+      .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || a.acc_pct - b.acc_pct || (b.missed || 0) - (a.missed || 0))
+      .slice(0, 12);
 
-          <div class="card-name-ribbon">
-            <span class="card-ump-name">${u.umpire_name}</span>
-            <span class="grump-pill">${pips}</span>
-          </div>
-        </div>
+    if (!worst.length) {
+      worst = [...heOnly]
+        .sort((a, b) => a.tol_acc_pct - b.tol_acc_pct || (b.missed || 0) - (a.missed || 0))
+        .slice(0, 12);
+    }
 
-        <div class="card-back-stats">
-          <div class="card-stats-grid">
-            <div class="card-stat-box">
-              <span>Tol Acc%</span>
-              <strong style="color:#dc2626">${fmt1(u.tol_acc_pct)}%</strong>
-            </div>
-            <div class="card-stat-box">
-              <span>Raw Acc%</span>
-              <strong>${fmt1(u.acc_pct)}%</strong>
-            </div>
-            <div class="card-stat-box">
-              <span>Missed Calls</span>
-              <strong style="color:#b91c1c">${u.missed.toLocaleString()}</strong>
-            </div>
-            <div class="card-stat-box">
-              <span>Mean Miss</span>
-              <strong>${u.mean_miss_in}"</strong>
-            </div>
-            <div class="card-stat-box">
-              <span>ABS Overturns</span>
-              <strong style="color:#7c3aed">${u.overturns}/${u.challenges}</strong>
-            </div>
-            <div class="card-stat-box">
-              <span>Σ ΔRE24</span>
-              <strong style="color:#15803d">+${u.re_impact}</strong>
-            </div>
-          </div>
-          <div class="card-scouting-report">
-            <strong>Miriam's Scouting Report (${u.games} G · ${u.taken.toLocaleString()} Pitches):</strong> ${verdict}
-          </div>
-        </div>
-      </article>
-    `;
-  }).join("");
+    els.badUmpsGrid.innerHTML = worst.map((u, idx) => buildHawkEyeBadUmpCardHtml(u, idx, yrLabel)).join("");
 
-  els.badUmpsGrid.querySelectorAll(".baseball-card").forEach((card) => {
-    card.addEventListener("click", () => openUmpireModal(card.dataset.ump));
+    if (aaSectionEl && aaGridEl) {
+      if (lvl === "ALL") {
+        const worstAa = getTopAaBadUmps(state.leaderboard, minP);
+        aaGridEl.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, "2026")).join("");
+        aaSectionEl.classList.toggle("hidden", worstAa.length === 0);
+      } else {
+        aaSectionEl.classList.add("hidden");
+      }
+    }
+  }
+
+  document.querySelectorAll("#badUmpsView .baseball-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const cardLvl = card.dataset.cardLvl || (els.levelFilter.value !== "ALL" ? els.levelFilter.value : null);
+      openUmpireModal(card.dataset.ump, cardLvl);
+    });
   });
 }
 

@@ -177,20 +177,17 @@ def rebuild_all_date_slates(data_dir: Path) -> int:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Concurrent 2026 MiLB Season Backfill for Grumpire")
+    parser = argparse.ArgumentParser(description="Concurrent MiLB Season Backfill for Grumpire")
     parser.add_argument("--start", default=DEFAULT_START, help=f"Start YYYY-MM-DD (default: {DEFAULT_START})")
     parser.add_argument("--end", default=DEFAULT_END, help=f"End YYYY-MM-DD (default: {DEFAULT_END})")
+    parser.add_argument("--years", default="", help="Optional comma-separated years (e.g. 2023,2024,2025,2026) to scan Apr 1 - Sep 25 each year")
+    parser.add_argument("--max-per-year", type=int, default=0, help="Optional cap of games per year (0 = all games)")
     parser.add_argument("--sport-ids", default="11,12,14", help="Comma-separated MLB sportIds (default: 11,12,14)")
     parser.add_argument("--workers", type=int, default=10, help="Concurrent worker threads (default: 10)")
     parser.add_argument("--rps", type=float, default=12.0, help="Max global requests/sec (default: 12.0)")
     parser.add_argument("--data-dir", default="site/data", help="Output JSON directory (default: site/data)")
     parser.add_argument("--force", action="store_true", help="Re-fetch games even if JSON already exists")
     args = parser.parse_args()
-
-    start_date = dt.date.fromisoformat(args.start)
-    end_date = dt.date.fromisoformat(args.end)
-    if end_date < start_date:
-        raise SystemExit("--end must be on or after --start")
 
     data_dir = Path(args.data_dir)
     games_dir = data_dir / "games"
@@ -206,7 +203,27 @@ def main() -> None:
     limiter = RateLimiter(args.rps)
     session = build_pooled_session(pool_size=args.workers)
 
-    all_games = discover_season_games(session, limiter, start_date, end_date, sport_ids=args.sport_ids)
+    if args.years:
+        all_games: list[tuple[str, dict[str, Any]]] = []
+        for yr_str in [y.strip() for y in args.years.split(",") if y.strip()]:
+            yr = int(yr_str)
+            yr_games = discover_season_games(
+                session,
+                limiter,
+                dt.date(yr, 4, 1),
+                dt.date(yr, 9, 25),
+                sport_ids=args.sport_ids,
+            )
+            if args.max_per_year > 0 and len(yr_games) > args.max_per_year:
+                step = max(1, len(yr_games) // args.max_per_year)
+                yr_games = yr_games[::step][: args.max_per_year]
+            all_games.extend(yr_games)
+    else:
+        start_date = dt.date.fromisoformat(args.start)
+        end_date = dt.date.fromisoformat(args.end)
+        if end_date < start_date:
+            raise SystemExit("--end must be on or after --start")
+        all_games = discover_season_games(session, limiter, start_date, end_date, sport_ids=args.sport_ids)
     if args.force:
         todo = all_games
     else:

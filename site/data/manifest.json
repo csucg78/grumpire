@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-24T03:14:31Z",
+  "updated_utc": "2026-11-24T04:31:10Z",
   "available_years": [
     "2026",
     "2025",
@@ -631,35 +631,35 @@
   ],
   "latest_date": "2026-09-24",
   "totals": {
-    "games": 11318,
-    "pitches": 1831265,
-    "umpires": 268
+    "games": 12497,
+    "pitches": 2012136,
+    "umpires": 298
   },
   "totals_by_year": {
     "ALL": {
-      "games": 11318,
-      "pitches": 1831265,
-      "umpires": 268
+      "games": 12497,
+      "pitches": 2012136,
+      "umpires": 298
     },
     "2026": {
-      "games": 2903,
-      "pitches": 467943,
-      "umpires": 141
+      "games": 3187,
+      "pitches": 512719,
+      "umpires": 148
     },
     "2025": {
-      "games": 2817,
-      "pitches": 450961,
-      "umpires": 108
+      "games": 3115,
+      "pitches": 496043,
+      "umpires": 151
     },
     "2024": {
-      "games": 2822,
-      "pitches": 451281,
-      "umpires": 121
+      "games": 3120,
+      "pitches": 495241,
+      "umpires": 168
     },
     "2023": {
-      "games": 2776,
-      "pitches": 461080,
-      "umpires": 89
+      "games": 3075,
+      "pitches": 508133,
+      "umpires": 132
     }
   }
 }

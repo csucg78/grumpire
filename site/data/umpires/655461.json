@@ -2,19 +2,20 @@
   "umpire_id": "655461",
   "umpire_name": "Ray Valero",
   "levels": [
+    "AA",
     "AAA"
   ],
-  "games": 138,
-  "total_pitches": 43880,
-  "taken": 21940,
-  "taken_pitches": 21940,
-  "called_strikes": 6450,
+  "games": 143,
+  "total_pitches": 45313,
+  "taken": 22665,
+  "taken_pitches": 22665,
+  "called_strikes": 6663,
   "called_strike_pct": 29.4,
-  "plate_appearances": 0,
-  "k_pct": null,
-  "bb_pct": null,
-  "runs_per_game": 9.98,
-  "ejections": 0,
+  "plate_appearances": 370,
+  "k_pct": 23.0,
+  "bb_pct": 10.0,
+  "runs_per_game": 9.95,
+  "ejections": 1,
   "missed": 1347,
   "acc_pct": 93.9,
   "accuracy_pct": 93.9,
@@ -28,6 +29,234 @@
   "overturn_pct": 49.4,
   "re_impact": 162.58,
   "level_splits": {
+    "AA": {
+      "umpire_id": "655461",
+      "umpire_name": "Ray Valero",
+      "levels": [
+        "AA"
+      ],
+      "games": 5,
+      "total_pitches": 1433,
+      "taken": 725,
+      "taken_pitches": 725,
+      "called_strikes": 213,
+      "called_strike_pct": 29.4,
+      "plate_appearances": 370,
+      "k_pct": 23.0,
+      "bb_pct": 10.0,
+      "runs_per_game": 9.2,
+      "ejections": 1,
+      "missed": null,
+      "acc_pct": null,
+      "accuracy_pct": null,
+      "tol_acc_pct": null,
+      "consistency_pct": null,
+      "expected_accuracy_pct": null,
+      "favor_runs": null,
+      "mean_miss_in": null,
+      "challenges": null,
+      "overturns": null,
+      "overturn_pct": null,
+      "re_impact": null,
+      "aa_heatmap": {
+        "grid_size": 6,
+        "span_sd": 1.8,
+        "cells": [
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 21,
+              "cs": 2,
+              "cs_pct": 9.5
+            },
+            {
+              "taken": 31,
+              "cs": 11,
+              "cs_pct": 35.5
+            },
+            {
+              "taken": 33,
+              "cs": 12,
+              "cs_pct": 36.4
+            },
+            {
+              "taken": 75,
+              "cs": 2,
+              "cs_pct": 2.7
+            },
+            {
+              "taken": 11,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 21,
+              "cs": 6,
+              "cs_pct": 28.6
+            },
+            {
+              "taken": 37,
+              "cs": 37,
+              "cs_pct": 100.0
+            },
+            {
+              "taken": 13,
+              "cs": 12,
+              "cs_pct": 92.3
+            },
+            {
+              "taken": 37,
+              "cs": 1,
+              "cs_pct": 2.7
+            },
+            {
+              "taken": 1,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 12,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 14,
+              "cs": 4,
+              "cs_pct": 28.6
+            },
+            {
+              "taken": 34,
+              "cs": 33,
+              "cs_pct": 97.1
+            },
+            {
+              "taken": 29,
+              "cs": 28,
+              "cs_pct": 96.6
+            },
+            {
+              "taken": 44,
+              "cs": 1,
+              "cs_pct": 2.3
+            },
+            {
+              "taken": 0,
+              "cs": 0,
+              "cs_pct": null
+            }
+          ],
+          [
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 26,
+              "cs": 10,
+              "cs_pct": 38.5
+            },
+            {
+              "taken": 27,
+              "cs": 23,
+              "cs_pct": 85.2
+            },
+            {
+              "taken": 30,
+              "cs": 28,
+              "cs_pct": 93.3
+            },
+            {
+              "taken": 20,
+              "cs": 2,
+              "cs_pct": 10.0
+            },
+            {
+              "taken": 7,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 10,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 39,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 24,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 13,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ],
+          [
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 11,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 3,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 9,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 2,
+              "cs": 0,
+              "cs_pct": 0.0
+            }
+          ]
+        ]
+      }
+    },
     "AAA": {
       "umpire_id": "655461",
       "umpire_name": "Ray Valero",
@@ -89,26 +318,224 @@
       "re_impact": 162.58
     }
   },
-  "aa_heatmap": null,
+  "aa_heatmap": {
+    "grid_size": 6,
+    "span_sd": 1.8,
+    "cells": [
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 21,
+          "cs": 2,
+          "cs_pct": 9.5
+        },
+        {
+          "taken": 31,
+          "cs": 11,
+          "cs_pct": 35.5
+        },
+        {
+          "taken": 33,
+          "cs": 12,
+          "cs_pct": 36.4
+        },
+        {
+          "taken": 75,
+          "cs": 2,
+          "cs_pct": 2.7
+        },
+        {
+          "taken": 11,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 21,
+          "cs": 6,
+          "cs_pct": 28.6
+        },
+        {
+          "taken": 37,
+          "cs": 37,
+          "cs_pct": 100.0
+        },
+        {
+          "taken": 13,
+          "cs": 12,
+          "cs_pct": 92.3
+        },
+        {
+          "taken": 37,
+          "cs": 1,
+          "cs_pct": 2.7
+        },
+        {
+          "taken": 1,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 12,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 14,
+          "cs": 4,
+          "cs_pct": 28.6
+        },
+        {
+          "taken": 34,
+          "cs": 33,
+          "cs_pct": 97.1
+        },
+        {
+          "taken": 29,
+          "cs": 28,
+          "cs_pct": 96.6
+        },
+        {
+          "taken": 44,
+          "cs": 1,
+          "cs_pct": 2.3
+        },
+        {
+          "taken": 0,
+          "cs": 0,
+          "cs_pct": null
+        }
+      ],
+      [
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 26,
+          "cs": 10,
+          "cs_pct": 38.5
+        },
+        {
+          "taken": 27,
+          "cs": 23,
+          "cs_pct": 85.2
+        },
+        {
+          "taken": 30,
+          "cs": 28,
+          "cs_pct": 93.3
+        },
+        {
+          "taken": 20,
+          "cs": 2,
+          "cs_pct": 10.0
+        },
+        {
+          "taken": 7,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 10,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 39,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 24,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 13,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ],
+      [
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 11,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 3,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 9,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 2,
+          "cs": 0,
+          "cs_pct": 0.0
+        }
+      ]
+    ]
+  },
   "season_splits": {
     "ALL": {
       "ALL": {
         "umpire_id": "655461",
         "umpire_name": "Ray Valero",
         "levels": [
+          "AA",
           "AAA"
         ],
-        "games": 138,
-        "total_pitches": 43880,
-        "taken": 21940,
-        "taken_pitches": 21940,
-        "called_strikes": 6450,
+        "games": 143,
+        "total_pitches": 45313,
+        "taken": 22665,
+        "taken_pitches": 22665,
+        "called_strikes": 6663,
         "called_strike_pct": 29.4,
-        "plate_appearances": 0,
-        "k_pct": null,
-        "bb_pct": null,
-        "runs_per_game": 9.98,
-        "ejections": 0,
+        "plate_appearances": 370,
+        "k_pct": 23.0,
+        "bb_pct": 10.0,
+        "runs_per_game": 9.95,
+        "ejections": 1,
         "missed": 1347,
         "acc_pct": 93.9,
         "accuracy_pct": 93.9,
@@ -120,7 +547,433 @@
         "challenges": 419,
         "overturns": 207,
         "overturn_pct": 49.4,
-        "re_impact": 162.58
+        "re_impact": 162.58,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 2,
+                "cs_pct": 9.5
+              },
+              {
+                "taken": 31,
+                "cs": 11,
+                "cs_pct": 35.5
+              },
+              {
+                "taken": 33,
+                "cs": 12,
+                "cs_pct": 36.4
+              },
+              {
+                "taken": 75,
+                "cs": 2,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 6,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 37,
+                "cs": 37,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 13,
+                "cs": 12,
+                "cs_pct": 92.3
+              },
+              {
+                "taken": 37,
+                "cs": 1,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 34,
+                "cs": 33,
+                "cs_pct": 97.1
+              },
+              {
+                "taken": 29,
+                "cs": 28,
+                "cs_pct": 96.6
+              },
+              {
+                "taken": 44,
+                "cs": 1,
+                "cs_pct": 2.3
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 26,
+                "cs": 10,
+                "cs_pct": 38.5
+              },
+              {
+                "taken": 27,
+                "cs": 23,
+                "cs_pct": 85.2
+              },
+              {
+                "taken": 30,
+                "cs": 28,
+                "cs_pct": 93.3
+              },
+              {
+                "taken": 20,
+                "cs": 2,
+                "cs_pct": 10.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 39,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 24,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "655461",
+        "umpire_name": "Ray Valero",
+        "levels": [
+          "AA"
+        ],
+        "games": 5,
+        "total_pitches": 1433,
+        "taken": 725,
+        "taken_pitches": 725,
+        "called_strikes": 213,
+        "called_strike_pct": 29.4,
+        "plate_appearances": 370,
+        "k_pct": 23.0,
+        "bb_pct": 10.0,
+        "runs_per_game": 9.2,
+        "ejections": 1,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 2,
+                "cs_pct": 9.5
+              },
+              {
+                "taken": 31,
+                "cs": 11,
+                "cs_pct": 35.5
+              },
+              {
+                "taken": 33,
+                "cs": 12,
+                "cs_pct": 36.4
+              },
+              {
+                "taken": 75,
+                "cs": 2,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 6,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 37,
+                "cs": 37,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 13,
+                "cs": 12,
+                "cs_pct": 92.3
+              },
+              {
+                "taken": 37,
+                "cs": 1,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 34,
+                "cs": 33,
+                "cs_pct": 97.1
+              },
+              {
+                "taken": 29,
+                "cs": 28,
+                "cs_pct": 96.6
+              },
+              {
+                "taken": 44,
+                "cs": 1,
+                "cs_pct": 2.3
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 26,
+                "cs": 10,
+                "cs_pct": 38.5
+              },
+              {
+                "taken": 27,
+                "cs": 23,
+                "cs_pct": 85.2
+              },
+              {
+                "taken": 30,
+                "cs": 28,
+                "cs_pct": 93.3
+              },
+              {
+                "taken": 20,
+                "cs": 2,
+                "cs_pct": 10.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 39,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 24,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
       },
       "AAA": {
         "umpire_id": "655461",
@@ -457,6 +1310,464 @@
         "overturns": 63,
         "overturn_pct": 47.7,
         "re_impact": 55.27
+      }
+    },
+    "2023": {
+      "ALL": {
+        "umpire_id": "655461",
+        "umpire_name": "Ray Valero",
+        "levels": [
+          "AA"
+        ],
+        "games": 5,
+        "total_pitches": 1433,
+        "taken": 725,
+        "taken_pitches": 725,
+        "called_strikes": 213,
+        "called_strike_pct": 29.4,
+        "plate_appearances": 370,
+        "k_pct": 23.0,
+        "bb_pct": 10.0,
+        "runs_per_game": 9.2,
+        "ejections": 1,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 2,
+                "cs_pct": 9.5
+              },
+              {
+                "taken": 31,
+                "cs": 11,
+                "cs_pct": 35.5
+              },
+              {
+                "taken": 33,
+                "cs": 12,
+                "cs_pct": 36.4
+              },
+              {
+                "taken": 75,
+                "cs": 2,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 6,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 37,
+                "cs": 37,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 13,
+                "cs": 12,
+                "cs_pct": 92.3
+              },
+              {
+                "taken": 37,
+                "cs": 1,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 34,
+                "cs": 33,
+                "cs_pct": 97.1
+              },
+              {
+                "taken": 29,
+                "cs": 28,
+                "cs_pct": 96.6
+              },
+              {
+                "taken": 44,
+                "cs": 1,
+                "cs_pct": 2.3
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 26,
+                "cs": 10,
+                "cs_pct": 38.5
+              },
+              {
+                "taken": 27,
+                "cs": 23,
+                "cs_pct": 85.2
+              },
+              {
+                "taken": 30,
+                "cs": 28,
+                "cs_pct": 93.3
+              },
+              {
+                "taken": 20,
+                "cs": 2,
+                "cs_pct": 10.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 39,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 24,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
+      },
+      "AA": {
+        "umpire_id": "655461",
+        "umpire_name": "Ray Valero",
+        "levels": [
+          "AA"
+        ],
+        "games": 5,
+        "total_pitches": 1433,
+        "taken": 725,
+        "taken_pitches": 725,
+        "called_strikes": 213,
+        "called_strike_pct": 29.4,
+        "plate_appearances": 370,
+        "k_pct": 23.0,
+        "bb_pct": 10.0,
+        "runs_per_game": 9.2,
+        "ejections": 1,
+        "missed": null,
+        "acc_pct": null,
+        "accuracy_pct": null,
+        "tol_acc_pct": null,
+        "consistency_pct": null,
+        "expected_accuracy_pct": null,
+        "favor_runs": null,
+        "mean_miss_in": null,
+        "challenges": null,
+        "overturns": null,
+        "overturn_pct": null,
+        "re_impact": null,
+        "aa_heatmap": {
+          "grid_size": 6,
+          "span_sd": 1.8,
+          "cells": [
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 2,
+                "cs_pct": 9.5
+              },
+              {
+                "taken": 31,
+                "cs": 11,
+                "cs_pct": 35.5
+              },
+              {
+                "taken": 33,
+                "cs": 12,
+                "cs_pct": 36.4
+              },
+              {
+                "taken": 75,
+                "cs": 2,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 21,
+                "cs": 6,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 37,
+                "cs": 37,
+                "cs_pct": 100.0
+              },
+              {
+                "taken": 13,
+                "cs": 12,
+                "cs_pct": 92.3
+              },
+              {
+                "taken": 37,
+                "cs": 1,
+                "cs_pct": 2.7
+              },
+              {
+                "taken": 1,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 12,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 14,
+                "cs": 4,
+                "cs_pct": 28.6
+              },
+              {
+                "taken": 34,
+                "cs": 33,
+                "cs_pct": 97.1
+              },
+              {
+                "taken": 29,
+                "cs": 28,
+                "cs_pct": 96.6
+              },
+              {
+                "taken": 44,
+                "cs": 1,
+                "cs_pct": 2.3
+              },
+              {
+                "taken": 0,
+                "cs": 0,
+                "cs_pct": null
+              }
+            ],
+            [
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 26,
+                "cs": 10,
+                "cs_pct": 38.5
+              },
+              {
+                "taken": 27,
+                "cs": 23,
+                "cs_pct": 85.2
+              },
+              {
+                "taken": 30,
+                "cs": 28,
+                "cs_pct": 93.3
+              },
+              {
+                "taken": 20,
+                "cs": 2,
+                "cs_pct": 10.0
+              },
+              {
+                "taken": 7,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 10,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 39,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 24,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 13,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ],
+            [
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 11,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 3,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 9,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 2,
+                "cs": 0,
+                "cs_pct": 0.0
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -2944,6 +4255,96 @@
       "tol_acc_pct": 96.0,
       "overturns": 5,
       "re_impact": 0.73
+    },
+    {
+      "game_pk": 721301,
+      "date": "2023-08-11",
+      "level": "AA",
+      "matchup": "TNS @ BLX",
+      "taken": 172,
+      "called_strikes": 42,
+      "called_strike_pct": 24.4,
+      "k_pct": 22.5,
+      "bb_pct": 8.8,
+      "runs_scored": 7,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 725033,
+      "date": "2023-07-26",
+      "level": "AA",
+      "matchup": "TNS @ RCT",
+      "taken": 131,
+      "called_strikes": 43,
+      "called_strike_pct": 32.8,
+      "k_pct": 21.5,
+      "bb_pct": 7.6,
+      "runs_scored": 12,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 721177,
+      "date": "2023-07-03",
+      "level": "AA",
+      "matchup": "TNS @ CHA",
+      "taken": 125,
+      "called_strikes": 45,
+      "called_strike_pct": 36.0,
+      "k_pct": 26.3,
+      "bb_pct": 10.5,
+      "runs_scored": 7,
+      "ejections": 1,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 720988,
+      "date": "2023-06-06",
+      "level": "AA",
+      "matchup": "MTG @ PNS",
+      "taken": 133,
+      "called_strikes": 37,
+      "called_strike_pct": 27.8,
+      "k_pct": 20.3,
+      "bb_pct": 9.5,
+      "runs_scored": 7,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
+    },
+    {
+      "game_pk": 721010,
+      "date": "2023-04-21",
+      "level": "AA",
+      "matchup": "BIR @ PNS",
+      "taken": 164,
+      "called_strikes": 46,
+      "called_strike_pct": 28.0,
+      "k_pct": 25.0,
+      "bb_pct": 13.8,
+      "runs_scored": 13,
+      "ejections": 0,
+      "missed": null,
+      "acc_pct": null,
+      "tol_acc_pct": null,
+      "overturns": 0,
+      "re_impact": null
     }
   ]
 }

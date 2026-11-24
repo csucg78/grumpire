@@ -117,12 +117,30 @@
     <section id="badUmpsView" class="hidden">
       <div class="bad-umps-intro">
         <img src="./icon.png" alt="Disapproving Miriam" class="miriam-hero-stamp" width="76" height="76" />
-        <div>
-          <h2>MIRIAM'S HALL OF SHAME — SERIES 1 TRADING CARDS</h2>
-          <p>The Worst of the Worst Home Plate Umpires (Ranked by Lowest Tolerance-Adjusted Accuracy, Min. 250 Taken Pitches). Click any card to inspect their full game log or flip through their worst misses.</p>
+        <div style="flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+            <h2 id="badUmpsTitle">MIRIAM'S HALL OF SHAME — SERIES 1 TRADING CARDS</h2>
+            <div class="tabs" id="badUmpsLevelPills">
+              <button type="button" class="pill-btn active" data-bu-lvl="ALL">All Levels (AAA + AA + FSL)</button>
+              <button type="button" class="pill-btn" data-bu-lvl="AA">Double-A (AA) Edition</button>
+              <button type="button" class="pill-btn" data-bu-lvl="AAA">Triple-A (AAA)</button>
+              <button type="button" class="pill-btn" data-bu-lvl="FSL">Single-A (FSL)</button>
+            </div>
+          </div>
+          <p id="badUmpsDesc">The Worst of the Worst Home Plate Umpires (Hawk-Eye Series ranked by Lowest Tolerance-Adjusted Accuracy; Double-A Series ranked by Extreme Zone Deviation, Outer-Fringe Called Strikes &amp; Ejections). Click any card to inspect their heatmap and game log.</p>
         </div>
       </div>
       <div class="trading-cards-grid" id="badUmpsGrid"></div>
+      <div id="badUmpsAaSection" class="hidden" style="margin-top:28px">
+        <div class="bad-umps-intro" style="margin-bottom:16px">
+          <img src="./icon.png" alt="Disapproving Miriam" class="miriam-hero-stamp" width="68" height="68" />
+          <div>
+            <h2>MIRIAM'S DOUBLE-A (AA) WILD ZONE &amp; CHAOS EDITION</h2>
+            <p>Double-A ballparks lack Hawk-Eye optical tracking — these Double-A cards spotlight the wildest Called-Strike % deviations from the 31.2% AA norm, outer-perimeter stringer called strikes (&gt;1.2σ), walk-fests, and ejections. Click any card to view their 6×6 Venue-Normalized Heatmap.</p>
+          </div>
+        </div>
+        <div class="trading-cards-grid" id="badUmpsAaGrid"></div>
+      </div>
     </section>
   </main>
 

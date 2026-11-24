@@ -1,0 +1,52 @@
+{
+  "umpire_id": "489985",
+  "umpire_name": "Chad Whitson",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 512,
+  "missed": 50,
+  "acc_pct": 90.2,
+  "tol_acc_pct": 91.1,
+  "mean_miss_in": 1.3,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 6.47,
+  "game_log": [
+    {
+      "game_pk": 781142,
+      "date": "2025-05-10",
+      "level": "AAA",
+      "matchup": "WOR @ LHV",
+      "taken": 152,
+      "missed": 7,
+      "acc_pct": 95.4,
+      "overturns": 0,
+      "re_impact": 0.92
+    },
+    {
+      "game_pk": 781146,
+      "date": "2025-05-06",
+      "level": "AAA",
+      "matchup": "WOR @ LHV",
+      "taken": 177,
+      "missed": 18,
+      "acc_pct": 89.8,
+      "overturns": 0,
+      "re_impact": 1.56
+    },
+    {
+      "game_pk": 781599,
+      "date": "2025-04-30",
+      "level": "AAA",
+      "matchup": "STP @ COL",
+      "taken": 183,
+      "missed": 25,
+      "acc_pct": 86.3,
+      "overturns": 0,
+      "re_impact": 3.99
+    }
+  ]
+}

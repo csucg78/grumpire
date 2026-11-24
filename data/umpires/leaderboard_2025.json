@@ -1,0 +1,1838 @@
+[
+  {
+    "umpire_id": "830673",
+    "umpire_name": "Alexander Cardona",
+    "levels": [
+      "FSL"
+    ],
+    "games": 2,
+    "taken": 311,
+    "missed": 43,
+    "acc_pct": 86.2,
+    "tol_acc_pct": 86.1,
+    "mean_miss_in": 2.12,
+    "challenges": 11,
+    "overturns": 9,
+    "overturn_pct": 81.8,
+    "re_impact": 5.15
+  },
+  {
+    "umpire_id": "823441",
+    "umpire_name": "DeAndre Cooper",
+    "levels": [
+      "FSL"
+    ],
+    "games": 1,
+    "taken": 139,
+    "missed": 20,
+    "acc_pct": 85.6,
+    "tol_acc_pct": 86.8,
+    "mean_miss_in": 2.58,
+    "challenges": 6,
+    "overturns": 5,
+    "overturn_pct": 83.3,
+    "re_impact": 2.02
+  },
+  {
+    "umpire_id": "455043",
+    "umpire_name": "Javerro January",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 152,
+    "missed": 19,
+    "acc_pct": 87.5,
+    "tol_acc_pct": 88.1,
+    "mean_miss_in": 1.17,
+    "challenges": 8,
+    "overturns": 6,
+    "overturn_pct": 75.0,
+    "re_impact": 2.21
+  },
+  {
+    "umpire_id": "823423",
+    "umpire_name": "Michael Lewis",
+    "levels": [
+      "FSL"
+    ],
+    "games": 2,
+    "taken": 341,
+    "missed": 40,
+    "acc_pct": 88.3,
+    "tol_acc_pct": 89.0,
+    "mean_miss_in": 2.22,
+    "challenges": 11,
+    "overturns": 4,
+    "overturn_pct": 36.4,
+    "re_impact": 5.64
+  },
+  {
+    "umpire_id": "690895",
+    "umpire_name": "Chase Eubanks",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 171,
+    "missed": 20,
+    "acc_pct": 88.3,
+    "tol_acc_pct": 89.2,
+    "mean_miss_in": 1.33,
+    "challenges": 7,
+    "overturns": 4,
+    "overturn_pct": 57.1,
+    "re_impact": 2.44
+  },
+  {
+    "umpire_id": "650862",
+    "umpire_name": "Jose Sandoval",
+    "levels": [
+      "FSL"
+    ],
+    "games": 19,
+    "taken": 3276,
+    "missed": 338,
+    "acc_pct": 89.7,
+    "tol_acc_pct": 90.2,
+    "mean_miss_in": 1.74,
+    "challenges": 73,
+    "overturns": 41,
+    "overturn_pct": 56.2,
+    "re_impact": 42.33
+  },
+  {
+    "umpire_id": "823442",
+    "umpire_name": "Eli Cox",
+    "levels": [
+      "FSL"
+    ],
+    "games": 10,
+    "taken": 1465,
+    "missed": 147,
+    "acc_pct": 90.0,
+    "tol_acc_pct": 90.3,
+    "mean_miss_in": 1.48,
+    "challenges": 48,
+    "overturns": 26,
+    "overturn_pct": 54.2,
+    "re_impact": 18.62
+  },
+  {
+    "umpire_id": "804690",
+    "umpire_name": "Natanael Rodriguez Garcia",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3260,
+    "missed": 338,
+    "acc_pct": 89.6,
+    "tol_acc_pct": 90.4,
+    "mean_miss_in": 1.68,
+    "challenges": 68,
+    "overturns": 33,
+    "overturn_pct": 48.5,
+    "re_impact": 41.59
+  },
+  {
+    "umpire_id": "823436",
+    "umpire_name": "Allen Bryan",
+    "levels": [
+      "FSL"
+    ],
+    "games": 23,
+    "taken": 3527,
+    "missed": 371,
+    "acc_pct": 89.5,
+    "tol_acc_pct": 90.5,
+    "mean_miss_in": 1.53,
+    "challenges": 113,
+    "overturns": 64,
+    "overturn_pct": 56.6,
+    "re_impact": 44.75
+  },
+  {
+    "umpire_id": "802059",
+    "umpire_name": "Kameron Jones",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3310,
+    "missed": 343,
+    "acc_pct": 89.6,
+    "tol_acc_pct": 90.5,
+    "mean_miss_in": 1.54,
+    "challenges": 102,
+    "overturns": 66,
+    "overturn_pct": 64.7,
+    "re_impact": 41.68
+  },
+  {
+    "umpire_id": "828462",
+    "umpire_name": "Dakota Kilgore",
+    "levels": [
+      "FSL"
+    ],
+    "games": 19,
+    "taken": 2906,
+    "missed": 298,
+    "acc_pct": 89.7,
+    "tol_acc_pct": 90.5,
+    "mean_miss_in": 1.53,
+    "challenges": 67,
+    "overturns": 31,
+    "overturn_pct": 46.3,
+    "re_impact": 38.09
+  },
+  {
+    "umpire_id": "605670",
+    "umpire_name": "Dan Merzel",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 144,
+    "missed": 16,
+    "acc_pct": 88.9,
+    "tol_acc_pct": 90.6,
+    "mean_miss_in": 1.02,
+    "challenges": 0,
+    "overturns": 0,
+    "overturn_pct": 0.0,
+    "re_impact": 1.54
+  },
+  {
+    "umpire_id": "830682",
+    "umpire_name": "Alex Reynolds",
+    "levels": [
+      "FSL"
+    ],
+    "games": 29,
+    "taken": 4387,
+    "missed": 443,
+    "acc_pct": 89.9,
+    "tol_acc_pct": 90.7,
+    "mean_miss_in": 1.37,
+    "challenges": 137,
+    "overturns": 70,
+    "overturn_pct": 51.1,
+    "re_impact": 55.29
+  },
+  {
+    "umpire_id": "823426",
+    "umpire_name": "Nicholas Saxton",
+    "levels": [
+      "FSL"
+    ],
+    "games": 17,
+    "taken": 2653,
+    "missed": 269,
+    "acc_pct": 89.9,
+    "tol_acc_pct": 90.7,
+    "mean_miss_in": 1.54,
+    "challenges": 83,
+    "overturns": 49,
+    "overturn_pct": 59.0,
+    "re_impact": 30.91
+  },
+  {
+    "umpire_id": "823445",
+    "umpire_name": "Breanna Johnson",
+    "levels": [
+      "FSL"
+    ],
+    "games": 16,
+    "taken": 2500,
+    "missed": 247,
+    "acc_pct": 90.1,
+    "tol_acc_pct": 90.9,
+    "mean_miss_in": 1.35,
+    "challenges": 74,
+    "overturns": 49,
+    "overturn_pct": 66.2,
+    "re_impact": 28.38
+  },
+  {
+    "umpire_id": "655462",
+    "umpire_name": "Emmanuel Perez",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3398,
+    "missed": 333,
+    "acc_pct": 90.2,
+    "tol_acc_pct": 90.9,
+    "mean_miss_in": 1.66,
+    "challenges": 90,
+    "overturns": 50,
+    "overturn_pct": 55.6,
+    "re_impact": 39.79
+  },
+  {
+    "umpire_id": "830685",
+    "umpire_name": "Francisco Gonzalez",
+    "levels": [
+      "FSL"
+    ],
+    "games": 15,
+    "taken": 2307,
+    "missed": 226,
+    "acc_pct": 90.2,
+    "tol_acc_pct": 90.9,
+    "mean_miss_in": 1.55,
+    "challenges": 65,
+    "overturns": 37,
+    "overturn_pct": 56.9,
+    "re_impact": 29.2
+  },
+  {
+    "umpire_id": "489985",
+    "umpire_name": "Chad Whitson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 3,
+    "taken": 512,
+    "missed": 50,
+    "acc_pct": 90.2,
+    "tol_acc_pct": 91.1,
+    "mean_miss_in": 1.3,
+    "challenges": 0,
+    "overturns": 0,
+    "overturn_pct": 0.0,
+    "re_impact": 6.47
+  },
+  {
+    "umpire_id": "830669",
+    "umpire_name": "Reid Hoover",
+    "levels": [
+      "FSL"
+    ],
+    "games": 19,
+    "taken": 3103,
+    "missed": 292,
+    "acc_pct": 90.6,
+    "tol_acc_pct": 91.1,
+    "mean_miss_in": 1.44,
+    "challenges": 62,
+    "overturns": 30,
+    "overturn_pct": 48.4,
+    "re_impact": 36.92
+  },
+  {
+    "umpire_id": "823607",
+    "umpire_name": "Blake Bizon",
+    "levels": [
+      "FSL"
+    ],
+    "games": 17,
+    "taken": 2756,
+    "missed": 262,
+    "acc_pct": 90.5,
+    "tol_acc_pct": 91.2,
+    "mean_miss_in": 1.35,
+    "challenges": 69,
+    "overturns": 27,
+    "overturn_pct": 39.1,
+    "re_impact": 33.19
+  },
+  {
+    "umpire_id": "823425",
+    "umpire_name": "Brady Parrish",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3343,
+    "missed": 321,
+    "acc_pct": 90.4,
+    "tol_acc_pct": 91.3,
+    "mean_miss_in": 1.38,
+    "challenges": 102,
+    "overturns": 56,
+    "overturn_pct": 54.9,
+    "re_impact": 37.17
+  },
+  {
+    "umpire_id": "681790",
+    "umpire_name": "Mickey Smith",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 199,
+    "missed": 17,
+    "acc_pct": 91.5,
+    "tol_acc_pct": 91.4,
+    "mean_miss_in": 1.11,
+    "challenges": 3,
+    "overturns": 2,
+    "overturn_pct": 66.7,
+    "re_impact": 1.76
+  },
+  {
+    "umpire_id": "827538",
+    "umpire_name": "Dylan Toomey",
+    "levels": [
+      "FSL"
+    ],
+    "games": 16,
+    "taken": 2489,
+    "missed": 229,
+    "acc_pct": 90.8,
+    "tol_acc_pct": 91.7,
+    "mean_miss_in": 1.53,
+    "challenges": 58,
+    "overturns": 29,
+    "overturn_pct": 50.0,
+    "re_impact": 27.12
+  },
+  {
+    "umpire_id": "823443",
+    "umpire_name": "Alayna Georgio",
+    "levels": [
+      "FSL"
+    ],
+    "games": 17,
+    "taken": 2622,
+    "missed": 238,
+    "acc_pct": 90.9,
+    "tol_acc_pct": 91.7,
+    "mean_miss_in": 1.6,
+    "challenges": 65,
+    "overturns": 40,
+    "overturn_pct": 61.5,
+    "re_impact": 28.45
+  },
+  {
+    "umpire_id": "827802",
+    "umpire_name": "Jacob Ashworth",
+    "levels": [
+      "FSL"
+    ],
+    "games": 20,
+    "taken": 3231,
+    "missed": 293,
+    "acc_pct": 90.9,
+    "tol_acc_pct": 91.8,
+    "mean_miss_in": 1.42,
+    "challenges": 78,
+    "overturns": 38,
+    "overturn_pct": 48.7,
+    "re_impact": 35.18
+  },
+  {
+    "umpire_id": "830665",
+    "umpire_name": "Patrick Goode",
+    "levels": [
+      "FSL"
+    ],
+    "games": 20,
+    "taken": 3251,
+    "missed": 294,
+    "acc_pct": 91.0,
+    "tol_acc_pct": 91.8,
+    "mean_miss_in": 1.36,
+    "challenges": 82,
+    "overturns": 47,
+    "overturn_pct": 57.3,
+    "re_impact": 36.29
+  },
+  {
+    "umpire_id": "701964",
+    "umpire_name": "Josiah Shepherd",
+    "levels": [
+      "AAA"
+    ],
+    "games": 3,
+    "taken": 448,
+    "missed": 37,
+    "acc_pct": 91.7,
+    "tol_acc_pct": 91.8,
+    "mean_miss_in": 1.24,
+    "challenges": 15,
+    "overturns": 9,
+    "overturn_pct": 60.0,
+    "re_impact": 4.43
+  },
+  {
+    "umpire_id": "830670",
+    "umpire_name": "Bryce Bobeldyke",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3274,
+    "missed": 299,
+    "acc_pct": 90.9,
+    "tol_acc_pct": 92.0,
+    "mean_miss_in": 1.38,
+    "challenges": 82,
+    "overturns": 40,
+    "overturn_pct": 48.8,
+    "re_impact": 35.23
+  },
+  {
+    "umpire_id": "823433",
+    "umpire_name": "Malik Coleman",
+    "levels": [
+      "FSL"
+    ],
+    "games": 20,
+    "taken": 3142,
+    "missed": 276,
+    "acc_pct": 91.2,
+    "tol_acc_pct": 92.0,
+    "mean_miss_in": 1.43,
+    "challenges": 76,
+    "overturns": 37,
+    "overturn_pct": 48.7,
+    "re_impact": 33.01
+  },
+  {
+    "umpire_id": "703365",
+    "umpire_name": "Jared Duerson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 4,
+    "taken": 644,
+    "missed": 56,
+    "acc_pct": 91.3,
+    "tol_acc_pct": 92.0,
+    "mean_miss_in": 1.33,
+    "challenges": 11,
+    "overturns": 8,
+    "overturn_pct": 72.7,
+    "re_impact": 6.14
+  },
+  {
+    "umpire_id": "804956",
+    "umpire_name": "Kaleb Kador",
+    "levels": [
+      "FSL"
+    ],
+    "games": 21,
+    "taken": 3268,
+    "missed": 281,
+    "acc_pct": 91.4,
+    "tol_acc_pct": 92.0,
+    "mean_miss_in": 1.46,
+    "challenges": 74,
+    "overturns": 34,
+    "overturn_pct": 45.9,
+    "re_impact": 35.74
+  },
+  {
+    "umpire_id": "605671",
+    "umpire_name": "Charlie Ramos",
+    "levels": [
+      "AAA"
+    ],
+    "games": 4,
+    "taken": 579,
+    "missed": 48,
+    "acc_pct": 91.7,
+    "tol_acc_pct": 92.1,
+    "mean_miss_in": 1.22,
+    "challenges": 6,
+    "overturns": 3,
+    "overturn_pct": 50.0,
+    "re_impact": 6.1
+  },
+  {
+    "umpire_id": "824993",
+    "umpire_name": "Reginald Webb",
+    "levels": [
+      "FSL"
+    ],
+    "games": 19,
+    "taken": 3066,
+    "missed": 266,
+    "acc_pct": 91.3,
+    "tol_acc_pct": 92.2,
+    "mean_miss_in": 1.38,
+    "challenges": 69,
+    "overturns": 40,
+    "overturn_pct": 58.0,
+    "re_impact": 33.23
+  },
+  {
+    "umpire_id": "830667",
+    "umpire_name": "Jarvis Warner",
+    "levels": [
+      "FSL"
+    ],
+    "games": 4,
+    "taken": 652,
+    "missed": 58,
+    "acc_pct": 91.1,
+    "tol_acc_pct": 92.3,
+    "mean_miss_in": 1.14,
+    "challenges": 20,
+    "overturns": 7,
+    "overturn_pct": 35.0,
+    "re_impact": 8.06
+  },
+  {
+    "umpire_id": "829385",
+    "umpire_name": "Bayron Matos",
+    "levels": [
+      "FSL"
+    ],
+    "games": 19,
+    "taken": 3400,
+    "missed": 292,
+    "acc_pct": 91.4,
+    "tol_acc_pct": 92.3,
+    "mean_miss_in": 1.2,
+    "challenges": 78,
+    "overturns": 33,
+    "overturn_pct": 42.3,
+    "re_impact": 34.48
+  },
+  {
+    "umpire_id": "823435",
+    "umpire_name": "John Miller",
+    "levels": [
+      "FSL"
+    ],
+    "games": 4,
+    "taken": 645,
+    "missed": 56,
+    "acc_pct": 91.3,
+    "tol_acc_pct": 92.4,
+    "mean_miss_in": 1.31,
+    "challenges": 14,
+    "overturns": 6,
+    "overturn_pct": 42.9,
+    "re_impact": 6.27
+  },
+  {
+    "umpire_id": "823734",
+    "umpire_name": "Derek Gibson",
+    "levels": [
+      "FSL"
+    ],
+    "games": 17,
+    "taken": 2572,
+    "missed": 218,
+    "acc_pct": 91.5,
+    "tol_acc_pct": 92.5,
+    "mean_miss_in": 1.38,
+    "challenges": 56,
+    "overturns": 24,
+    "overturn_pct": 42.9,
+    "re_impact": 27.77
+  },
+  {
+    "umpire_id": "830684",
+    "umpire_name": "Xander Huddleston",
+    "levels": [
+      "FSL"
+    ],
+    "games": 20,
+    "taken": 3390,
+    "missed": 283,
+    "acc_pct": 91.7,
+    "tol_acc_pct": 92.5,
+    "mean_miss_in": 1.15,
+    "challenges": 55,
+    "overturns": 23,
+    "overturn_pct": 41.8,
+    "re_impact": 35.32
+  },
+  {
+    "umpire_id": "823432",
+    "umpire_name": "Dylan Reaves",
+    "levels": [
+      "FSL"
+    ],
+    "games": 13,
+    "taken": 2139,
+    "missed": 170,
+    "acc_pct": 92.1,
+    "tol_acc_pct": 92.5,
+    "mean_miss_in": 1.46,
+    "challenges": 54,
+    "overturns": 27,
+    "overturn_pct": 50.0,
+    "re_impact": 21.06
+  },
+  {
+    "umpire_id": "681849",
+    "umpire_name": "Felix Neon",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7616,
+    "missed": 629,
+    "acc_pct": 91.7,
+    "tol_acc_pct": 92.7,
+    "mean_miss_in": 1.19,
+    "challenges": 158,
+    "overturns": 92,
+    "overturn_pct": 58.2,
+    "re_impact": 75.97
+  },
+  {
+    "umpire_id": "545402",
+    "umpire_name": "John Bacon",
+    "levels": [
+      "AAA"
+    ],
+    "games": 9,
+    "taken": 1439,
+    "missed": 118,
+    "acc_pct": 91.8,
+    "tol_acc_pct": 92.7,
+    "mean_miss_in": 1.09,
+    "challenges": 39,
+    "overturns": 25,
+    "overturn_pct": 64.1,
+    "re_impact": 13.38
+  },
+  {
+    "umpire_id": "801282",
+    "umpire_name": "Elliott Melton",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 180,
+    "missed": 14,
+    "acc_pct": 92.2,
+    "tol_acc_pct": 92.7,
+    "mean_miss_in": 1.28,
+    "challenges": 6,
+    "overturns": 3,
+    "overturn_pct": 50.0,
+    "re_impact": 1.59
+  },
+  {
+    "umpire_id": "677389",
+    "umpire_name": "Ty Krauss",
+    "levels": [
+      "AAA"
+    ],
+    "games": 51,
+    "taken": 8110,
+    "missed": 654,
+    "acc_pct": 91.9,
+    "tol_acc_pct": 92.8,
+    "mean_miss_in": 1.21,
+    "challenges": 183,
+    "overturns": 110,
+    "overturn_pct": 60.1,
+    "re_impact": 79.71
+  },
+  {
+    "umpire_id": "486200",
+    "umpire_name": "David Arrieta",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 6937,
+    "missed": 562,
+    "acc_pct": 91.9,
+    "tol_acc_pct": 92.8,
+    "mean_miss_in": 1.16,
+    "challenges": 142,
+    "overturns": 78,
+    "overturn_pct": 54.9,
+    "re_impact": 69.37
+  },
+  {
+    "umpire_id": "823440",
+    "umpire_name": "Brandon Smith",
+    "levels": [
+      "FSL"
+    ],
+    "games": 18,
+    "taken": 2973,
+    "missed": 227,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 92.9,
+    "mean_miss_in": 1.23,
+    "challenges": 56,
+    "overturns": 19,
+    "overturn_pct": 33.9,
+    "re_impact": 30.38
+  },
+  {
+    "umpire_id": "676582",
+    "umpire_name": "Evin Johnson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 48,
+    "taken": 7647,
+    "missed": 609,
+    "acc_pct": 92.0,
+    "tol_acc_pct": 93.0,
+    "mean_miss_in": 1.18,
+    "challenges": 168,
+    "overturns": 102,
+    "overturn_pct": 60.7,
+    "re_impact": 69.95
+  },
+  {
+    "umpire_id": "670567",
+    "umpire_name": "Steven Hodgins",
+    "levels": [
+      "AAA"
+    ],
+    "games": 48,
+    "taken": 7492,
+    "missed": 589,
+    "acc_pct": 92.1,
+    "tol_acc_pct": 93.0,
+    "mean_miss_in": 1.12,
+    "challenges": 137,
+    "overturns": 74,
+    "overturn_pct": 54.0,
+    "re_impact": 73.01
+  },
+  {
+    "umpire_id": "676583",
+    "umpire_name": "Thomas O'Neil",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 7027,
+    "missed": 546,
+    "acc_pct": 92.2,
+    "tol_acc_pct": 93.0,
+    "mean_miss_in": 1.07,
+    "challenges": 145,
+    "overturns": 84,
+    "overturn_pct": 57.9,
+    "re_impact": 67.44
+  },
+  {
+    "umpire_id": "830661",
+    "umpire_name": "Patrick McMorris",
+    "levels": [
+      "FSL"
+    ],
+    "games": 20,
+    "taken": 3128,
+    "missed": 245,
+    "acc_pct": 92.2,
+    "tol_acc_pct": 93.0,
+    "mean_miss_in": 1.39,
+    "challenges": 92,
+    "overturns": 46,
+    "overturn_pct": 50.0,
+    "re_impact": 31.63
+  },
+  {
+    "umpire_id": "682556",
+    "umpire_name": "Paul Roemer",
+    "levels": [
+      "AAA"
+    ],
+    "games": 2,
+    "taken": 411,
+    "missed": 31,
+    "acc_pct": 92.5,
+    "tol_acc_pct": 93.0,
+    "mean_miss_in": 0.9,
+    "challenges": 8,
+    "overturns": 5,
+    "overturn_pct": 62.5,
+    "re_impact": 3.88
+  },
+  {
+    "umpire_id": "830668",
+    "umpire_name": "Jacob Gorman",
+    "levels": [
+      "FSL"
+    ],
+    "games": 3,
+    "taken": 493,
+    "missed": 39,
+    "acc_pct": 92.1,
+    "tol_acc_pct": 93.1,
+    "mean_miss_in": 1.14,
+    "challenges": 14,
+    "overturns": 7,
+    "overturn_pct": 50.0,
+    "re_impact": 5.94
+  },
+  {
+    "umpire_id": "658082",
+    "umpire_name": "Jacob Metz",
+    "levels": [
+      "AAA"
+    ],
+    "games": 20,
+    "taken": 3145,
+    "missed": 246,
+    "acc_pct": 92.2,
+    "tol_acc_pct": 93.1,
+    "mean_miss_in": 1.07,
+    "challenges": 52,
+    "overturns": 33,
+    "overturn_pct": 63.5,
+    "re_impact": 29.52
+  },
+  {
+    "umpire_id": "688063",
+    "umpire_name": "Chad Patterson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 153,
+    "missed": 13,
+    "acc_pct": 91.5,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.21,
+    "challenges": 4,
+    "overturns": 2,
+    "overturn_pct": 50.0,
+    "re_impact": 1.3
+  },
+  {
+    "umpire_id": "670631",
+    "umpire_name": "Tanner Moore",
+    "levels": [
+      "AAA"
+    ],
+    "games": 42,
+    "taken": 6630,
+    "missed": 517,
+    "acc_pct": 92.2,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.06,
+    "challenges": 97,
+    "overturns": 46,
+    "overturn_pct": 47.4,
+    "re_impact": 58.25
+  },
+  {
+    "umpire_id": "668924",
+    "umpire_name": "Kelvis Velez",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7789,
+    "missed": 600,
+    "acc_pct": 92.3,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.06,
+    "challenges": 169,
+    "overturns": 98,
+    "overturn_pct": 58.0,
+    "re_impact": 72.06
+  },
+  {
+    "umpire_id": "665294",
+    "umpire_name": "Mark Bass",
+    "levels": [
+      "AAA"
+    ],
+    "games": 46,
+    "taken": 7380,
+    "missed": 569,
+    "acc_pct": 92.3,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.11,
+    "challenges": 143,
+    "overturns": 71,
+    "overturn_pct": 49.7,
+    "re_impact": 65.0
+  },
+  {
+    "umpire_id": "668915",
+    "umpire_name": "Harley Acosta",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 8075,
+    "missed": 613,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.19,
+    "challenges": 178,
+    "overturns": 104,
+    "overturn_pct": 58.4,
+    "re_impact": 72.16
+  },
+  {
+    "umpire_id": "682501",
+    "umpire_name": "Joe Belangia",
+    "levels": [
+      "AAA"
+    ],
+    "games": 33,
+    "taken": 5530,
+    "missed": 422,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.2,
+    "mean_miss_in": 1.17,
+    "challenges": 119,
+    "overturns": 64,
+    "overturn_pct": 53.8,
+    "re_impact": 53.75
+  },
+  {
+    "umpire_id": "681791",
+    "umpire_name": "Bryan Van Vranken",
+    "levels": [
+      "AAA"
+    ],
+    "games": 46,
+    "taken": 7534,
+    "missed": 580,
+    "acc_pct": 92.3,
+    "tol_acc_pct": 93.3,
+    "mean_miss_in": 1.14,
+    "challenges": 155,
+    "overturns": 82,
+    "overturn_pct": 52.9,
+    "re_impact": 72.19
+  },
+  {
+    "umpire_id": "682954",
+    "umpire_name": "Mitch Trzeciak",
+    "levels": [
+      "AAA"
+    ],
+    "games": 50,
+    "taken": 8355,
+    "missed": 639,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.3,
+    "mean_miss_in": 1.14,
+    "challenges": 187,
+    "overturns": 108,
+    "overturn_pct": 57.8,
+    "re_impact": 76.39
+  },
+  {
+    "umpire_id": "681783",
+    "umpire_name": "Casey James",
+    "levels": [
+      "AAA"
+    ],
+    "games": 40,
+    "taken": 6402,
+    "missed": 486,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.3,
+    "mean_miss_in": 1.12,
+    "challenges": 115,
+    "overturns": 63,
+    "overturn_pct": 54.8,
+    "re_impact": 57.03
+  },
+  {
+    "umpire_id": "830664",
+    "umpire_name": "Parker Powell",
+    "levels": [
+      "FSL"
+    ],
+    "games": 17,
+    "taken": 2657,
+    "missed": 201,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.3,
+    "mean_miss_in": 1.57,
+    "challenges": 70,
+    "overturns": 37,
+    "overturn_pct": 52.9,
+    "re_impact": 22.65
+  },
+  {
+    "umpire_id": "664263",
+    "umpire_name": "Edwin Jimenez",
+    "levels": [
+      "AAA"
+    ],
+    "games": 12,
+    "taken": 1827,
+    "missed": 136,
+    "acc_pct": 92.6,
+    "tol_acc_pct": 93.3,
+    "mean_miss_in": 1.04,
+    "challenges": 48,
+    "overturns": 29,
+    "overturn_pct": 60.4,
+    "re_impact": 14.41
+  },
+  {
+    "umpire_id": "832210",
+    "umpire_name": "Preston Hughes",
+    "levels": [
+      "FSL"
+    ],
+    "games": 2,
+    "taken": 300,
+    "missed": 25,
+    "acc_pct": 91.7,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.47,
+    "challenges": 7,
+    "overturns": 3,
+    "overturn_pct": 42.9,
+    "re_impact": 3.16
+  },
+  {
+    "umpire_id": "688057",
+    "umpire_name": "Matt Blackborow",
+    "levels": [
+      "AAA"
+    ],
+    "games": 46,
+    "taken": 7604,
+    "missed": 589,
+    "acc_pct": 92.3,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.12,
+    "challenges": 148,
+    "overturns": 96,
+    "overturn_pct": 64.9,
+    "re_impact": 75.36
+  },
+  {
+    "umpire_id": "665281",
+    "umpire_name": "Brian Walsh",
+    "levels": [
+      "AAA"
+    ],
+    "games": 11,
+    "taken": 1776,
+    "missed": 135,
+    "acc_pct": 92.4,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.18,
+    "challenges": 40,
+    "overturns": 29,
+    "overturn_pct": 72.5,
+    "re_impact": 15.8
+  },
+  {
+    "umpire_id": "665280",
+    "umpire_name": "Darius Ghani",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7965,
+    "missed": 597,
+    "acc_pct": 92.5,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.13,
+    "challenges": 171,
+    "overturns": 93,
+    "overturn_pct": 54.4,
+    "re_impact": 70.28
+  },
+  {
+    "umpire_id": "665298",
+    "umpire_name": "Dexter Kelley",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 7006,
+    "missed": 524,
+    "acc_pct": 92.5,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.04,
+    "challenges": 117,
+    "overturns": 63,
+    "overturn_pct": 53.8,
+    "re_impact": 60.66
+  },
+  {
+    "umpire_id": "668921",
+    "umpire_name": "Jen Pawol",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 6967,
+    "missed": 522,
+    "acc_pct": 92.5,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.09,
+    "challenges": 164,
+    "overturns": 101,
+    "overturn_pct": 61.6,
+    "re_impact": 60.85
+  },
+  {
+    "umpire_id": "623995",
+    "umpire_name": "Raul Moreno",
+    "levels": [
+      "AAA"
+    ],
+    "games": 46,
+    "taken": 7568,
+    "missed": 554,
+    "acc_pct": 92.7,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.07,
+    "challenges": 130,
+    "overturns": 81,
+    "overturn_pct": 62.3,
+    "re_impact": 67.75
+  },
+  {
+    "umpire_id": "823604",
+    "umpire_name": "Tanya Millette",
+    "levels": [
+      "FSL"
+    ],
+    "games": 15,
+    "taken": 2364,
+    "missed": 171,
+    "acc_pct": 92.8,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.37,
+    "challenges": 59,
+    "overturns": 32,
+    "overturn_pct": 54.2,
+    "re_impact": 18.95
+  },
+  {
+    "umpire_id": "802055",
+    "umpire_name": "Tim Barreras",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 153,
+    "missed": 10,
+    "acc_pct": 93.5,
+    "tol_acc_pct": 93.4,
+    "mean_miss_in": 1.09,
+    "challenges": 3,
+    "overturns": 1,
+    "overturn_pct": 33.3,
+    "re_impact": 1.3
+  },
+  {
+    "umpire_id": "676578",
+    "umpire_name": "Thomas Fornarola",
+    "levels": [
+      "AAA"
+    ],
+    "games": 48,
+    "taken": 7771,
+    "missed": 564,
+    "acc_pct": 92.7,
+    "tol_acc_pct": 93.5,
+    "mean_miss_in": 1.13,
+    "challenges": 150,
+    "overturns": 81,
+    "overturn_pct": 54.0,
+    "re_impact": 65.72
+  },
+  {
+    "umpire_id": "686967",
+    "umpire_name": "Denver Dangerfield",
+    "levels": [
+      "AAA"
+    ],
+    "games": 45,
+    "taken": 7095,
+    "missed": 526,
+    "acc_pct": 92.6,
+    "tol_acc_pct": 93.6,
+    "mean_miss_in": 1.15,
+    "challenges": 171,
+    "overturns": 102,
+    "overturn_pct": 59.6,
+    "re_impact": 63.21
+  },
+  {
+    "umpire_id": "703141",
+    "umpire_name": "Charlie Welling",
+    "levels": [
+      "AAA"
+    ],
+    "games": 45,
+    "taken": 7291,
+    "missed": 536,
+    "acc_pct": 92.6,
+    "tol_acc_pct": 93.7,
+    "mean_miss_in": 0.99,
+    "challenges": 153,
+    "overturns": 80,
+    "overturn_pct": 52.3,
+    "re_impact": 65.64
+  },
+  {
+    "umpire_id": "677388",
+    "umpire_name": "Pete Talkington",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 8118,
+    "missed": 589,
+    "acc_pct": 92.7,
+    "tol_acc_pct": 93.7,
+    "mean_miss_in": 1.09,
+    "challenges": 143,
+    "overturns": 77,
+    "overturn_pct": 53.8,
+    "re_impact": 74.47
+  },
+  {
+    "umpire_id": "682874",
+    "umpire_name": "Trevor Mathews",
+    "levels": [
+      "AAA"
+    ],
+    "games": 45,
+    "taken": 7145,
+    "missed": 510,
+    "acc_pct": 92.9,
+    "tol_acc_pct": 93.7,
+    "mean_miss_in": 1.13,
+    "challenges": 133,
+    "overturns": 62,
+    "overturn_pct": 46.6,
+    "re_impact": 66.44
+  },
+  {
+    "umpire_id": "690888",
+    "umpire_name": "Austin Snow",
+    "levels": [
+      "AAA"
+    ],
+    "games": 45,
+    "taken": 7448,
+    "missed": 548,
+    "acc_pct": 92.6,
+    "tol_acc_pct": 93.8,
+    "mean_miss_in": 1.04,
+    "challenges": 136,
+    "overturns": 65,
+    "overturn_pct": 47.8,
+    "re_impact": 66.7
+  },
+  {
+    "umpire_id": "688060",
+    "umpire_name": "Kaleb Martin",
+    "levels": [
+      "AAA"
+    ],
+    "games": 47,
+    "taken": 7528,
+    "missed": 539,
+    "acc_pct": 92.8,
+    "tol_acc_pct": 93.8,
+    "mean_miss_in": 1.18,
+    "challenges": 168,
+    "overturns": 87,
+    "overturn_pct": 51.8,
+    "re_impact": 63.25
+  },
+  {
+    "umpire_id": "682443",
+    "umpire_name": "Steven Rios Jr.",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7805,
+    "missed": 558,
+    "acc_pct": 92.9,
+    "tol_acc_pct": 93.8,
+    "mean_miss_in": 1.05,
+    "challenges": 176,
+    "overturns": 106,
+    "overturn_pct": 60.2,
+    "re_impact": 65.99
+  },
+  {
+    "umpire_id": "670565",
+    "umpire_name": "Trevor Dannegger",
+    "levels": [
+      "AAA"
+    ],
+    "games": 50,
+    "taken": 7884,
+    "missed": 553,
+    "acc_pct": 93.0,
+    "tol_acc_pct": 93.8,
+    "mean_miss_in": 1.03,
+    "challenges": 166,
+    "overturns": 93,
+    "overturn_pct": 56.0,
+    "re_impact": 63.73
+  },
+  {
+    "umpire_id": "485856",
+    "umpire_name": "Jonathan Parra",
+    "levels": [
+      "AAA"
+    ],
+    "games": 38,
+    "taken": 5817,
+    "missed": 401,
+    "acc_pct": 93.1,
+    "tol_acc_pct": 93.8,
+    "mean_miss_in": 1.1,
+    "challenges": 92,
+    "overturns": 47,
+    "overturn_pct": 51.1,
+    "re_impact": 47.34
+  },
+  {
+    "umpire_id": "658536",
+    "umpire_name": "Austin Jones",
+    "levels": [
+      "AAA"
+    ],
+    "games": 10,
+    "taken": 1681,
+    "missed": 109,
+    "acc_pct": 93.5,
+    "tol_acc_pct": 93.9,
+    "mean_miss_in": 1.06,
+    "challenges": 28,
+    "overturns": 11,
+    "overturn_pct": 39.3,
+    "re_impact": 12.78
+  },
+  {
+    "umpire_id": "670688",
+    "umpire_name": "Mark Stewart Jr.",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7901,
+    "missed": 552,
+    "acc_pct": 93.0,
+    "tol_acc_pct": 94.0,
+    "mean_miss_in": 0.94,
+    "challenges": 167,
+    "overturns": 81,
+    "overturn_pct": 48.5,
+    "re_impact": 64.97
+  },
+  {
+    "umpire_id": "676580",
+    "umpire_name": "Steven Jaschinski",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 7160,
+    "missed": 489,
+    "acc_pct": 93.2,
+    "tol_acc_pct": 94.0,
+    "mean_miss_in": 1.01,
+    "challenges": 135,
+    "overturns": 72,
+    "overturn_pct": 53.3,
+    "re_impact": 57.56
+  },
+  {
+    "umpire_id": "670562",
+    "umpire_name": "Dane Poncsak",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 8099,
+    "missed": 568,
+    "acc_pct": 93.0,
+    "tol_acc_pct": 94.1,
+    "mean_miss_in": 1.03,
+    "challenges": 141,
+    "overturns": 69,
+    "overturn_pct": 48.9,
+    "re_impact": 69.41
+  },
+  {
+    "umpire_id": "573769",
+    "umpire_name": "Jeremy Riggs",
+    "levels": [
+      "AAA"
+    ],
+    "games": 42,
+    "taken": 6807,
+    "missed": 468,
+    "acc_pct": 93.1,
+    "tol_acc_pct": 94.1,
+    "mean_miss_in": 0.99,
+    "challenges": 124,
+    "overturns": 53,
+    "overturn_pct": 42.7,
+    "re_impact": 56.08
+  },
+  {
+    "umpire_id": "676581",
+    "umpire_name": "James Jean",
+    "levels": [
+      "AAA"
+    ],
+    "games": 20,
+    "taken": 3024,
+    "missed": 210,
+    "acc_pct": 93.1,
+    "tol_acc_pct": 94.1,
+    "mean_miss_in": 0.88,
+    "challenges": 56,
+    "overturns": 28,
+    "overturn_pct": 50.0,
+    "re_impact": 24.34
+  },
+  {
+    "umpire_id": "665299",
+    "umpire_name": "Louie Krupa",
+    "levels": [
+      "AAA"
+    ],
+    "games": 50,
+    "taken": 8254,
+    "missed": 559,
+    "acc_pct": 93.2,
+    "tol_acc_pct": 94.1,
+    "mean_miss_in": 0.99,
+    "challenges": 155,
+    "overturns": 84,
+    "overturn_pct": 54.2,
+    "re_impact": 69.6
+  },
+  {
+    "umpire_id": "691047",
+    "umpire_name": "Kellen Martin",
+    "levels": [
+      "AAA"
+    ],
+    "games": 48,
+    "taken": 7540,
+    "missed": 501,
+    "acc_pct": 93.4,
+    "tol_acc_pct": 94.2,
+    "mean_miss_in": 1.09,
+    "challenges": 149,
+    "overturns": 65,
+    "overturn_pct": 43.6,
+    "re_impact": 59.4
+  },
+  {
+    "umpire_id": "665278",
+    "umpire_name": "Ben Phillips",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7798,
+    "missed": 503,
+    "acc_pct": 93.5,
+    "tol_acc_pct": 94.2,
+    "mean_miss_in": 1.03,
+    "challenges": 151,
+    "overturns": 73,
+    "overturn_pct": 48.3,
+    "re_impact": 61.52
+  },
+  {
+    "umpire_id": "658292",
+    "umpire_name": "Derek Thomas",
+    "levels": [
+      "AAA"
+    ],
+    "games": 15,
+    "taken": 2257,
+    "missed": 154,
+    "acc_pct": 93.2,
+    "tol_acc_pct": 94.3,
+    "mean_miss_in": 0.93,
+    "challenges": 58,
+    "overturns": 27,
+    "overturn_pct": 46.6,
+    "re_impact": 16.81
+  },
+  {
+    "umpire_id": "665297",
+    "umpire_name": "Tom Hanahan",
+    "levels": [
+      "AAA"
+    ],
+    "games": 9,
+    "taken": 1524,
+    "missed": 100,
+    "acc_pct": 93.4,
+    "tol_acc_pct": 94.3,
+    "mean_miss_in": 1.02,
+    "challenges": 24,
+    "overturns": 9,
+    "overturn_pct": 37.5,
+    "re_impact": 12.06
+  },
+  {
+    "umpire_id": "691042",
+    "umpire_name": "Willie Traynor",
+    "levels": [
+      "AAA"
+    ],
+    "games": 29,
+    "taken": 4914,
+    "missed": 310,
+    "acc_pct": 93.7,
+    "tol_acc_pct": 94.4,
+    "mean_miss_in": 1.02,
+    "challenges": 75,
+    "overturns": 34,
+    "overturn_pct": 45.3,
+    "re_impact": 40.11
+  },
+  {
+    "umpire_id": "683078",
+    "umpire_name": "Joe McCarthy",
+    "levels": [
+      "AAA"
+    ],
+    "games": 44,
+    "taken": 6891,
+    "missed": 440,
+    "acc_pct": 93.6,
+    "tol_acc_pct": 94.5,
+    "mean_miss_in": 1.07,
+    "challenges": 106,
+    "overturns": 46,
+    "overturn_pct": 43.4,
+    "re_impact": 52.17
+  },
+  {
+    "umpire_id": "676575",
+    "umpire_name": "Dylan Bradley",
+    "levels": [
+      "AAA"
+    ],
+    "games": 37,
+    "taken": 5986,
+    "missed": 386,
+    "acc_pct": 93.6,
+    "tol_acc_pct": 94.5,
+    "mean_miss_in": 1.0,
+    "challenges": 101,
+    "overturns": 56,
+    "overturn_pct": 55.4,
+    "re_impact": 48.15
+  },
+  {
+    "umpire_id": "665302",
+    "umpire_name": "Dillon Wilson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 47,
+    "taken": 7448,
+    "missed": 471,
+    "acc_pct": 93.7,
+    "tol_acc_pct": 94.6,
+    "mean_miss_in": 1.01,
+    "challenges": 129,
+    "overturns": 60,
+    "overturn_pct": 46.5,
+    "re_impact": 56.88
+  },
+  {
+    "umpire_id": "830659",
+    "umpire_name": "Brice McCormick",
+    "levels": [
+      "FSL"
+    ],
+    "games": 3,
+    "taken": 541,
+    "missed": 33,
+    "acc_pct": 93.9,
+    "tol_acc_pct": 94.6,
+    "mean_miss_in": 1.68,
+    "challenges": 15,
+    "overturns": 10,
+    "overturn_pct": 66.7,
+    "re_impact": 4.21
+  },
+  {
+    "umpire_id": "623957",
+    "umpire_name": "Brian Peterson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 205,
+    "missed": 12,
+    "acc_pct": 94.1,
+    "tol_acc_pct": 94.6,
+    "mean_miss_in": 0.78,
+    "challenges": 3,
+    "overturns": 0,
+    "overturn_pct": 0.0,
+    "re_impact": 1.69
+  },
+  {
+    "umpire_id": "665576",
+    "umpire_name": "Brock Ballou",
+    "levels": [
+      "AAA"
+    ],
+    "games": 15,
+    "taken": 2364,
+    "missed": 153,
+    "acc_pct": 93.5,
+    "tol_acc_pct": 94.7,
+    "mean_miss_in": 0.93,
+    "challenges": 46,
+    "overturns": 25,
+    "overturn_pct": 54.3,
+    "re_impact": 17.9
+  },
+  {
+    "umpire_id": "655461",
+    "umpire_name": "Ray Valero",
+    "levels": [
+      "AAA"
+    ],
+    "games": 45,
+    "taken": 6787,
+    "missed": 426,
+    "acc_pct": 93.7,
+    "tol_acc_pct": 94.7,
+    "mean_miss_in": 0.97,
+    "challenges": 136,
+    "overturns": 72,
+    "overturn_pct": 52.9,
+    "re_impact": 50.03
+  },
+  {
+    "umpire_id": "658325",
+    "umpire_name": "Tyler Jones",
+    "levels": [
+      "AAA"
+    ],
+    "games": 42,
+    "taken": 6681,
+    "missed": 420,
+    "acc_pct": 93.7,
+    "tol_acc_pct": 94.7,
+    "mean_miss_in": 0.94,
+    "challenges": 112,
+    "overturns": 56,
+    "overturn_pct": 50.0,
+    "re_impact": 50.97
+  },
+  {
+    "umpire_id": "677387",
+    "umpire_name": "Ray Patchen",
+    "levels": [
+      "AAA"
+    ],
+    "games": 40,
+    "taken": 6174,
+    "missed": 377,
+    "acc_pct": 93.9,
+    "tol_acc_pct": 94.8,
+    "mean_miss_in": 0.98,
+    "challenges": 94,
+    "overturns": 45,
+    "overturn_pct": 47.9,
+    "re_impact": 45.31
+  },
+  {
+    "umpire_id": "690896",
+    "umpire_name": "Sean Sparling",
+    "levels": [
+      "AAA"
+    ],
+    "games": 47,
+    "taken": 7732,
+    "missed": 460,
+    "acc_pct": 94.1,
+    "tol_acc_pct": 94.9,
+    "mean_miss_in": 0.97,
+    "challenges": 128,
+    "overturns": 51,
+    "overturn_pct": 39.8,
+    "re_impact": 56.14
+  },
+  {
+    "umpire_id": "670636",
+    "umpire_name": "Tanner Dobson",
+    "levels": [
+      "AAA"
+    ],
+    "games": 47,
+    "taken": 7464,
+    "missed": 449,
+    "acc_pct": 94.0,
+    "tol_acc_pct": 95.0,
+    "mean_miss_in": 0.9,
+    "challenges": 128,
+    "overturns": 56,
+    "overturn_pct": 43.8,
+    "re_impact": 56.16
+  },
+  {
+    "umpire_id": "573659",
+    "umpire_name": "Brian DeBrauwere",
+    "levels": [
+      "AAA"
+    ],
+    "games": 2,
+    "taken": 288,
+    "missed": 16,
+    "acc_pct": 94.4,
+    "tol_acc_pct": 95.1,
+    "mean_miss_in": 0.84,
+    "challenges": 4,
+    "overturns": 3,
+    "overturn_pct": 75.0,
+    "re_impact": 1.7
+  },
+  {
+    "umpire_id": "700499",
+    "umpire_name": "Macon Hammond",
+    "levels": [
+      "AAA"
+    ],
+    "games": 49,
+    "taken": 7794,
+    "missed": 445,
+    "acc_pct": 94.3,
+    "tol_acc_pct": 95.2,
+    "mean_miss_in": 0.9,
+    "challenges": 129,
+    "overturns": 58,
+    "overturn_pct": 45.0,
+    "re_impact": 54.98
+  },
+  {
+    "umpire_id": "801287",
+    "umpire_name": "Jack Wason",
+    "levels": [
+      "AAA"
+    ],
+    "games": 1,
+    "taken": 140,
+    "missed": 5,
+    "acc_pct": 96.4,
+    "tol_acc_pct": 97.1,
+    "mean_miss_in": 1.36,
+    "challenges": 1,
+    "overturns": 0,
+    "overturn_pct": 0.0,
+    "re_impact": 0.52
+  }
+]

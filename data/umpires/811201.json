@@ -1,0 +1,41 @@
+{
+  "umpire_id": "811201",
+  "umpire_name": "Kevin Bruno",
+  "levels": [
+    "FSL"
+  ],
+  "games": 2,
+  "taken": 316,
+  "missed": 31,
+  "acc_pct": 90.2,
+  "tol_acc_pct": 90.0,
+  "mean_miss_in": 1.65,
+  "challenges": 8,
+  "overturns": 4,
+  "overturn_pct": 50.0,
+  "re_impact": 3.96,
+  "game_log": [
+    {
+      "game_pk": 729672,
+      "date": "2023-05-21",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 178,
+      "missed": 18,
+      "acc_pct": 89.9,
+      "overturns": 2,
+      "re_impact": 2.68
+    },
+    {
+      "game_pk": 729674,
+      "date": "2023-05-19",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 138,
+      "missed": 13,
+      "acc_pct": 90.6,
+      "overturns": 2,
+      "re_impact": 1.28
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "umpire_id": "823429",
+  "umpire_name": "Kaden Tichenor",
+  "levels": [
+    "FSL"
+  ],
+  "games": 11,
+  "taken": 1734,
+  "missed": 130,
+  "acc_pct": 92.5,
+  "tol_acc_pct": 93.5,
+  "mean_miss_in": 1.15,
+  "challenges": 26,
+  "overturns": 10,
+  "overturn_pct": 38.5,
+  "re_impact": 16.17,
+  "game_log": [
+    {
+      "game_pk": 760293,
+      "date": "2024-08-30",
+      "level": "FSL",
+      "matchup": "CLR @ FTM",
+      "taken": 137,
+      "missed": 20,
+      "acc_pct": 85.4,
+      "overturns": 2,
+      "re_impact": 2.47
+    },
+    {
+      "game_pk": 760298,
+      "date": "2024-08-27",
+      "level": "FSL",
+      "matchup": "CLR @ FTM",
+      "taken": 168,
+      "missed": 10,
+      "acc_pct": 94.0,
+      "overturns": 0,
+      "re_impact": 1.08
+    },
+    {
+      "game_pk": 760231,
+      "date": "2024-08-25",
+      "level": "FSL",
+      "matchup": "DBT @ JUP",
+      "taken": 138,
+      "missed": 10,
+      "acc_pct": 92.8,
+      "overturns": 2,
+      "re_impact": 1.24
+    },
+    {
+      "game_pk": 760236,
+      "date": "2024-08-23",
+      "level": "FSL",
+      "matchup": "DBT @ JUP",
+      "taken": 151,
+      "missed": 7,
+      "acc_pct": 95.4,
+      "overturns": 0,
+      "re_impact": 0.99
+    },
+    {
+      "game_pk": 760235,
+      "date": "2024-08-21",
+      "level": "FSL",
+      "matchup": "DBT @ JUP",
+      "taken": 185,
+      "missed": 9,
+      "acc_pct": 95.1,
+      "overturns": 0,
+      "re_impact": 1.11
+    },
+    {
+      "game_pk": 760566,
+      "date": "2024-08-17",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 181,
+      "missed": 21,
+      "acc_pct": 88.4,
+      "overturns": 1,
+      "re_impact": 2.48
+    },
+    {
+      "game_pk": 760563,
+      "date": "2024-08-15",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 170,
+      "missed": 9,
+      "acc_pct": 94.7,
+      "overturns": 0,
+      "re_impact": 1.03
+    },
+    {
+      "game_pk": 760567,
+      "date": "2024-08-13",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 179,
+      "missed": 6,
+      "acc_pct": 96.6,
+      "overturns": 0,
+      "re_impact": 0.68
+    },
+    {
+      "game_pk": 760170,
+      "date": "2024-08-11",
+      "level": "FSL",
+      "matchup": "CLR @ LAK",
+      "taken": 86,
+      "missed": 6,
+      "acc_pct": 93.0,
+      "overturns": 1,
+      "re_impact": 0.86
+    },
+    {
+      "game_pk": 760175,
+      "date": "2024-08-09",
+      "level": "FSL",
+      "matchup": "CLR @ LAK",
+      "taken": 186,
+      "missed": 22,
+      "acc_pct": 88.2,
+      "overturns": 4,
+      "re_impact": 3.06
+    },
+    {
+      "game_pk": 760177,
+      "date": "2024-08-07",
+      "level": "FSL",
+      "matchup": "CLR @ LAK",
+      "taken": 153,
+      "missed": 10,
+      "acc_pct": 93.5,
+      "overturns": 0,
+      "re_impact": 1.17
+    }
+  ]
+}

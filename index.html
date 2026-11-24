@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miriam's Grumpire — MiLB Umpire &amp; ABS Audit</title>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="apple-touch-icon" href="./icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <img src="./icon.png" alt="Miriam's Grumpire icon" class="brand-icon" width="56" height="56" />
+      <div class="brand-text">
+        <h1>MIRIAM'S GRUMPIRE</h1>
+        <p class="subtitle">MiLB Home Plate Umpire Accuracy &amp; Unmasked ABS Challenge Tracker (AAA + FSL)</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button type="button" class="pill-btn organ-btn" id="organToggleBtn" title="Play or mute ballpark organ ('Take Me Out to the Ball Game')">🔇 Mute Organ</button>
+      <div class="meta-stats" id="seasonTotals">Loading index…</div>
+    </div>
+  </header>
+
+  <nav class="controls-bar">
+    <div class="tabs">
+      <button class="tab-btn active" data-view="slateView">Daily Slate</button>
+      <button class="tab-btn" data-view="leaderboardView">Umpire Leaderboard</button>
+      <button class="tab-btn" data-view="badUmpsView">🃏 Bad Umps</button>
+    </div>
+
+    <div class="filters" id="yearControls">
+      <label for="yearSelect">Season</label>
+      <select id="yearSelect">
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="ALL">All (2025–2026)</option>
+      </select>
+    </div>
+
+    <div class="filters" id="dateControls">
+      <label for="dateSelect">Game Date</label>
+      <select id="dateSelect"></select>
+    </div>
+
+    <div class="filters hidden" id="leaderControls">
+      <label for="levelFilter">Level</label>
+      <select id="levelFilter">
+        <option value="ALL">All (AAA + FSL)</option>
+        <option value="AAA">Triple-A</option>
+        <option value="FSL">Florida State League</option>
+      </select>
+      <label for="minPitches">Min Pitches</label>
+      <input type="number" id="minPitches" value="50" min="0" step="25" />
+      <button type="button" class="pill-btn" id="toggleLevelsCol" title="Show or hide the Levels column">+ Show Levels</button>
+      <button type="button" class="pill-btn" id="togglePhotoOnly" title="Filter to umpires with verified Wikipedia photos">📷 Photos Only</button>
+    </div>
+  </nav>
+
+  <!-- Active Metric Definition Banner (works on Desktop Hover & iPhone Tap) -->
+  <div id="metricTipBar" class="metric-tip-bar">
+    <span class="tip-icon">ⓘ</span>
+    <span id="metricTipText">Hover or tap any column header <span class="th-info-badge">?</span> for its exact formula and Hawk-Eye definition.</span>
+  </div>
+
+  <main class="workspace">
+    <!-- Daily Slate + Scorecard Split -->
+    <section id="slateView" class="view-grid">
+      <div class="slate-list" id="gamesList"></div>
+      <aside class="scorecard-panel" id="scorecardPanel">
+        <div class="empty-state">Select a game card to inspect its normalized Hawk-Eye strike zone and ABS overturns.</div>
+      </aside>
+    </section>
+
+    <!-- Season Leaderboard -->
+    <section id="leaderboardView" class="hidden">
+      <div class="viz-banner" id="leaderboardViz"></div>
+      <div id="leaderTipBar" class="metric-tip-bar">
+        <span class="tip-icon">ⓘ</span>
+        <span id="leaderTipText">Hover or tap any column header <span class="th-info-badge">?</span> below for its exact formula and Hawk-Eye definition.</span>
+      </div>
+      <div class="table-wrap hide-levels" id="leaderboardTableWrap">
+        <table class="data-table">
+          <thead>
+            <tr id="leaderboardHeaderRow">
+              <th data-tip="Rank: Row position under the current sort order (defaults to #1 Grumpiest / lowest raw accuracy).">Rank <span class="th-info-badge">?</span></th>
+              <th data-sort="umpire_name" class="sortable-th" data-tip="Umpire: Home plate official identified from MLB StatsAPI boxscore metadata. Click any column header to sort, or click an umpire name to inspect their full game log and photo search.">Umpire <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="rating" class="sortable-th" data-tip="Rating: Miriam Grumpiness Rating (1 to 5 mini Miriam icons) based on initial raw accuracy — more Miriams = grumpier (5 Miriams <88.5%, 4 Miriams <90.0%, 3 Miriams <91.5%, 2 Miriams <93.0%, 1 Miriam ≥93.0%).">Rating <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="levels" class="sortable-th col-levels" data-tip="Levels: MiLB levels with public Hawk-Eye optical tracking worked by this umpire — Triple-A (AAA) and/or Florida State League (FSL).">Levels <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="games" class="sortable-th" data-tip="Games: Total tracked games worked behind home plate with ≥20 Hawk-Eye taken pitches.">Games <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="taken" class="sortable-th" data-tip="Taken: Total pitches taken by the batter (called strikes + called balls, excluding swings/pitchouts) with valid 3D Hawk-Eye coordinates.">Taken <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="tol_acc_pct" class="sortable-th sort-active" data-tip="Tol Acc% (±0.20&quot;): Tolerance-adjusted accuracy — percentage of correct initial calls excluding razor-thin borderline pitches whose outer ball edge falls within ±0.20 inches (the Hawk-Eye camera margin of error) of the strike zone edge.">Tol Acc% (±0.20") <span class="sort-arrow">▲</span> <span class="th-info-badge">?</span></th>
+              <th data-sort="acc_pct" class="sortable-th" data-tip="Raw Acc%: Strict unbuffered accuracy — percentage of taken pitches where the umpire's initial call BEFORE any ABS challenge matched the exact 0.00&quot; 2D Hawk-Eye strike zone boundary.">Raw Acc% <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="missed" class="sortable-th" data-tip="Missed: Total initial ball/strike calls that disagreed with Hawk-Eye (including calls later overturned by an ABS challenge).">Missed <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="mean_miss_in" class="sortable-th" data-tip="Mean Miss: Average distance in inches from the outer edge of the baseball to the strike zone boundary across all missed calls.">Mean Miss <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="overturns" class="sortable-th" data-tip="ABS Overturns: Automated Ball-Strike system challenges that overturned the umpire's initial call / total challenges initiated (and overturn rate %).">ABS Overturns <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+              <th data-sort="re_impact" class="sortable-th" data-tip="Σ ΔRE24: Cumulative Run Expectancy swing across all missed initial calls, weighted by the pre-pitch ball-strike count leverage (e.g., a 3-2 miss swings 0.445 expected runs).">Σ ΔRE24 <span class="sort-arrow"></span> <span class="th-info-badge">?</span></th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Bad Umps Vintage Baseball Trading Cards -->
+    <section id="badUmpsView" class="hidden">
+      <div class="bad-umps-intro">
+        <img src="./icon.png" alt="Disapproving Miriam" class="miriam-hero-stamp" width="76" height="76" />
+        <div>
+          <h2>MIRIAM'S HALL OF SHAME — SERIES 1 TRADING CARDS</h2>
+          <p>The Worst of the Worst Home Plate Umpires (Ranked by Lowest Tolerance-Adjusted Accuracy, Min. 250 Taken Pitches). Click any card to inspect their full game log or flip through their worst misses.</p>
+        </div>
+      </div>
+      <div class="trading-cards-grid" id="badUmpsGrid"></div>
+    </section>
+  </main>
+
+  <!-- Umpire Profile & Season Game Log Modal -->
+  <div id="umpModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="umpModalCard"></div>
+  </div>
+
+  <!-- Player (Batter / Pitcher) Profile Modal -->
+  <div id="playerModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="playerModalCard"></div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

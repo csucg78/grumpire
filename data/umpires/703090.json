@@ -1,0 +1,30 @@
+{
+  "umpire_id": "703090",
+  "umpire_name": "James Fitzpatrick",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 153,
+  "missed": 9,
+  "acc_pct": 94.1,
+  "tol_acc_pct": 94.6,
+  "mean_miss_in": 1.04,
+  "challenges": 5,
+  "overturns": 1,
+  "overturn_pct": 20.0,
+  "re_impact": 1.47,
+  "game_log": [
+    {
+      "game_pk": 751767,
+      "date": "2024-07-28",
+      "level": "AAA",
+      "matchup": "LV @ RNO",
+      "taken": 153,
+      "missed": 9,
+      "acc_pct": 94.1,
+      "overturns": 1,
+      "re_impact": 1.47
+    }
+  ]
+}

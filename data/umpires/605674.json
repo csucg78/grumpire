@@ -1,0 +1,52 @@
+{
+  "umpire_id": "605674",
+  "umpire_name": "Ryan Wills",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 521,
+  "missed": 31,
+  "acc_pct": 94.0,
+  "tol_acc_pct": 94.1,
+  "mean_miss_in": 1.14,
+  "challenges": 10,
+  "overturns": 6,
+  "overturn_pct": 60.0,
+  "re_impact": 3.59,
+  "game_log": [
+    {
+      "game_pk": 722898,
+      "date": "2023-08-05",
+      "level": "AAA",
+      "matchup": "ROC @ SWB",
+      "taken": 167,
+      "missed": 15,
+      "acc_pct": 91.0,
+      "overturns": 5,
+      "re_impact": 1.56
+    },
+    {
+      "game_pk": 722902,
+      "date": "2023-08-01",
+      "level": "AAA",
+      "matchup": "ROC @ SWB",
+      "taken": 197,
+      "missed": 5,
+      "acc_pct": 97.5,
+      "overturns": 0,
+      "re_impact": 0.51
+    },
+    {
+      "game_pk": 722943,
+      "date": "2023-05-05",
+      "level": "AAA",
+      "matchup": "ROC @ SWB",
+      "taken": 157,
+      "missed": 11,
+      "acc_pct": 93.0,
+      "overturns": 1,
+      "re_impact": 1.52
+    }
+  ]
+}

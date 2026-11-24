@@ -1,0 +1,52 @@
+{
+  "umpire_id": "573594",
+  "umpire_name": "Alberto Ruiz",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 510,
+  "missed": 39,
+  "acc_pct": 92.4,
+  "tol_acc_pct": 93.4,
+  "mean_miss_in": 1.1,
+  "challenges": 16,
+  "overturns": 9,
+  "overturn_pct": 56.2,
+  "re_impact": 5.02,
+  "game_log": [
+    {
+      "game_pk": 751915,
+      "date": "2024-08-04",
+      "level": "AAA",
+      "matchup": "ABQ @ LV",
+      "taken": 177,
+      "missed": 12,
+      "acc_pct": 93.2,
+      "overturns": 3,
+      "re_impact": 2.0
+    },
+    {
+      "game_pk": 751912,
+      "date": "2024-08-01",
+      "level": "AAA",
+      "matchup": "ABQ @ LV",
+      "taken": 165,
+      "missed": 17,
+      "acc_pct": 89.7,
+      "overturns": 5,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 751927,
+      "date": "2024-06-27",
+      "level": "AAA",
+      "matchup": "SAC @ LV",
+      "taken": 168,
+      "missed": 10,
+      "acc_pct": 94.0,
+      "overturns": 1,
+      "re_impact": 1.44
+    }
+  ]
+}

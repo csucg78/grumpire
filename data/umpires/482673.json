@@ -1,0 +1,30 @@
+{
+  "umpire_id": "482673",
+  "umpire_name": "Jeffrey Spisak",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 156,
+  "missed": 11,
+  "acc_pct": 92.9,
+  "tol_acc_pct": 94.1,
+  "mean_miss_in": 1.03,
+  "challenges": 2,
+  "overturns": 1,
+  "overturn_pct": 50.0,
+  "re_impact": 1.44,
+  "game_log": [
+    {
+      "game_pk": 816540,
+      "date": "2026-08-20",
+      "level": "AAA",
+      "matchup": "LOU @ IND",
+      "taken": 156,
+      "missed": 11,
+      "acc_pct": 92.95,
+      "overturns": 1,
+      "re_impact": 1.44
+    }
+  ]
+}

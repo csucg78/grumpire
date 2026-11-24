@@ -1,0 +1,30 @@
+{
+  "umpire_id": "801287",
+  "umpire_name": "Jack Wason",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 140,
+  "missed": 5,
+  "acc_pct": 96.4,
+  "tol_acc_pct": 97.1,
+  "mean_miss_in": 1.36,
+  "challenges": 1,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 0.52,
+  "game_log": [
+    {
+      "game_pk": 780382,
+      "date": "2025-05-25",
+      "level": "AAA",
+      "matchup": "IND @ TOL",
+      "taken": 140,
+      "missed": 5,
+      "acc_pct": 96.4,
+      "overturns": 0,
+      "re_impact": 0.52
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2025-09-24",
+  "games": [
+    {
+      "game_pk": 814159,
+      "date": "2025-09-24",
+      "level": "AAA",
+      "venue": "Las Vegas Ballpark",
+      "away": "TAC",
+      "home": "LV",
+      "away_runs": 3,
+      "home_runs": 7,
+      "umpire_id": "677388",
+      "umpire_name": "Pete Talkington",
+      "taken": 121,
+      "correct": 111,
+      "missed": 10,
+      "acc_pct": 91.7,
+      "tol_acc_pct": 92.4,
+      "cs_acc_pct": 86.1,
+      "cb_acc_pct": 94.1,
+      "mean_miss_in": 1.53,
+      "challenges": 3,
+      "overturns": 2,
+      "unchallenged_misses": 8,
+      "re_impact": 0.88
+    },
+    {
+      "game_pk": 814160,
+      "date": "2025-09-24",
+      "level": "AAA",
+      "venue": "Vystar Ballpark",
+      "away": "SWB",
+      "home": "JAX",
+      "away_runs": 4,
+      "home_runs": 6,
+      "umpire_id": "665302",
+      "umpire_name": "Dillon Wilson",
+      "taken": 187,
+      "correct": 178,
+      "missed": 9,
+      "acc_pct": 95.2,
+      "tol_acc_pct": 95.2,
+      "cs_acc_pct": 94.4,
+      "cb_acc_pct": 95.5,
+      "mean_miss_in": 1.25,
+      "challenges": 6,
+      "overturns": 4,
+      "unchallenged_misses": 6,
+      "re_impact": 1.41
+    }
+  ]
+}

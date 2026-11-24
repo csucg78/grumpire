@@ -1,0 +1,30 @@
+{
+  "umpire_id": "504348",
+  "umpire_name": "Brandon Misun",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 214,
+  "missed": 16,
+  "acc_pct": 92.5,
+  "tol_acc_pct": 93.4,
+  "mean_miss_in": 0.92,
+  "challenges": 10,
+  "overturns": 6,
+  "overturn_pct": 60.0,
+  "re_impact": 1.85,
+  "game_log": [
+    {
+      "game_pk": 751848,
+      "date": "2024-07-14",
+      "level": "AAA",
+      "matchup": "ELP @ OKC",
+      "taken": 214,
+      "missed": 16,
+      "acc_pct": 92.5,
+      "overturns": 6,
+      "re_impact": 1.85
+    }
+  ]
+}

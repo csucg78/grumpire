@@ -1,0 +1,41 @@
+{
+  "umpire_id": "686410",
+  "umpire_name": "Terrence Jones",
+  "levels": [
+    "AAA"
+  ],
+  "games": 2,
+  "taken": 239,
+  "missed": 30,
+  "acc_pct": 87.4,
+  "tol_acc_pct": 87.7,
+  "mean_miss_in": 1.46,
+  "challenges": 7,
+  "overturns": 5,
+  "overturn_pct": 71.4,
+  "re_impact": 3.53,
+  "game_log": [
+    {
+      "game_pk": 753467,
+      "date": "2024-09-14",
+      "level": "AAA",
+      "matchup": "JAX @ CLT",
+      "taken": 104,
+      "missed": 9,
+      "acc_pct": 91.3,
+      "overturns": 1,
+      "re_impact": 1.21
+    },
+    {
+      "game_pk": 753350,
+      "date": "2024-06-30",
+      "level": "AAA",
+      "matchup": "LHV @ DUR",
+      "taken": 135,
+      "missed": 21,
+      "acc_pct": 84.4,
+      "overturns": 4,
+      "re_impact": 2.32
+    }
+  ]
+}

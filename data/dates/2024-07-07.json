@@ -1,0 +1,53 @@
+{
+  "date": "2024-07-07",
+  "games": [
+    {
+      "game_pk": 752373,
+      "date": "2024-07-07",
+      "level": "AAA",
+      "venue": "CHS Field",
+      "away": "GWN",
+      "home": "STP",
+      "away_runs": 3,
+      "home_runs": 4,
+      "umpire_id": "676575",
+      "umpire_name": "Dylan Bradley",
+      "taken": 170,
+      "correct": 158,
+      "missed": 12,
+      "acc_pct": 92.9,
+      "tol_acc_pct": 94.0,
+      "cs_acc_pct": 89.4,
+      "cb_acc_pct": 94.3,
+      "mean_miss_in": 0.82,
+      "challenges": 3,
+      "overturns": 2,
+      "unchallenged_misses": 9,
+      "re_impact": 1.37
+    },
+    {
+      "game_pk": 751995,
+      "date": "2024-07-07",
+      "level": "AAA",
+      "venue": "Southwest University Park",
+      "away": "ABQ",
+      "home": "ELP",
+      "away_runs": 2,
+      "home_runs": 6,
+      "umpire_id": "676578",
+      "umpire_name": "Thomas Fornarola",
+      "taken": 163,
+      "correct": 154,
+      "missed": 9,
+      "acc_pct": 94.5,
+      "tol_acc_pct": 95.6,
+      "cs_acc_pct": 81.8,
+      "cb_acc_pct": 99.2,
+      "mean_miss_in": 0.94,
+      "challenges": 4,
+      "overturns": 3,
+      "unchallenged_misses": 5,
+      "re_impact": 1.41
+    }
+  ]
+}

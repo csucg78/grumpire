@@ -1,0 +1,272 @@
+{
+  "umpire_id": "830686",
+  "umpire_name": "Joshua Smith",
+  "levels": [
+    "FSL"
+  ],
+  "games": 23,
+  "taken": 3547,
+  "missed": 313,
+  "acc_pct": 91.2,
+  "tol_acc_pct": 92.0,
+  "mean_miss_in": 1.37,
+  "challenges": 85,
+  "overturns": 37,
+  "overturn_pct": 43.5,
+  "re_impact": 39.35,
+  "game_log": [
+    {
+      "game_pk": 850938,
+      "date": "2026-09-08",
+      "level": "FSL",
+      "matchup": "CLR @ TAM",
+      "taken": 157,
+      "missed": 9,
+      "acc_pct": 94.27,
+      "overturns": 1,
+      "re_impact": 0.71
+    },
+    {
+      "game_pk": 820242,
+      "date": "2026-09-05",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 161,
+      "missed": 8,
+      "acc_pct": 95.03,
+      "overturns": 2,
+      "re_impact": 1.18
+    },
+    {
+      "game_pk": 820241,
+      "date": "2026-09-03",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 110,
+      "missed": 14,
+      "acc_pct": 87.27,
+      "overturns": 1,
+      "re_impact": 1.9
+    },
+    {
+      "game_pk": 820235,
+      "date": "2026-09-02",
+      "level": "FSL",
+      "matchup": "DUN @ TAM",
+      "taken": 93,
+      "missed": 16,
+      "acc_pct": 82.8,
+      "overturns": 1,
+      "re_impact": 1.86
+    },
+    {
+      "game_pk": 820430,
+      "date": "2026-08-28",
+      "level": "FSL",
+      "matchup": "CLR @ LAK",
+      "taken": 160,
+      "missed": 13,
+      "acc_pct": 91.88,
+      "overturns": 3,
+      "re_impact": 1.29
+    },
+    {
+      "game_pk": 820434,
+      "date": "2026-08-26",
+      "level": "FSL",
+      "matchup": "CLR @ LAK",
+      "taken": 147,
+      "missed": 12,
+      "acc_pct": 91.84,
+      "overturns": 0,
+      "re_impact": 1.29
+    },
+    {
+      "game_pk": 820374,
+      "date": "2026-08-23",
+      "level": "FSL",
+      "matchup": "FTM @ PMB",
+      "taken": 164,
+      "missed": 17,
+      "acc_pct": 89.63,
+      "overturns": 0,
+      "re_impact": 1.73
+    },
+    {
+      "game_pk": 820372,
+      "date": "2026-08-21",
+      "level": "FSL",
+      "matchup": "FTM @ PMB",
+      "taken": 165,
+      "missed": 18,
+      "acc_pct": 89.09,
+      "overturns": 1,
+      "re_impact": 2.03
+    },
+    {
+      "game_pk": 820373,
+      "date": "2026-08-19",
+      "level": "FSL",
+      "matchup": "FTM @ PMB",
+      "taken": 178,
+      "missed": 12,
+      "acc_pct": 93.26,
+      "overturns": 4,
+      "re_impact": 1.89
+    },
+    {
+      "game_pk": 820637,
+      "date": "2026-08-16",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 190,
+      "missed": 18,
+      "acc_pct": 90.53,
+      "overturns": 0,
+      "re_impact": 2.37
+    },
+    {
+      "game_pk": 820639,
+      "date": "2026-08-14",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 166,
+      "missed": 18,
+      "acc_pct": 89.16,
+      "overturns": 4,
+      "re_impact": 2.79
+    },
+    {
+      "game_pk": 820636,
+      "date": "2026-08-12",
+      "level": "FSL",
+      "matchup": "TAM @ DUN",
+      "taken": 155,
+      "missed": 10,
+      "acc_pct": 93.55,
+      "overturns": 1,
+      "re_impact": 1.42
+    },
+    {
+      "game_pk": 820314,
+      "date": "2026-08-09",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 162,
+      "missed": 11,
+      "acc_pct": 93.21,
+      "overturns": 4,
+      "re_impact": 1.05
+    },
+    {
+      "game_pk": 820313,
+      "date": "2026-08-08",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 115,
+      "missed": 6,
+      "acc_pct": 94.78,
+      "overturns": 2,
+      "re_impact": 0.52
+    },
+    {
+      "game_pk": 820316,
+      "date": "2026-08-06",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 186,
+      "missed": 20,
+      "acc_pct": 89.25,
+      "overturns": 0,
+      "re_impact": 2.17
+    },
+    {
+      "game_pk": 820312,
+      "date": "2026-08-05",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 116,
+      "missed": 8,
+      "acc_pct": 93.1,
+      "overturns": 1,
+      "re_impact": 1.21
+    },
+    {
+      "game_pk": 820512,
+      "date": "2026-07-31",
+      "level": "FSL",
+      "matchup": "CLR @ JUP",
+      "taken": 197,
+      "missed": 18,
+      "acc_pct": 90.86,
+      "overturns": 2,
+      "re_impact": 3.11
+    },
+    {
+      "game_pk": 820515,
+      "date": "2026-07-29",
+      "level": "FSL",
+      "matchup": "CLR @ JUP",
+      "taken": 178,
+      "missed": 19,
+      "acc_pct": 89.33,
+      "overturns": 1,
+      "re_impact": 2.22
+    },
+    {
+      "game_pk": 820850,
+      "date": "2026-07-25",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 112,
+      "missed": 10,
+      "acc_pct": 91.07,
+      "overturns": 3,
+      "re_impact": 0.96
+    },
+    {
+      "game_pk": 820847,
+      "date": "2026-07-23",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 114,
+      "missed": 10,
+      "acc_pct": 91.23,
+      "overturns": 1,
+      "re_impact": 1.25
+    },
+    {
+      "game_pk": 820851,
+      "date": "2026-07-21",
+      "level": "FSL",
+      "matchup": "DUN @ BRD",
+      "taken": 184,
+      "missed": 17,
+      "acc_pct": 90.76,
+      "overturns": 1,
+      "re_impact": 2.39
+    },
+    {
+      "game_pk": 820584,
+      "date": "2026-07-19",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 165,
+      "missed": 12,
+      "acc_pct": 92.73,
+      "overturns": 0,
+      "re_impact": 1.85
+    },
+    {
+      "game_pk": 820582,
+      "date": "2026-07-17",
+      "level": "FSL",
+      "matchup": "LAK @ FTM",
+      "taken": 172,
+      "missed": 17,
+      "acc_pct": 90.12,
+      "overturns": 4,
+      "re_impact": 2.16
+    }
+  ]
+}

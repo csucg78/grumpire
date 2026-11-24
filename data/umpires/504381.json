@@ -1,0 +1,30 @@
+{
+  "umpire_id": "504381",
+  "umpire_name": "Will Little",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 147,
+  "missed": 13,
+  "acc_pct": 91.2,
+  "tol_acc_pct": 91.7,
+  "mean_miss_in": 1.37,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 1.31,
+  "game_log": [
+    {
+      "game_pk": 753529,
+      "date": "2024-05-01",
+      "level": "AAA",
+      "matchup": "MEM @ CLT",
+      "taken": 147,
+      "missed": 13,
+      "acc_pct": 91.2,
+      "overturns": 0,
+      "re_impact": 1.31
+    }
+  ]
+}

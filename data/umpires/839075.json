@@ -1,0 +1,206 @@
+{
+  "umpire_id": "839075",
+  "umpire_name": "Leo Dlatt",
+  "levels": [
+    "FSL"
+  ],
+  "games": 17,
+  "taken": 3007,
+  "missed": 238,
+  "acc_pct": 92.1,
+  "tol_acc_pct": 93.0,
+  "mean_miss_in": 1.25,
+  "challenges": 66,
+  "overturns": 30,
+  "overturn_pct": 45.5,
+  "re_impact": 30.3,
+  "game_log": [
+    {
+      "game_pk": 820258,
+      "date": "2026-07-11",
+      "level": "FSL",
+      "matchup": "CLR @ TAM",
+      "taken": 114,
+      "missed": 7,
+      "acc_pct": 93.86,
+      "overturns": 3,
+      "re_impact": 0.72
+    },
+    {
+      "game_pk": 820260,
+      "date": "2026-07-08",
+      "level": "FSL",
+      "matchup": "CLR @ TAM",
+      "taken": 140,
+      "missed": 10,
+      "acc_pct": 92.86,
+      "overturns": 1,
+      "re_impact": 1.03
+    },
+    {
+      "game_pk": 820521,
+      "date": "2026-07-04",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 211,
+      "missed": 16,
+      "acc_pct": 92.42,
+      "overturns": 0,
+      "re_impact": 2.38
+    },
+    {
+      "game_pk": 820525,
+      "date": "2026-07-02",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 191,
+      "missed": 18,
+      "acc_pct": 90.58,
+      "overturns": 1,
+      "re_impact": 2.39
+    },
+    {
+      "game_pk": 820533,
+      "date": "2026-06-30",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 192,
+      "missed": 14,
+      "acc_pct": 92.71,
+      "overturns": 1,
+      "re_impact": 2.25
+    },
+    {
+      "game_pk": 820394,
+      "date": "2026-06-28",
+      "level": "FSL",
+      "matchup": "BRD @ PMB",
+      "taken": 131,
+      "missed": 12,
+      "acc_pct": 90.84,
+      "overturns": 5,
+      "re_impact": 1.0
+    },
+    {
+      "game_pk": 820393,
+      "date": "2026-06-26",
+      "level": "FSL",
+      "matchup": "BRD @ PMB",
+      "taken": 208,
+      "missed": 19,
+      "acc_pct": 90.87,
+      "overturns": 1,
+      "re_impact": 2.12
+    },
+    {
+      "game_pk": 820398,
+      "date": "2026-06-24",
+      "level": "FSL",
+      "matchup": "BRD @ PMB",
+      "taken": 216,
+      "missed": 17,
+      "acc_pct": 92.13,
+      "overturns": 5,
+      "re_impact": 2.19
+    },
+    {
+      "game_pk": 820325,
+      "date": "2026-06-21",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 216,
+      "missed": 17,
+      "acc_pct": 92.13,
+      "overturns": 4,
+      "re_impact": 1.82
+    },
+    {
+      "game_pk": 820336,
+      "date": "2026-06-18",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 182,
+      "missed": 10,
+      "acc_pct": 94.51,
+      "overturns": 0,
+      "re_impact": 1.61
+    },
+    {
+      "game_pk": 820339,
+      "date": "2026-06-16",
+      "level": "FSL",
+      "matchup": "DBT @ SLU",
+      "taken": 176,
+      "missed": 17,
+      "acc_pct": 90.34,
+      "overturns": 2,
+      "re_impact": 1.97
+    },
+    {
+      "game_pk": 820803,
+      "date": "2026-06-14",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 156,
+      "missed": 12,
+      "acc_pct": 92.31,
+      "overturns": 0,
+      "re_impact": 1.85
+    },
+    {
+      "game_pk": 820804,
+      "date": "2026-06-12",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 149,
+      "missed": 14,
+      "acc_pct": 90.6,
+      "overturns": 0,
+      "re_impact": 2.14
+    },
+    {
+      "game_pk": 820798,
+      "date": "2026-06-10",
+      "level": "FSL",
+      "matchup": "LAK @ CLR",
+      "taken": 145,
+      "missed": 11,
+      "acc_pct": 92.41,
+      "overturns": 3,
+      "re_impact": 1.15
+    },
+    {
+      "game_pk": 820539,
+      "date": "2026-06-06",
+      "level": "FSL",
+      "matchup": "BRD @ JUP",
+      "taken": 185,
+      "missed": 12,
+      "acc_pct": 93.51,
+      "overturns": 3,
+      "re_impact": 1.43
+    },
+    {
+      "game_pk": 820534,
+      "date": "2026-06-04",
+      "level": "FSL",
+      "matchup": "BRD @ JUP",
+      "taken": 250,
+      "missed": 24,
+      "acc_pct": 90.4,
+      "overturns": 1,
+      "re_impact": 3.06
+    },
+    {
+      "game_pk": 820540,
+      "date": "2026-06-02",
+      "level": "FSL",
+      "matchup": "BRD @ JUP",
+      "taken": 145,
+      "missed": 8,
+      "acc_pct": 94.48,
+      "overturns": 0,
+      "re_impact": 1.19
+    }
+  ]
+}

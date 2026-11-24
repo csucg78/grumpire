@@ -1,0 +1,30 @@
+{
+  "umpire_id": "673837",
+  "umpire_name": "Eduardo Ruiz",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 192,
+  "missed": 16,
+  "acc_pct": 91.7,
+  "tol_acc_pct": 92.5,
+  "mean_miss_in": 1.14,
+  "challenges": 9,
+  "overturns": 6,
+  "overturn_pct": 66.7,
+  "re_impact": 1.89,
+  "game_log": [
+    {
+      "game_pk": 751928,
+      "date": "2024-06-15",
+      "level": "AAA",
+      "matchup": "SL @ LV",
+      "taken": 192,
+      "missed": 16,
+      "acc_pct": 91.7,
+      "overturns": 6,
+      "re_impact": 1.89
+    }
+  ]
+}

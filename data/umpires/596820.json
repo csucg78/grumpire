@@ -1,0 +1,52 @@
+{
+  "umpire_id": "596820",
+  "umpire_name": "Billy Cunha",
+  "levels": [
+    "AAA"
+  ],
+  "games": 3,
+  "taken": 501,
+  "missed": 27,
+  "acc_pct": 94.6,
+  "tol_acc_pct": 95.5,
+  "mean_miss_in": 0.77,
+  "challenges": 6,
+  "overturns": 2,
+  "overturn_pct": 33.3,
+  "re_impact": 3.18,
+  "game_log": [
+    {
+      "game_pk": 752380,
+      "date": "2024-06-23",
+      "level": "AAA",
+      "matchup": "TOL @ STP",
+      "taken": 202,
+      "missed": 12,
+      "acc_pct": 94.1,
+      "overturns": 2,
+      "re_impact": 1.46
+    },
+    {
+      "game_pk": 752384,
+      "date": "2024-06-20",
+      "level": "AAA",
+      "matchup": "TOL @ STP",
+      "taken": 138,
+      "missed": 10,
+      "acc_pct": 92.8,
+      "overturns": 0,
+      "re_impact": 1.16
+    },
+    {
+      "game_pk": 752413,
+      "date": "2024-04-11",
+      "level": "AAA",
+      "matchup": "IOW @ STP",
+      "taken": 161,
+      "missed": 5,
+      "acc_pct": 96.9,
+      "overturns": 0,
+      "re_impact": 0.56
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "umpire_id": "839073",
+  "umpire_name": "Caleb Rodriguez",
+  "levels": [
+    "FSL"
+  ],
+  "games": 1,
+  "taken": 174,
+  "missed": 14,
+  "acc_pct": 92.0,
+  "tol_acc_pct": 92.5,
+  "mean_miss_in": 1.24,
+  "challenges": 4,
+  "overturns": 2,
+  "overturn_pct": 50.0,
+  "re_impact": 1.75,
+  "game_log": [
+    {
+      "game_pk": 820781,
+      "date": "2026-07-26",
+      "level": "FSL",
+      "matchup": "DBT @ CLR",
+      "taken": 174,
+      "missed": 14,
+      "acc_pct": 91.95,
+      "overturns": 2,
+      "re_impact": 1.75
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "umpire_id": "427554",
+  "umpire_name": "Jim Wolf",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 128,
+  "missed": 16,
+  "acc_pct": 87.5,
+  "tol_acc_pct": 90.2,
+  "mean_miss_in": 1.32,
+  "challenges": 0,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 1.78,
+  "game_log": [
+    {
+      "game_pk": 752257,
+      "date": "2024-04-24",
+      "level": "AAA",
+      "matchup": "WOR @ TOL",
+      "taken": 128,
+      "missed": 16,
+      "acc_pct": 87.5,
+      "overturns": 0,
+      "re_impact": 1.78
+    }
+  ]
+}

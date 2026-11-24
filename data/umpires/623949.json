@@ -1,0 +1,74 @@
+{
+  "umpire_id": "623949",
+  "umpire_name": "Clint Vondrak",
+  "levels": [
+    "AAA"
+  ],
+  "games": 5,
+  "taken": 786,
+  "missed": 58,
+  "acc_pct": 92.6,
+  "tol_acc_pct": 93.8,
+  "mean_miss_in": 1.21,
+  "challenges": 3,
+  "overturns": 0,
+  "overturn_pct": 0.0,
+  "re_impact": 6.83,
+  "game_log": [
+    {
+      "game_pk": 723187,
+      "date": "2023-09-10",
+      "level": "AAA",
+      "matchup": "MEM @ NAS",
+      "taken": 160,
+      "missed": 18,
+      "acc_pct": 88.8,
+      "overturns": 0,
+      "re_impact": 2.1
+    },
+    {
+      "game_pk": 723190,
+      "date": "2023-09-06",
+      "level": "AAA",
+      "matchup": "MEM @ NAS",
+      "taken": 145,
+      "missed": 7,
+      "acc_pct": 95.2,
+      "overturns": 0,
+      "re_impact": 0.94
+    },
+    {
+      "game_pk": 723222,
+      "date": "2023-06-18",
+      "level": "AAA",
+      "matchup": "GWN @ NAS",
+      "taken": 147,
+      "missed": 8,
+      "acc_pct": 94.6,
+      "overturns": 0,
+      "re_impact": 0.66
+    },
+    {
+      "game_pk": 723224,
+      "date": "2023-06-15",
+      "level": "AAA",
+      "matchup": "GWN @ NAS",
+      "taken": 144,
+      "missed": 7,
+      "acc_pct": 95.1,
+      "overturns": 0,
+      "re_impact": 0.68
+    },
+    {
+      "game_pk": 722654,
+      "date": "2023-04-01",
+      "level": "AAA",
+      "matchup": "SYR @ WOR",
+      "taken": 190,
+      "missed": 18,
+      "acc_pct": 90.5,
+      "overturns": 0,
+      "re_impact": 2.45
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2024-04-08",
+  "games": [
+    {
+      "game_pk": 752339,
+      "date": "2024-04-08",
+      "level": "AAA",
+      "venue": "NBT Bank Stadium",
+      "away": "WOR",
+      "home": "SYR",
+      "away_runs": 9,
+      "home_runs": 0,
+      "umpire_id": "668915",
+      "umpire_name": "Harley Acosta",
+      "taken": 182,
+      "correct": 169,
+      "missed": 13,
+      "acc_pct": 92.9,
+      "tol_acc_pct": 94.3,
+      "cs_acc_pct": 90.2,
+      "cb_acc_pct": 94.2,
+      "mean_miss_in": 1.16,
+      "challenges": 0,
+      "overturns": 0,
+      "unchallenged_misses": 13,
+      "re_impact": 1.91
+    }
+  ]
+}

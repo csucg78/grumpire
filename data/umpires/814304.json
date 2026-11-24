@@ -1,0 +1,195 @@
+{
+  "umpire_id": "814304",
+  "umpire_name": "Jarred Neal",
+  "levels": [
+    "FSL"
+  ],
+  "games": 16,
+  "taken": 2550,
+  "missed": 216,
+  "acc_pct": 91.5,
+  "tol_acc_pct": 92.8,
+  "mean_miss_in": 1.08,
+  "challenges": 49,
+  "overturns": 21,
+  "overturn_pct": 42.9,
+  "re_impact": 28.19,
+  "game_log": [
+    {
+      "game_pk": 760008,
+      "date": "2024-05-18",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 228,
+      "missed": 21,
+      "acc_pct": 90.8,
+      "overturns": 3,
+      "re_impact": 3.25
+    },
+    {
+      "game_pk": 760005,
+      "date": "2024-05-16",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 138,
+      "missed": 8,
+      "acc_pct": 94.2,
+      "overturns": 0,
+      "re_impact": 0.99
+    },
+    {
+      "game_pk": 760012,
+      "date": "2024-05-14",
+      "level": "FSL",
+      "matchup": "BRD @ TAM",
+      "taken": 164,
+      "missed": 8,
+      "acc_pct": 95.1,
+      "overturns": 0,
+      "re_impact": 0.94
+    },
+    {
+      "game_pk": 760610,
+      "date": "2024-05-04",
+      "level": "FSL",
+      "matchup": "FTM @ BRD",
+      "taken": 130,
+      "missed": 9,
+      "acc_pct": 93.1,
+      "overturns": 5,
+      "re_impact": 1.46
+    },
+    {
+      "game_pk": 760614,
+      "date": "2024-05-02",
+      "level": "FSL",
+      "matchup": "FTM @ BRD",
+      "taken": 119,
+      "missed": 12,
+      "acc_pct": 89.9,
+      "overturns": 0,
+      "re_impact": 1.88
+    },
+    {
+      "game_pk": 760613,
+      "date": "2024-04-30",
+      "level": "FSL",
+      "matchup": "FTM @ BRD",
+      "taken": 176,
+      "missed": 14,
+      "acc_pct": 92.0,
+      "overturns": 0,
+      "re_impact": 1.65
+    },
+    {
+      "game_pk": 760281,
+      "date": "2024-04-28",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 171,
+      "missed": 19,
+      "acc_pct": 88.9,
+      "overturns": 3,
+      "re_impact": 2.43
+    },
+    {
+      "game_pk": 760283,
+      "date": "2024-04-26",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 124,
+      "missed": 15,
+      "acc_pct": 87.9,
+      "overturns": 0,
+      "re_impact": 1.84
+    },
+    {
+      "game_pk": 760284,
+      "date": "2024-04-24",
+      "level": "FSL",
+      "matchup": "DUN @ JUP",
+      "taken": 138,
+      "missed": 6,
+      "acc_pct": 95.7,
+      "overturns": 0,
+      "re_impact": 0.5
+    },
+    {
+      "game_pk": 760085,
+      "date": "2024-04-20",
+      "level": "FSL",
+      "matchup": "TAM @ SLU",
+      "taken": 191,
+      "missed": 13,
+      "acc_pct": 93.2,
+      "overturns": 5,
+      "re_impact": 2.04
+    },
+    {
+      "game_pk": 760088,
+      "date": "2024-04-18",
+      "level": "FSL",
+      "matchup": "TAM @ SLU",
+      "taken": 238,
+      "missed": 16,
+      "acc_pct": 93.3,
+      "overturns": 0,
+      "re_impact": 1.93
+    },
+    {
+      "game_pk": 760092,
+      "date": "2024-04-16",
+      "level": "FSL",
+      "matchup": "TAM @ SLU",
+      "taken": 162,
+      "missed": 13,
+      "acc_pct": 92.0,
+      "overturns": 0,
+      "re_impact": 1.85
+    },
+    {
+      "game_pk": 760550,
+      "date": "2024-04-14",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 139,
+      "missed": 15,
+      "acc_pct": 89.2,
+      "overturns": 2,
+      "re_impact": 1.75
+    },
+    {
+      "game_pk": 760552,
+      "date": "2024-04-12",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 147,
+      "missed": 13,
+      "acc_pct": 91.2,
+      "overturns": 1,
+      "re_impact": 1.66
+    },
+    {
+      "game_pk": 760555,
+      "date": "2024-04-10",
+      "level": "FSL",
+      "matchup": "FTM @ CLR",
+      "taken": 157,
+      "missed": 16,
+      "acc_pct": 89.8,
+      "overturns": 0,
+      "re_impact": 1.76
+    },
+    {
+      "game_pk": 760156,
+      "date": "2024-04-06",
+      "level": "FSL",
+      "matchup": "JUP @ PMB",
+      "taken": 128,
+      "missed": 18,
+      "acc_pct": 85.9,
+      "overturns": 2,
+      "re_impact": 2.26
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "umpire_id": "605670",
+  "umpire_name": "Dan Merzel",
+  "levels": [
+    "AAA"
+  ],
+  "games": 8,
+  "taken": 1292,
+  "missed": 79,
+  "acc_pct": 93.9,
+  "tol_acc_pct": 95.3,
+  "mean_miss_in": 1.03,
+  "challenges": 16,
+  "overturns": 12,
+  "overturn_pct": 75.0,
+  "re_impact": 10.09,
+  "game_log": [
+    {
+      "game_pk": 781538,
+      "date": "2025-04-02",
+      "level": "AAA",
+      "matchup": "SUG @ DUR",
+      "taken": 144,
+      "missed": 16,
+      "acc_pct": 88.9,
+      "overturns": 0,
+      "re_impact": 1.54
+    },
+    {
+      "game_pk": 752245,
+      "date": "2024-05-29",
+      "level": "AAA",
+      "matchup": "SWB @ TOL",
+      "taken": 176,
+      "missed": 7,
+      "acc_pct": 96.0,
+      "overturns": 0,
+      "re_impact": 0.8
+    },
+    {
+      "game_pk": 725435,
+      "date": "2023-09-07",
+      "level": "AAA",
+      "matchup": "DUR @ CLT",
+      "taken": 188,
+      "missed": 10,
+      "acc_pct": 94.7,
+      "overturns": 0,
+      "re_impact": 1.68
+    },
+    {
+      "game_pk": 723693,
+      "date": "2023-09-02",
+      "level": "AAA",
+      "matchup": "NAS @ DUR",
+      "taken": 169,
+      "missed": 11,
+      "acc_pct": 93.5,
+      "overturns": 4,
+      "re_impact": 1.37
+    },
+    {
+      "game_pk": 723695,
+      "date": "2023-08-29",
+      "level": "AAA",
+      "matchup": "NAS @ DUR",
+      "taken": 145,
+      "missed": 5,
+      "acc_pct": 96.6,
+      "overturns": 0,
+      "re_impact": 0.79
+    },
+    {
+      "game_pk": 723636,
+      "date": "2023-07-21",
+      "level": "AAA",
+      "matchup": "NOR @ GWN",
+      "taken": 121,
+      "missed": 6,
+      "acc_pct": 95.0,
+      "overturns": 2,
+      "re_impact": 0.98
+    },
+    {
+      "game_pk": 722682,
+      "date": "2023-07-09",
+      "level": "AAA",
+      "matchup": "LOU @ TOL",
+      "taken": 179,
+      "missed": 18,
+      "acc_pct": 89.9,
+      "overturns": 6,
+      "re_impact": 1.92
+    },
+    {
+      "game_pk": 723724,
+      "date": "2023-07-04",
+      "level": "AAA",
+      "matchup": "NOR @ DUR",
+      "taken": 170,
+      "missed": 6,
+      "acc_pct": 96.5,
+      "overturns": 0,
+      "re_impact": 1.01
+    }
+  ]
+}

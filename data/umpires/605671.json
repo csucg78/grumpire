@@ -1,0 +1,173 @@
+{
+  "umpire_id": "605671",
+  "umpire_name": "Charlie Ramos",
+  "levels": [
+    "AAA"
+  ],
+  "games": 14,
+  "taken": 2323,
+  "missed": 158,
+  "acc_pct": 93.2,
+  "tol_acc_pct": 94.1,
+  "mean_miss_in": 1.31,
+  "challenges": 25,
+  "overturns": 15,
+  "overturn_pct": 60.0,
+  "re_impact": 19.1,
+  "game_log": [
+    {
+      "game_pk": 781336,
+      "date": "2025-07-12",
+      "level": "AAA",
+      "matchup": "GWN @ IND",
+      "taken": 119,
+      "missed": 6,
+      "acc_pct": 95.0,
+      "overturns": 0,
+      "re_impact": 0.56
+    },
+    {
+      "game_pk": 780614,
+      "date": "2025-05-10",
+      "level": "AAA",
+      "matchup": "ROC @ SWB",
+      "taken": 147,
+      "missed": 12,
+      "acc_pct": 91.8,
+      "overturns": 2,
+      "re_impact": 1.58
+    },
+    {
+      "game_pk": 781458,
+      "date": "2025-04-05",
+      "level": "AAA",
+      "matchup": "NAS @ GWN",
+      "taken": 167,
+      "missed": 18,
+      "acc_pct": 89.2,
+      "overturns": 0,
+      "re_impact": 2.83
+    },
+    {
+      "game_pk": 781460,
+      "date": "2025-04-01",
+      "level": "AAA",
+      "matchup": "NAS @ GWN",
+      "taken": 146,
+      "missed": 12,
+      "acc_pct": 91.8,
+      "overturns": 1,
+      "re_impact": 1.13
+    },
+    {
+      "game_pk": 753176,
+      "date": "2024-08-30",
+      "level": "AAA",
+      "matchup": "LOU @ IND",
+      "taken": 208,
+      "missed": 17,
+      "acc_pct": 91.8,
+      "overturns": 4,
+      "re_impact": 1.67
+    },
+    {
+      "game_pk": 752657,
+      "date": "2024-08-23",
+      "level": "AAA",
+      "matchup": "WOR @ NOR",
+      "taken": 182,
+      "missed": 13,
+      "acc_pct": 92.9,
+      "overturns": 2,
+      "re_impact": 1.23
+    },
+    {
+      "game_pk": 722816,
+      "date": "2023-08-29",
+      "level": "AAA",
+      "matchup": "COL @ STP",
+      "taken": 190,
+      "missed": 4,
+      "acc_pct": 97.9,
+      "overturns": 0,
+      "re_impact": 0.49
+    },
+    {
+      "game_pk": 723127,
+      "date": "2023-07-29",
+      "level": "AAA",
+      "matchup": "NAS @ NOR",
+      "taken": 158,
+      "missed": 11,
+      "acc_pct": 93.0,
+      "overturns": 5,
+      "re_impact": 1.36
+    },
+    {
+      "game_pk": 723134,
+      "date": "2023-07-25",
+      "level": "AAA",
+      "matchup": "NAS @ NOR",
+      "taken": 210,
+      "missed": 11,
+      "acc_pct": 94.8,
+      "overturns": 0,
+      "re_impact": 1.48
+    },
+    {
+      "game_pk": 725470,
+      "date": "2023-06-23",
+      "level": "AAA",
+      "matchup": "LOU @ CLT",
+      "taken": 106,
+      "missed": 4,
+      "acc_pct": 96.2,
+      "overturns": 1,
+      "re_impact": 0.43
+    },
+    {
+      "game_pk": 725468,
+      "date": "2023-06-20",
+      "level": "AAA",
+      "matchup": "LOU @ CLT",
+      "taken": 203,
+      "missed": 3,
+      "acc_pct": 98.5,
+      "overturns": 0,
+      "re_impact": 0.58
+    },
+    {
+      "game_pk": 723674,
+      "date": "2023-04-15",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 150,
+      "missed": 15,
+      "acc_pct": 90.0,
+      "overturns": 0,
+      "re_impact": 1.85
+    },
+    {
+      "game_pk": 723681,
+      "date": "2023-04-11",
+      "level": "AAA",
+      "matchup": "MEM @ GWN",
+      "taken": 162,
+      "missed": 9,
+      "acc_pct": 94.4,
+      "overturns": 0,
+      "re_impact": 1.26
+    },
+    {
+      "game_pk": 723258,
+      "date": "2023-04-01",
+      "level": "AAA",
+      "matchup": "LOU @ NAS",
+      "taken": 175,
+      "missed": 23,
+      "acc_pct": 86.9,
+      "overturns": 0,
+      "re_impact": 2.65
+    }
+  ]
+}

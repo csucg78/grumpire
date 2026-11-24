@@ -1,0 +1,30 @@
+{
+  "umpire_id": "670561",
+  "umpire_name": "Jude Koury",
+  "levels": [
+    "AAA"
+  ],
+  "games": 1,
+  "taken": 149,
+  "missed": 14,
+  "acc_pct": 90.6,
+  "tol_acc_pct": 91.7,
+  "mean_miss_in": 1.09,
+  "challenges": 5,
+  "overturns": 3,
+  "overturn_pct": 60.0,
+  "re_impact": 1.48,
+  "game_log": [
+    {
+      "game_pk": 723756,
+      "date": "2023-09-24",
+      "level": "AAA",
+      "matchup": "OMA @ COL",
+      "taken": 149,
+      "missed": 14,
+      "acc_pct": 90.6,
+      "overturns": 3,
+      "re_impact": 1.48
+    }
+  ]
+}

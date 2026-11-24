@@ -1,0 +1,53 @@
+{
+  "date": "2023-09-27",
+  "games": [
+    {
+      "game_pk": 738543,
+      "date": "2023-09-27",
+      "level": "AAA",
+      "venue": "Chickasaw Bricktown Ballpark",
+      "away": "RR",
+      "home": "OKC",
+      "away_runs": 2,
+      "home_runs": 5,
+      "umpire_id": "665298",
+      "umpire_name": "Dexter Kelley",
+      "taken": 119,
+      "correct": 102,
+      "missed": 17,
+      "acc_pct": 85.7,
+      "tol_acc_pct": 87.0,
+      "cs_acc_pct": 77.8,
+      "cb_acc_pct": 89.2,
+      "mean_miss_in": 1.25,
+      "challenges": 6,
+      "overturns": 6,
+      "unchallenged_misses": 11,
+      "re_impact": 1.59
+    },
+    {
+      "game_pk": 738544,
+      "date": "2023-09-27",
+      "level": "AAA",
+      "venue": "Harbor Park",
+      "away": "DUR",
+      "home": "NOR",
+      "away_runs": 2,
+      "home_runs": 7,
+      "umpire_id": "676581",
+      "umpire_name": "James Jean",
+      "taken": 158,
+      "correct": 144,
+      "missed": 14,
+      "acc_pct": 91.1,
+      "tol_acc_pct": 92.3,
+      "cs_acc_pct": 95.9,
+      "cb_acc_pct": 89.0,
+      "mean_miss_in": 1.24,
+      "challenges": 2,
+      "overturns": 1,
+      "unchallenged_misses": 14,
+      "re_impact": 1.6
+    }
+  ]
+}

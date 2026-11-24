@@ -1,0 +1,29 @@
+{
+  "date": "2025-09-25",
+  "games": [
+    {
+      "game_pk": 814162,
+      "date": "2025-09-25",
+      "level": "AAA",
+      "venue": "Vystar Ballpark",
+      "away": "SWB",
+      "home": "JAX",
+      "away_runs": 4,
+      "home_runs": 7,
+      "umpire_id": "682954",
+      "umpire_name": "Mitch Trzeciak",
+      "taken": 177,
+      "correct": 163,
+      "missed": 14,
+      "acc_pct": 92.1,
+      "tol_acc_pct": 94.8,
+      "cs_acc_pct": 80.0,
+      "cb_acc_pct": 96.9,
+      "mean_miss_in": 0.74,
+      "challenges": 3,
+      "overturns": 1,
+      "unchallenged_misses": 13,
+      "re_impact": 1.55
+    }
+  ]
+}

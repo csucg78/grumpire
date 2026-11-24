@@ -78,17 +78,17 @@
               "cs_pct": 0.0
             },
             {
-              "taken": 0,
-              "cs": 0,
-              "cs_pct": null
-            },
-            {
-              "taken": 7,
+              "taken": 3,
               "cs": 0,
               "cs_pct": 0.0
             },
             {
-              "taken": 2,
+              "taken": 5,
+              "cs": 0,
+              "cs_pct": 0.0
+            },
+            {
+              "taken": 4,
               "cs": 0,
               "cs_pct": 0.0
             }
@@ -105,40 +105,40 @@
               "cs_pct": 25.0
             },
             {
-              "taken": 2,
-              "cs": 2,
+              "taken": 3,
+              "cs": 3,
               "cs_pct": 100.0
             },
             {
-              "taken": 10,
-              "cs": 1,
-              "cs_pct": 10.0
+              "taken": 5,
+              "cs": 0,
+              "cs_pct": 0.0
             },
             {
-              "taken": 6,
-              "cs": 1,
-              "cs_pct": 16.7
+              "taken": 7,
+              "cs": 2,
+              "cs_pct": 28.6
             },
             {
-              "taken": 3,
+              "taken": 4,
               "cs": 0,
               "cs_pct": 0.0
             }
           ],
           [
             {
-              "taken": 2,
+              "taken": 3,
               "cs": 0,
               "cs_pct": 0.0
             },
             {
               "taken": 6,
-              "cs": 2,
-              "cs_pct": 33.3
+              "cs": 3,
+              "cs_pct": 50.0
             },
             {
-              "taken": 5,
-              "cs": 5,
+              "taken": 4,
+              "cs": 4,
               "cs_pct": 100.0
             },
             {
@@ -164,9 +164,9 @@
               "cs_pct": 0.0
             },
             {
-              "taken": 11,
-              "cs": 4,
-              "cs_pct": 36.4
+              "taken": 10,
+              "cs": 3,
+              "cs_pct": 30.0
             },
             {
               "taken": 4,
@@ -179,12 +179,12 @@
               "cs_pct": 100.0
             },
             {
-              "taken": 10,
+              "taken": 9,
               "cs": 5,
-              "cs_pct": 50.0
+              "cs_pct": 55.6
             },
             {
-              "taken": 2,
+              "taken": 3,
               "cs": 0,
               "cs_pct": 0.0
             }
@@ -196,12 +196,12 @@
               "cs_pct": 0.0
             },
             {
-              "taken": 6,
+              "taken": 7,
               "cs": 0,
               "cs_pct": 0.0
             },
             {
-              "taken": 8,
+              "taken": 7,
               "cs": 0,
               "cs_pct": 0.0
             },
@@ -278,17 +278,17 @@
           "cs_pct": 0.0
         },
         {
-          "taken": 0,
-          "cs": 0,
-          "cs_pct": null
-        },
-        {
-          "taken": 7,
+          "taken": 3,
           "cs": 0,
           "cs_pct": 0.0
         },
         {
-          "taken": 2,
+          "taken": 5,
+          "cs": 0,
+          "cs_pct": 0.0
+        },
+        {
+          "taken": 4,
           "cs": 0,
           "cs_pct": 0.0
         }
@@ -305,40 +305,40 @@
           "cs_pct": 25.0
         },
         {
-          "taken": 2,
-          "cs": 2,
+          "taken": 3,
+          "cs": 3,
           "cs_pct": 100.0
         },
         {
-          "taken": 10,
-          "cs": 1,
-          "cs_pct": 10.0
+          "taken": 5,
+          "cs": 0,
+          "cs_pct": 0.0
         },
         {
-          "taken": 6,
-          "cs": 1,
-          "cs_pct": 16.7
+          "taken": 7,
+          "cs": 2,
+          "cs_pct": 28.6
         },
         {
-          "taken": 3,
+          "taken": 4,
           "cs": 0,
           "cs_pct": 0.0
         }
       ],
       [
         {
-          "taken": 2,
+          "taken": 3,
           "cs": 0,
           "cs_pct": 0.0
         },
         {
           "taken": 6,
-          "cs": 2,
-          "cs_pct": 33.3
+          "cs": 3,
+          "cs_pct": 50.0
         },
         {
-          "taken": 5,
-          "cs": 5,
+          "taken": 4,
+          "cs": 4,
           "cs_pct": 100.0
         },
         {
@@ -364,9 +364,9 @@
           "cs_pct": 0.0
         },
         {
-          "taken": 11,
-          "cs": 4,
-          "cs_pct": 36.4
+          "taken": 10,
+          "cs": 3,
+          "cs_pct": 30.0
         },
         {
           "taken": 4,
@@ -379,12 +379,12 @@
           "cs_pct": 100.0
         },
         {
-          "taken": 10,
+          "taken": 9,
           "cs": 5,
-          "cs_pct": 50.0
+          "cs_pct": 55.6
         },
         {
-          "taken": 2,
+          "taken": 3,
           "cs": 0,
           "cs_pct": 0.0
         }
@@ -396,12 +396,12 @@
           "cs_pct": 0.0
         },
         {
-          "taken": 6,
+          "taken": 7,
           "cs": 0,
           "cs_pct": 0.0
         },
         {
-          "taken": 8,
+          "taken": 7,
           "cs": 0,
           "cs_pct": 0.0
         },
@@ -507,17 +507,17 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 0,
-                "cs": 0,
-                "cs_pct": null
-              },
-              {
-                "taken": 7,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 2,
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -534,40 +534,40 @@
                 "cs_pct": 25.0
               },
               {
-                "taken": 2,
-                "cs": 2,
+                "taken": 3,
+                "cs": 3,
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
-                "cs": 1,
-                "cs_pct": 10.0
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
               },
               {
-                "taken": 6,
-                "cs": 1,
-                "cs_pct": 16.7
+                "taken": 7,
+                "cs": 2,
+                "cs_pct": 28.6
               },
               {
-                "taken": 3,
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
             ],
             [
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
                 "taken": 6,
-                "cs": 2,
-                "cs_pct": 33.3
+                "cs": 3,
+                "cs_pct": 50.0
               },
               {
-                "taken": 5,
-                "cs": 5,
+                "taken": 4,
+                "cs": 4,
                 "cs_pct": 100.0
               },
               {
@@ -593,9 +593,9 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 11,
-                "cs": 4,
-                "cs_pct": 36.4
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
               },
               {
                 "taken": 4,
@@ -608,12 +608,12 @@
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
+                "taken": 9,
                 "cs": 5,
-                "cs_pct": 50.0
+                "cs_pct": 55.6
               },
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -625,12 +625,12 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 6,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 8,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
@@ -735,17 +735,17 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 0,
-                "cs": 0,
-                "cs_pct": null
-              },
-              {
-                "taken": 7,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 2,
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -762,40 +762,40 @@
                 "cs_pct": 25.0
               },
               {
-                "taken": 2,
-                "cs": 2,
+                "taken": 3,
+                "cs": 3,
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
-                "cs": 1,
-                "cs_pct": 10.0
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
               },
               {
-                "taken": 6,
-                "cs": 1,
-                "cs_pct": 16.7
+                "taken": 7,
+                "cs": 2,
+                "cs_pct": 28.6
               },
               {
-                "taken": 3,
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
             ],
             [
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
                 "taken": 6,
-                "cs": 2,
-                "cs_pct": 33.3
+                "cs": 3,
+                "cs_pct": 50.0
               },
               {
-                "taken": 5,
-                "cs": 5,
+                "taken": 4,
+                "cs": 4,
                 "cs_pct": 100.0
               },
               {
@@ -821,9 +821,9 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 11,
-                "cs": 4,
-                "cs_pct": 36.4
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
               },
               {
                 "taken": 4,
@@ -836,12 +836,12 @@
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
+                "taken": 9,
                 "cs": 5,
-                "cs_pct": 50.0
+                "cs_pct": 55.6
               },
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -853,12 +853,12 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 6,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 8,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
@@ -965,17 +965,17 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 0,
-                "cs": 0,
-                "cs_pct": null
-              },
-              {
-                "taken": 7,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 2,
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -992,40 +992,40 @@
                 "cs_pct": 25.0
               },
               {
-                "taken": 2,
-                "cs": 2,
+                "taken": 3,
+                "cs": 3,
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
-                "cs": 1,
-                "cs_pct": 10.0
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
               },
               {
-                "taken": 6,
-                "cs": 1,
-                "cs_pct": 16.7
+                "taken": 7,
+                "cs": 2,
+                "cs_pct": 28.6
               },
               {
-                "taken": 3,
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
             ],
             [
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
                 "taken": 6,
-                "cs": 2,
-                "cs_pct": 33.3
+                "cs": 3,
+                "cs_pct": 50.0
               },
               {
-                "taken": 5,
-                "cs": 5,
+                "taken": 4,
+                "cs": 4,
                 "cs_pct": 100.0
               },
               {
@@ -1051,9 +1051,9 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 11,
-                "cs": 4,
-                "cs_pct": 36.4
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
               },
               {
                 "taken": 4,
@@ -1066,12 +1066,12 @@
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
+                "taken": 9,
                 "cs": 5,
-                "cs_pct": 50.0
+                "cs_pct": 55.6
               },
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -1083,12 +1083,12 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 6,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 8,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
@@ -1193,17 +1193,17 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 0,
-                "cs": 0,
-                "cs_pct": null
-              },
-              {
-                "taken": 7,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 2,
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
+              },
+              {
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -1220,40 +1220,40 @@
                 "cs_pct": 25.0
               },
               {
-                "taken": 2,
-                "cs": 2,
+                "taken": 3,
+                "cs": 3,
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
-                "cs": 1,
-                "cs_pct": 10.0
+                "taken": 5,
+                "cs": 0,
+                "cs_pct": 0.0
               },
               {
-                "taken": 6,
-                "cs": 1,
-                "cs_pct": 16.7
+                "taken": 7,
+                "cs": 2,
+                "cs_pct": 28.6
               },
               {
-                "taken": 3,
+                "taken": 4,
                 "cs": 0,
                 "cs_pct": 0.0
               }
             ],
             [
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
                 "taken": 6,
-                "cs": 2,
-                "cs_pct": 33.3
+                "cs": 3,
+                "cs_pct": 50.0
               },
               {
-                "taken": 5,
-                "cs": 5,
+                "taken": 4,
+                "cs": 4,
                 "cs_pct": 100.0
               },
               {
@@ -1279,9 +1279,9 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 11,
-                "cs": 4,
-                "cs_pct": 36.4
+                "taken": 10,
+                "cs": 3,
+                "cs_pct": 30.0
               },
               {
                 "taken": 4,
@@ -1294,12 +1294,12 @@
                 "cs_pct": 100.0
               },
               {
-                "taken": 10,
+                "taken": 9,
                 "cs": 5,
-                "cs_pct": 50.0
+                "cs_pct": 55.6
               },
               {
-                "taken": 2,
+                "taken": 3,
                 "cs": 0,
                 "cs_pct": 0.0
               }
@@ -1311,12 +1311,12 @@
                 "cs_pct": 0.0
               },
               {
-                "taken": 6,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },
               {
-                "taken": 8,
+                "taken": 7,
                 "cs": 0,
                 "cs_pct": 0.0
               },

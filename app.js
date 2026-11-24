@@ -1592,7 +1592,7 @@ function renderBadUmpsCards(filteredRows) {
     if (aaSectionEl) aaSectionEl.classList.add("hidden");
 
     const worstAa = getTopAaBadUmps(state.leaderboard, minP);
-    els.badUmpsGrid.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, "2026")).join("");
+    els.badUmpsGrid.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, yrLabel)).join("");
   } else {
     if (titleEl) {
       titleEl.textContent =
@@ -1623,7 +1623,7 @@ function renderBadUmpsCards(filteredRows) {
     if (aaSectionEl && aaGridEl) {
       if (lvl === "ALL") {
         const worstAa = getTopAaBadUmps(state.leaderboard, minP);
-        aaGridEl.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, "2026")).join("");
+        aaGridEl.innerHTML = worstAa.map((u, idx) => buildAaBadUmpCardHtml(u, idx, yrLabel)).join("");
         aaSectionEl.classList.toggle("hidden", worstAa.length === 0);
       } else {
         aaSectionEl.classList.add("hidden");
